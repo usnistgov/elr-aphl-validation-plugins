@@ -1,0 +1,3 @@
+MSH|^~\&|||||20120821140551-0500||ORU^R01^ORU_R01|NIST-ELR-002.01|T|2.5.1|||AL|ER|||||PHLabReport-Ack^HL7^2.16.840.1.113883.9.11^ISO
+ORC|RE
+OBR|||system generated^^2.16.840.1.113883.3.72.5.24^ISO|5609-3^Cadmium [Mass/volume] in Blood^LN
