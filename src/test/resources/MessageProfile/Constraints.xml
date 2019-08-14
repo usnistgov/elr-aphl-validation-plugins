@@ -7,13 +7,13 @@
 				<Predicate ID="CP_MSH-15" Target="15[1]" TrueUsage="R" FalseUsage="RE">
 					<Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'.</Description>
 					<Condition>
-						<Plugin QualifiedClassName="gov.nist.healthcare.elr.custom.cp.MSH_15"/>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_15"/>
 					</Condition>
 				</Predicate>
 				<Predicate ID="CP_MSH-16" Target="16[1]" TrueUsage="R" FalseUsage="RE">
 					<Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'.</Description>
 					<Condition>
-						<Plugin QualifiedClassName="gov.nist.healthcare.elr.custom.cp.MSH_16"/>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_16"/>
 					</Condition>
 				</Predicate>
 			</ByID>
@@ -125,25 +125,25 @@
 				<Constraint ID="ELR-019">
 					<Description>MSH-15 (Accept Acknowledgment Type) SHALL contain the constant value 'AL' IF any occurrence of MSH-21.1 (Entity Identifier) is 'PHLabReport-Ack' , ELSE, if valued, SHALL contain the constant value 'NE'.</Description>
 					<Assertion>
-						<Plugin QualifiedClassName="gov.nist.healthcare.elr.custom.cs.ELR_019"/>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_019"/>
 					</Assertion>
 				</Constraint>
 				<Constraint ID="ELR-020">
 					<Description>MSH-16 (Application Acknowledgement Type) SHALL contain the constant value 'AL', 'NE', 'ER', or 'SU', IF any occurrence of MSH-21.1 (Entity Identifier) is 'PHLabReport-Ack', ELSE, if valued, SHALL contain the constant value 'NE'.</Description>
 					<Assertion>
-						<Plugin QualifiedClassName="gov.nist.healthcare.elr.custom.cs.ELR_020"/>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_020"/>
 					</Assertion>
 				</Constraint>
 				<Constraint ID="ELR-021">
 					<Description>MSH-21.1 (Entity Identifier) of an occurrence of MSH-21 (Message Profile Identifier) SHALL be valued with 'PHLabReport-Ack' OR 'PHLabReport-NoAck' OR 'PHLabReport-Batch'.</Description>
 					<Assertion>
-						<Plugin QualifiedClassName="gov.nist.healthcare.elr.custom.cs.ELR_021"/>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_021"/>
 					</Assertion>
 				</Constraint>
 				<Constraint ID="ELR-022">
 					<Description>MSH-21.3 (Universal ID) of an occurrence of MSH-21 (Message Profile Identifier) SHALL contain the value "2.16.840.1.113883.9.11".</Description>
 					<Assertion>
-						<Plugin QualifiedClassName="gov.nist.healthcare.elr.custom.cs.ELR_022"/>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_022"/>
 					</Assertion>
 				</Constraint>
 			</ByID>
@@ -154,7 +154,7 @@
 				<Constraint ID="ELR-040">
 					<Description>OBR-3 (Filler Order Number) SHALL NOT contain the same value as another occurrence of OBR-3 (Filler Order Number) in the message.</Description>
 					<Assertion>
-						<Plugin QualifiedClassName="gov.nist.healthcare.elr.custom.cs.ELR_040"/>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_040"/>
 					</Assertion>
 				</Constraint>			
 			</ByID>
