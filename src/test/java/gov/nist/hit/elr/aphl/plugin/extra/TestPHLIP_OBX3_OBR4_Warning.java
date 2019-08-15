@@ -10,10 +10,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
-public class TestOBX3_OBR4 {
+public class TestPHLIP_OBX3_OBR4_Warning {
 
 	// SUCCESS
 	// use case : OBX-3/OBR-4 is in "Tests"
@@ -35,14 +34,14 @@ public class TestOBX3_OBR4 {
 	// use case : OBX-3 is not present in "Tests", but is present in "Observations",
 	// OBR-4 is not present in "Tests", and not present in "Orders"
 
-	private static OBX3_OBR4 testObject;
+	private static PHLIP_OBX3_OBR4_Warning testObject;
 
 	private static ComplexCodedElement OBR4;
 	private static List<ComplexCodedElement> OBX3s;
 
 	@BeforeClass
 	public static void setUp() {
-		testObject = new OBX3_OBR4();
+		testObject = new PHLIP_OBX3_OBR4_Warning();
 		OBX3s = new ArrayList<ComplexCodedElement>();
 	}
 
@@ -98,23 +97,23 @@ public class TestOBX3_OBR4 {
 
 		OBR4 = new ComplexCodedElement("68991-9", "LN", "", "");
 		List<String> result = testObject.check(OBR4, OBX3s);
-		assertEquals(4, result.size());
+		assertEquals(0, result.size());
 
 		OBR4 = new ComplexCodedElement("", "", "68991-9", "LN");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(4, result.size());
+		assertEquals(0, result.size());
 
 		OBR4 = new ComplexCodedElement("68991-9", "LN", "ABC", "L");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(4, result.size());
+		assertEquals(0, result.size());
 
 		OBR4 = new ComplexCodedElement("ABC", "L", "68991-9", "LN");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(4, result.size());
+		assertEquals(0, result.size());
 
 		OBR4 = new ComplexCodedElement("ABC", "L", "XYZ", "M");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(4, result.size());
+		assertEquals(0, result.size());
 	}
 
 	@Test
@@ -133,19 +132,19 @@ public class TestOBX3_OBR4 {
 
 		OBR4 = new ComplexCodedElement("12237-4", "LN", "", "");
 		List<String> result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("", "", "12237-4", "LN");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("12237-4", "LN", "ABC", "L");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("ABC", "L", "12237-4", "LN");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		// use case : OBX-3 is in "Tests", OBR-4 is not present in "Tests" but it is
 		// present in "Orders"
@@ -155,15 +154,15 @@ public class TestOBX3_OBR4 {
 		// present in "Orders"
 		OBR4 = new ComplexCodedElement("0000-0", "LN", "", "");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("", "", "0000-0", "LN");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("0000-0", "LN", "11111-1", "L");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		// use case : OBX-3 is not present in "Tests", but is present in "Observations",
 		// OBR-4 is present in "Tests"
@@ -181,19 +180,19 @@ public class TestOBX3_OBR4 {
 
 		OBR4 = new ComplexCodedElement("12237-4", "LN", "", "");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("", "", "12237-4", "LN");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("12237-4", "LN", "ABC", "L");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("ABC", "L", "12237-4", "LN");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		// use case : OBX-3 is not present in "Tests", but is present in "Observations",
 		// OBR-4 is not present in "Tests", but it is present in "Orders"
@@ -203,15 +202,15 @@ public class TestOBX3_OBR4 {
 		// OBR-4 is not present in "Tests", and not present in "Orders"
 		OBR4 = new ComplexCodedElement("0000-0", "LN", "", "");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("", "", "0000-0", "LN");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 		OBR4 = new ComplexCodedElement("0000-0", "LN", "11111-1", "L");
 		result = testObject.check(OBR4, OBX3s);
-		assertEquals(0, result.size());
+		assertEquals(4, result.size());
 
 	}
 

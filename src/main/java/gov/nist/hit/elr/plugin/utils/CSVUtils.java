@@ -18,11 +18,11 @@ public class CSVUtils {
 
 	private static Logger logger = Logger.getLogger(CSVUtils.class.getName());
 
-	private static String FOLDER = "jun2019";
-	private static String TEST_CSV = "Flu_Encoding_Guideline_Jun2019(obx2)-Test.csv";
-	private static String OBSERVATIONS_CSV = "Flu_Encoding_Guideline_Jun2019(obx2)-Observations.csv";
-	private static String ORDERS = "Flu_Encoding_Guideline_Jun2019(obx2)-Orders.csv";
-	private static String VALUE_SETS_CSV = "Flu_Encoding_Guideline_Jun2019(obx2)-ValueSets.csv";
+//	private static String FOLDER = "jun2019";
+//	private static String TEST_CSV = "Flu_Encoding_Guideline_Jun2019(obx2)-Test.csv";
+//	private static String OBSERVATIONS_CSV = "Flu_Encoding_Guideline_Jun2019(obx2)-Observations.csv";
+//	private static String ORDERS = "Flu_Encoding_Guideline_Jun2019(obx2)-Orders.csv";
+//	private static String VALUE_SETS_CSV = "Flu_Encoding_Guideline_Jun2019(obx2)-ValueSets.csv";
 
 	private Set<CodedElement> OBR4;
 	private Set<CodedElement> OBX3;
@@ -40,7 +40,6 @@ public class CSVUtils {
 		OBX3_OBX2 = new HashMap<CodedElement, String>();
 		OBX3_OBX5 = new HashMap<CodedElement, String>();
 		valueSets = new HashMap<String, Set<CodedElement>>();
-		parse();
 	}
 
 	public Set<CodedElement> getOBR4() {
@@ -71,16 +70,17 @@ public class CSVUtils {
 		return valueSets;
 	}
 
-	public void parse() throws IOException {
-		parseOrdersCSV();
-		parseObservationsCSV();
-		parseTestCSV();
-		parseValueSetsCSV();
+	public void parse(String folder, String testCsv, String observationsCsv, String orderCsv, String valueSetsCsv)
+			throws IOException {
+		parseOrdersCSV(folder, orderCsv);
+		parseObservationsCSV(folder, observationsCsv);
+		parseTestCSV(folder, testCsv);
+		parseValueSetsCSV(folder, valueSetsCsv);
 	}
 
-	private void parseValueSetsCSV() throws IOException {
+	private void parseValueSetsCSV(String folder, String valueSetsCsv) throws IOException {
 		BufferedReader reader = new BufferedReader(
-				new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + FOLDER + "/" + VALUE_SETS_CSV)));
+				new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + valueSetsCsv)));
 
 		CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
 		CSVParser csvParser = new CSVParser(reader, format);
@@ -104,10 +104,10 @@ public class CSVUtils {
 		reader.close();
 	}
 
-	private void parseTestCSV() throws IOException {
+	private void parseTestCSV(String folder, String testCsv) throws IOException {
 
 		BufferedReader reader = new BufferedReader(
-				new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + FOLDER + "/" + TEST_CSV)));
+				new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + testCsv)));
 
 		CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
 		CSVParser csvParser = new CSVParser(reader, format);
@@ -149,10 +149,10 @@ public class CSVUtils {
 		reader.close();
 	}
 
-	private void parseObservationsCSV() throws IOException {
+	private void parseObservationsCSV(String folder, String observationsCsv) throws IOException {
 
 		BufferedReader reader = new BufferedReader(
-				new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + FOLDER + "/" + OBSERVATIONS_CSV)));
+				new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + observationsCsv)));
 
 		CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
 		CSVParser csvParser = new CSVParser(reader, format);
@@ -171,11 +171,9 @@ public class CSVUtils {
 		reader.close();
 	}
 
-	private void parseOrdersCSV() throws IOException {
-
+	private void parseOrdersCSV(String folder, String orderCsv) throws IOException {
 		BufferedReader reader = new BufferedReader(
-				new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + FOLDER + "/" + ORDERS)));
-
+				new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + orderCsv)));
 		CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
 		CSVParser csvParser = new CSVParser(reader, format);
 

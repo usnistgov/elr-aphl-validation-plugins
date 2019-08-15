@@ -15,9 +15,19 @@ import hl7.v2.instance.Simple;
 import scala.collection.Iterator;
 import scala.collection.immutable.List;
 
-public class OBX3_OBR4 {
+public abstract class OBX3_OBR4 {
 
 	private static Logger logger = Logger.getLogger(OBX3_OBR4.class.getName());
+
+	public abstract String getFOLDER();
+
+	public abstract String getTEST_CSV();
+
+	public abstract String getOBSERVATIONS_CSV();
+
+	public abstract String getORDERS();
+
+	public abstract String getVALUE_SETS_CSV();
 
 	/**
 	 * 
@@ -26,7 +36,6 @@ public class OBX3_OBR4 {
 	 * @throws IOException
 	 */
 	public java.util.List<String> assertionWithCustomMessages(Element e) throws IOException {
-
 		java.util.List<String> messages = new ArrayList<String>();
 
 		List<Element> OBR4List = Query.query(e, "2[1].4[1]").get();
@@ -37,6 +46,7 @@ public class OBX3_OBR4 {
 		}
 
 		List<Element> OBX3List = Query.query(e, "6[*].1[1].3[1]").get();
+
 		if (OBX3List == null || OBX3List.size() == 0) {
 			// no OBX-3 under the OBR-4 - this is outside the scope of this conformance
 			// statement
@@ -62,7 +72,6 @@ public class OBX3_OBR4 {
 
 		ComplexCodedElement _OBR4 = new ComplexCodedElement(identifierOBR4, alternateOBR4);
 		java.util.List<ComplexCodedElement> _OBX3s = new ArrayList<ComplexCodedElement>();
-
 		Iterator<Element> it = OBX3List.iterator();
 		while (it.hasNext()) {
 			Element OBX3 = it.next();
@@ -91,6 +100,7 @@ public class OBX3_OBR4 {
 	public java.util.List<String> check(ComplexCodedElement OBR4, java.util.List<ComplexCodedElement> OBX3s)
 			throws IOException {
 		CSVUtils util = new CSVUtils();
+		util.parse(getFOLDER(), getTEST_CSV(), getOBSERVATIONS_CSV(), getORDERS(), getVALUE_SETS_CSV());
 
 		java.util.List<String> messages = new ArrayList<String>();
 
@@ -111,7 +121,6 @@ public class OBX3_OBR4 {
 				// 1.1 Check if the parent OBR-4 matches
 				if (obr4Expected.contains(identifierOBR4) || obr4Expected.contains(alternateOBR4)) {
 					// success : move to the next OBX-3
-					logger.debug("SUCCESS 1");
 					continue;
 				}
 			}
@@ -125,12 +134,10 @@ public class OBX3_OBR4 {
 					} else {
 						messages.add("[FAIL] The OBX-3 value (" + OBX3.prettyPrint() + ") is not valid");
 					}
-					logger.debug("FAIL 1");
 					continue;
 				}
 			}
 		}
-		logger.debug(messages);
 		return messages;
 	}
 }

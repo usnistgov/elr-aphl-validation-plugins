@@ -15,9 +15,19 @@ import hl7.v2.instance.Simple;
 import scala.collection.Iterator;
 import scala.collection.immutable.List;
 
-public class OBX3_OBR4_Warning {
+public abstract class OBX3_OBR4_Warning {
 
 	private static Logger logger = Logger.getLogger(OBX3_OBR4_Warning.class.getName());
+
+	public abstract String getFOLDER();
+
+	public abstract String getTEST_CSV();
+
+	public abstract String getOBSERVATIONS_CSV();
+
+	public abstract String getORDERS();
+
+	public abstract String getVALUE_SETS_CSV();
 
 	/**
 	 * 
@@ -91,6 +101,7 @@ public class OBX3_OBR4_Warning {
 	public java.util.List<String> check(ComplexCodedElement OBR4, java.util.List<ComplexCodedElement> OBX3s)
 			throws IOException {
 		CSVUtils util = new CSVUtils();
+		util.parse(getFOLDER(), getTEST_CSV(), getOBSERVATIONS_CSV(), getORDERS(), getVALUE_SETS_CSV());
 
 		java.util.List<String> messages = new ArrayList<String>();
 
