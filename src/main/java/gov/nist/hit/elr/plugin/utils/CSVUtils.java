@@ -18,12 +18,6 @@ public class CSVUtils {
 
 	private static Logger logger = Logger.getLogger(CSVUtils.class.getName());
 
-//	private static String FOLDER = "jun2019";
-//	private static String TEST_CSV = "Flu_Encoding_Guideline_Jun2019(obx2)-Test.csv";
-//	private static String OBSERVATIONS_CSV = "Flu_Encoding_Guideline_Jun2019(obx2)-Observations.csv";
-//	private static String ORDERS = "Flu_Encoding_Guideline_Jun2019(obx2)-Orders.csv";
-//	private static String VALUE_SETS_CSV = "Flu_Encoding_Guideline_Jun2019(obx2)-ValueSets.csv";
-
 	private Set<CodedElement> OBR4;
 	private Set<CodedElement> OBX3;
 	private Map<CodedElement, Set<CodedElement>> OBR4_OBX3;

@@ -148,7 +148,23 @@
 				</Constraint>
 			</ByID>
 		</Segment>
-		<Group />
+		<Group>
+			<ByID ID="ORDER_OBSERVATION">
+				<Constraint ID="ELR-037">
+					<Description>ORC-12 (Ordering Provider) SHALL be the same value as OBR-16 within same Order_Observation Group.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_037"/>
+					</Assertion>
+				</Constraint>			
+				
+				<Constraint ID="ELR-051">
+					<Description>The value of OBSERVATION[*].OBX.14.1 (Time) SHALL be equal to the value of OBR.7.1 (Time).</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_051"/>
+					</Assertion>
+				</Constraint>	
+			</ByID>		
+		</Group>
 		<Message>
 			<ByID ID="ORU_R01">
 				<Constraint ID="ELR-040">
