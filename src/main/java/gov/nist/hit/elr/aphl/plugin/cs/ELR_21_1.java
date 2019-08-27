@@ -7,7 +7,7 @@ import hl7.v2.instance.Simple;
 import scala.collection.Iterator;
 import scala.collection.immutable.List;
 
-public class ARLN_21 {
+public class ELR_21_1 {
 
 	private static String EntityIdentifier = "PHLabReport-NoAck";
 	private static String NamespaceID = "phLabResultsELRv251";
