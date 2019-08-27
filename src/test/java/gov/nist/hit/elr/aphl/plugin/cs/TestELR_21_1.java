@@ -19,13 +19,13 @@ import gov.nist.validation.report.Entry;
 import gov.nist.validation.report.Report;
 import hl7.v2.validation.SyncHL7Validator;
 
-public class TestARLN_21 {
+public class TestELR_21_1 {
 
-	private static ARLN_21 testObject;
+	private static ELR_21_1 testObject;
 
 	@BeforeClass
 	public static void setUp() {
-		testObject = new ARLN_21();
+		testObject = new ELR_21_1();
 	}
 
 	@Test
