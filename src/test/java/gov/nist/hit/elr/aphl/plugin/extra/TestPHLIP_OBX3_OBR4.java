@@ -61,7 +61,6 @@ public class TestPHLIP_OBX3_OBR4 {
 	}
 
 	@Test
-	@Ignore
 	public void testCheckSuccess() throws IOException {
 		// OBX-3 = 11368-8 LN & OBR-4 = 68991-9 LN
 
@@ -93,7 +92,6 @@ public class TestPHLIP_OBX3_OBR4 {
 	}
 
 	@Test
-	@Ignore
 	public void testCheckFail() throws IOException {
 		// OBX-3 = 00000-0 LN & OBR-4 = 68991-9 LN
 
@@ -128,7 +126,6 @@ public class TestPHLIP_OBX3_OBR4 {
 	}
 
 	@Test
-	@Ignore
 	public void testCheckWarning() throws IOException {
 		// use case : OBX-3 in in "Tests", but OBR-4 is associated to another OBX-3
 		// OBX-3 = 11368-8 LN & OBR-4 = 12237-4 LN
@@ -227,6 +224,7 @@ public class TestPHLIP_OBX3_OBR4 {
 	}
 
 	@Test
+	@Ignore
 	public void testMessage() throws Exception {
 
 		String globalFolder = "/PHLIP";
