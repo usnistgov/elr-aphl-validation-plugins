@@ -22,9 +22,15 @@ public class ELR_037 {
 	 * 
 	 * @param e the ORDER_OBSERVATION group
 	 * @return
-	 * @throws InterruptedException
 	 */
 	public boolean assertion(Element e) {
+
+		List<Element> ORCList = Query.query(e, "1[*]").get();
+
+		if (ORCList.size() == 0) {
+			// no ORC segment
+			return true;
+		}
 
 		List<Element> ORC12List = Query.query(e, "1[*].12[*]").get();
 		List<Element> OBR16List = Query.query(e, "2[*].16[*]").get();

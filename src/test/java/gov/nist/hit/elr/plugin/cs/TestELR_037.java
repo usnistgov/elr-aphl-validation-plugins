@@ -11,7 +11,6 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.plugin.util.Util;
@@ -197,7 +196,6 @@ public class TestELR_037 {
 
 	}
 
-	@Ignore
 	@Test
 	public void testMessage() throws Exception {
 
@@ -207,7 +205,7 @@ public class TestELR_037 {
 		String constraints = StringUtils.join(globalFolder, "/Constraints.xml");
 		String valueSets = StringUtils.join(globalFolder, "/ValueSets.xml");
 
-		String message1FileName = "TestMessages/ELR037/Message1.txt";
+		String message1FileName = "TestMessages/ELR037/Message2.txt";
 
 		SyncHL7Validator validator = Util.createValidator(profiles, constraints, null, valueSets);
 		ClassLoader classLoader = getClass().getClassLoader();
