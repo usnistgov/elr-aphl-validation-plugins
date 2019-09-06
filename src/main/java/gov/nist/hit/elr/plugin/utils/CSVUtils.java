@@ -26,6 +26,8 @@ public class CSVUtils {
 	private Map<CodedElement, String> OBX3_OBX5;
 	private Map<String, Set<CodedElement>> valueSets;
 
+	private Set<CodedElement> SPM4;
+
 	public CSVUtils() throws IOException {
 		OBR4 = new HashSet<CodedElement>();
 		OBX3 = new HashSet<CodedElement>();
@@ -34,6 +36,9 @@ public class CSVUtils {
 		OBX3_OBX2 = new HashMap<CodedElement, String>();
 		OBX3_OBX5 = new HashMap<CodedElement, String>();
 		valueSets = new HashMap<String, Set<CodedElement>>();
+
+		SPM4 = new HashSet<CodedElement>();
+
 	}
 
 	public Set<CodedElement> getOBR4() {
@@ -62,6 +67,10 @@ public class CSVUtils {
 
 	public Map<String, Set<CodedElement>> getValueSets() {
 		return valueSets;
+	}
+
+	public Set<CodedElement> getSPM4() {
+		return SPM4;
 	}
 
 	public void parse(String folder, String testCsv, String observationsCsv, String orderCsv, String valueSetsCsv)
@@ -178,6 +187,26 @@ public class CSVUtils {
 			CodedElement OBR4 = new CodedElement(OBR4Identifier, OBR4CodeSystem);
 
 			this.OBR4.add(OBR4);
+
+		}
+		csvParser.close();
+		reader.close();
+	}
+
+	public void parseSpecimenTypeCSV(String folder, String specimentTypeCsv) throws IOException {
+		BufferedReader reader = new BufferedReader(
+				new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + specimentTypeCsv)));
+		CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
+		CSVParser csvParser = new CSVParser(reader, format);
+
+		for (CSVRecord csvRecord : csvParser) {
+			String SPM4Identifier = csvRecord.get("Concept Code");
+			String SPM4Text = csvRecord.get("Preferred Concept Name");
+			String SPM4CodeSystem = csvRecord.get("Code System");
+
+			CodedElement SPM4 = new CodedElement(SPM4Identifier, SPM4Text, SPM4CodeSystem);
+
+			this.SPM4.add(SPM4);
 
 		}
 		csvParser.close();

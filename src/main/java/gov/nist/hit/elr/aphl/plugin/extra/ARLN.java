@@ -8,6 +8,9 @@ public class ARLN {
 	private static final String ORDERS = "IGAMT_ARLN_import_tables_20190826_Orders.csv";
 	private static final String VALUE_SETS_CSV = "IGAMT_ARLN_import_tables_20190826_Value_sets.csv";
 
+	private static final String FOLDER_SPM = "arln/20190906";
+	private static final String SPECIMEN_TYPE_CSV = "ARLN_SPM4_ValueSet.csv";
+
 	public static String getFOLDER() {
 		return FOLDER;
 	}
@@ -26,6 +29,14 @@ public class ARLN {
 
 	public static String getVALUE_SETS_CSV() {
 		return VALUE_SETS_CSV;
+	}
+
+	public static String getFOLDER_SPM() {
+		return FOLDER_SPM;
+	}
+
+	public static String getSPECIMEN_TYPE_CSV() {
+		return SPECIMEN_TYPE_CSV;
 	}
 
 }
