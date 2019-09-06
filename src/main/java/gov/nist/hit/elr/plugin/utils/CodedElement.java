@@ -3,11 +3,19 @@ package gov.nist.hit.elr.plugin.utils;
 public class CodedElement {
 
 	private String identifier;
+	private String text;
 	private String codeSystem;
 
 	public CodedElement(String identifier, String codeSystem) {
 		super();
 		this.identifier = identifier;
+		this.codeSystem = codeSystem;
+	}
+
+	public CodedElement(String identifier, String text, String codeSystem) {
+		super();
+		this.identifier = identifier;
+		this.text = text;
 		this.codeSystem = codeSystem;
 	}
 
@@ -17,6 +25,14 @@ public class CodedElement {
 
 	public void setIdentifier(String identifier) {
 		this.identifier = identifier;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
 	}
 
 	public String getCodeSystem() {

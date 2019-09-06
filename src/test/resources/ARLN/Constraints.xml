@@ -690,6 +690,15 @@
 						<Format Path="18[1].1[1]" Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$" />
 					</Assertion>
 				</Constraint>
+				
+				
+				<Constraint ID="SPM-4Value">
+					<Description>SPM-4 SHALL be a valid code for the ARLN program</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.ARLN_SPM4" />
+					</Assertion>
+				</Constraint>
+				
 			</ByID>
 			<ByID ID="NTE_ELR">
 				<Constraint ID="ELR-053">

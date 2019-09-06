@@ -155,6 +155,12 @@
 					<Assertion>
 						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_037"/>
 					</Assertion>
+				</Constraint>		
+				<Constraint ID="ELR-038">
+					<Description>ORC-14 (Call Back Phone Number) SHALL be the same value as OBR-17 within same Order_Observation Group.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_038"/>
+					</Assertion>
 				</Constraint>			
 				
 				<Constraint ID="ELR-051">
@@ -162,7 +168,14 @@
 					<Assertion>
 						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_051"/>
 					</Assertion>
-				</Constraint>	
+				</Constraint>
+				
+				<Constraint ID="OBX-4">
+					<Description>If there are multiple OBX segments associated with the same OBR segment that have the same OBX-3 (Observation Identifier) values for (OBX-3.1 (Identifier) + OBX-3.3 (Name of Coding System)) or (OBX-3.4 (Alternate Identifier) + OBX-3.6 (Name of Alternate Coding System)), OBX-4 SHALL be present.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.OBX_4"/>
+					</Assertion>
+				</Constraint>		
 			</ByID>		
 		</Group>
 		<Message>

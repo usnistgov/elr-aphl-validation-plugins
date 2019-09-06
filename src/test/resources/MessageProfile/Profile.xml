@@ -17,7 +17,7 @@
 					</Group>
 				</Group>
 				<Group ID="ORDER_OBSERVATION" Name="ORDER_OBSERVATION" Usage="R" Min="1" Max="*">
-					<Segment Ref="ORC" Usage="R" Min="1" Max="1" />
+					<Segment Ref="ORC" Usage="O" Min="0" Max="1" />
 					<Segment Ref="OBR" Usage="R" Min="1" Max="1" />
 					<Segment Ref="NTE" Usage="O" Min="0" Max="*" />
 					<Group ID="TIMING_QTY" Name="TIMING_QTY" Usage="O" Min="0" Max="*">
