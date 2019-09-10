@@ -22,7 +22,7 @@ public class CSVUtils {
 	private Set<CodedElement> OBX3;
 	private Map<CodedElement, Set<CodedElement>> OBR4_OBX3;
 	private Map<CodedElement, Set<CodedElement>> OBX3_OBR4;
-	private Map<CodedElement, String> OBX3_OBX2;
+	private Map<CodedElement, Set<String>> OBX3_OBX2;
 	private Map<CodedElement, String> OBX3_OBX5;
 	private Map<String, Set<CodedElement>> valueSets;
 
@@ -33,7 +33,7 @@ public class CSVUtils {
 		OBX3 = new HashSet<CodedElement>();
 		OBR4_OBX3 = new HashMap<CodedElement, Set<CodedElement>>();
 		OBX3_OBR4 = new HashMap<CodedElement, Set<CodedElement>>();
-		OBX3_OBX2 = new HashMap<CodedElement, String>();
+		OBX3_OBX2 = new HashMap<CodedElement, Set<String>>();
 		OBX3_OBX5 = new HashMap<CodedElement, String>();
 		valueSets = new HashMap<String, Set<CodedElement>>();
 
@@ -57,7 +57,7 @@ public class CSVUtils {
 		return OBX3_OBR4;
 	}
 
-	public Map<CodedElement, String> getOBX3_OBX2() {
+	public Map<CodedElement, Set<String>> getOBX3_OBX2() {
 		return OBX3_OBX2;
 	}
 
@@ -143,7 +143,10 @@ public class CSVUtils {
 			}
 
 			String OBX2 = csvRecord.get("OBX2");
-			OBX3_OBX2.put(OBX3, OBX2);
+			if (!OBX3_OBX2.containsKey(OBX3)) {
+				OBX3_OBX2.put(OBX3, new HashSet<String>());
+			}
+			OBX3_OBX2.get(OBX3).add(OBX2);
 
 			String OBX5 = csvRecord.get("Value Set Name");
 			OBX3_OBX5.put(OBX3, OBX5);

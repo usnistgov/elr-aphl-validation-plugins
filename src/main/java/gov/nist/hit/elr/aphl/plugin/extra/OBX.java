@@ -99,25 +99,27 @@ public abstract class OBX {
 		CodedElement alternate = obx3.getAlternateIdentifier();
 
 		if (util.getOBX3_OBX2().containsKey(identifier)) {
-			String expected = util.getOBX3_OBX2().get(identifier);
-			if (expected.equalsIgnoreCase("varies")) {
+			Set<String> expected = util.getOBX3_OBX2().get(identifier);
+			if (expected.contains("varies")) {
 				// no check can be performed
 				return messages;
 			}
-			if (!expected.equals(obx2)) {
-				messages.add("The OBX-2 value (" + obx2 + ") is not valid for this OBX-3 value ("
-						+ identifier.prettyPrint() + "). The expected OBX-2 value is " + expected + "");
+			if (!expected.contains(obx2)) {
+				messages.add(
+						"The OBX-2 value (" + obx2 + ") is not valid for this OBX-3 value (" + identifier.prettyPrint()
+								+ "). The expected OBX-2 value is one of " + expected.toString() + "");
 			}
 		}
 		if (util.getOBX3_OBX2().containsKey(alternate)) {
-			String expected = util.getOBX3_OBX2().get(alternate);
-			if (expected.equalsIgnoreCase("varies")) {
+			Set<String> expected = util.getOBX3_OBX2().get(alternate);
+			if (expected.contains("varies")) {
 				// no check can be performed
 				return messages;
 			}
-			if (!expected.equals(obx2)) {
-				messages.add("The OBX-2 value (" + obx2 + ") is not valid for this OBX-3 value ("
-						+ alternate.prettyPrint() + "). The expected OBX-2 value is " + expected + "");
+			if (!expected.contains(obx2)) {
+				messages.add(
+						"The OBX-2 value (" + obx2 + ") is not valid for this OBX-3 value (" + alternate.prettyPrint()
+								+ "). The expected OBX-2 value is one of " + expected.toString() + "");
 			}
 		}
 		return messages;

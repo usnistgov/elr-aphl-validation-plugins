@@ -36,7 +36,6 @@ public class TestARLN_SPM4 {
 	}
 
 	@Test
-	@Ignore
 	public void testCheckSuccess() throws IOException {
 
 		ComplexCodedElement SPM4 = new ComplexCodedElement("116155002", "SCT", "Ampulla of Vater cytologic material",
@@ -59,7 +58,6 @@ public class TestARLN_SPM4 {
 	}
 
 	@Test
-	@Ignore
 	public void testCheckFail() throws IOException {
 		ComplexCodedElement SPM4 = new ComplexCodedElement("_116155002", "SCT", "Ampulla of Vater cytologic material",
 				"L");
@@ -80,6 +78,7 @@ public class TestARLN_SPM4 {
 	}
 
 	@Test
+	@Ignore
 	public void testMessage() throws Exception {
 
 		String globalFolder = "/ARLN";
