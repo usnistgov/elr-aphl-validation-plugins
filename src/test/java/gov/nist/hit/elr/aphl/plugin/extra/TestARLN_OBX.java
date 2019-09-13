@@ -84,9 +84,9 @@ public class TestARLN_OBX {
 		assertEquals(0, result.size());
 
 		// OBX-3 = PLT609 / PLT
-		// OBX-2 = DTM
+		// OBX-2 = DT
 		OBX3 = new ComplexCodedElement("PLT609", "PLT", "", "");
-		OBX2 = "DTM";
+		OBX2 = "DT";
 		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
 		assertEquals(0, result.size());
 
@@ -239,9 +239,9 @@ public class TestARLN_OBX {
 		assertEquals(1, result.size());
 
 		// OBX-3 = PLT609 / PLT
-		// OBX-2 = DT
+		// OBX-2 = DTM
 		OBX3 = new ComplexCodedElement("PLT609", "PLT", "", "");
-		OBX2 = "DT";
+		OBX2 = "DTM";
 		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
 		assertEquals(1, result.size());
 
