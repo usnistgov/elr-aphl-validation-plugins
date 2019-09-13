@@ -1,0 +1,88 @@
+<ConformanceContext
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd"
+	UUID="57450d0dd4c6f57e694d1e88">
+	<MetaData Name="Main IG-APHL-08132019" OrgName="APHL"
+		Version="No Version Info" Date="No Date Info" />
+	<Predicates />
+	<Constraints>
+		<Datatype>
+			 <ByID ID="TS_ELR">
+				<Constraint ID="TS_ELR">
+					<Description></Description>
+					<Assertion>
+						<Plugin
+							QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.TS" />
+					</Assertion>
+				</Constraint>
+			</ByID> 
+		</Datatype>
+		<Segment>
+
+			<!-- <ByID ID="MSH_ELR">
+				<Constraint ID="MSH_ELR">
+					<Description>MSH_ELR</Description>
+					<Assertion>
+						<Plugin
+							QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.DTM" />
+					</Assertion>
+				</Constraint>
+			</ByID>
+			<ByID ID="PID_ELR">
+				<Constraint ID="PID_ELR">
+					<Description>PID_ELR</Description>
+					<Assertion>
+						<Plugin
+							QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.DTM" />
+					</Assertion>
+				</Constraint>
+			</ByID>
+
+			<ByID ID="SFT_ELR">
+				<Constraint ID="SFT_ELR">
+					<Description>SFT_ELR</Description>
+					<Assertion>
+						<Plugin
+							QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.DTM" />
+					</Assertion>
+				</Constraint>
+			</ByID>
+			<ByID ID="PV1_ELR">
+				<Constraint ID="PV1_ELR">
+					<Description>PV1_ELR</Description>
+					<Assertion>
+						<Plugin
+							QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.DTM" />
+					</Assertion>
+				</Constraint>
+			</ByID>
+			<ByID ID="OBR_ELR">
+				<Constraint ID="OBR_ELR">
+					<Description>OBR_ELR</Description>
+					<Assertion>
+						<Plugin
+							QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.DTM" />
+					</Assertion>
+				</Constraint>
+			</ByID>
+			<ByID ID="OBX_ELR">
+				<Constraint ID="OBX_ELR">
+					<Description>OBX_ELR</Description>
+					<Assertion>
+						<Plugin
+							QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.DTM" />
+					</Assertion>
+				</Constraint>
+			</ByID>
+			<ByID ID="SPM_ELR">
+				<Constraint ID="SPM_ELR">
+					<Description>SPM_ELR</Description>
+					<Assertion>
+						<Plugin
+							QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.DTM" />
+					</Assertion>
+				</Constraint>
+			</ByID> -->
+		</Segment>
+	</Constraints>
+</ConformanceContext>
