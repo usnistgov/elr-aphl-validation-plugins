@@ -14,85 +14,85 @@ import gov.nist.hit.elr.plugin.cs.ELR_040;
 
 public class TestELR_040 {
 
-	/**
-	 * ELR-040: OBR-3 (Filler Order Number) SHALL NOT contain the same value as
-	 * another occurrence of OBR-3 (Filler Order Number) in the message.
-	 */
+  /**
+   * ELR-040: OBR-3 (Filler Order Number) SHALL NOT contain the same value as another occurrence of
+   * OBR-3 (Filler Order Number) in the message.
+   */
 
-	private static ELR_040 testObject;
+  private static ELR_040 testObject;
 
-	@BeforeClass
-	public static void setUp() {
-		testObject = new ELR_040();
-	}
+  @BeforeClass
+  public static void setUp() {
+    testObject = new ELR_040();
+  }
 
-	@Test
-	public void testCheckSuccess() {
-		List<List<String>> actual = new ArrayList<List<String>>();
+  @Test
+  public void testCheckSuccess() {
+    List<List<String>> actual = new ArrayList<List<String>>();
 
-		String OBR3_1 = "OBR3_1";
-		String OBR3_2 = "OBR3_2";
-		String OBR3_3 = "OBR3_3";
-		String OBR3_4 = "OBR3_4";
+    String OBR3_1 = "OBR3_1";
+    String OBR3_2 = "OBR3_2";
+    String OBR3_3 = "OBR3_3";
+    String OBR3_4 = "OBR3_4";
 
-		List<String> OBR3 = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
-		actual.add(OBR3);
+    List<String> OBR3 = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
+    actual.add(OBR3);
 
-		boolean result = testObject.check(actual);
-		assertTrue(result);
+    boolean result = testObject.check(actual);
+    assertTrue(result);
 
-		OBR3_1 = "OBR3_1+";
-		OBR3_2 = "OBR3_2+";
-		OBR3_3 = "OBR3_3+";
-		OBR3_4 = "OBR3_4+";
+    OBR3_1 = "OBR3_1+";
+    OBR3_2 = "OBR3_2+";
+    OBR3_3 = "OBR3_3+";
+    OBR3_4 = "OBR3_4+";
 
-		List<String> OBR3_second = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
-		actual.add(OBR3_second);
+    List<String> OBR3_second = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
+    actual.add(OBR3_second);
 
-		result = testObject.check(actual);
-		assertTrue(result);
-	}
+    result = testObject.check(actual);
+    assertTrue(result);
+  }
 
-	@Test
-	public void testCheckFail() {
+  @Test
+  public void testCheckFail() {
 
-		List<List<String>> actual = new ArrayList<List<String>>();
+    List<List<String>> actual = new ArrayList<List<String>>();
 
-		String OBR3_1 = "OBR3_1";
-		String OBR3_2 = "OBR3_2";
-		String OBR3_3 = "OBR3_3";
-		String OBR3_4 = "OBR3_4";
+    String OBR3_1 = "OBR3_1";
+    String OBR3_2 = "OBR3_2";
+    String OBR3_3 = "OBR3_3";
+    String OBR3_4 = "OBR3_4";
 
-		List<String> OBR3_first = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
-		actual.add(OBR3_first);
+    List<String> OBR3_first = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
+    actual.add(OBR3_first);
 
-		List<String> OBR3_second = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
-		actual.add(OBR3_second);
+    List<String> OBR3_second = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
+    actual.add(OBR3_second);
 
-		boolean result = testObject.check(actual);
-		assertFalse(result);
+    boolean result = testObject.check(actual);
+    assertFalse(result);
 
-		List<String> OBR3_third = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
-		actual.add(OBR3_third);
+    List<String> OBR3_third = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
+    actual.add(OBR3_third);
 
-		result = testObject.check(actual);
-		assertFalse(result);
+    result = testObject.check(actual);
+    assertFalse(result);
 
-		OBR3_1 = "OBR3_1+";
-		OBR3_2 = "OBR3_2+";
-		OBR3_3 = "OBR3_3+";
-		OBR3_4 = "OBR3_4+";
+    OBR3_1 = "OBR3_1+";
+    OBR3_2 = "OBR3_2+";
+    OBR3_3 = "OBR3_3+";
+    OBR3_4 = "OBR3_4+";
 
-		List<String> OBR3_fourth = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
-		actual.add(OBR3_fourth);
+    List<String> OBR3_fourth = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
+    actual.add(OBR3_fourth);
 
-		result = testObject.check(actual);
-		assertFalse(result);
+    result = testObject.check(actual);
+    assertFalse(result);
 
-		List<String> OBR3_fifth = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
-		actual.add(OBR3_fifth);
+    List<String> OBR3_fifth = Arrays.asList(OBR3_1, OBR3_2, OBR3_3, OBR3_4);
+    actual.add(OBR3_fifth);
 
-		result = testObject.check(actual);
-		assertFalse(result);
-	}
+    result = testObject.check(actual);
+    assertFalse(result);
+  }
 }

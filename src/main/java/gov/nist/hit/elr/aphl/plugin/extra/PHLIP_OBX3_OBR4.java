@@ -6,28 +6,28 @@ import hl7.v2.instance.Element;
 
 public class PHLIP_OBX3_OBR4 extends OBX3_OBR4 {
 
-	public String getFOLDER() {
-		return PHLIP.getFOLDER();
-	}
+  public String getFOLDER() {
+    return PHLIP.getFOLDER();
+  }
 
-	public String getTEST_CSV() {
-		return PHLIP.getTEST_CSV();
-	}
+  public String getTEST_CSV() {
+    return PHLIP.getTEST_CSV();
+  }
 
-	public String getOBSERVATIONS_CSV() {
-		return PHLIP.getOBSERVATIONS_CSV();
-	}
+  public String getOBSERVATIONS_CSV() {
+    return PHLIP.getOBSERVATIONS_CSV();
+  }
 
-	public String getORDERS() {
-		return PHLIP.getORDERS();
-	}
+  public String getORDERS() {
+    return PHLIP.getORDERS();
+  }
 
-	public String getVALUE_SETS_CSV() {
-		return PHLIP.getVALUE_SETS_CSV();
-	}
+  public String getVALUE_SETS_CSV() {
+    return PHLIP.getVALUE_SETS_CSV();
+  }
 
-	public java.util.List<String> assertionWithCustomMessages(Element e) throws IOException {
-		return super.assertionWithCustomMessages(e);
-	}
+  public java.util.List<String> assertionWithCustomMessages(Element e) throws IOException {
+    return super.assertionWithCustomMessages(e);
+  }
 
 }

@@ -13,486 +13,486 @@ import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
 public class TestARLN_OBX {
 
-	private static OBX testObject;
-
-	private static ComplexCodedElement OBX3;
-	private static String OBX2;
-	private static ComplexCodedElement OBX5;
-
-	@BeforeClass
-	public static void setUp() {
-		testObject = new ARLN_OBX();
-	}
-
-	@Test
-	public void testCheckOBX3_OBX2_Success() throws IOException {
-		// OBX-3 = 19156-9/LN
-		// OBX-2 = CWE
-		OBX3 = new ComplexCodedElement("19156-9", "LN", "", "");
-		OBX2 = "CWE";
-		List<String> result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "19156-9", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("19156-9", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "19156-9", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		// OBX-3 = PLT641 / PLT
-		// OBX-2 = TX
-		OBX3 = new ComplexCodedElement("PLT641", "PLT", "", "");
-		OBX2 = "TX";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "PLT641", "PLT");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("PLT641", "PLT", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "PLT641", "PLT");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		// OBX-3 = 85930-6 / LN
-		// OBX-2 = DT
-		OBX3 = new ComplexCodedElement("85930-6", "LN", "", "");
-		OBX2 = "DT";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "85930-6", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("85930-6", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "85930-6", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		// OBX-3 = PLT609 / PLT
-		// OBX-2 = DT
-		OBX3 = new ComplexCodedElement("PLT609", "PLT", "", "");
-		OBX2 = "DT";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "PLT609", "PLT");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("PLT609", "PLT", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "PLT609", "PLT");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		// OBX-3 = 108-1 / LN
-		// OBX-2 = SN
-		OBX3 = new ComplexCodedElement("108-1", "LN", "", "");
-		OBX2 = "SN";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "108-1", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("108-1", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "108-1", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		// OBX-3 = 15378-3 / LN
-		// OBX-2 = ST
-		OBX3 = new ComplexCodedElement("15378-3", "LN", "", "");
-		OBX2 = "CWE";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "15378-3", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("15378-3", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "15378-3", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		// OBX-3 = 35659-2 / LN
-		// OBX-2 = SN
-		OBX3 = new ComplexCodedElement("35659-2", "LN", "", "");
-		OBX2 = "SN";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "35659-2", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("35659-2", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "35659-2", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		// OBX-3 = 35659-2 / LN
-		// OBX-2 = NM
-		OBX3 = new ComplexCodedElement("35659-2", "LN", "", "");
-		OBX2 = "NM";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "35659-2", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("35659-2", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "35659-2", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(0, result.size());
-	}
-
-	@Test
-	public void testCheckOBX3_OBX2_Fail() throws IOException {
-		// OBX-3 = 19156-9/LN
-		// OBX-2 = ST
-		OBX3 = new ComplexCodedElement("19156-9", "LN", "", "");
-		OBX2 = "ST";
-		List<String> result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "19156-9", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("19156-9", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "19156-9", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		// OBX-3 = PLT641 / PLT
-		// OBX-2 = CWE
-		OBX3 = new ComplexCodedElement("PLT641", "PLT", "", "");
-		OBX2 = "CWE";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "PLT641", "PLT");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("PLT641", "PLT", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "PLT641", "PLT");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		// OBX-3 = 85930-6 / LN
-		// OBX-2 = TX
-		OBX3 = new ComplexCodedElement("85930-6", "LN", "", "");
-		OBX2 = "TX";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "85930-6", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("85930-6", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "85930-6", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		// OBX-3 = PLT609 / PLT
-		// OBX-2 = DTM
-		OBX3 = new ComplexCodedElement("PLT609", "PLT", "", "");
-		OBX2 = "DTM";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "PLT609", "PLT");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("PLT609", "PLT", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "PLT609", "PLT");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		// OBX-3 = 108-1 / LN
-		// OBX-2 = DTM
-		OBX3 = new ComplexCodedElement("108-1", "LN", "", "");
-		OBX2 = "DTM";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "108-1", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("108-1", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "108-1", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		// OBX-3 = 15378-3 / LN
-		// OBX-2 = SN
-		OBX3 = new ComplexCodedElement("15378-3", "LN", "", "");
-		OBX2 = "SN";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "15378-3", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("15378-3", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "15378-3", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		// OBX-3 = 35659-2 / LN
-		// OBX-2 = ST
-		OBX3 = new ComplexCodedElement("35659-2", "LN", "", "");
-		OBX2 = "ST";
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "35659-2", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("35659-2", "LN", "ABC", "L");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "35659-2", "LN");
-		result = testObject.checkOBX3_OBX2(OBX3, OBX2);
-		assertEquals(1, result.size());
-	}
-
-	@Test
-	public void testCheckOBX3_OBX5_CWE_Success() throws IOException {
-		// OBX-3 = 90003-5/LN
-		// OBX-2 = CWE
-		// OBX-5 = 91288006 / SCT (Acinetobacter culture result)
-
-		OBX3 = new ComplexCodedElement("90003-5", "LN", "", "");
-		OBX5 = new ComplexCodedElement("91288006", "SCT", "", "");
-		List<String> result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "90003-5", "LN");
-		OBX5 = new ComplexCodedElement("91288006", "SCT", "", "");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("90003-5", "LN", "ABC", "L");
-		OBX5 = new ComplexCodedElement("91288006", "SCT", "", "");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "90003-5", "LN");
-		OBX5 = new ComplexCodedElement("91288006", "SCT", "", "");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("90003-5", "LN", "", "");
-		OBX5 = new ComplexCodedElement("", "", "91288006", "SCT");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "90003-5", "LN");
-		OBX5 = new ComplexCodedElement("", "", "91288006", "SCT");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("90003-5", "LN", "ABC", "L");
-		OBX5 = new ComplexCodedElement("", "", "91288006", "SCT");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "90003-5", "LN");
-		OBX5 = new ComplexCodedElement("", "", "91288006", "SCT");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("90003-5", "LN", "", "");
-		OBX5 = new ComplexCodedElement("91288006", "SCT", "ABC", "L");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "90003-5", "LN");
-		OBX5 = new ComplexCodedElement("91288006", "SCT", "ABC", "L");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("90003-5", "LN", "ABC", "L");
-		OBX5 = new ComplexCodedElement("91288006", "SCT", "ABC", "L");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "90003-5", "LN");
-		OBX5 = new ComplexCodedElement("91288006", "SCT", "ABC", "L");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("90003-5", "LN", "", "");
-		OBX5 = new ComplexCodedElement("ABC", "L", "91288006", "SCT");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "90003-5", "LN");
-		OBX5 = new ComplexCodedElement("ABC", "L", "91288006", "SCT");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("90003-5", "LN", "ABC", "L");
-		OBX5 = new ComplexCodedElement("ABC", "L", "91288006", "SCT");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "90003-5", "LN");
-		OBX5 = new ComplexCodedElement("ABC", "L", "91288006", "SCT");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(0, result.size());
-
-	}
-
-	@Test
-	public void testCheckOBX3_OBX5_CWE_Fail() throws IOException {
-		// OBX-3 = 6985-6/LN
-		// OBX-2 = CWE
-		// OBX-5 = UNK / NULLFL
-
-		OBX3 = new ComplexCodedElement("6985-6", "LN", "", "");
-		OBX5 = new ComplexCodedElement("UNK", "NULLFL", "", "");
-		List<String> result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "6985-6", "LN");
-		OBX5 = new ComplexCodedElement("UNK", "NULLFL", "", "");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("6985-6", "LN", "ABC", "L");
-		OBX5 = new ComplexCodedElement("UNK", "NULLFL", "", "");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "6985-6", "LN");
-		OBX5 = new ComplexCodedElement("UNK", "NULLFL", "", "");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("6985-6", "LN", "", "");
-		OBX5 = new ComplexCodedElement("", "", "UNK", "NULLFL");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "6985-6", "LN");
-		OBX5 = new ComplexCodedElement("", "", "UNK", "NULLFL");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("6985-6", "LN", "ABC", "L");
-		OBX5 = new ComplexCodedElement("", "", "UNK", "NULLFL");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "6985-6", "LN");
-		OBX5 = new ComplexCodedElement("", "", "UNK", "NULLFL");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("6985-6", "LN", "", "");
-		OBX5 = new ComplexCodedElement("UNK", "NULLFL", "ABC", "L");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "6985-6", "LN");
-		OBX5 = new ComplexCodedElement("UNK", "NULLFL", "ABC", "L");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("6985-6", "LN", "ABC", "L");
-		OBX5 = new ComplexCodedElement("UNK", "NULLFL", "ABC", "L");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "6985-6", "LN");
-		OBX5 = new ComplexCodedElement("UNK", "NULLFL", "ABC", "L");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("6985-6", "LN", "", "");
-		OBX5 = new ComplexCodedElement("ABC", "L", "UNK", "NULLFL");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("", "", "6985-6", "LN");
-		OBX5 = new ComplexCodedElement("ABC", "L", "UNK", "NULLFL");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("6985-6", "LN", "ABC", "L");
-		OBX5 = new ComplexCodedElement("ABC", "L", "UNK", "NULLFL");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-
-		OBX3 = new ComplexCodedElement("ABC", "L", "6985-6", "LN");
-		OBX5 = new ComplexCodedElement("ABC", "L", "UNK", "NULLFL");
-		result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
-		assertEquals(1, result.size());
-	}
-
-	@Test
-	@Ignore
-	public void testCheckMessage() {
-
-	}
+  private static OBX testObject;
+
+  private static ComplexCodedElement OBX3;
+  private static String OBX2;
+  private static ComplexCodedElement OBX5;
+
+  @BeforeClass
+  public static void setUp() {
+    testObject = new ARLN_OBX();
+  }
+
+  @Test
+  public void testCheckOBX3_OBX2_Success() throws IOException {
+    // OBX-3 = 19156-9/LN
+    // OBX-2 = CWE
+    OBX3 = new ComplexCodedElement("19156-9", "LN", "", "");
+    OBX2 = "CWE";
+    List<String> result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "19156-9", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("19156-9", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "19156-9", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = PLT641 / PLT
+    // OBX-2 = TX
+    OBX3 = new ComplexCodedElement("PLT641", "PLT", "", "");
+    OBX2 = "TX";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "PLT641", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT641", "PLT", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "PLT641", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 85930-6 / LN
+    // OBX-2 = DT
+    OBX3 = new ComplexCodedElement("85930-6", "LN", "", "");
+    OBX2 = "DT";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "85930-6", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("85930-6", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "85930-6", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = PLT609 / PLT
+    // OBX-2 = DT
+    OBX3 = new ComplexCodedElement("PLT609", "PLT", "", "");
+    OBX2 = "DT";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "PLT609", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT609", "PLT", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "PLT609", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 108-1 / LN
+    // OBX-2 = SN
+    OBX3 = new ComplexCodedElement("108-1", "LN", "", "");
+    OBX2 = "SN";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "108-1", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("108-1", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "108-1", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 15378-3 / LN
+    // OBX-2 = ST
+    OBX3 = new ComplexCodedElement("15378-3", "LN", "", "");
+    OBX2 = "CWE";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "15378-3", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("15378-3", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "15378-3", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 35659-2 / LN
+    // OBX-2 = SN
+    OBX3 = new ComplexCodedElement("35659-2", "LN", "", "");
+    OBX2 = "SN";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "35659-2", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("35659-2", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "35659-2", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 35659-2 / LN
+    // OBX-2 = NM
+    OBX3 = new ComplexCodedElement("35659-2", "LN", "", "");
+    OBX2 = "NM";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "35659-2", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("35659-2", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "35659-2", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+  }
+
+  @Test
+  public void testCheckOBX3_OBX2_Fail() throws IOException {
+    // OBX-3 = 19156-9/LN
+    // OBX-2 = ST
+    OBX3 = new ComplexCodedElement("19156-9", "LN", "", "");
+    OBX2 = "ST";
+    List<String> result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "19156-9", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("19156-9", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "19156-9", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    // OBX-3 = PLT641 / PLT
+    // OBX-2 = CWE
+    OBX3 = new ComplexCodedElement("PLT641", "PLT", "", "");
+    OBX2 = "CWE";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "PLT641", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT641", "PLT", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "PLT641", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    // OBX-3 = 85930-6 / LN
+    // OBX-2 = TX
+    OBX3 = new ComplexCodedElement("85930-6", "LN", "", "");
+    OBX2 = "TX";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "85930-6", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("85930-6", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "85930-6", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    // OBX-3 = PLT609 / PLT
+    // OBX-2 = DTM
+    OBX3 = new ComplexCodedElement("PLT609", "PLT", "", "");
+    OBX2 = "DTM";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "PLT609", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT609", "PLT", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "PLT609", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    // OBX-3 = 108-1 / LN
+    // OBX-2 = DTM
+    OBX3 = new ComplexCodedElement("108-1", "LN", "", "");
+    OBX2 = "DTM";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "108-1", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("108-1", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "108-1", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    // OBX-3 = 15378-3 / LN
+    // OBX-2 = SN
+    OBX3 = new ComplexCodedElement("15378-3", "LN", "", "");
+    OBX2 = "SN";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "15378-3", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("15378-3", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "15378-3", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    // OBX-3 = 35659-2 / LN
+    // OBX-2 = ST
+    OBX3 = new ComplexCodedElement("35659-2", "LN", "", "");
+    OBX2 = "ST";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "35659-2", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("35659-2", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "35659-2", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+  }
+
+  @Test
+  public void testCheckOBX3_OBX5_CWE_Success() throws IOException {
+    // OBX-3 = 90003-5/LN
+    // OBX-2 = CWE
+    // OBX-5 = 91288006 / SCT (Acinetobacter culture result)
+
+    OBX3 = new ComplexCodedElement("90003-5", "LN", "", "");
+    OBX5 = new ComplexCodedElement("91288006", "SCT", "", "");
+    List<String> result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "90003-5", "LN");
+    OBX5 = new ComplexCodedElement("91288006", "SCT", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("90003-5", "LN", "ABC", "L");
+    OBX5 = new ComplexCodedElement("91288006", "SCT", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "90003-5", "LN");
+    OBX5 = new ComplexCodedElement("91288006", "SCT", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("90003-5", "LN", "", "");
+    OBX5 = new ComplexCodedElement("", "", "91288006", "SCT");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "90003-5", "LN");
+    OBX5 = new ComplexCodedElement("", "", "91288006", "SCT");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("90003-5", "LN", "ABC", "L");
+    OBX5 = new ComplexCodedElement("", "", "91288006", "SCT");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "90003-5", "LN");
+    OBX5 = new ComplexCodedElement("", "", "91288006", "SCT");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("90003-5", "LN", "", "");
+    OBX5 = new ComplexCodedElement("91288006", "SCT", "ABC", "L");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "90003-5", "LN");
+    OBX5 = new ComplexCodedElement("91288006", "SCT", "ABC", "L");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("90003-5", "LN", "ABC", "L");
+    OBX5 = new ComplexCodedElement("91288006", "SCT", "ABC", "L");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "90003-5", "LN");
+    OBX5 = new ComplexCodedElement("91288006", "SCT", "ABC", "L");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("90003-5", "LN", "", "");
+    OBX5 = new ComplexCodedElement("ABC", "L", "91288006", "SCT");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "90003-5", "LN");
+    OBX5 = new ComplexCodedElement("ABC", "L", "91288006", "SCT");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("90003-5", "LN", "ABC", "L");
+    OBX5 = new ComplexCodedElement("ABC", "L", "91288006", "SCT");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "90003-5", "LN");
+    OBX5 = new ComplexCodedElement("ABC", "L", "91288006", "SCT");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+  }
+
+  @Test
+  public void testCheckOBX3_OBX5_CWE_Fail() throws IOException {
+    // OBX-3 = 6985-6/LN
+    // OBX-2 = CWE
+    // OBX-5 = UNK / NULLFL
+
+    OBX3 = new ComplexCodedElement("6985-6", "LN", "", "");
+    OBX5 = new ComplexCodedElement("UNK", "NULLFL", "", "");
+    List<String> result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "6985-6", "LN");
+    OBX5 = new ComplexCodedElement("UNK", "NULLFL", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("6985-6", "LN", "ABC", "L");
+    OBX5 = new ComplexCodedElement("UNK", "NULLFL", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "6985-6", "LN");
+    OBX5 = new ComplexCodedElement("UNK", "NULLFL", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("6985-6", "LN", "", "");
+    OBX5 = new ComplexCodedElement("", "", "UNK", "NULLFL");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "6985-6", "LN");
+    OBX5 = new ComplexCodedElement("", "", "UNK", "NULLFL");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("6985-6", "LN", "ABC", "L");
+    OBX5 = new ComplexCodedElement("", "", "UNK", "NULLFL");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "6985-6", "LN");
+    OBX5 = new ComplexCodedElement("", "", "UNK", "NULLFL");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("6985-6", "LN", "", "");
+    OBX5 = new ComplexCodedElement("UNK", "NULLFL", "ABC", "L");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "6985-6", "LN");
+    OBX5 = new ComplexCodedElement("UNK", "NULLFL", "ABC", "L");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("6985-6", "LN", "ABC", "L");
+    OBX5 = new ComplexCodedElement("UNK", "NULLFL", "ABC", "L");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "6985-6", "LN");
+    OBX5 = new ComplexCodedElement("UNK", "NULLFL", "ABC", "L");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("6985-6", "LN", "", "");
+    OBX5 = new ComplexCodedElement("ABC", "L", "UNK", "NULLFL");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "6985-6", "LN");
+    OBX5 = new ComplexCodedElement("ABC", "L", "UNK", "NULLFL");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("6985-6", "LN", "ABC", "L");
+    OBX5 = new ComplexCodedElement("ABC", "L", "UNK", "NULLFL");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "6985-6", "LN");
+    OBX5 = new ComplexCodedElement("ABC", "L", "UNK", "NULLFL");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(1, result.size());
+  }
+
+  @Test
+  @Ignore
+  public void testCheckMessage() {
+
+  }
 }

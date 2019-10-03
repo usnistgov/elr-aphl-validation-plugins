@@ -21,219 +21,219 @@ import hl7.v2.validation.SyncHL7Validator;
 
 public class TestELR_037 {
 
-	private static ELR_037 testObject;
-	private static MyTreeNode<String> provider1;
-	private static MyTreeNode<String> provider2;
-	private static MyTreeNode<String> provider3;
-	private static MyTreeNode<String> provider4;
+  private static ELR_037 testObject;
+  private static MyTreeNode<String> provider1;
+  private static MyTreeNode<String> provider2;
+  private static MyTreeNode<String> provider3;
+  private static MyTreeNode<String> provider4;
 
-	@BeforeClass
-	public static void setUp() {
-		testObject = new ELR_037();
+  @BeforeClass
+  public static void setUp() {
+    testObject = new ELR_037();
 
-		provider1 = new MyTreeNode<String>("");
-		provider1.addChild(new MyTreeNode<String>("111111111"));
-		provider1.addChild(new MyTreeNode<String>("Bloodraw"));
-		provider1.addChild(new MyTreeNode<String>("Leonard"));
-		provider1.addChild(new MyTreeNode<String>("T"));
-		provider1.addChild(new MyTreeNode<String>("JR"));
-		provider1.addChild(new MyTreeNode<String>("DR"));
-		provider1.addChild(new MyTreeNode<String>(""));
-		provider1.addChild(new MyTreeNode<String>(""));
-		MyTreeNode<String> npi = new MyTreeNode<String>("");
-		npi.addChild("NPI");
-		npi.addChild("2.16.840.1.113883.4.6");
-		npi.addChild("ISO");
-		provider1.addChild(npi);
-		provider1.addChild(new MyTreeNode<String>("L"));
-		provider1.addChild(new MyTreeNode<String>(""));
-		provider1.addChild(new MyTreeNode<String>(""));
-		MyTreeNode<String> npi_fac = new MyTreeNode<String>("");
-		npi_fac.addChild("NPI");
-		npi_fac.addChild("NPI_Facility");
-		npi_fac.addChild("2.16.840.1.113883.3.72.5.26");
-		npi_fac.addChild("ISO");
-		provider1.addChild(npi_fac);
-		provider1.addChild(new MyTreeNode<String>(""));
-		provider1.addChild(new MyTreeNode<String>(""));
-		provider1.addChild(new MyTreeNode<String>(""));
-		provider1.addChild(new MyTreeNode<String>(""));
-		provider1.addChild(new MyTreeNode<String>(""));
-		provider1.addChild(new MyTreeNode<String>(""));
-		provider1.addChild(new MyTreeNode<String>("MD"));
+    provider1 = new MyTreeNode<String>("");
+    provider1.addChild(new MyTreeNode<String>("111111111"));
+    provider1.addChild(new MyTreeNode<String>("Bloodraw"));
+    provider1.addChild(new MyTreeNode<String>("Leonard"));
+    provider1.addChild(new MyTreeNode<String>("T"));
+    provider1.addChild(new MyTreeNode<String>("JR"));
+    provider1.addChild(new MyTreeNode<String>("DR"));
+    provider1.addChild(new MyTreeNode<String>(""));
+    provider1.addChild(new MyTreeNode<String>(""));
+    MyTreeNode<String> npi = new MyTreeNode<String>("");
+    npi.addChild("NPI");
+    npi.addChild("2.16.840.1.113883.4.6");
+    npi.addChild("ISO");
+    provider1.addChild(npi);
+    provider1.addChild(new MyTreeNode<String>("L"));
+    provider1.addChild(new MyTreeNode<String>(""));
+    provider1.addChild(new MyTreeNode<String>(""));
+    MyTreeNode<String> npi_fac = new MyTreeNode<String>("");
+    npi_fac.addChild("NPI");
+    npi_fac.addChild("NPI_Facility");
+    npi_fac.addChild("2.16.840.1.113883.3.72.5.26");
+    npi_fac.addChild("ISO");
+    provider1.addChild(npi_fac);
+    provider1.addChild(new MyTreeNode<String>(""));
+    provider1.addChild(new MyTreeNode<String>(""));
+    provider1.addChild(new MyTreeNode<String>(""));
+    provider1.addChild(new MyTreeNode<String>(""));
+    provider1.addChild(new MyTreeNode<String>(""));
+    provider1.addChild(new MyTreeNode<String>(""));
+    provider1.addChild(new MyTreeNode<String>("MD"));
 
-		provider2 = new MyTreeNode<String>("");
-		provider2.addChild(new MyTreeNode<String>("111111111"));
-		provider2.addChild(new MyTreeNode<String>("Bloodraw"));
-		provider2.addChild(new MyTreeNode<String>("Leonard"));
-		provider2.addChild(new MyTreeNode<String>("T"));
-		provider2.addChild(new MyTreeNode<String>("JR"));
-		provider2.addChild(new MyTreeNode<String>("DR"));
-		provider2.addChild(new MyTreeNode<String>(""));
-		provider2.addChild(new MyTreeNode<String>(""));
-		npi = new MyTreeNode<String>("");
-		npi.addChild("NPI");
-		npi.addChild("2.16.840.1.113883.4.6");
-		npi.addChild("ISO");
-		provider2.addChild(npi);
-		provider2.addChild(new MyTreeNode<String>("L"));
-		provider2.addChild(new MyTreeNode<String>(""));
-		provider2.addChild(new MyTreeNode<String>(""));
-		npi_fac = new MyTreeNode<String>("");
-		npi_fac.addChild("NPI");
-		npi_fac.addChild("NPI_Facility");
-		npi_fac.addChild("2.16.840.1.113883.3.72.5.26");
-		npi_fac.addChild("ISO");
-		provider2.addChild(npi_fac);
-		provider2.addChild(new MyTreeNode<String>(""));
-		provider2.addChild(new MyTreeNode<String>(""));
-		provider2.addChild(new MyTreeNode<String>(""));
-		provider2.addChild(new MyTreeNode<String>(""));
-		provider2.addChild(new MyTreeNode<String>(""));
-		provider2.addChild(new MyTreeNode<String>(""));
-		provider2.addChild(new MyTreeNode<String>("MD"));
+    provider2 = new MyTreeNode<String>("");
+    provider2.addChild(new MyTreeNode<String>("111111111"));
+    provider2.addChild(new MyTreeNode<String>("Bloodraw"));
+    provider2.addChild(new MyTreeNode<String>("Leonard"));
+    provider2.addChild(new MyTreeNode<String>("T"));
+    provider2.addChild(new MyTreeNode<String>("JR"));
+    provider2.addChild(new MyTreeNode<String>("DR"));
+    provider2.addChild(new MyTreeNode<String>(""));
+    provider2.addChild(new MyTreeNode<String>(""));
+    npi = new MyTreeNode<String>("");
+    npi.addChild("NPI");
+    npi.addChild("2.16.840.1.113883.4.6");
+    npi.addChild("ISO");
+    provider2.addChild(npi);
+    provider2.addChild(new MyTreeNode<String>("L"));
+    provider2.addChild(new MyTreeNode<String>(""));
+    provider2.addChild(new MyTreeNode<String>(""));
+    npi_fac = new MyTreeNode<String>("");
+    npi_fac.addChild("NPI");
+    npi_fac.addChild("NPI_Facility");
+    npi_fac.addChild("2.16.840.1.113883.3.72.5.26");
+    npi_fac.addChild("ISO");
+    provider2.addChild(npi_fac);
+    provider2.addChild(new MyTreeNode<String>(""));
+    provider2.addChild(new MyTreeNode<String>(""));
+    provider2.addChild(new MyTreeNode<String>(""));
+    provider2.addChild(new MyTreeNode<String>(""));
+    provider2.addChild(new MyTreeNode<String>(""));
+    provider2.addChild(new MyTreeNode<String>(""));
+    provider2.addChild(new MyTreeNode<String>("MD"));
 
-		provider3 = new MyTreeNode<String>("");
-		provider3.addChild(new MyTreeNode<String>("111111113"));
-		provider3.addChild(new MyTreeNode<String>("Bloodraw"));
-		provider3.addChild(new MyTreeNode<String>("Leonard"));
-		provider3.addChild(new MyTreeNode<String>("T"));
-		provider3.addChild(new MyTreeNode<String>("JR"));
-		provider3.addChild(new MyTreeNode<String>("DR"));
-		provider3.addChild(new MyTreeNode<String>(""));
-		provider3.addChild(new MyTreeNode<String>(""));
-		npi = new MyTreeNode<String>("");
-		npi.addChild("NPI");
-		npi.addChild("2.16.840.1.113883.4.6");
-		npi.addChild("ISO");
-		provider3.addChild(npi);
-		provider3.addChild(new MyTreeNode<String>("L"));
-		provider3.addChild(new MyTreeNode<String>(""));
-		provider3.addChild(new MyTreeNode<String>(""));
-		npi_fac = new MyTreeNode<String>("");
-		npi_fac.addChild("NPI");
-		npi_fac.addChild("NPI_Facility");
-		npi_fac.addChild("2.16.840.1.113883.3.72.5.26");
-		npi_fac.addChild("ISO");
-		provider3.addChild(npi_fac);
-		provider3.addChild(new MyTreeNode<String>(""));
-		provider3.addChild(new MyTreeNode<String>(""));
-		provider3.addChild(new MyTreeNode<String>(""));
-		provider3.addChild(new MyTreeNode<String>(""));
-		provider3.addChild(new MyTreeNode<String>(""));
-		provider3.addChild(new MyTreeNode<String>(""));
-		provider3.addChild(new MyTreeNode<String>("MD"));
+    provider3 = new MyTreeNode<String>("");
+    provider3.addChild(new MyTreeNode<String>("111111113"));
+    provider3.addChild(new MyTreeNode<String>("Bloodraw"));
+    provider3.addChild(new MyTreeNode<String>("Leonard"));
+    provider3.addChild(new MyTreeNode<String>("T"));
+    provider3.addChild(new MyTreeNode<String>("JR"));
+    provider3.addChild(new MyTreeNode<String>("DR"));
+    provider3.addChild(new MyTreeNode<String>(""));
+    provider3.addChild(new MyTreeNode<String>(""));
+    npi = new MyTreeNode<String>("");
+    npi.addChild("NPI");
+    npi.addChild("2.16.840.1.113883.4.6");
+    npi.addChild("ISO");
+    provider3.addChild(npi);
+    provider3.addChild(new MyTreeNode<String>("L"));
+    provider3.addChild(new MyTreeNode<String>(""));
+    provider3.addChild(new MyTreeNode<String>(""));
+    npi_fac = new MyTreeNode<String>("");
+    npi_fac.addChild("NPI");
+    npi_fac.addChild("NPI_Facility");
+    npi_fac.addChild("2.16.840.1.113883.3.72.5.26");
+    npi_fac.addChild("ISO");
+    provider3.addChild(npi_fac);
+    provider3.addChild(new MyTreeNode<String>(""));
+    provider3.addChild(new MyTreeNode<String>(""));
+    provider3.addChild(new MyTreeNode<String>(""));
+    provider3.addChild(new MyTreeNode<String>(""));
+    provider3.addChild(new MyTreeNode<String>(""));
+    provider3.addChild(new MyTreeNode<String>(""));
+    provider3.addChild(new MyTreeNode<String>("MD"));
 
-		provider4 = new MyTreeNode<String>("");
-		provider4.addChild(new MyTreeNode<String>("111111111"));
-		provider4.addChild(new MyTreeNode<String>("Bloodraw"));
-		provider4.addChild(new MyTreeNode<String>("Leonard"));
-		provider4.addChild(new MyTreeNode<String>("T"));
-		provider4.addChild(new MyTreeNode<String>("JR"));
-		provider4.addChild(new MyTreeNode<String>("DR"));
-		provider4.addChild(new MyTreeNode<String>(""));
-		provider4.addChild(new MyTreeNode<String>(""));
-		npi = new MyTreeNode<String>("");
-		npi.addChild("NPI");
-		npi.addChild("2.16.840.1.113883.4.6");
-		npi.addChild("ISO");
-		provider4.addChild(npi);
-		provider4.addChild(new MyTreeNode<String>("L"));
-		provider4.addChild(new MyTreeNode<String>(""));
-		provider4.addChild(new MyTreeNode<String>(""));
-		npi_fac = new MyTreeNode<String>("");
-		npi_fac.addChild("NPI");
-		npi_fac.addChild("NPI_Facility");
-		npi_fac.addChild("2.16.840.1.113883.3.72.5.26");
-		npi_fac.addChild("ISO");
-		provider4.addChild(npi_fac);
-		provider4.addChild(new MyTreeNode<String>("MD"));
+    provider4 = new MyTreeNode<String>("");
+    provider4.addChild(new MyTreeNode<String>("111111111"));
+    provider4.addChild(new MyTreeNode<String>("Bloodraw"));
+    provider4.addChild(new MyTreeNode<String>("Leonard"));
+    provider4.addChild(new MyTreeNode<String>("T"));
+    provider4.addChild(new MyTreeNode<String>("JR"));
+    provider4.addChild(new MyTreeNode<String>("DR"));
+    provider4.addChild(new MyTreeNode<String>(""));
+    provider4.addChild(new MyTreeNode<String>(""));
+    npi = new MyTreeNode<String>("");
+    npi.addChild("NPI");
+    npi.addChild("2.16.840.1.113883.4.6");
+    npi.addChild("ISO");
+    provider4.addChild(npi);
+    provider4.addChild(new MyTreeNode<String>("L"));
+    provider4.addChild(new MyTreeNode<String>(""));
+    provider4.addChild(new MyTreeNode<String>(""));
+    npi_fac = new MyTreeNode<String>("");
+    npi_fac.addChild("NPI");
+    npi_fac.addChild("NPI_Facility");
+    npi_fac.addChild("2.16.840.1.113883.3.72.5.26");
+    npi_fac.addChild("ISO");
+    provider4.addChild(npi_fac);
+    provider4.addChild(new MyTreeNode<String>("MD"));
 
-	}
+  }
 
-	@Test
-	public void testCheckSucess() throws Exception {
+  @Test
+  public void testCheckSucess() throws Exception {
 
-		HashSet<MyTreeNode<String>> orc12 = new HashSet<MyTreeNode<String>>();
-		HashSet<MyTreeNode<String>> obr16 = new HashSet<MyTreeNode<String>>();
+    HashSet<MyTreeNode<String>> orc12 = new HashSet<MyTreeNode<String>>();
+    HashSet<MyTreeNode<String>> obr16 = new HashSet<MyTreeNode<String>>();
 
-		orc12.add(provider1);
-		obr16.add(provider2);
+    orc12.add(provider1);
+    obr16.add(provider2);
 
-		boolean result = testObject.check(orc12, obr16);
-		assertTrue(result);
+    boolean result = testObject.check(orc12, obr16);
+    assertTrue(result);
 
-		orc12.add(provider2);
-		result = testObject.check(orc12, obr16);
-		assertTrue(result);
+    orc12.add(provider2);
+    result = testObject.check(orc12, obr16);
+    assertTrue(result);
 
-		orc12.add(provider3);
-		obr16.add(provider3);
-		result = testObject.check(orc12, obr16);
-		assertTrue(result);
-	}
+    orc12.add(provider3);
+    obr16.add(provider3);
+    result = testObject.check(orc12, obr16);
+    assertTrue(result);
+  }
 
-	@Test
-	public void testCheckFail() throws Exception {
+  @Test
+  public void testCheckFail() throws Exception {
 
-		HashSet<MyTreeNode<String>> orc12 = new HashSet<MyTreeNode<String>>();
-		HashSet<MyTreeNode<String>> obr16 = new HashSet<MyTreeNode<String>>();
+    HashSet<MyTreeNode<String>> orc12 = new HashSet<MyTreeNode<String>>();
+    HashSet<MyTreeNode<String>> obr16 = new HashSet<MyTreeNode<String>>();
 
-		orc12.add(provider1);
-		obr16.add(provider3);
+    orc12.add(provider1);
+    obr16.add(provider3);
 
-		boolean result = testObject.check(orc12, obr16);
-		assertFalse(result);
+    boolean result = testObject.check(orc12, obr16);
+    assertFalse(result);
 
-		orc12.removeAll(orc12);
-		obr16.removeAll(obr16);
+    orc12.removeAll(orc12);
+    obr16.removeAll(obr16);
 
-		orc12.add(provider1);
-		obr16.add(provider4);
+    orc12.add(provider1);
+    obr16.add(provider4);
 
-		result = testObject.check(orc12, obr16);
-		assertFalse(result);
+    result = testObject.check(orc12, obr16);
+    assertFalse(result);
 
-	}
+  }
 
-	@Test
-	public void testMessage() throws Exception {
+  @Test
+  public void testMessage() throws Exception {
 
-		String globalFolder = "/MessageProfile";
+    String globalFolder = "/MessageProfile";
 
-		String profiles = StringUtils.join(globalFolder, "/Profile.xml");
-		String constraints = StringUtils.join(globalFolder, "/Constraints.xml");
-		String valueSets = StringUtils.join(globalFolder, "/ValueSets.xml");
+    String profiles = StringUtils.join(globalFolder, "/Profile.xml");
+    String constraints = StringUtils.join(globalFolder, "/Constraints.xml");
+    String valueSets = StringUtils.join(globalFolder, "/ValueSets.xml");
 
-		String message1FileName = "TestMessages/ELR037/Message2.txt";
+    String message1FileName = "TestMessages/ELR037/Message2.txt";
 
-		SyncHL7Validator validator = Util.createValidator(profiles, constraints, null, valueSets);
-		ClassLoader classLoader = getClass().getClassLoader();
-		File message1 = new File(classLoader.getResource(message1FileName).getFile());
-		String messageString = FileUtils.readFileToString(message1);
-		Report report = validator.check(messageString, "ORU_R01");
+    SyncHL7Validator validator = Util.createValidator(profiles, constraints, null, valueSets);
+    ClassLoader classLoader = getClass().getClassLoader();
+    File message1 = new File(classLoader.getResource(message1FileName).getFile());
+    String messageString = FileUtils.readFileToString(message1);
+    Report report = validator.check(messageString, "ORU_R01");
 
-		Set<String> keys = report.getEntries().keySet();
-		int errors = 0;
-		int alerts = 0;
-		for (String key : keys) {
-			List<Entry> entries = report.getEntries().get(key);
-			if (entries != null && entries.size() > 0) {
-				System.out.println("*** " + key + " ***");
-				for (Entry entry : entries) {
-					switch (entry.getClassification()) {
-					case "Error":
-						Util.printEntry(entry);
-						errors++;
-						break;
-					case "Alert":
-						Util.printEntry(entry);
-						alerts++;
-						break;
-					}
-				}
-			}
-		}
-	}
+    Set<String> keys = report.getEntries().keySet();
+    int errors = 0;
+    int alerts = 0;
+    for (String key : keys) {
+      List<Entry> entries = report.getEntries().get(key);
+      if (entries != null && entries.size() > 0) {
+        System.out.println("*** " + key + " ***");
+        for (Entry entry : entries) {
+          switch (entry.getClassification()) {
+            case "Error":
+              Util.printEntry(entry);
+              errors++;
+              break;
+            case "Alert":
+              Util.printEntry(entry);
+              alerts++;
+              break;
+          }
+        }
+      }
+    }
+  }
 
 }
