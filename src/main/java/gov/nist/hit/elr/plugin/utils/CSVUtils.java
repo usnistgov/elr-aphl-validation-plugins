@@ -26,6 +26,10 @@ public class CSVUtils {
   private Map<CodedElement, String> OBX3_OBX5;
   private Map<String, Set<CodedElement>> valueSets;
 
+  private Set<HierarchicDesignator> MSH3;
+  private Map<HierarchicDesignator, Set<String>> MSH3_MSH11;
+  private Set<HierarchicDesignator> MSH4;
+
   private Set<CodedElement> SPM4;
 
   public CSVUtils() throws IOException {
@@ -37,8 +41,24 @@ public class CSVUtils {
     OBX3_OBX5 = new HashMap<CodedElement, String>();
     valueSets = new HashMap<String, Set<CodedElement>>();
 
+    MSH3 = new HashSet<HierarchicDesignator>();
+    MSH3_MSH11 = new HashMap<HierarchicDesignator, Set<String>>();
+    MSH4 = new HashSet<HierarchicDesignator>();
+
     SPM4 = new HashSet<CodedElement>();
 
+  }
+
+  public Set<HierarchicDesignator> getMSH3() {
+    return MSH3;
+  }
+
+  public Map<HierarchicDesignator, Set<String>> getMSH3_MSH11() {
+    return MSH3_MSH11;
+  }
+
+  public Set<HierarchicDesignator> getMSH4() {
+    return MSH4;
   }
 
   public Set<CodedElement> getOBR4() {
@@ -216,4 +236,49 @@ public class CSVUtils {
     reader.close();
   }
 
+  public void parseSendingApplication(String folder, String messageHeaderCsv) throws IOException {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(
+        CSVUtils.class.getResourceAsStream("/" + folder + "/" + messageHeaderCsv)));
+    CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
+    CSVParser csvParser = new CSVParser(reader, format);
+    for (CSVRecord csvRecord : csvParser) {
+      String MSH3nsId = csvRecord.get(1);
+      String MSH3uId = csvRecord.get(2);
+      String MSH3uIdType = csvRecord.get(3);
+
+      String MSH11 = csvRecord.get(4);
+
+      HierarchicDesignator MSH3 = new HierarchicDesignator(MSH3nsId, MSH3uId, MSH3uIdType);
+      // logger.debug("Adding " + MSH3.normalize().prettyPrint() + " to MSH-3");
+      this.MSH3.add(MSH3.normalize());
+
+      if (!this.MSH3_MSH11.containsKey(MSH3.normalize())) {
+        this.MSH3_MSH11.put(MSH3.normalize(), new HashSet<String>());
+      }
+      this.MSH3_MSH11.get(MSH3.normalize()).add(MSH11);
+
+    }
+    csvParser.close();
+    reader.close();
+  }
+
+  public void parseSendingFacility(String folder, String messageHeaderCsv) throws IOException {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(
+        CSVUtils.class.getResourceAsStream("/" + folder + "/" + messageHeaderCsv)));
+    CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
+    CSVParser csvParser = new CSVParser(reader, format);
+
+    for (CSVRecord csvRecord : csvParser) {
+
+      String MSH4nsId = csvRecord.get(1);
+      String MSH4uId = csvRecord.get(2);
+      String MSH4uIdType = csvRecord.get(3);
+
+      HierarchicDesignator MSH4 = new HierarchicDesignator(MSH4nsId, MSH4uId, MSH4uIdType);
+      this.MSH4.add(MSH4.normalize());
+
+    }
+    csvParser.close();
+    reader.close();
+  }
 }

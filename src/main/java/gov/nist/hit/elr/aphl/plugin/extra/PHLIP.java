@@ -3,6 +3,11 @@ package gov.nist.hit.elr.aphl.plugin.extra;
 public class PHLIP {
 
   private static final String FOLDER = "phlip/20190930";
+
+  private static final String FOLDER_MSH = "phlip/20191003";
+  private static final String MSH3_CSV = "MSH3.csv";
+  private static final String MSH4_CSV = "MSH4.csv";
+
   private static final String TEST_CSV = "IGAMT_PHLIP_Tests.csv";
   private static final String OBSERVATIONS_CSV = "IGAMT_PHLIP_Observations.csv";
   private static final String ORDERS = "IGAMT_PHLIP_Orders.csv";
@@ -38,4 +43,18 @@ public class PHLIP {
   public static String getSPECIMEN_TYPE_CSV() {
     return ELR_FOUNDATION.getSPECIMEN_TYPE_CSV();
   }
+
+  public static String getFOLDER_MSH() {
+    return FOLDER_MSH;
+  }
+
+  public static String getMSH3_CSV() {
+    return MSH3_CSV;
+  }
+
+  public static String getMSH4_CSV() {
+    return MSH4_CSV;
+  }
+
+
 }
