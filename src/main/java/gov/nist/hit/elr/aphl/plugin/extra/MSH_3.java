@@ -26,7 +26,6 @@ public abstract class MSH_3 {
    * @throws IOException
    */
   public java.util.List<String> assertionWithCustomMessages(Element e) throws IOException {
-
     java.util.List<String> messages = new ArrayList<String>();
 
     // MSH-3
@@ -51,13 +50,12 @@ public abstract class MSH_3 {
     // MSH-11
     String _MSH11 = "";
 
-    List<Simple> MSH11List = Query.queryAsSimple(e, "11[1]").get();
+    List<Simple> MSH11List = Query.queryAsSimple(e, "11[1].1[1]").get();
     if (MSH11List != null) {
       _MSH11 = MSH11List.size() > 0 ? MSH11List.apply(0).value().raw() : "";
     }
 
     messages.addAll(check(_MSH3, _MSH11));
-
     return messages;
   }
 
@@ -72,6 +70,7 @@ public abstract class MSH_3 {
     if (!util.getMSH3().contains(MSH3.normalize())) {
       messages.add(MSH3.prettyPrint() + " is not a valid value for MSH-3");
     }
+
     // MSH-3 - MSH-11 check
     if (util.getMSH3_MSH11().containsKey(MSH3.normalize())) {
       Set<String> expected = util.getMSH3_MSH11().get(MSH3.normalize());
