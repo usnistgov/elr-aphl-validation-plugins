@@ -149,6 +149,15 @@
 			</ByID>
 		</Segment>
 		<Group>
+			<ByID ID="PATIENT_RESULT">
+				<Constraint ID="ELR-064">
+					<Description>Specimen (Specimen Group) SHALL be present in at least one occurrence of one Order_Observation Group.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_064"/>
+					</Assertion>
+				</Constraint>	
+			</ByID>
+	
 			<ByID ID="ORDER_OBSERVATION">
 				<Constraint ID="ELR-037">
 					<Description>ORC-12 (Ordering Provider) SHALL be the same value as OBR-16 within same Order_Observation Group.</Description>
