@@ -179,6 +179,46 @@ public class TestPHLIP_OBX {
     OBX3 = new ComplexCodedElement("ABC", "L", "TRAVEL05", "PHINQUESTION");
     result = testObject.checkOBX3_OBX2(OBX3, OBX2);
     assertEquals(0, result.size());
+
+
+
+    // OBX-3 = 21612-7 / LN
+    // OBX-2 = SN
+    OBX3 = new ComplexCodedElement("21612-7", "LN", "", "");
+    OBX2 = "SN";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "21612-7", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("21612-7", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "21612-7", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 21612-7 / LN
+    // OBX-2 = NM
+    OBX3 = new ComplexCodedElement("21612-7", "LN", "", "");
+    OBX2 = "NM";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "21612-7", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("21612-7", "LN", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "21612-7", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
   }
 
   @Test
