@@ -10,6 +10,7 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.plugin.util.Util;
@@ -42,12 +43,13 @@ public class TestELR_064 {
   }
 
   @Test
+  @Ignore
   public void testMessage() throws Exception {
 
     String globalFolder = "/MessageProfile";
 
     String profiles = StringUtils.join(globalFolder, "/Profile.xml");
-    String constraints = StringUtils.join(globalFolder, "/Constraints.xml");
+    String constraints = StringUtils.join(globalFolder, "/Constraints_1.xml");
     String valueSets = StringUtils.join(globalFolder, "/ValueSets.xml");
 
     String message1FileName = "TestMessages/ELR064/Message1.txt";
