@@ -177,6 +177,83 @@ public class TestARLN_OBX {
     OBX3 = new ComplexCodedElement("ABC", "L", "35659-2", "LN");
     result = testObject.checkOBX3_OBX2(OBX3, OBX2);
     assertEquals(0, result.size());
+
+
+    // OBX-3 = PLT610 / PLT
+    // OBX-2 = DT
+    OBX3 = new ComplexCodedElement("PLT610", "PLT", "", "");
+    OBX2 = "DT";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "PLT610", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT610", "PLT", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "PLT610", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = PLT622 / PLT
+    // OBX-2 = CWE
+    OBX3 = new ComplexCodedElement("PLT622", "PLT", "", "");
+    OBX2 = "CWE";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "PLT622", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT622", "PLT", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "PLT622", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = PLT631 / PLT
+    // OBX-2 = CWE
+    OBX3 = new ComplexCodedElement("PLT631", "PLT", "", "");
+    OBX2 = "CWE";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "PLT631", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT631", "PLT", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "PLT631", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = PLT642 / PLT
+    // OBX-2 = DT
+    OBX3 = new ComplexCodedElement("PLT642", "PLT", "", "");
+    OBX2 = "DT";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "PLT642", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT642", "PLT", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "PLT642", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
   }
 
   @Test
@@ -311,6 +388,26 @@ public class TestARLN_OBX {
     assertEquals(1, result.size());
 
     OBX3 = new ComplexCodedElement("ABC", "L", "35659-2", "LN");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+
+    // OBX-3 = PLT642 / PLT
+    // OBX-2 = DTM
+    OBX3 = new ComplexCodedElement("PLT642", "PLT", "", "");
+    OBX2 = "DTM";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("", "", "PLT642", "PLT");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT642", "PLT", "ABC", "L");
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(1, result.size());
+
+    OBX3 = new ComplexCodedElement("ABC", "L", "PLT642", "PLT");
     result = testObject.checkOBX3_OBX2(OBX3, OBX2);
     assertEquals(1, result.size());
   }
