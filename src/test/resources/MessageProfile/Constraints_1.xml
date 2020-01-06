@@ -1,0 +1,201 @@
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd" UUID="5d4c59d984aecbc03a7d6e25">
+	<MetaData Name="ORU R01" OrgName="No Org Info" Version="No Version Info" Date="No Date Info" Status="Draft" />
+	<Predicates>
+		<Datatype />
+		<Segment>
+			<ByID ID="MSH">
+				<Predicate ID="CP_MSH-15" Target="15[1]" TrueUsage="R" FalseUsage="RE">
+					<Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'.</Description>
+					<Condition>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_15"/>
+					</Condition>
+				</Predicate>
+				<Predicate ID="CP_MSH-16" Target="16[1]" TrueUsage="R" FalseUsage="RE">
+					<Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'.</Description>
+					<Condition>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_16"/>
+					</Condition>
+				</Predicate>
+			</ByID>
+		</Segment>
+		<Group />
+		<Message />
+	</Predicates>
+	<Constraints>
+		<Datatype>
+			<ByID ID="DTM">
+				<Constraint ID="DTM_Year_USAGE(R)" Target=".">
+					<Description>Year usage is 'R'.</Description>
+					<Assertion>
+						<Format Path="." Regex="([0-9]{4})(((0[1-9])|(1[0-2]))(((0[1-9])|([1-2][0-9])|(3[0-1]))((([0-1][0-9])|(2[0-3]))(([0-5][0-9])(([0-5][0-9])(\.[0-9]{1,4})?)?)?)?)?)?((\+|\-)[0-9]{4})?" />
+					</Assertion>
+				</Constraint>
+				<Constraint ID="DTM_Day_USAGE(C)" Target=".">
+					<Description>Day usage is 'C'.False Usage is 'X'. Predicate is 'If MM(Month) is valued.'.</Description>
+					<Assertion>
+						<IMPLY>
+							<NOT>
+								<Format Path="." Regex="([0-9]{4})((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))((([0-1][0-9])|(2[0-3]))(([0-5][0-9])(([0-5][0-9])(\.[0-9]{1,4})?)?)?)?((\+|\-)[0-9]{4})?" />
+							</NOT>
+							<Format Path="." Regex="([0-9]{4})?((0[1-9])|(1[0-2]))?((\+|\-)[0-9]{4})?" />
+						</IMPLY>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="DTM_Hour_USAGE(C)" Target=".">
+					<Description>Hour usage is 'C'.False Usage is 'X'. Predicate is 'If DD(Day) is valued.'.</Description>
+					<Assertion>
+						<IMPLY>
+							<NOT>
+								<Format Path="." Regex="([0-9]{4})((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))(([0-1][0-9])|(2[0-3]))(([0-5][0-9])(([0-5][0-9])(\.[0-9]{1,4})?)?)?((\+|\-)[0-9]{4})?" />
+							</NOT>
+							<Format Path="." Regex="([0-9]{4})?((0[1-9])|(1[0-2]))?((0[1-9])|([1-2][0-9])|(3[0-1]))?((\+|\-)[0-9]{4})?" />
+						</IMPLY>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="DTM_Minute_USAGE(C)" Target=".">
+					<Description>Minute usage is 'C'.False Usage is 'X'. Predicate is 'If HH(Hour) is valued.'.</Description>
+					<Assertion>
+						<IMPLY>
+							<NOT>
+								<Format Path="." Regex="([0-9]{4})((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))(([0-1][0-9])|(2[0-3]))([0-5][0-9])(([0-5][0-9])(\.[0-9]{1,4})?)?((\+|\-)[0-9]{4})?" />
+							</NOT>
+							<Format Path="." Regex="([0-9]{4})?((0[1-9])|(1[0-2]))?((0[1-9])|([1-2][0-9])|(3[0-1]))?(([0-1][0-9])|(2[0-3]))?((\+|\-)[0-9]{4})?" />
+						</IMPLY>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="DTM_Second_USAGE(C)" Target=".">
+					<Description>Second usage is 'C'.False Usage is 'X'. Predicate is 'If MM(Minute) is valued.'.</Description>
+					<Assertion>
+						<IMPLY>
+							<NOT>
+								<Format Path="." Regex="([0-9]{4})((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))(([0-1][0-9])|(2[0-3]))([0-5][0-9])([0-5][0-9])(\.[0-9]{1,4})?((\+|\-)[0-9]{4})?" />
+							</NOT>
+							<Format Path="." Regex="([0-9]{4})?((0[1-9])|(1[0-2]))?((0[1-9])|([1-2][0-9])|(3[0-1]))?(([0-1][0-9])|(2[0-3]))?([0-5][0-9])?((\+|\-)[0-9]{4})?" />
+						</IMPLY>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="DTM_1/10 second_USAGE(C)" Target=".">
+					<Description>1/10 second usage is 'C'.False Usage is 'X'. Predicate is 'If SS(Second) is valued.'.</Description>
+					<Assertion>
+						<IMPLY>
+							<NOT>
+								<Format Path="." Regex="([0-9]{4})((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))(([0-1][0-9])|(2[0-3]))([0-5][0-9])([0-5][0-9])\.[0-9]([0-9]([0-9]([0-9])?)?)?((\+|\-)[0-9]{4})?" />
+							</NOT>
+							<Format Path="." Regex="([0-9]{4})?((0[1-9])|(1[0-2]))?((0[1-9])|([1-2][0-9])|(3[0-1]))?(([0-1][0-9])|(2[0-3]))?([0-5][0-9])?([0-5][0-9])?((\+|\-)[0-9]{4})?" />
+						</IMPLY>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="DTM_1/100 second_USAGE(C)" Target=".">
+					<Description>1/100 second usage is 'C'.False Usage is 'X'. Predicate is 'If s(1/10 second) is valued.'.</Description>
+					<Assertion>
+						<IMPLY>
+							<NOT>
+								<Format Path="." Regex="([0-9]{4})((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))(([0-1][0-9])|(2[0-3]))([0-5][0-9])([0-5][0-9])\.[0-9][0-9]([0-9]([0-9])?)?((\+|\-)[0-9]{4})?" />
+							</NOT>
+							<Format Path="." Regex="([0-9]{4})?((0[1-9])|(1[0-2]))?((0[1-9])|([1-2][0-9])|(3[0-1]))?(([0-1][0-9])|(2[0-3]))?([0-5][0-9])?([0-5][0-9])?(\.[0-9])?((\+|\-)[0-9]{4})?" />
+						</IMPLY>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="DTM_1/1000 second_USAGE(C)" Target=".">
+					<Description>1/1000 second usage is 'C'.False Usage is 'X'. Predicate is 'If s(1/100 second) is valued.'.</Description>
+					<Assertion>
+						<IMPLY>
+							<NOT>
+								<Format Path="." Regex="([0-9]{4})((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))(([0-1][0-9])|(2[0-3]))([0-5][0-9])([0-5][0-9])\.[0-9][0-9][0-9]([0-9])?((\+|\-)[0-9]{4})?" />
+							</NOT>
+							<Format Path="." Regex="([0-9]{4})?((0[1-9])|(1[0-2]))?((0[1-9])|([1-2][0-9])|(3[0-1]))?(([0-1][0-9])|(2[0-3]))?([0-5][0-9])?([0-5][0-9])?(\.[0-9])?([0-9])?((\+|\-)[0-9]{4})?" />
+						</IMPLY>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="DTM_1/10000 second_USAGE(C)" Target=".">
+					<Description>1/10000 second usage is 'C'.False Usage is 'X'. Predicate is 'If s(1/1000 second) is valued.'.</Description>
+					<Assertion>
+						<IMPLY>
+							<NOT>
+								<Format Path="." Regex="([0-9]{4})((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))(([0-1][0-9])|(2[0-3]))([0-5][0-9])([0-5][0-9])\.[0-9][0-9][0-9][0-9]((\+|\-)[0-9]{4})?" />
+							</NOT>
+							<Format Path="." Regex="([0-9]{4})?((0[1-9])|(1[0-2]))?((0[1-9])|([1-2][0-9])|(3[0-1]))?(([0-1][0-9])|(2[0-3]))?([0-5][0-9])?([0-5][0-9])?(\.[0-9])?([0-9])?([0-9])?((\+|\-)[0-9]{4})?" />
+						</IMPLY>
+					</Assertion>
+				</Constraint>
+			</ByID>
+		</Datatype>
+		<Segment>
+			<ByID ID="MSH">
+				<Constraint ID="ELR-019">
+					<Description>MSH-15 (Accept Acknowledgment Type) SHALL contain the constant value 'AL' IF any occurrence of MSH-21.1 (Entity Identifier) is 'PHLabReport-Ack' , ELSE, if valued, SHALL contain the constant value 'NE'.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_019"/>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="ELR-020">
+					<Description>MSH-16 (Application Acknowledgement Type) SHALL contain the constant value 'AL', 'NE', 'ER', or 'SU', IF any occurrence of MSH-21.1 (Entity Identifier) is 'PHLabReport-Ack', ELSE, if valued, SHALL contain the constant value 'NE'.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_020"/>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="ELR-021">
+					<Description>MSH-21.1 (Entity Identifier) of an occurrence of MSH-21 (Message Profile Identifier) SHALL be valued with 'PHLabReport-Ack' OR 'PHLabReport-NoAck' OR 'PHLabReport-Batch'.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_021"/>
+					</Assertion>
+				</Constraint>
+				<Constraint ID="ELR-022">
+					<Description>MSH-21.3 (Universal ID) of an occurrence of MSH-21 (Message Profile Identifier) SHALL contain the value "2.16.840.1.113883.9.11".</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_022"/>
+					</Assertion>
+				</Constraint>
+			</ByID>
+		</Segment>
+		<Group>
+			<ByID ID="PATIENT_RESULT">
+				<Constraint ID="ELR-064">
+					<Description>Specimen (Specimen Group) SHALL be present in at least one occurrence of one Order_Observation Group.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_064"/>
+					</Assertion>
+				</Constraint>	
+			</ByID>
+	
+			<ByID ID="ORDER_OBSERVATION">
+				<Constraint ID="ELR-037">
+					<Description>ORC-12 (Ordering Provider) SHALL be the same value as OBR-16 within same Order_Observation Group.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_037"/>
+					</Assertion>
+				</Constraint>		
+				<Constraint ID="ELR-038">
+					<Description>ORC-14 (Call Back Phone Number) SHALL be the same value as OBR-17 within same Order_Observation Group.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_038"/>
+					</Assertion>
+				</Constraint>			
+				
+				<Constraint ID="ELR-051">
+					<Description>The value of OBSERVATION[*].OBX.14.1 (Time) SHALL be equal to the value of OBR.7.1 (Time).</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_051"/>
+					</Assertion>
+				</Constraint>
+				
+				<Constraint ID="OBX-4">
+					<Description>If there are multiple OBX segments associated with the same OBR segment that have the same OBX-3 (Observation Identifier) values for (OBX-3.1 (Identifier) + OBX-3.3 (Name of Coding System)) or (OBX-3.4 (Alternate Identifier) + OBX-3.6 (Name of Alternate Coding System)), OBX-4 SHALL be present.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.OBX_4"/>
+					</Assertion>
+				</Constraint>		
+			</ByID>		
+		</Group>
+		<Message>
+			<ByID ID="ORU_R01">
+				<Constraint ID="ELR-040">
+					<Description>OBR-3 (Filler Order Number) SHALL NOT contain the same value as another occurrence of OBR-3 (Filler Order Number) in the message.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_040"/>
+					</Assertion>
+				</Constraint>			
+			</ByID>
+		</Message>
+	</Constraints>
+</ConformanceContext>
