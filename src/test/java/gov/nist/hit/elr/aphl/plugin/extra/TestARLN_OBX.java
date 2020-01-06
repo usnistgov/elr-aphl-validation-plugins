@@ -498,6 +498,38 @@ public class TestARLN_OBX {
     result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
     assertEquals(0, result.size());
 
+
+
+    //
+    OBX3 = new ComplexCodedElement("PLT622", "PLT", "", "");
+    OBX5 = new ComplexCodedElement("PLT620", "PLT", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT622", "PLT", "", "");
+    OBX5 = new ComplexCodedElement("PLR4162", "PLR", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT622", "PLT", "", "");
+    OBX5 = new ComplexCodedElement("373121007", "SCT", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT631", "PLT", "", "");
+    OBX5 = new ComplexCodedElement("MD", "FIPS5_2", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT631", "PLT", "", "");
+    OBX5 = new ComplexCodedElement("NY", "FIPS5_2", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    OBX3 = new ComplexCodedElement("PLT631", "PLT", "", "");
+    OBX5 = new ComplexCodedElement("WI", "FIPS5_2", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
   }
 
   @Test

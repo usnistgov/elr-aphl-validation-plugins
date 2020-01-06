@@ -160,7 +160,7 @@ OBR4 Code,OBR4 Code System,OBX3 Code,OBX3 Code System,OBX2,Value Set Name,
 ,,PLT608,PLT,CWE,Yes No Indicator,
 ,,PLT609,PLT,DTM,,
 ,,PLT610,PLT,DT,,added 01/04/2020
-,,PLT622,PLT,CWE,,added 01/04/2020
+,,PLT622,PLT,CWE,CRE PCR method,added 01/04/2020
 ,,PLT623,PLT,CWE,CRE AST method,
 ,,PLT624,PLT,CWE,CRE Phenotypic method,
 ,,PLT625,PLT,ST,,
@@ -168,7 +168,7 @@ OBR4 Code,OBR4 Code System,OBX3 Code,OBX3 Code System,OBX2,Value Set Name,
 ,,PLT627,PLT,CWE,CRE PCR results,
 ,,PLT628,PLT,SN,,
 ,,PLT630,PLT,CWE,Gender,
-,,PLT631,PLT,CWE,,added 01/04/2020
+,,PLT631,PLT,CWE,ARLN Regional Labs,added 01/04/2020
 ,,PLT632,PLT,CWE,PHL - CRE CRPA,
 ,,PLT633,PLT,CWE,Jurisdiction PHL codes for GC,
 ,,PLT638,PLT,ST,,
