@@ -1,11 +1,11 @@
 package gov.nist.hit.elr.aphl.plugin.extra;
 
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 
-import gov.nist.healthcare.utils.date.DateUtil;
-import gov.nist.healthcare.utils.date.ExtendedDate;
+import gov.nist.healthcare.utils.date.DateUtilNew;
 import hl7.v2.instance.Element;
 import hl7.v2.instance.Query;
 import hl7.v2.instance.Simple;
@@ -16,7 +16,7 @@ public class DateChecks {
 
   private static Logger logger = Logger.getLogger(DateChecks.class.getName());
 
-  private String defaultTz = "-0500";
+  private String defaultTz = "";
 
   /**
    * PID.7 <= (OBR.7 = OBX.14 = SPM.17.1) <= (SPM.17.2 = OBR.8) <= SPM.18 <= OBX.19 <= OBR.22 <=
@@ -29,26 +29,46 @@ public class DateChecks {
    * @return
    */
   public java.util.List<String> assertionWithCustomMessages(Element e) {
-    java.util.List<LocationDateList> datesToCheck = checkMessageContext(e);
-    java.util.List<String> result = check(datesToCheck);
-    if (result.size() > 0) {
-      logger.debug(result);
+    java.util.List<String> result = new java.util.ArrayList<String>();
+    // we extract the default timezone first (from MSH-7). If not present, we don't check anything
+    defaultTz = extractDefaultTZ(e);
+    if (!"".equals(defaultTz)) {
+      java.util.List<LocationDateList> datesToCheck = checkMessageContext(e);
+      result.addAll(check(datesToCheck));
+      if (result.size() > 0) {
+        logger.debug(result);
+      }
     }
     return result;
+  }
+
+
+  public String getDefaultTz() {
+    return defaultTz;
+  }
+
+
+  public void setDefaultTz(String defaultTz) {
+    this.defaultTz = defaultTz;
+  }
+
+
+  private String extractDefaultTZ(Element m) {
+    // MSH-7
+    List<Simple> MSH7List = Query.queryAsSimple(m, "1[1].7[1].1[1]").get();
+    String MSH7 = MSH7List.size() > 0 ? MSH7List.apply(0).value().raw() : "";
+
+    int max = Math.max(MSH7.indexOf("+"), MSH7.indexOf("-"));
+    if (max > -1) {
+      return MSH7.substring(max);
+    }
+    return "";
   }
 
   public java.util.List<String> check(java.util.List<LocationDateList> dates) {
     java.util.List<String> result = new ArrayList<String>();
     for (LocationDateList dateList : dates) {
-      logger.debug("---");
-      LocationDate e = dateList.get(dateList.size() - 1);
-      if (e.getLocation().equals("MSH-7")) {
-        int max = Math.max(e.getDate().indexOf("+"), e.getDate().indexOf("-"));
-        if (max > -1) {
-          defaultTz = e.getDate().substring(max);
-        }
-      }
-
+      // logger.debug("---");
       for (int i = 0; i < dateList.size() - 1; i++) {
         LocationDate a = dateList.get(i);
         LocationDate b = dateList.get(i + 1);
@@ -56,21 +76,19 @@ public class DateChecks {
         String dtm1 = a.getDate();
         String dtm2 = b.getDate();
 
-        logger.debug("Compare " + a.getLocation() + "[" + a.getDate() + "] to " + b.getLocation()
-            + " [" + b.getDate() + "]");
+        // logger.debug("Compare " + a.getLocation() + "[" + a.getDate() + "] to " + b.getLocation()
+        // + " [" + b.getDate() + "]");
 
-        if (!DateUtil.isValid(dtm1) || !DateUtil.isValid(dtm2)) {
+        if (!DateUtilNew.isValid(dtm1, defaultTz) || !DateUtilNew.isValid(dtm2, defaultTz)) {
           continue;
         }
 
-        dtm1 = DateUtil.truncateTo(dtm1, dtm2, true);
-        dtm2 = DateUtil.truncateTo(dtm2, dtm1, true);
+        OffsetDateTime ext1 = DateUtilNew.parseDTM(dtm1, defaultTz);
+        OffsetDateTime ext2 = DateUtilNew.parseDTM(dtm2, defaultTz);
 
-        logger.debug("Compare " + a.getLocation() + "[" + dtm1 + "] to " + b.getLocation() + " ["
-            + dtm2 + "] (truncated)");
 
-        ExtendedDate ext1 = DateUtil.toExtendedDate(dtm1, defaultTz);
-        ExtendedDate ext2 = DateUtil.toExtendedDate(dtm2, defaultTz);
+        // logger.debug("Compare " + a.getLocation() + "[" + ext1 + "] to " + b.getLocation() + " ["
+        // + ext2 + "]");
 
         if ((a.getLocation().equals("OBR-7") || a.getLocation().equals("OBX-14")
             || a.getLocation().equals("SPM-17.1"))
@@ -100,7 +118,7 @@ public class DateChecks {
         }
       }
     }
-    logger.debug(result);
+    // logger.debug(result);
     return result;
   }
 
@@ -119,15 +137,8 @@ public class DateChecks {
       Element pr = it.next();
       java.util.List<LocationDateList> toto = checkPatientResultContext(pr);
       for (LocationDateList list : toto) {
-        if (DateUtil.isValid(MSH7)) {
+        if (DateUtilNew.isValid(MSH7, defaultTz)) {
           list.add("MSH-7", MSH7);
-
-          // MSH-7 time zone is the default time zone
-          // defaultTz = MSH7.
-          int max = Math.max(MSH7.indexOf("+"), MSH7.indexOf("-"));
-          if (max > -1) {
-            defaultTz = MSH7.substring(max);
-          }
         }
         result.add(list);
       }
@@ -227,7 +238,7 @@ public class DateChecks {
   public class LocationDateList extends ArrayList<LocationDate> {
 
     protected boolean add(String location, String date) {
-      if (DateUtil.isValid(date)) {
+      if (DateUtilNew.isValid(date, defaultTz)) {
         LocationDate locationDate = new LocationDate(location, date);
         return this.add(locationDate);
       }

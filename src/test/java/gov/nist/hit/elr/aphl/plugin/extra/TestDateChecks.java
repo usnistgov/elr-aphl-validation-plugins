@@ -7,7 +7,6 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.aphl.plugin.extra.DateChecks.LocationDateList;
@@ -21,6 +20,7 @@ public class TestDateChecks {
   @BeforeClass
   public static void setUp() {
     testObject = new DateChecks();
+    testObject.setDefaultTz("-0500");
   }
 
   @Before
@@ -28,7 +28,6 @@ public class TestDateChecks {
     dates = new ArrayList<LocationDateList>();
   }
 
-  @Ignore
   @Test
   public void testCheckSuccess() {
     LocationDateList e = testObject.new LocationDateList();
@@ -105,7 +104,7 @@ public class TestDateChecks {
 
     // different precision && missing some
     e = testObject.new LocationDateList();
-    e.add("OBR-7", "201912171212");
+    e.add("OBR-7", "20191217121212.3");
     e.add("SPM-17.1", "20191217121212.3");
     e.add("OBR-8", "20191218121212.345");
     e.add("OBX-19 ", "20191220121212.345");
@@ -148,9 +147,9 @@ public class TestDateChecks {
 
     // different time zones
     e = testObject.new LocationDateList();
-    e.add("OBR-7", "2019121714-0600");
-    e.add("OBX-14", "201912171313-0500");
-    e.add("SPM-17.1", "20191217121314-0400");
+    e.add("OBR-7", "201912171400-0500");
+    e.add("OBX-14", "201912171300-0600");
+    e.add("SPM-17.1", "2019121712-0700");
 
     dates.add(e);
     result = testObject.check(dates);
@@ -159,7 +158,6 @@ public class TestDateChecks {
   }
 
   @Test
-  @Ignore
   public void testCheckFail() {
     LocationDateList e = testObject.new LocationDateList();
     e.add("PID-7", "20191222");
@@ -173,7 +171,8 @@ public class TestDateChecks {
     e.add("OBR-22", "20191214");
     e.add("MSH-7", "20191213");
     dates.add(e);
-    testObject.check(dates);
+    List<String> result = testObject.check(dates);
+    assertEquals(9, result.size());
 
   }
 }
