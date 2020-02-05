@@ -12,9 +12,9 @@ import hl7.v2.instance.Simple;
 import scala.collection.Iterator;
 import scala.collection.immutable.List;
 
-public class DateChecks {
+public class DatesCheck {
 
-  private static Logger logger = Logger.getLogger(DateChecks.class.getName());
+  private static Logger logger = Logger.getLogger(DatesCheck.class.getName());
 
   private String defaultTz = "";
 
