@@ -219,7 +219,82 @@ public class TestPHLIP_OBX {
     OBX3 = new ComplexCodedElement("ABC", "L", "21612-7", "LN");
     result = testObject.checkOBX3_OBX2(OBX3, OBX2);
     assertEquals(0, result.size());
+
+
+    // OBX-3 = 94309-2 / LN
+    // OBX-2 = CWE
+    OBX3 = new ComplexCodedElement("94309-2", "LN", "", "");
+    OBX2 = "CWE";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94307-6 / LN
+    // OBX-2 = CWE
+    OBX3 = new ComplexCodedElement("94307-6", "LN", "", "");
+    OBX2 = "CWE";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94308-4 / LN
+    // OBX-2 = CWE
+    OBX3 = new ComplexCodedElement("94308-4", "LN", "", "");
+    OBX2 = "CWE";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94310-0 / LN
+    // OBX-2 = CWE
+    OBX3 = new ComplexCodedElement("94310-0", "LN", "", "");
+    OBX2 = "CWE";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94311-8 / LN
+    // OBX-2 = NM
+    OBX3 = new ComplexCodedElement("94311-8", "LN", "", "");
+    OBX2 = "NM";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94311-8 / LN
+    // OBX-2 = SN
+    OBX3 = new ComplexCodedElement("94311-8", "LN", "", "");
+    OBX2 = "SN";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94312-6 / LN
+    // OBX-2 = NM
+    OBX3 = new ComplexCodedElement("94312-6", "LN", "", "");
+    OBX2 = "NM";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94312-6/ LN
+    // OBX-2 = SN
+    OBX3 = new ComplexCodedElement("94312-6", "LN", "", "");
+    OBX2 = "SN";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94313-4/ LN
+    // OBX-2 = NM
+    OBX3 = new ComplexCodedElement("94313-4", "LN", "", "");
+    OBX2 = "NM";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94313-4/ LN
+    // OBX-2 = SN
+    OBX3 = new ComplexCodedElement("94313-4", "LN", "", "");
+    OBX2 = "SN";
+    result = testObject.checkOBX3_OBX2(OBX3, OBX2);
+    assertEquals(0, result.size());
+
+
+
   }
+
 
   @Test
   public void testCheckOBX3_OBX2_Fail() throws IOException {
@@ -387,6 +462,39 @@ public class TestPHLIP_OBX {
     result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
     assertEquals(0, result.size());
 
+
+
+    // OBX-3 = 94309-2/LN
+    // OBX-2 = CWE
+    // OBX-5 = 260415000 / SCT Conclusion PCR result
+    OBX3 = new ComplexCodedElement("94309-2", "LN", "", "");
+    OBX5 = new ComplexCodedElement("260415000", "SCT", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94307-6/LN
+    // OBX-2 = CWE
+    // OBX-5 = 123840003 / SCT Target PCR result
+    OBX3 = new ComplexCodedElement("94307-6", "LN", "", "");
+    OBX5 = new ComplexCodedElement("123840003", "SCT", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94308-4/LN
+    // OBX-2 = CWE
+    // OBX-5 = 281273001 / SCT Target PCR result
+    OBX3 = new ComplexCodedElement("94308-4", "LN", "", "");
+    OBX5 = new ComplexCodedElement("281273001", "SCT", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
+
+    // OBX-3 = 94310-0/LN
+    // OBX-2 = CWE
+    // OBX-5 = 373121007 / SCT Target PCR result
+    OBX3 = new ComplexCodedElement("94310-0", "LN", "", "");
+    OBX5 = new ComplexCodedElement("373121007", "SCT", "", "");
+    result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
+    assertEquals(0, result.size());
   }
 
   @Test

@@ -92,6 +92,33 @@ public class TestPHLIP_OBX3_OBR4 {
   }
 
   @Test
+  public void testCheckSuccess2() throws IOException {
+    // OBX-3 = 94307-6 LN & OBR-4 = 94306-8 LN
+    // OBX-3 = 94308-4 LN & OBR-4 = 94306-8 LN
+    // OBX-3 = 94310-0 LN & OBR-4 = 94306-8 LN
+    // OBX-3 = 94311-8 LN & OBR-4 = 94306-8 LN
+    // OBX-3 = 94312-6 LN & OBR-4 = 94306-8 LN
+    // OBX-3 = 94313-4 LN & OBR-4 = 94306-8 LN
+
+    ComplexCodedElement OBX3_identifier = new ComplexCodedElement("94307-6", "LN", "", "");
+    OBX3s.add(OBX3_identifier);
+    OBX3_identifier = new ComplexCodedElement("94308-4", "LN", "", "");
+    OBX3s.add(OBX3_identifier);
+    OBX3_identifier = new ComplexCodedElement("94310-0", "LN", "", "");
+    OBX3s.add(OBX3_identifier);
+    OBX3_identifier = new ComplexCodedElement("94311-8", "LN", "", "");
+    OBX3s.add(OBX3_identifier);
+    OBX3_identifier = new ComplexCodedElement("94312-6", "LN", "", "");
+    OBX3s.add(OBX3_identifier);
+    OBX3_identifier = new ComplexCodedElement("94313-4", "LN", "", "");
+    OBX3s.add(OBX3_identifier);
+
+    OBR4 = new ComplexCodedElement("94306-8", "LN", "", "");
+    List<String> result = testObject.check(OBR4, OBX3s);
+    assertEquals(0, result.size());
+  }
+
+  @Test
   public void testCheckFail() throws IOException {
     // OBX-3 = 00000-0 LN & OBR-4 = 68991-9 LN
 

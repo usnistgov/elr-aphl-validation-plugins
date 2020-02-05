@@ -167,7 +167,6 @@ public abstract class OBX {
                 + "). OBX-5 is expected to be present in the '" + valueSetId + "' value set");
       }
     }
-
     if (util.getOBX3_OBX5().containsKey(alternate)) {
       String valueSetId = util.getOBX3_OBX5().get(alternate);
       if (!util.getValueSets().containsKey(valueSetId)) {

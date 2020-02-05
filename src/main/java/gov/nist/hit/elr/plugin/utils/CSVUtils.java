@@ -146,6 +146,12 @@ public class CSVUtils {
 
       CodedElement OBX3 = new CodedElement(OBX3Identifier, OBX3CodeSystem);
 
+      if (OBX3Identifier == null || "".equals(OBX3Identifier) || OBX3CodeSystem == null
+          || "".equals(OBX3CodeSystem)) {
+        logger.debug("Error in CSV file. OBX-3 cannot be null");
+        continue;
+      }
+
       // OBR-4 to OBX-3 relationship
       if (OBR4_OBX3.containsKey(OBR4)) {
         OBR4_OBX3.get(OBR4).add(OBX3);
