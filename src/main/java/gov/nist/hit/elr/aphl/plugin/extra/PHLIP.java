@@ -2,7 +2,7 @@ package gov.nist.hit.elr.aphl.plugin.extra;
 
 public class PHLIP {
 
-  private static final String FOLDER = "phlip/20200203";
+  private static final String FOLDER = "phlip/20200203_2";
 
   private static final String FOLDER_MSH = "phlip/20191003";
   private static final String MSH3_CSV = "MSH3.csv";
