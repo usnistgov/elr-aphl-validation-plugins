@@ -2,7 +2,7 @@ package gov.nist.hit.elr.aphl.plugin.extra;
 
 public class ARLN {
 
-  private static final String FOLDER = "arln/20200117";
+  private static final String FOLDER = "arln/20200209";
   private static final String TEST_CSV = "IGAMT_ARLN_import_tables_Tests.csv";
   private static final String OBSERVATIONS_CSV = "IGAMT_ARLN_import_tables_Observations.csv";
   private static final String ORDERS = "IGAMT_ARLN_import_tables_Orders.csv";
