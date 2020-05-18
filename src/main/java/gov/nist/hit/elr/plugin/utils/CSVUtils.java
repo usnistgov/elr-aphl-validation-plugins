@@ -61,30 +61,37 @@ public class CSVUtils {
     return MSH4;
   }
 
+  @Deprecated
   public Set<CodedElement> getOBR4() {
     return OBR4;
   }
 
+  @Deprecated
   public Set<CodedElement> getOBX3() {
     return OBX3;
   }
 
+  @Deprecated
   public Map<CodedElement, Set<CodedElement>> getOBR4_OBX3() {
     return OBR4_OBX3;
   }
 
+  @Deprecated
   public Map<CodedElement, Set<CodedElement>> getOBX3_OBR4() {
     return OBX3_OBR4;
   }
 
+  @Deprecated
   public Map<CodedElement, Set<String>> getOBX3_OBX2() {
     return OBX3_OBX2;
   }
 
+  @Deprecated
   public Map<CodedElement, String> getOBX3_OBX5() {
     return OBX3_OBX5;
   }
 
+  @Deprecated
   public Map<String, Set<CodedElement>> getValueSets() {
     return valueSets;
   }
@@ -109,7 +116,7 @@ public class CSVUtils {
     CSVParser csvParser = new CSVParser(reader, format);
 
     for (CSVRecord csvRecord : csvParser) {
-      String valueSetName = csvRecord.get("Value Set Name");
+      String valueSetName = csvRecord.get("Value Set Name").toLowerCase();
       String code = csvRecord.get("Code");
       String codeSystem = csvRecord.get("CodeSystem");
 
@@ -175,7 +182,13 @@ public class CSVUtils {
       OBX3_OBX2.get(OBX3).add(OBX2);
 
       String OBX5 = csvRecord.get("Value Set Name");
-      OBX3_OBX5.put(OBX3, OBX5);
+      if (OBX3_OBX5.containsKey(OBX3) && !OBX3_OBX5.get(OBX3).equalsIgnoreCase(OBX5)) {
+        System.err.println(OBX3);
+        System.err.println(OBX3_OBX5.get(OBX3));
+        System.err.println(OBX5);
+        System.err.println();
+      }
+      OBX3_OBX5.put(OBX3, OBX5.toLowerCase());
     }
     csvParser.close();
     reader.close();
