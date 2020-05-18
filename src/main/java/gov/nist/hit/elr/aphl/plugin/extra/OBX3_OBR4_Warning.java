@@ -126,7 +126,7 @@ public abstract class OBX3_OBR4_Warning {
         // 1.1 Check if the parent OBR-4 matches
         if (obr4Expected.contains(obx4)) {
           // success : move to the next OBX-3
-          logger.debug("SUCCESS 1");
+          // logger.debug("SUCCESS 1");
           continue;
         }
         // 1.2 Check if the OBR-4 value is associated with another OBX-3 in test
@@ -182,7 +182,7 @@ public abstract class OBX3_OBR4_Warning {
         logger.debug("WARNING 6");
       }
     }
-    logger.debug(messages);
+    // logger.debug(messages);
     return messages;
   }
 }

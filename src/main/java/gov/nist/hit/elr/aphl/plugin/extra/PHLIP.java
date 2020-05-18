@@ -1,8 +1,12 @@
 package gov.nist.hit.elr.aphl.plugin.extra;
 
+import gov.nist.hit.elr.aphl.domain.Program;
+
 public class PHLIP {
 
-  private static final String FOLDER = "phlip/20200203_2";
+  public static final Program program = Program.PHLIP;
+
+  private static final String FOLDER = "phlip/20200416_2";
 
   private static final String FOLDER_MSH = "phlip/20191003";
   private static final String MSH3_CSV = "MSH3.csv";
@@ -15,6 +19,9 @@ public class PHLIP {
 
   // private static final String FOLDER_SPM = "";
   // private static final String SPECIMEN_TYPE_CSV = "";
+
+  private static final String WEBSERVICE_URL =
+      "https://hit-dev.nist.gov:8097/aphl-service/aphl/phlip/";
 
   public static String getFOLDER() {
     return FOLDER;
@@ -54,6 +61,10 @@ public class PHLIP {
 
   public static String getMSH4_CSV() {
     return MSH4_CSV;
+  }
+
+  public static String getWEBSERVICE_URL() {
+    return WEBSERVICE_URL;
   }
 
 

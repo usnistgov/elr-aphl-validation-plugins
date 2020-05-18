@@ -12,7 +12,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.plugin.util.Util;
@@ -93,27 +92,21 @@ public class TestPHLIP_OBX3_OBR4 {
 
   @Test
   public void testCheckSuccess2() throws IOException {
-    // OBX-3 = 94307-6 LN & OBR-4 = 94306-8 LN
-    // OBX-3 = 94308-4 LN & OBR-4 = 94306-8 LN
-    // OBX-3 = 94310-0 LN & OBR-4 = 94306-8 LN
-    // OBX-3 = 94311-8 LN & OBR-4 = 94306-8 LN
-    // OBX-3 = 94312-6 LN & OBR-4 = 94306-8 LN
-    // OBX-3 = 94313-4 LN & OBR-4 = 94306-8 LN
 
     ComplexCodedElement OBX3_identifier = new ComplexCodedElement("94307-6", "LN", "", "");
     OBX3s.add(OBX3_identifier);
-    OBX3_identifier = new ComplexCodedElement("94308-4", "LN", "", "");
-    OBX3s.add(OBX3_identifier);
-    OBX3_identifier = new ComplexCodedElement("94310-0", "LN", "", "");
-    OBX3s.add(OBX3_identifier);
-    OBX3_identifier = new ComplexCodedElement("94311-8", "LN", "", "");
-    OBX3s.add(OBX3_identifier);
-    OBX3_identifier = new ComplexCodedElement("94312-6", "LN", "", "");
-    OBX3s.add(OBX3_identifier);
-    OBX3_identifier = new ComplexCodedElement("94313-4", "LN", "", "");
-    OBX3s.add(OBX3_identifier);
+    OBX3_identifier = new ComplexCodedElement("94500-6", "LN", "", "");
+    // OBX3s.add(OBX3_identifier);
+    // OBX3_identifier = new ComplexCodedElement("94310-0", "LN", "", "");
+    // OBX3s.add(OBX3_identifier);
+    // OBX3_identifier = new ComplexCodedElement("94311-8", "LN", "", "");
+    // OBX3s.add(OBX3_identifier);
+    // OBX3_identifier = new ComplexCodedElement("94312-6", "LN", "", "");
+    // OBX3s.add(OBX3_identifier);
+    // OBX3_identifier = new ComplexCodedElement("94313-4", "LN", "", "");
+    // OBX3s.add(OBX3_identifier);
 
-    OBR4 = new ComplexCodedElement("94306-8", "LN", "", "");
+    OBR4 = new ComplexCodedElement("94500-6", "LN", "", "");
     List<String> result = testObject.check(OBR4, OBX3s);
     assertEquals(0, result.size());
   }
@@ -251,7 +244,7 @@ public class TestPHLIP_OBX3_OBR4 {
   }
 
   @Test
-  @Ignore
+  // @Ignore
   public void testMessage() throws Exception {
 
     String globalFolder = "/PHLIP";
@@ -266,7 +259,7 @@ public class TestPHLIP_OBX3_OBR4 {
     ClassLoader classLoader = getClass().getClassLoader();
     File message1 = new File(classLoader.getResource(message1FileName).getFile());
     String messageString = FileUtils.readFileToString(message1);
-    Report report = validator.check(messageString, "5d557ed577493e608b838fa8");
+    Report report = validator.check(messageString, "5d5d68ce6dc12f5d54495e15");
 
     Set<String> keys = report.getEntries().keySet();
     int errors = 0;

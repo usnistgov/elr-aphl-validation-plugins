@@ -2,7 +2,7 @@ package gov.nist.hit.elr.aphl.plugin.extra;
 
 public class ELR_FOUNDATION {
 
-  private static final String FOLDER_SPM = "elr-foundation/20190906";
+  private static final String FOLDER_SPM = "elr-foundation/20200428";
   private static final String SPECIMEN_TYPE_CSV = "SPM4_ValueSet.csv";
 
   public static String getFOLDER_SPM() {

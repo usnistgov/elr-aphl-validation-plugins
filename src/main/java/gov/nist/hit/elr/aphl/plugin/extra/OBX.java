@@ -89,6 +89,7 @@ public abstract class OBX {
     return messages;
   }
 
+
   public java.util.List<String> checkOBX3_OBX2(ComplexCodedElement obx3, String obx2)
       throws IOException {
     CSVUtils util = new CSVUtils();
@@ -143,7 +144,7 @@ public abstract class OBX {
             + identifier.prettyPrint() + ". The tool cannot validate the OBX-5 value.");
       }
 
-      Set<CodedElement> valueSet = util.getValueSets().get(valueSetId);
+      Set<CodedElement> valueSet = util.getValueSets().get(valueSetId.toLowerCase());
       if (valueSet.contains(obx5.getIdentifier())
           || valueSet.contains(obx5.getAlternateIdentifier())) {
         // PASS
