@@ -39,7 +39,6 @@ public abstract class OBX3_OBR4_ws {
    */
   public java.util.List<String> assertionWithCustomMessages(Element e)
       throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
-    System.out.println("je rentre dans OBX3_OBR4_ws assertionWithCustomMessages");
     java.util.List<String> messages = new ArrayList<String>();
 
     List<Element> OBR4List = Query.query(e, "2[1].4[1]").get();

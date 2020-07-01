@@ -3,15 +3,21 @@ package gov.nist.hit.elr.plugin.utils;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+//import java.net.http.HttpClient;
+//import java.net.http.HttpRequest;
+//import java.net.http.HttpResponse;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+
 import org.apache.commons.lang3.StringUtils;
+import org.glassfish.jersey.client.ClientConfig;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -26,17 +32,15 @@ import gov.nist.hit.elr.aphl.domain.vocab.ExpandedValueSet;
 import gov.nist.hit.elr.aphl.domain.vocab.ValueSet;
 import gov.nist.hit.elr.aphl.domain.vocab.ValueSets;
 
+
 public class WSUtils {
 
   // private static Logger logger = Logger.getLogger(WSUtils.class.getName());
 
-  private final HttpClient httpClient;
-
+  private Client client;
   public WSUtils() {
-    System.out.println("WSUtils - 1");
-    httpClient = HttpClient.newBuilder().version(HttpClient.Version.HTTP_2).build();
-    System.out.println("WSUtils - 2");
-
+    ClientConfig config = new ClientConfig();
+    client = ClientBuilder.newClient(config);
   }
 
   // public static void main(String[] args)
@@ -119,7 +123,6 @@ public class WSUtils {
 
   private String sendGET(WebService url, Program program, String resource)
       throws IOException, InterruptedException, URISyntaxException {
-    System.out.println("je rentre dans sendGET");
     URI uri = new URI(StringUtils.join(url, "/", program, "/", resource.replaceAll(" ", "%20")));
     WSCache cache = WSCache.getInstance();
     // cache.clearCache();
@@ -133,16 +136,14 @@ public class WSUtils {
       }
     }
     // get data from webservice
-
-    HttpRequest request = HttpRequest.newBuilder().GET().uri(uri).build();
-    System.out.println("je send le GET");
-    System.out.println(uri.toString());
-    HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-    System.out.println("je recois la reponse");
+    WebTarget target = client.target(uri);
+    String response = target.
+        request(MediaType.APPLICATION_JSON).
+        get(String.class);
+       
     // save response in cache
-    Cache<String> value = new Cache<String>(response.body());
+    Cache<String> value = new Cache<String>(response);
     cache.getCache().put(uri.toString(), value);
-    System.out.println("je sors de sendGET");
-    return response.body();
+    return response;
   }
 }

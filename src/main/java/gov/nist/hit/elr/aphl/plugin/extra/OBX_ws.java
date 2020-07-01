@@ -39,7 +39,6 @@ public abstract class OBX_ws {
 
   public java.util.List<String> assertionWithCustomMessages(Element e)
       throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
-    System.out.println("je rentre dans OBX_ws assertionWithCustomMessages");
 
     java.util.List<String> messages = new ArrayList<String>();
 
@@ -47,7 +46,6 @@ public abstract class OBX_ws {
     List<Element> OBX3List = Query.query(e, "3[1]").get();
     if (OBX3List == null || OBX3List.size() == 0) {
       // no OBX-3, we can move on, no check performed
-      System.out.println("no OBX-3, we can move on, no check performed");
       return messages;
     }
     Element OBX3 = OBX3List.apply(0);
@@ -68,7 +66,6 @@ public abstract class OBX_ws {
     List<Simple> OBX2List = Query.queryAsSimple(e, "2[1]").get();
     if (OBX2List == null || OBX2List.size() == 0) {
       // no OBX-2, we can move on, no check performed
-      System.out.println(" no OBX-2, we can move on, no check performed");
       return messages;
     }
     String _OBX2 = OBX2List.size() > 0 ? OBX2List.apply(0).value().raw() : "";
@@ -77,7 +74,6 @@ public abstract class OBX_ws {
     messages = checkOBX3_OBX2(_OBX3, _OBX2);
     // If OBX-2 is invalid - we do not check OBX-5
     if (messages.size() > 0) {
-      System.out.println(" OBX-2 is invalid - we do not check OBX-5");
       return messages;
     }
 
@@ -105,13 +101,11 @@ public abstract class OBX_ws {
       }
       messages = checkOBX3_OBX5_CWE(_OBX3, _OBX5);
     }
-    System.out.println("je sors de OBX_ws assertionWithCustomMessages");
     return messages;
   }
 
   public java.util.List<String> checkOBX3(ComplexCodedElement obx3)
       throws ClassNotFoundException, IOException, InterruptedException, URISyntaxException {
-    System.out.println("je rentre dans OBX_ws checkOBX3");
 
     WSUtils ws = new WSUtils();
     java.util.List<String> messages = new ArrayList<String>();
@@ -130,39 +124,29 @@ public abstract class OBX_ws {
       messages.add("The OBX-3 value (" + obx3 + ") was not found in the valid list of Test for the "
           + getProgram() + " program");
     }
-    System.out.println("je sors de OBX_ws checkOBX3");
     return messages;
   }
 
   public java.util.List<String> checkOBX3_OBX2(ComplexCodedElement obx3, String obx2)
       throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
-    System.out.println("je rentre dans OBX_ws checkOBX3_OBX2 - v1");
 
     WSUtils ws = new WSUtils();
-    System.out.println("1");
     java.util.List<String> messages = new ArrayList<String>();
 
     CodedElement identifier = obx3.getIdentifier();
     CodedElement alternate = obx3.getAlternateIdentifier();
-    System.out.println("2");
 
     java.util.List<Test> tests = ws.getTests(getProgram());
-    System.out.println("3");
 
     Set<Test> expectedTests =
         Test.findByOBX3(identifier.getIdentifier(), identifier.getCodeSystem(), tests);
-    System.out.println("4");
 
     if (expectedTests.size() > 0) {
-      System.out.println("5");
-
       Set<String> expectedValues = expectedTests.stream()
           .map(expectedTest -> expectedTest.getObx2()).collect(Collectors.toSet());
-      System.out.println("6");
 
       if (expectedValues.contains("varies")) {
         // no check can be performed
-        System.out.println("no check can be performed - 1");
         return messages;
       }
       if (!expectedValues.contains(obx2)) {
@@ -171,21 +155,14 @@ public abstract class OBX_ws {
             + expectedValues.toString() + "");
       }
     }
-    System.out.println("7");
 
     expectedTests = Test.findByOBX3(alternate.getIdentifier(), alternate.getCodeSystem(), tests);
-    System.out.println("8");
 
     if (expectedTests.size() > 0) {
-      System.out.println("9");
-
       Set<String> expectedValues = expectedTests.stream()
           .map(expectedTest -> expectedTest.getObx2()).collect(Collectors.toSet());
-      System.out.println("10");
-
       if (expectedValues.contains("varies")) {
         // no check can be performed
-        System.out.println("no check can be performed - 2");
         return messages;
       }
       if (!expectedValues.contains(obx2)) {
@@ -194,17 +171,13 @@ public abstract class OBX_ws {
             + expectedValues.toString() + "");
       }
     }
-    System.out.println("je sors de OBX_ws checkOBX3_OBX2");
     return messages;
   }
 
   public java.util.List<String> checkOBX3_OBX5_CWE(ComplexCodedElement obx3,
       ComplexCodedElement obx5)
       throws IOException, InterruptedException, ClassNotFoundException, URISyntaxException {
-    System.out.println("je rentre dans OBX_ws checkOBX3_OBX5_CWE");
-
     WSUtils ws = new WSUtils();
-
     java.util.List<String> messages = new ArrayList<String>();
 
     CodedElement identifier = obx3.getIdentifier();
@@ -243,14 +216,12 @@ public abstract class OBX_ws {
           if (valueSet.containsCode(obx5.getIdentifier().getIdentifier(),
               obx5.getIdentifier().getCodeSystem())) {
             // PASS
-            System.out.println("je sors de OBX_ws checkOBX3_OBX2 - 1 ");
             return messages;
           }
           // the OBX-5 alternate identifier code + codesystem is in the value set
           if (valueSet.containsCode(obx5.getAlternateIdentifier().getIdentifier(),
               obx5.getAlternateIdentifier().getCodeSystem())) {
             // PASS
-            System.out.println("je sors de OBX_ws checkOBX3_OBX2 - 2 ");
             return messages;
           }
         }
@@ -304,14 +275,12 @@ public abstract class OBX_ws {
           if (valueSet.containsCode(obx5.getIdentifier().getIdentifier(),
               obx5.getIdentifier().getCodeSystem())) {
             // PASS
-            System.out.println("je sors de OBX_ws checkOBX3_OBX2 - 3 ");
             return messages;
           }
           // the OBX-5 alternate identifier code + codesystem is in the value set
           if (valueSet.containsCode(obx5.getAlternateIdentifier().getIdentifier(),
               obx5.getAlternateIdentifier().getCodeSystem())) {
             // PASS
-            System.out.println("je sors de OBX_ws checkOBX3_OBX2 - 4 ");
             return messages;
           }
         }
@@ -338,7 +307,6 @@ public abstract class OBX_ws {
             + "' value set");
       }
     }
-    System.out.println("je sors de OBX_ws checkOBX3_OBX2 - 5 ");
     return messages;
   }
 }
