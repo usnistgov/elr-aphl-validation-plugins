@@ -2,7 +2,7 @@ package gov.nist.hit.elr.aphl.domain;
 
 public enum Program {
 
-  ARLN, PHLIP, APHL_ARLN, APHL_PHLIP;
+  ARLN, PHLIP, VPD, APHL_ARLN, APHL_PHLIP, APHL_VPD;
 
   @Override
   public String toString() {

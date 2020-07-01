@@ -1,0 +1,9 @@
+MSH|^~\&#|ELIS.MN.Stag^2.16.840.1.114222.4.3.3.6.1.2^ISO|MN Public Health Lab^2.16.840.1.114222.4.1.10080^ISO|PHLIP-VPD^2.16.840.1.114222.4.3.6.1^ISO|NCIRD-VPD^2.16.840.1.114222.4.1.214275^ISO|20140618150841.641-0100||ORU^R01^ORU_R01|APHL UAT ELR 048.3 Valid OBX.5 SN.3|T|2.5.1|||NE|NE|||||PHLabReport-NoAck^IGAMT ELR TESTING^2.16.840.1.113883.9.11^ISO
+SFT|Orion Health^D^^^^Orion Health&2.16.840.1.113883.3.89&ISO^XX^^^1|4.1.0.64168|Orion Rhapsody|4.1.0.64168
+PID|1||PT[0000058591]^^^CLIMS.NY.Stag&2.16.840.1.114222.4.3.3.2.17.2&ISO^MR||~^^^^^^S||19531215|M||2131-1^Other Race^HL70005^My Local Code^My Local Text^L|^^^VT
+NTE|1|P|This is a sample NTE segment~with multiple comments~embedded in it
+ORC|RE||FO10.0^^2.16.840.1.113883.3.72.5.20^ISO||||||||||||||||||University Hospital|^^^^^^^^42043|^^^^^^7771234
+OBR|1||FO10.0^^2.16.840.1.113883.3.72.5.20^ISO|48509-4^^LN|||20140618|||||||||||||||201406180000-0500|||F
+OBX|1|CWE|48509-4^^LN|1|260415000^^SCT||||||F||||||||||||PHLIP-Test-Lab|^^^PA
+OBX|2|SN|48509-4^^LN|2|>^41^/|[e]^elementary charge^UCUM|||||F||||||||||||PHLIP-Test-Lab|^^^PA
+SPM|1|^SID10.0&&2.16.840.1.113883.3.72.5.20&ISO||TUMOR^Tumor^HL70487^^^^^^Nasopharyngeal Swab|||||||||||||20140618|20140618100038

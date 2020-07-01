@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -29,17 +28,23 @@ import gov.nist.hit.elr.aphl.domain.vocab.ValueSets;
 
 public class WSUtils {
 
-  private static Logger logger = Logger.getLogger(WSUtils.class.getName());
+  // private static Logger logger = Logger.getLogger(WSUtils.class.getName());
 
-  private final HttpClient httpClient =
-      HttpClient.newBuilder().version(HttpClient.Version.HTTP_2).build();
+  private final HttpClient httpClient;
 
-  public static void main(String[] args)
-      throws IOException, InterruptedException, ClassNotFoundException, URISyntaxException {
-    WSUtils obj = new WSUtils();
-    List<Observation> data = obj.getObservations(Program.ARLN);
-    System.out.println(data);
+  public WSUtils() {
+    System.out.println("WSUtils - 1");
+    httpClient = HttpClient.newBuilder().version(HttpClient.Version.HTTP_2).build();
+    System.out.println("WSUtils - 2");
+
   }
+
+  // public static void main(String[] args)
+  // throws IOException, InterruptedException, ClassNotFoundException, URISyntaxException {
+  // WSUtils obj = new WSUtils();
+  // List<Observation> data = obj.getObservations(Program.ARLN);
+  // System.out.println(data);
+  // }
 
   public List<ExpandedValueSet> getExpandedValueSet(Program program, String valueSetName)
       throws IOException, InterruptedException, URISyntaxException {
@@ -114,6 +119,7 @@ public class WSUtils {
 
   private String sendGET(WebService url, Program program, String resource)
       throws IOException, InterruptedException, URISyntaxException {
+    System.out.println("je rentre dans sendGET");
     URI uri = new URI(StringUtils.join(url, "/", program, "/", resource.replaceAll(" ", "%20")));
     WSCache cache = WSCache.getInstance();
     // cache.clearCache();
@@ -127,11 +133,16 @@ public class WSUtils {
       }
     }
     // get data from webservice
+
     HttpRequest request = HttpRequest.newBuilder().GET().uri(uri).build();
+    System.out.println("je send le GET");
+    System.out.println(uri.toString());
     HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+    System.out.println("je recois la reponse");
     // save response in cache
     Cache<String> value = new Cache<String>(response.body());
     cache.getCache().put(uri.toString(), value);
+    System.out.println("je sors de sendGET");
     return response.body();
   }
 }
