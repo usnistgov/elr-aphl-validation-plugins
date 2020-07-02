@@ -1,0 +1,525 @@
+Value Set Name,Code,CodeSystem
+(Non-coded date/time value),(DateTime),(n/a)
+(Non-coded numeric value),(Numeric),(n/a)
+(Non-coded text),(Text),(n/a)
+(Non-coded structured numeric value),(StructNum),(n/a)
+(Non-coded string value),(String),(n/a)
+(PDF file result),(PDF),(n/a)
+(FASTA file),(FASTA),(n/a)
+RNase P PCR ordinal,260373001,SCT
+RNase P PCR ordinal,260415000,SCT
+RNase P PCR ordinal,373121007,SCT
+RNase P PCR ordinal,10828004,SCT
+RNase P PCR ordinal,260385009,SCT
+Antibiotics for pertussis,723,RxNorm
+Antibiotics for pertussis,733,RxNorm
+Antibiotics for pertussis,151392,RxNorm
+Antibiotics for pertussis,18631,RxNorm
+Antibiotics for pertussis,203635,RxNorm
+Antibiotics for pertussis,25033,RxNorm
+Antibiotics for pertussis,21212,RxNorm
+Antibiotics for pertussis,3640,RxNorm
+Antibiotics for pertussis,4053,RxNorm
+Antibiotics for pertussis,70618,RxNorm
+Antibiotics for pertussis,10831,RxNorm
+Antibiotics for pertussis,10395,RxNorm
+"Yes, No, Unknown",Y,HL70136
+"Yes, No, Unknown",N,HL70136
+"Yes, No, Unknown",UNK,NULLFL
+Clinical specimen or isolate,PLR81,PLR
+Clinical specimen or isolate,PLR2647,PLR
+PCR ordinal,260373001,SCT
+PCR ordinal,260415000,SCT
+PCR ordinal,419984006,SCT
+PCR ordinal,373121007,SCT
+PCR ordinal,42425007,SCT
+PCR ordinal,125154007,SCT
+PCR ordinal with Indeterminate,260373001,SCT
+PCR ordinal with Indeterminate,260415000,SCT
+PCR ordinal with Indeterminate,82334004,SCT
+PCR ordinal with Indeterminate,419984006,SCT
+PCR ordinal with Indeterminate,373121007,SCT
+Ct value interpretation,260373001,SCT
+Ct value interpretation,260415000,SCT
+Ct value interpretation,373121007,SCT
+Ct value interpretation,10828004,SCT
+Ct value interpretation,260385009,SCT
+Serology ordinal,10828004,SCT
+Serology ordinal,260385009,SCT
+Serology ordinal,42425007,SCT
+Serology ordinal,82334004,SCT
+Serology ordinal,373121007,SCT
+Serology ordinal,125154007,SCT
+Culture ordinal,46651001,SCT
+Culture ordinal,264887000,SCT
+Culture ordinal,264868006,SCT
+Culture ordinal,62604006,SCT
+Culture ordinal,125154007,SCT
+Culture ordinal,373121007,SCT
+Measles genotyping,426558008,SCT
+Measles genotyping,732209005,SCT
+Measles genotyping,426654002,SCT
+Measles genotyping,427073007,SCT
+Measles genotyping,426188007,SCT
+Measles genotyping,427182003,SCT
+Measles genotyping,732208002,SCT
+Measles genotyping,426640005,SCT
+Measles genotyping,425970007,SCT
+Measles genotyping,426261008,SCT
+Measles genotyping,427706006,SCT
+Measles genotyping,426028006,SCT
+Measles genotyping,427353006,SCT
+Measles genotyping,427290009,SCT
+Measles genotyping,426535005,SCT
+Measles genotyping,427263000,SCT
+Measles genotyping,698204007,SCT
+Measles genotyping,732207007,SCT
+Measles genotyping,732206003,SCT
+Measles genotyping,732210000,SCT
+Measles genotyping,426091009,SCT
+Measles genotyping,425684000,SCT
+Measles genotyping,425966004,SCT
+Measles genotyping,426424002,SCT
+Measles genotyping,260385009,SCT
+Measles genotyping,PLR226,PLR
+Measles genotyping,82334004,SCT
+Measles genotyping,419984006,SCT
+Measles genotyping,373121007,SCT
+Measles genotyping,PLR168,PLR
+Measles genotyping,52584002,SCT
+Measles genotyping,125154007,SCT
+Mumps genotyping,725443000,SCT
+Mumps genotyping,725444006,SCT
+Mumps genotyping,725445007,SCT
+Mumps genotyping,725446008,SCT
+Mumps genotyping,PLR312,PLR
+Mumps genotyping,725447004,SCT
+Mumps genotyping,725448009,SCT
+Mumps genotyping,725449001,SCT
+Mumps genotyping,725450001,SCT
+Mumps genotyping,725451002,SCT
+Mumps genotyping,725452009,SCT
+Mumps genotyping,725453004,SCT
+Mumps genotyping,725454005,SCT
+Mumps genotyping,PLR373,PLR
+Mumps genotyping,PLR313,PLR
+Mumps genotyping,260385009,SCT
+Mumps genotyping,PLR226,PLR
+Mumps genotyping,419984006,SCT
+Mumps genotyping,373121007,SCT
+Mumps genotyping,PLR168,PLR
+Mumps genotyping,(none),(n/a)
+Mumps genotyping,125154007,SCT
+Rubella genotyping,PLR526,PLR
+Rubella genotyping,425872000,SCT
+Rubella genotyping,425415004,SCT
+Rubella genotyping,427398000,SCT
+Rubella genotyping,427559006,SCT
+Rubella genotyping,426085007,SCT
+Rubella genotyping,426367009,SCT
+Rubella genotyping,426209008,SCT
+Rubella genotyping,698201004,SCT
+Rubella genotyping,698202006,SCT
+Rubella genotyping,698203001,SCT
+Rubella genotyping,425891000,SCT
+Rubella genotyping,426612000,SCT
+Rubella genotyping,427329000,SCT
+Rubella genotyping,260385009,SCT
+Rubella genotyping,PLR226,PLR
+Rubella genotyping,419984006,SCT
+Rubella genotyping,373121007,SCT
+Rubella genotyping,PLR168,PLR
+Rubella genotyping,5210005,SCT
+Rubella genotyping,PLR165,PLR
+Rubella genotyping,PLR166,PLR
+Rubella genotyping,PLR167,PLR
+Rubella genotyping,125154007,SCT
+VZV strain PCR,734285001,SCT
+VZV strain PCR,734287009,SCT
+VZV strain PCR,PLR225,PLR
+VZV strain PCR,260415000,SCT
+VZV strain PCR,419984006,SCT
+VZV strain PCR,373121007,SCT
+VZV strain PCR,125154007,SCT
+VZV genotyping,725469006,SCT
+VZV genotyping,725470007,SCT
+VZV genotyping,PLR222,PLR
+VZV genotyping,725471006,SCT
+VZV genotyping,725472004,SCT
+VZV genotyping,725473009,SCT
+VZV genotyping,PLR215,PLR
+VZV genotyping,PLR532,PLR
+VZV genotyping,PLR216,PLR
+VZV genotyping,PLR217,PLR
+VZV genotyping,260385009,SCT
+VZV genotyping,PLR226,PLR
+VZV genotyping,419984006,SCT
+VZV genotyping,373121007,SCT
+VZV genotyping,125154007,SCT
+Ct interpretation with Indeterminate,260373001,SCT
+Ct interpretation with Indeterminate,260415000,SCT
+Ct interpretation with Indeterminate,82334004,SCT
+Ct interpretation with Indeterminate,10828004,SCT
+Ct interpretation with Indeterminate,260385009,SCT
+Ct interpretation with Indeterminate,373121007,SCT
+Pertussis toxin serology ordinal,10828004,SCT
+Pertussis toxin serology ordinal,260385009,SCT
+Pertussis toxin serology ordinal,82334004,SCT
+Pertussis toxin serology ordinal,373121007,SCT
+Pertussis toxin serology ordinal,125154007,SCT
+Bordetella sp PCR,5247005,SCT
+Bordetella sp PCR,26183002,SCT
+Bordetella sp PCR,116035000,SCT
+Bordetella sp PCR,PLR196,PLR
+Bordetella sp PCR,PLR193,PLR
+Bordetella sp PCR,PLR194,PLR
+Bordetella sp PCR,PLR195,PLR
+Bordetella sp PCR,82334004,SCT
+Bordetella sp PCR,260415000,SCT
+Bordetella sp PCR,419984006,SCT
+Bordetella sp PCR,373121007,SCT
+Bacterial culture,44470000,SCT
+Bacterial culture,17872004,SCT
+Bacterial culture,PLR4159,PLR
+Bacterial culture,404523002,SCT
+Bacterial culture,264868006,SCT
+Bacterial culture,373121007,SCT
+H. influenzae serotyping PCR,103441001,SCT
+H. influenzae serotyping PCR,103442008,SCT
+H. influenzae serotyping PCR,103443003,SCT
+H. influenzae serotyping PCR,103444009,SCT
+H. influenzae serotyping PCR,103445005,SCT
+H. influenzae serotyping PCR,103446006,SCT
+H. influenzae serotyping PCR,260385009,SCT
+H. influenzae serotyping PCR,419984006,SCT
+H. influenzae serotyping PCR,PLR226,PLR
+H. influenzae serotyping PCR,PLR297,PLR
+H. influenzae serotyping PCR,373121007,SCT
+H. influenzae serotyping PCR,125154007,SCT
+N. meningitidis serogrouping PCR,103479006,SCT
+N. meningitidis serogrouping PCR,103480009,SCT
+N. meningitidis serogrouping PCR,103481008,SCT
+N. meningitidis serogrouping PCR,103483006,SCT
+N. meningitidis serogrouping PCR,125041003,SCT
+N. meningitidis serogrouping PCR,103482001,SCT
+N. meningitidis serogrouping PCR,260385009,SCT
+N. meningitidis serogrouping PCR,419984006,SCT
+N. meningitidis serogrouping PCR,PLR226,PLR
+N. meningitidis serogrouping PCR,PLR299,PLR
+N. meningitidis serogrouping PCR,373121007,SCT
+N. meningitidis serogrouping PCR,125154007,SCT
+Streptococcus culture,9861002,SCT
+Streptococcus culture,PLR4159,PLR
+Streptococcus culture,404523002,SCT
+Streptococcus culture,264868006,SCT
+Streptococcus culture,373121007,SCT
+S. pneumoniae serotyping PCR conventional,415607008,SCT
+S. pneumoniae serotyping PCR conventional,419527005,SCT
+S. pneumoniae serotyping PCR conventional,103497003,SCT
+S. pneumoniae serotyping PCR conventional,415616007,SCT
+S. pneumoniae serotyping PCR conventional,419871001,SCT
+S. pneumoniae serotyping PCR conventional,PLR242,PLR
+S. pneumoniae serotyping PCR conventional,PLR243,PLR
+S. pneumoniae serotyping PCR conventional,PLR244,PLR
+S. pneumoniae serotyping PCR conventional,PLR248,PLR
+S. pneumoniae serotyping PCR conventional,418759005,SCT
+S. pneumoniae serotyping PCR conventional,PLR245,PLR
+S. pneumoniae serotyping PCR conventional,PLR246,PLR
+S. pneumoniae serotyping PCR conventional,415608003,SCT
+S. pneumoniae serotyping PCR conventional,PLR227,PLR
+S. pneumoniae serotyping PCR conventional,PLR228,PLR
+S. pneumoniae serotyping PCR conventional,PLR229,PLR
+S. pneumoniae serotyping PCR conventional,428366009,SCT
+S. pneumoniae serotyping PCR conventional,103498008,SCT
+S. pneumoniae serotyping PCR conventional,PLR230,PLR
+S. pneumoniae serotyping PCR conventional,PLR231,PLR
+S. pneumoniae serotyping PCR conventional,698112006,SCT
+S. pneumoniae serotyping PCR conventional,420138009,SCT
+S. pneumoniae serotyping PCR conventional,PLR233,PLR
+S. pneumoniae serotyping PCR conventional,415611002,SCT
+S. pneumoniae serotyping PCR conventional,419915004,SCT
+S. pneumoniae serotyping PCR conventional,763395009,SCT
+S. pneumoniae serotyping PCR conventional,698097002,SCT
+S. pneumoniae serotyping PCR conventional,PLR247,PLR
+S. pneumoniae serotyping PCR conventional,698098007,SCT
+S. pneumoniae serotyping PCR conventional,427741005,SCT
+S. pneumoniae serotyping PCR conventional,418217008,SCT
+S. pneumoniae serotyping PCR conventional,PLR236,PLR
+S. pneumoniae serotyping PCR conventional,443670000,SCT
+S. pneumoniae serotyping PCR conventional,PLR237,PLR
+S. pneumoniae serotyping PCR conventional,767201007,SCT
+S. pneumoniae serotyping PCR conventional,698133002,SCT
+S. pneumoniae serotyping PCR conventional,PLR238,PLR
+S. pneumoniae serotyping PCR conventional,PLR240,PLR
+S. pneumoniae serotyping PCR conventional,PLR241,PLR
+S. pneumoniae serotyping PCR conventional,767208001,SCT
+S. pneumoniae serotyping PCR conventional,415620006,SCT
+S. pneumoniae serotyping PCR conventional,PLR2653,PLR
+S. pneumoniae serotyping PCR conventional,PLR226,PLR
+S. pneumoniae serotyping PCR conventional,419984006,SCT
+S. pneumoniae serotyping PCR conventional,260385009,SCT
+S. pneumoniae serotyping PCR conventional,125154007,SCT
+S. pneumoniae serotyping PCR conventional,373121007,SCT
+S. pneumoniae serotyping PCR real time,415607008,SCT
+S. pneumoniae serotyping PCR real time,419527005,SCT
+S. pneumoniae serotyping PCR real time,103497003,SCT
+S. pneumoniae serotyping PCR real time,415616007,SCT
+S. pneumoniae serotyping PCR real time,419871001,SCT
+S. pneumoniae serotyping PCR real time,PLR242,PLR
+S. pneumoniae serotyping PCR real time,PLR243,PLR
+S. pneumoniae serotyping PCR real time,PLR248,PLR
+S. pneumoniae serotyping PCR real time,PLR246,PLR
+S. pneumoniae serotyping PCR real time,PLR228,PLR
+S. pneumoniae serotyping PCR real time,PLR229,PLR
+S. pneumoniae serotyping PCR real time,103498008,SCT
+S. pneumoniae serotyping PCR real time,PLR230,PLR
+S. pneumoniae serotyping PCR real time,698112006,SCT
+S. pneumoniae serotyping PCR real time,PLR233,PLR
+S. pneumoniae serotyping PCR real time,415611002,SCT
+S. pneumoniae serotyping PCR real time,419915004,SCT
+S. pneumoniae serotyping PCR real time,PLR247,PLR
+S. pneumoniae serotyping PCR real time,698098007,SCT
+S. pneumoniae serotyping PCR real time,418217008,SCT
+S. pneumoniae serotyping PCR real time,PLR237,PLR
+S. pneumoniae serotyping PCR real time,415620006,SCT
+S. pneumoniae serotyping PCR real time,PLR2654,PLR
+S. pneumoniae serotyping PCR real time,PLR226,PLR
+S. pneumoniae serotyping PCR real time,419984006,SCT
+S. pneumoniae serotyping PCR real time,260385009,SCT
+S. pneumoniae serotyping PCR real time,125154007,SCT
+S. pneumoniae serotyping PCR real time,373121007,SCT
+S. pneumoniae serotype,415607008,SCT
+S. pneumoniae serotype,419527005,SCT
+S. pneumoniae serotype,103497003,SCT
+S. pneumoniae serotype,415616007,SCT
+S. pneumoniae serotype,419871001,SCT
+S. pneumoniae serotype,443156004,SCT
+S. pneumoniae serotype,418902003,SCT
+S. pneumoniae serotype,698095005,SCT
+S. pneumoniae serotype,719028004,SCT
+S. pneumoniae serotype,415619000,SCT
+S. pneumoniae serotype,698102004,SCT
+S. pneumoniae serotype,698096006,SCT
+S. pneumoniae serotype,103499000,SCT
+S. pneumoniae serotype,418759005,SCT
+S. pneumoniae serotype,419167001,SCT
+S. pneumoniae serotype,418883007,SCT
+S. pneumoniae serotype,103500009,SCT
+S. pneumoniae serotype,418322006,SCT
+S. pneumoniae serotype,415608003,SCT
+S. pneumoniae serotype,428124003,SCT
+S. pneumoniae serotype,698103009,SCT
+S. pneumoniae serotype,441602004,SCT
+S. pneumoniae serotype,419071000,SCT
+S. pneumoniae serotype,698104003,SCT
+S. pneumoniae serotype,698105002,SCT
+S. pneumoniae serotype,698106001,SCT
+S. pneumoniae serotype,698107005,SCT
+S. pneumoniae serotype,698108000,SCT
+S. pneumoniae serotype,698109008,SCT
+S. pneumoniae serotype,419305002,SCT
+S. pneumoniae serotype,428366009,SCT
+S. pneumoniae serotype,103498008,SCT
+S. pneumoniae serotype,443239003,SCT
+S. pneumoniae serotype,415610001,SCT
+S. pneumoniae serotype,443240001,SCT
+S. pneumoniae serotype,698110003,SCT
+S. pneumoniae serotype,698111004,SCT
+S. pneumoniae serotype,698112006,SCT
+S. pneumoniae serotype,698113001,SCT
+S. pneumoniae serotype,420138009,SCT
+S. pneumoniae serotype,698114007,SCT
+S. pneumoniae serotype,698115008,SCT
+S. pneumoniae serotype,418451009,SCT
+S. pneumoniae serotype,698116009,SCT
+S. pneumoniae serotype,415611002,SCT
+S. pneumoniae serotype,698117000,SCT
+S. pneumoniae serotype,698118005,SCT
+S. pneumoniae serotype,419915004,SCT
+S. pneumoniae serotype,763395009,SCT
+S. pneumoniae serotype,698097002,SCT
+S. pneumoniae serotype,441566007,SCT
+S. pneumoniae serotype,420216004,SCT
+S. pneumoniae serotype,698098007,SCT
+S. pneumoniae serotype,427741005,SCT
+S. pneumoniae serotype,418217008,SCT
+S. pneumoniae serotype,698119002,SCT
+S. pneumoniae serotype,698120008,SCT
+S. pneumoniae serotype,698121007,SCT
+S. pneumoniae serotype,698123005,SCT
+S. pneumoniae serotype,698124004,SCT
+S. pneumoniae serotype,698125003,SCT
+S. pneumoniae serotype,444352000,SCT
+S. pneumoniae serotype,444353005,SCT
+S. pneumoniae serotype,131363003,SCT
+S. pneumoniae serotype,443670000,SCT
+S. pneumoniae serotype,698127006,SCT
+S. pneumoniae serotype,698128001,SCT
+S. pneumoniae serotype,442049002,SCT
+S. pneumoniae serotype,698129009,SCT
+S. pneumoniae serotype,698130004,SCT
+S. pneumoniae serotype,698131000,SCT
+S. pneumoniae serotype,420148006,SCT
+S. pneumoniae serotype,767201007,SCT
+S. pneumoniae serotype,698132007,SCT
+S. pneumoniae serotype,698133002,SCT
+S. pneumoniae serotype,698134008,SCT
+S. pneumoniae serotype,698135009,SCT
+S. pneumoniae serotype,698136005,SCT
+S. pneumoniae serotype,698137001,SCT
+S. pneumoniae serotype,767204004,SCT
+S. pneumoniae serotype,767208001,SCT
+S. pneumoniae serotype,767274003,SCT
+S. pneumoniae serotype,698139003,SCT
+S. pneumoniae serotype,698140001,SCT
+S. pneumoniae serotype,767285001,SCT
+S. pneumoniae serotype,767284002,SCT
+S. pneumoniae serotype,767283008,SCT
+S. pneumoniae serotype,767282003,SCT
+S. pneumoniae serotype,767281005,SCT
+S. pneumoniae serotype,698147003,SCT
+S. pneumoniae serotype,698148008,SCT
+S. pneumoniae serotype,767275002,SCT
+S. pneumoniae serotype,415620006,SCT
+S. pneumoniae serotype,PLR2652,PLR
+S. pneumoniae serotype,PLR226,PLR
+S. pneumoniae serotype,419984006,SCT
+S. pneumoniae serotype,82334004,SCT
+S. pneumoniae serotype,260385009,SCT
+S. pneumoniae serotype,125154007,SCT
+S. pneumoniae serotype,373121007,SCT
+S. pneumoniae WGS result,PLR226,PLR
+S. pneumoniae WGS result,419984006,SCT
+S. pneumoniae WGS result,82334004,SCT
+S. pneumoniae WGS result,125154007,SCT
+S. pneumoniae WGS result,373121007,SCT
+S. pneumoniae WGS result,OTH,NULLFL
+S. pneumoniae WGS result,415607008,SCT
+S. pneumoniae WGS result,419527005,SCT
+S. pneumoniae WGS result,103497003,SCT
+S. pneumoniae WGS result,415616007,SCT
+S. pneumoniae WGS result,419871001,SCT
+S. pneumoniae WGS result,443156004,SCT
+S. pneumoniae WGS result,418902003,SCT
+S. pneumoniae WGS result,698095005,SCT
+S. pneumoniae WGS result,719028004,SCT
+S. pneumoniae WGS result,PLR242,PLR
+S. pneumoniae WGS result,PLR243,PLR
+S. pneumoniae WGS result,415619000,SCT
+S. pneumoniae WGS result,698102004,SCT
+S. pneumoniae WGS result,698096006,SCT
+S. pneumoniae WGS result,103499000,SCT
+S. pneumoniae WGS result,PLR244,PLR
+S. pneumoniae WGS result,PLR248,PLR
+S. pneumoniae WGS result,418759005,SCT
+S. pneumoniae WGS result,419167001,SCT
+S. pneumoniae WGS result,418883007,SCT
+S. pneumoniae WGS result,103500009,SCT
+S. pneumoniae WGS result,418322006,SCT
+S. pneumoniae WGS result,PLR245,PLR
+S. pneumoniae WGS result,PLR246,PLR
+S. pneumoniae WGS result,415608003,SCT
+S. pneumoniae WGS result,428124003,SCT
+S. pneumoniae WGS result,698103009,SCT
+S. pneumoniae WGS result,441602004,SCT
+S. pneumoniae WGS result,PLR227,PLR
+S. pneumoniae WGS result,419071000,SCT
+S. pneumoniae WGS result,698104003,SCT
+S. pneumoniae WGS result,698105002,SCT
+S. pneumoniae WGS result,698106001,SCT
+S. pneumoniae WGS result,698107005,SCT
+S. pneumoniae WGS result,PLR228,PLR
+S. pneumoniae WGS result,698108000,SCT
+S. pneumoniae WGS result,698109008,SCT
+S. pneumoniae WGS result,419305002,SCT
+S. pneumoniae WGS result,PLR229,PLR
+S. pneumoniae WGS result,428366009,SCT
+S. pneumoniae WGS result,103498008,SCT
+S. pneumoniae WGS result,443239003,SCT
+S. pneumoniae WGS result,415610001,SCT
+S. pneumoniae WGS result,443240001,SCT
+S. pneumoniae WGS result,698110003,SCT
+S. pneumoniae WGS result,PLR230,PLR
+S. pneumoniae WGS result,PLR231,PLR
+S. pneumoniae WGS result,698111004,SCT
+S. pneumoniae WGS result,698112006,SCT
+S. pneumoniae WGS result,698113001,SCT
+S. pneumoniae WGS result,420138009,SCT
+S. pneumoniae WGS result,698114007,SCT
+S. pneumoniae WGS result,698115008,SCT
+S. pneumoniae WGS result,418451009,SCT
+S. pneumoniae WGS result,698116009,SCT
+S. pneumoniae WGS result,PLR233,PLR
+S. pneumoniae WGS result,415611002,SCT
+S. pneumoniae WGS result,698117000,SCT
+S. pneumoniae WGS result,698118005,SCT
+S. pneumoniae WGS result,419915004,SCT
+S. pneumoniae WGS result,763395009,SCT
+S. pneumoniae WGS result,698097002,SCT
+S. pneumoniae WGS result,441566007,SCT
+S. pneumoniae WGS result,420216004,SCT
+S. pneumoniae WGS result,PLR247,PLR
+S. pneumoniae WGS result,698098007,SCT
+S. pneumoniae WGS result,427741005,SCT
+S. pneumoniae WGS result,418217008,SCT
+S. pneumoniae WGS result,698119002,SCT
+S. pneumoniae WGS result,698120008,SCT
+S. pneumoniae WGS result,698121007,SCT
+S. pneumoniae WGS result,PLR236,PLR
+S. pneumoniae WGS result,698123005,SCT
+S. pneumoniae WGS result,698124004,SCT
+S. pneumoniae WGS result,698125003,SCT
+S. pneumoniae WGS result,444352000,SCT
+S. pneumoniae WGS result,444353005,SCT
+S. pneumoniae WGS result,131363003,SCT
+S. pneumoniae WGS result,443670000,SCT
+S. pneumoniae WGS result,698127006,SCT
+S. pneumoniae WGS result,698128001,SCT
+S. pneumoniae WGS result,442049002,SCT
+S. pneumoniae WGS result,698129009,SCT
+S. pneumoniae WGS result,698130004,SCT
+S. pneumoniae WGS result,698131000,SCT
+S. pneumoniae WGS result,420148006,SCT
+S. pneumoniae WGS result,PLR237,PLR
+S. pneumoniae WGS result,767201007,SCT
+S. pneumoniae WGS result,698132007,SCT
+S. pneumoniae WGS result,698133002,SCT
+S. pneumoniae WGS result,698134008,SCT
+S. pneumoniae WGS result,698135009,SCT
+S. pneumoniae WGS result,PLR238,PLR
+S. pneumoniae WGS result,PLR240,PLR
+S. pneumoniae WGS result,698136005,SCT
+S. pneumoniae WGS result,698137001,SCT
+S. pneumoniae WGS result,767204004,SCT
+S. pneumoniae WGS result,PLR241,PLR
+S. pneumoniae WGS result,767208001,SCT
+S. pneumoniae WGS result,767274003,SCT
+S. pneumoniae WGS result,698139003,SCT
+S. pneumoniae WGS result,698140001,SCT
+S. pneumoniae WGS result,767285001,SCT
+S. pneumoniae WGS result,767284002,SCT
+S. pneumoniae WGS result,767283008,SCT
+S. pneumoniae WGS result,767282003,SCT
+S. pneumoniae WGS result,767281005,SCT
+S. pneumoniae WGS result,698147003,SCT
+S. pneumoniae WGS result,698148008,SCT
+S. pneumoniae WGS result,767275002,SCT
+"Detected, Not detected",260373001,SCT
+"Detected, Not detected",260415000,SCT
+PCR ordinal - bacterial,260373001,SCT
+PCR ordinal - bacterial,260415000,SCT
+PCR ordinal - bacterial,419984006,SCT
+PCR ordinal - bacterial,42425007,SCT
+PCR ordinal - bacterial,373121007,SCT
+PCR ordinal - bacterial,125154007,SCT
+"Positive, Negative",10828004,SCT
+"Positive, Negative",260385009,SCT
+VZV strain SNP PCR,734285001,SCT
+VZV strain SNP PCR,734287009,SCT
+VZV strain SNP PCR,260415000,SCT
+VZV strain SNP PCR,373121007,SCT
+Bordetella ptxS1 marker Ct interpretation,260373001,SCT
+Bordetella ptxS1 marker Ct interpretation,260415000,SCT
+Bordetella ptxS1 marker Ct interpretation,373121007,SCT
+Bordetella ptxS1 marker Ct interpretation,10828004,SCT
+Bordetella ptxS1 marker Ct interpretation,260385009,SCT

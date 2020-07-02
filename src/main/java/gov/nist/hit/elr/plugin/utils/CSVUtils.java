@@ -219,6 +219,7 @@ public class CSVUtils {
   private void parseOrdersCSV(String folder, String orderCsv) throws IOException {
     BufferedReader reader = new BufferedReader(
         new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + orderCsv)));
+    System.out.println("/" + folder + "/" + orderCsv);
     CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
     CSVParser csvParser = new CSVParser(reader, format);
 

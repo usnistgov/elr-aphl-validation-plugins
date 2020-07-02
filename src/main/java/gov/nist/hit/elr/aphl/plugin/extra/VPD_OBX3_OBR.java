@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import hl7.v2.instance.Element;
 
-public class VPD_OBX extends OBX {
+public class VPD_OBX3_OBR extends OBX3_OBR4 {
 
   public String getFOLDER() {
     return VPD.getFOLDER();

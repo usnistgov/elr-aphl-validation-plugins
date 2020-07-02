@@ -15,8 +15,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4;
 import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4_ws;
-import gov.nist.hit.elr.aphl.plugin.extra.VPD_OBX3_OBR4;
+import gov.nist.hit.elr.aphl.plugin.extra.VPD_OBX3_OBR4_ws;
 import gov.nist.hit.elr.plugin.util.Util;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import gov.nist.validation.report.Entry;
@@ -45,7 +46,7 @@ public class TestVPD_OBX3_OBR4 {
   // use case : OBX-3 is not present in "Tests", but is present in "Observations",
   // OBR-4 is not present in "Tests", and not present in "Orders"
 
-  private static OBX3_OBR4_ws testObject;
+  private static OBX3_OBR4 testObject;
 
   private static ComplexCodedElement OBR4;
   private static List<ComplexCodedElement> OBX3s;

@@ -6,7 +6,7 @@ import java.net.URISyntaxException;
 import gov.nist.hit.elr.aphl.domain.Program;
 import hl7.v2.instance.Element;
 
-public class VPD_OBX3_OBR4 extends OBX3_OBR4_ws {
+public class VPD_OBX_ws extends OBX_ws {
 
   public java.util.List<String> assertionWithCustomMessages(Element e)
       throws ClassNotFoundException, IOException, InterruptedException, URISyntaxException {
@@ -27,6 +27,5 @@ public class VPD_OBX3_OBR4 extends OBX3_OBR4_ws {
   public Program getValueSetProgram() {
     return Program.APHL_VPD;
   }
-
 
 }
