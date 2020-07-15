@@ -124,6 +124,7 @@ public class WSUtils {
   private String sendGET(WebService url, Program program, String resource)
       throws IOException, InterruptedException, URISyntaxException {
     URI uri = new URI(StringUtils.join(url, "/", program, "/", resource.replaceAll(" ", "%20")));
+    System.out.println(uri);
     WSCache cache = WSCache.getInstance();
     // cache.clearCache();
     if (cache.getCache().containsKey(uri.toString())) {

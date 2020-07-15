@@ -14,6 +14,8 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.log4j.Logger;
 
+import gov.nist.hit.elr.aphl.plugin.extra.VPD;
+
 public class CSVUtils {
 
   private static Logger logger = Logger.getLogger(CSVUtils.class.getName());
@@ -217,9 +219,10 @@ public class CSVUtils {
   }
 
   private void parseOrdersCSV(String folder, String orderCsv) throws IOException {
+    
     BufferedReader reader = new BufferedReader(
         new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + orderCsv)));
-    System.out.println("/" + folder + "/" + orderCsv);
+    
     CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
     CSVParser csvParser = new CSVParser(reader, format);
 

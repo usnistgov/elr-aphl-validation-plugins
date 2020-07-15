@@ -1,0 +1,41 @@
+HL7 Message Context,Concept Code,Concept Name,Preferred Concept Name,Code System,VPD Data Element Identifer,VPD Data element Name,VPD Value Set Identifier,VPD Value Set Name
+SPM-4.1,119297000,Blood specimen (specimen),Blood specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,122554006,Capillary blood specimen (specimen),Capillary blood specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,119361006,Plasma specimen (specimen),Plasma specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,119364003,Serum specimen (specimen),Serum specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,429881000124104,Acute phase serum specimen (specimen),Acute phase serum specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,429891000124101,Convalescent phase serum specimen (specimen),Convalescent phase serum specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,122555007,Venous blood specimen (specimen),Venous blood specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,309051001,Body fluid sample (specimen),Body fluid sample,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,258450006,Cerebrospinal fluid sample (specimen),Cerebrospinal fluid sample,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,429951000124103,Bacterial isolate specimen (specimen),Bacterial isolate specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,119303007,Microbial isolate specimen (specimen),Microbial isolate specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,430751000124105,Viral isolate specimen (specimen),Viral isolate specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,309049000,Lesion sample (specimen),Lesion sample,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,PLR169,Scab (specimen),Scab,PLR,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,435541000124108,Scab specimen (specimen),Scab specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,309068002,Skin lesion sample (specimen),Skin lesion sample,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,257261003,Swab (specimen),Swab,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,472862007,Swab from lesion of skin (specimen),Swab from lesion of skin,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,119376003,Tissue specimen (specimen),Tissue specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,258482009,Vesicle fluid sample (specimen),Vesicle fluid sample,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,258566005,Deoxyribonucleic acid sample (specimen),Deoxyribonucleic acid sample,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,448789008,Nucleic acid specimen (specimen),Nucleic acid specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,441673008,Ribonucleic acid specimen (specimen),Ribonucleic acid specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,258607008,Bronchoalveolar lavage fluid sample (specimen),Bronchoalveolar lavage fluid sample,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,258564008,Buccal smear sample (specimen),Buccal smear sample,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,258411007,Nasopharyngeal aspirate (specimen),Nasopharyngeal aspirate,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,258500001,Nasopharyngeal swab (specimen),Nasopharyngeal swab,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,258467004,Nasopharyngeal washings (specimen),Nasopharyngeal washings,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,441620008,Oral fluid specimen (specimen),Oral fluid specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,418932006,Oral swab (specimen),Oral swab,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,119342007,Saliva specimen (specimen),Saliva specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,122609004,Specimen from lung obtained by bronchial washing procedure (specimen),Specimen from lung obtained by bronchial washing procedure,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,440674008,Specimen obtained by lavage (specimen),Specimen obtained by lavage,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,472901003,Swab from nasal sinus (specimen),Swab from nasal sinus,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,445297001,Swab of internal nose (specimen),Swab of internal nose,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,258529004,Throat swab (specimen),Throat swab,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,119339001,Stool specimen (specimen),Stool specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,122575003,Urine specimen (specimen),Urine specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,123038009,Specimen (specimen),Specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type
+SPM-4.1,122594008,Tears specimen (specimen),Tears specimen,SCT,SPM_04,SpecType,vs-053,VPD Specimen Type

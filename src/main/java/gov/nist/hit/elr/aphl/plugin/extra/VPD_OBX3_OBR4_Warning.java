@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import hl7.v2.instance.Element;
 
-public class VPD_OBX3_OBR extends OBX3_OBR4 {
+public class VPD_OBX3_OBR4_Warning extends OBX3_OBR4_Warning {
 
   public String getFOLDER() {
     return VPD.getFOLDER();
@@ -29,5 +29,4 @@ public class VPD_OBX3_OBR extends OBX3_OBR4 {
   public java.util.List<String> assertionWithCustomMessages(Element e) throws IOException {
     return super.assertionWithCustomMessages(e);
   }
-
 }
