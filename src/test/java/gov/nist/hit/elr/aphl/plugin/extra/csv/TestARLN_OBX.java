@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra;
+package gov.nist.hit.elr.aphl.plugin.extra.csv;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,7 +13,7 @@ import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
 public class TestARLN_OBX {
 
-  private static OBX testObject;
+  private static OBX_csv testObject;
 
   private static ComplexCodedElement OBX3;
   private static String OBX2;
@@ -21,7 +21,7 @@ public class TestARLN_OBX {
 
   @BeforeClass
   public static void setUp() {
-    testObject = new ARLN_OBX();
+    testObject = new ARLN_OBX_csv();
   }
 
   @Test

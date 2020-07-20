@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra;
+package gov.nist.hit.elr.aphl.plugin.extra.csv;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,19 +14,21 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import gov.nist.hit.elr.aphl.plugin.extra.PHLIP_SPM4;
+import gov.nist.hit.elr.aphl.plugin.extra.SPM_4;
 import gov.nist.hit.elr.plugin.util.Util;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import gov.nist.validation.report.Entry;
 import gov.nist.validation.report.Report;
 import hl7.v2.validation.SyncHL7Validator;
 
-public class TestARLN_SPM4 {
+public class TestPHLIP_SPM4 {
 
-  private static SPM_4 testObject;
+  private static SPM_4_csv testObject;
 
   @BeforeClass
   public static void setUp() {
-    testObject = new ARLN_SPM4();
+    testObject = new PHLIP_SPM4_csv();
 
   }
 
@@ -62,10 +64,12 @@ public class TestARLN_SPM4 {
     ComplexCodedElement SPM4 =
         new ComplexCodedElement("_116155002", "SCT", "Ampulla of Vater cytologic material", "L");
     List<String> result = testObject.check(SPM4);
+    System.out.println(result);
     assertEquals(1, result.size());
 
     SPM4 = new ComplexCodedElement("Ampulla of Vater cytologic material", "L", "_116155002", "SCT");
     result = testObject.check(SPM4);
+    System.out.println(result);
     assertEquals(1, result.size());
 
     SPM4 = new ComplexCodedElement("_116155002", "SCT", "", "");
@@ -87,7 +91,7 @@ public class TestARLN_SPM4 {
     String constraints = StringUtils.join(globalFolder, "/Constraints.xml");
     String valueSets = StringUtils.join(globalFolder, "/ValueSets.xml");
 
-    String message1FileName = "TestMessages/SPM4/Message.txt";
+    String message1FileName = "ARLN/Message.txt";
 
     SyncHL7Validator validator = Util.createValidator(profiles, constraints, null, valueSets);
     ClassLoader classLoader = getClass().getClassLoader();

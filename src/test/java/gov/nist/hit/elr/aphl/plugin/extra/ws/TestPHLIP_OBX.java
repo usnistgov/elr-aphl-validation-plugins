@@ -10,8 +10,6 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import gov.nist.hit.elr.aphl.plugin.extra.OBX_ws;
-import gov.nist.hit.elr.aphl.plugin.extra.PHLIP_OBX_ws;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
 public class TestPHLIP_OBX {

@@ -16,8 +16,6 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import gov.nist.hit.elr.aphl.plugin.extra.ARLN_OBX3_ws;
-import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4_ws;
 import gov.nist.hit.elr.plugin.util.Util;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import gov.nist.validation.report.Entry;

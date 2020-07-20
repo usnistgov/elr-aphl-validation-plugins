@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra;
+package gov.nist.hit.elr.aphl.plugin.extra.ws;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -6,8 +6,7 @@ import java.net.URISyntaxException;
 import gov.nist.hit.elr.aphl.domain.Program;
 import hl7.v2.instance.Element;
 
-public class ARLN_OBX_ws extends OBX_ws {
-
+public class PHLIP_OBX3_OBR4_Warning_ws extends OBX3_OBR4_Warning_ws {
 
   public java.util.List<String> assertionWithCustomMessages(Element e)
       throws ClassNotFoundException, IOException, InterruptedException, URISyntaxException {
@@ -16,11 +15,12 @@ public class ARLN_OBX_ws extends OBX_ws {
 
   @Override
   public Program getProgram() {
-    return Program.ARLN;
+    return Program.PHLIP;
   }
 
   @Override
   public Program getValueSetProgram() {
-    return Program.APHL_ARLN;
+    return Program.APHL_PHLIP;
   }
+
 }

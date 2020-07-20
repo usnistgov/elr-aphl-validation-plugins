@@ -1,44 +1,41 @@
-package gov.nist.hit.elr.aphl.plugin.extra;
+package gov.nist.hit.elr.aphl.plugin.extra.csv;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
 
-import gov.nist.hit.elr.aphl.domain.Observation;
-import gov.nist.hit.elr.aphl.domain.Program;
-import gov.nist.hit.elr.aphl.domain.Test;
+import gov.nist.hit.elr.plugin.utils.CSVUtils;
 import gov.nist.hit.elr.plugin.utils.CodedElement;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
-import gov.nist.hit.elr.plugin.utils.WSUtils;
 import hl7.v2.instance.Element;
 import hl7.v2.instance.Query;
 import hl7.v2.instance.Simple;
 import scala.collection.Iterator;
 import scala.collection.immutable.List;
 
-public abstract class OBX3_OBR4_ws {
+public abstract class OBX3_OBR4_csv {
 
-  private static Logger logger = Logger.getLogger(OBX3_OBR4_ws.class.getName());
+  private static Logger logger = Logger.getLogger(OBX3_OBR4_csv.class.getName());
 
-  public abstract Program getProgram();
+  public abstract String getFOLDER();
 
-  public abstract Program getValueSetProgram();
+  public abstract String getTEST_CSV();
 
+  public abstract String getOBSERVATIONS_CSV();
+
+  public abstract String getORDERS();
+
+  public abstract String getVALUE_SETS_CSV();
 
   /**
    * 
    * @param e the ORDER_OBSERVATION group
    * @return
    * @throws IOException
-   * @throws InterruptedException
-   * @throws ClassNotFoundException
-   * @throws URISyntaxException
    */
-  public java.util.List<String> assertionWithCustomMessages(Element e)
-      throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
+  public java.util.List<String> assertionWithCustomMessages(Element e) throws IOException {
     java.util.List<String> messages = new ArrayList<String>();
 
     List<Element> OBR4List = Query.query(e, "2[1].4[1]").get();
@@ -101,44 +98,29 @@ public abstract class OBX3_OBR4_ws {
   }
 
   public java.util.List<String> check(ComplexCodedElement OBR4,
-      java.util.List<ComplexCodedElement> OBX3s)
-      throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
-    WSUtils ws = new WSUtils();
+      java.util.List<ComplexCodedElement> OBX3s) throws IOException {
+    CSVUtils util = new CSVUtils();
+    util.parse(getFOLDER(), getTEST_CSV(), getOBSERVATIONS_CSV(), getORDERS(), getVALUE_SETS_CSV());
 
     java.util.List<String> messages = new ArrayList<String>();
 
     CodedElement identifierOBR4 = OBR4.getIdentifier();
     CodedElement alternateOBR4 = OBR4.getAlternateIdentifier();
 
-    java.util.List<Test> tests = ws.getTests(getProgram());
-    java.util.List<Observation> observations = ws.getObservations(getProgram());
-
     for (ComplexCodedElement OBX3 : OBX3s) {
       CodedElement identifierOBX3 = OBX3.getIdentifier();
       CodedElement alternateOBX3 = OBX3.getAlternateIdentifier();
 
-      // System.err.println(identifierOBX3.toString());
-      // System.err.println(alternateOBX3.toString());
-
       // 1. Check if OBX-3 is in 'Test'
-      long identifierOBX3Count =
-          Test.countByOBX3(identifierOBX3.getIdentifier(), identifierOBX3.getCodeSystem(), tests);
-      long alternateOBX3Count =
-          Test.countByOBX3(alternateOBX3.getIdentifier(), alternateOBX3.getCodeSystem(), tests);
-
-      boolean obx3InTests = identifierOBX3Count > 0 || alternateOBX3Count > 0;
+      boolean obx3InTests = util.getOBX3_OBR4().containsKey(identifierOBX3)
+          || util.getOBX3_OBR4().containsKey(alternateOBX3);
 
       if (obx3InTests) {
-        CodedElement obx3 = identifierOBX3Count > 0 ? identifierOBX3 : alternateOBX3;
-        Set<Test> obr4Expected = Test.findByOBX3(obx3.getIdentifier(), obx3.getCodeSystem(), tests);
-
-        Set<Test> subsetId = Test.findByOBR4(identifierOBR4.getIdentifier(),
-            identifierOBR4.getCodeSystem(), obr4Expected);
-        Set<Test> subsetAlt = Test.findByOBR4(alternateOBR4.getIdentifier(),
-            alternateOBR4.getCodeSystem(), obr4Expected);
-
+        CodedElement obx3 =
+            util.getOBX3_OBR4().containsKey(identifierOBX3) ? identifierOBX3 : alternateOBX3;
+        Set<CodedElement> obr4Expected = util.getOBX3_OBR4().get(obx3);
         // 1.1 Check if the parent OBR-4 matches
-        if (subsetId.size() > 0 || subsetAlt.size() > 0) {
+        if (obr4Expected.contains(identifierOBR4) || obr4Expected.contains(alternateOBR4)) {
           // success : move to the next OBX-3
           continue;
         }
@@ -146,13 +128,7 @@ public abstract class OBX3_OBR4_ws {
 
       if (!obx3InTests) {
         // 2.1 Check if OBX-3 is present in "Observations"
-
-        Observation obsById = Observation.find(identifierOBX3.getIdentifier(),
-            identifierOBX3.getCodeSystem(), observations);
-        Observation obxByAlt = Observation.find(alternateOBX3.getIdentifier(),
-            alternateOBX3.getCodeSystem(), observations);
-
-        if (obsById == null && obxByAlt == null) {
+        if (!util.getOBX3().contains(identifierOBX3) && !util.getOBX3().contains(alternateOBX3)) {
           // this is an error;
           if (!OBX3.getIdentifier().isEmpty() && !OBX3.getAlternateIdentifier().isEmpty()) {
             messages.add("[FAIL] The OBX-3 values (" + OBX3.prettyPrint() + ") are not valid");

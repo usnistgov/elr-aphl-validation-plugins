@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra;
+package gov.nist.hit.elr.aphl.plugin.extra.csv;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,6 +15,8 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import gov.nist.hit.elr.aphl.plugin.extra.ARLN_OBX3;
+import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4;
 import gov.nist.hit.elr.plugin.util.Util;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import gov.nist.validation.report.Entry;
@@ -43,14 +45,14 @@ public class TestARLN_OBX3 {
   // use case : OBX-3 is not present in "Tests", but is present in "Observations",
   // OBR-4 is not present in "Tests", and not present in "Orders"
 
-  private static OBX3_OBR4 testObject;
+  private static OBX3_OBR4_csv testObject;
 
   private static ComplexCodedElement OBR4;
   private static List<ComplexCodedElement> OBX3s;
 
   @BeforeClass
   public static void setUp() {
-    testObject = new ARLN_OBX3();
+    testObject = new ARLN_OBX3_csv();
     OBX3s = new ArrayList<ComplexCodedElement>();
   }
 

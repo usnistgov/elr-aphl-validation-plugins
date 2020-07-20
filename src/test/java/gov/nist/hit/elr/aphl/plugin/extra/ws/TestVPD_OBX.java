@@ -11,9 +11,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.aphl.plugin.extra.OBX;
-import gov.nist.hit.elr.aphl.plugin.extra.OBX_ws;
 import gov.nist.hit.elr.aphl.plugin.extra.VPD_OBX;
-import gov.nist.hit.elr.aphl.plugin.extra.VPD_OBX_ws;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
 public class TestVPD_OBX {

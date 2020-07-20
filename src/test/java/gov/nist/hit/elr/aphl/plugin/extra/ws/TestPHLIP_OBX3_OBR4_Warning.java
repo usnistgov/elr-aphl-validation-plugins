@@ -11,7 +11,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import gov.nist.hit.elr.aphl.plugin.extra.PHLIP_OBX3_OBR4_Warning_ws;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
 public class TestPHLIP_OBX3_OBR4_Warning {

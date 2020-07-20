@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra;
+package gov.nist.hit.elr.aphl.plugin.extra.csv;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,19 +14,21 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import gov.nist.hit.elr.aphl.plugin.extra.SPM_4;
+import gov.nist.hit.elr.aphl.plugin.extra.VPD_SPM4;
 import gov.nist.hit.elr.plugin.util.Util;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import gov.nist.validation.report.Entry;
 import gov.nist.validation.report.Report;
 import hl7.v2.validation.SyncHL7Validator;
 
-public class TestSPM4 {
+public class TestVPD_SPM4 {
 
-  private static SPM_4 testObject;
+  private static SPM_4_csv testObject;
 
   @BeforeClass
   public static void setUp() {
-    testObject = new SPM_4();
+    testObject = new VPD_SPM4_csv();
 
   }
 
@@ -39,19 +41,19 @@ public class TestSPM4 {
   public void testCheckSuccess() throws IOException {
 
     ComplexCodedElement SPM4 =
-        new ComplexCodedElement("116155002", "SCT", "Ampulla of Vater cytologic material", "L");
+        new ComplexCodedElement("119297000", "SCT", "Blood specimen (specimen)", "L");
     List<String> result = testObject.check(SPM4);
     assertEquals(0, result.size());
 
-    SPM4 = new ComplexCodedElement("Ampulla of Vater cytologic material", "L", "116155002", "SCT");
+    SPM4 = new ComplexCodedElement("Blood specimen (specimen)", "L", "119297000", "SCT");
     result = testObject.check(SPM4);
     assertEquals(0, result.size());
 
-    SPM4 = new ComplexCodedElement("116155002", "SCT", "", "");
+    SPM4 = new ComplexCodedElement("119297000", "SCT", "", "");
     result = testObject.check(SPM4);
     assertEquals(0, result.size());
 
-    SPM4 = new ComplexCodedElement("", "", "116155002", "SCT");
+    SPM4 = new ComplexCodedElement("", "", "119297000", "SCT");
     result = testObject.check(SPM4);
     assertEquals(0, result.size());
 

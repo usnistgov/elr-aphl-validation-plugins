@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra;
+package gov.nist.hit.elr.aphl.plugin.extra.ws;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

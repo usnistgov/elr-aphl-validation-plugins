@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra;
+package gov.nist.hit.elr.aphl.plugin.extra.csv;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,6 +13,8 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import gov.nist.hit.elr.aphl.plugin.extra.MSH_3;
+import gov.nist.hit.elr.aphl.plugin.extra.PHLIP_MSH_3;
 import gov.nist.hit.elr.plugin.util.Util;
 import gov.nist.hit.elr.plugin.utils.HierarchicDesignator;
 import gov.nist.validation.report.Entry;
@@ -22,11 +24,11 @@ import hl7.v2.validation.SyncHL7Validator;
 public class TestPHLIP_MSH3 {
 
 
-  private static MSH_3 testObject;
+  private static MSH_3_csv testObject;
 
   @BeforeClass
   public static void setUp() {
-    testObject = new PHLIP_MSH_3();
+    testObject = new PHLIP_MSH_3_csv();
   }
 
 
