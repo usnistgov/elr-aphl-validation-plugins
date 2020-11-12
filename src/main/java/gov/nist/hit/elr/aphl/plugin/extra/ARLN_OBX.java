@@ -1,37 +1,33 @@
 package gov.nist.hit.elr.aphl.plugin.extra;
 
-import java.io.IOException;
+import java.util.List;
 
+import gov.nist.hit.elr.aphl.plugin.extra.ws.ARLN_OBX_ws;
+import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import hl7.v2.instance.Element;
 
-public class ARLN_OBX extends OBX {
-
-  @Override
-  public String getFOLDER() {
-    return ARLN.getFOLDER();
+public class ARLN_OBX implements OBX {
+  
+  private OBX datasource;
+  
+  public ARLN_OBX() {
+    datasource = new ARLN_OBX_ws();
   }
 
   @Override
-  public String getTEST_CSV() {
-    return ARLN.getTEST_CSV();
+  public List<String> assertionWithCustomMessages(Element e) throws Exception {
+    return datasource.assertionWithCustomMessages(e);
   }
 
   @Override
-  public String getOBSERVATIONS_CSV() {
-    return ARLN.getOBSERVATIONS_CSV();
+  public List<String> checkOBX3_OBX2(ComplexCodedElement obx3, String obx2) throws Exception {
+    return datasource.checkOBX3_OBX2(obx3, obx2);
   }
 
   @Override
-  public String getORDERS() {
-    return ARLN.getORDERS();
+  public List<String> checkOBX3_OBX5_CWE(ComplexCodedElement obx3, ComplexCodedElement obx5) throws Exception {
+    return datasource.checkOBX3_OBX5_CWE(obx3, obx5);
   }
 
-  @Override
-  public String getVALUE_SETS_CSV() {
-    return ARLN.getVALUE_SETS_CSV();
-  }
 
-  public java.util.List<String> assertionWithCustomMessages(Element e) throws IOException {
-    return super.assertionWithCustomMessages(e);
-  }
 }

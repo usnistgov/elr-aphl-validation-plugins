@@ -3,7 +3,8 @@ package gov.nist.hit.elr.aphl.plugin.extra.csv;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import gov.nist.hit.elr.aphl.plugin.extra.ELR_FOUNDATION;
+import gov.nist.hit.elr.aphl.plugin.extra.SPM_4;
+import gov.nist.hit.elr.aphl.plugin.extra.context.ELR_FOUNDATION;
 import gov.nist.hit.elr.plugin.utils.CSVUtils;
 import gov.nist.hit.elr.plugin.utils.CodedElement;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
@@ -12,7 +13,7 @@ import hl7.v2.instance.Query;
 import hl7.v2.instance.Simple;
 import scala.collection.immutable.List;
 
-public class SPM_4_csv {
+public class SPM_4_csv implements SPM_4 {
 
   public String getFOLDER_SPM() {
     return ELR_FOUNDATION.getFOLDER_SPM();
@@ -89,7 +90,7 @@ public class SPM_4_csv {
     return messages;
   }
 
-  protected String getProgram() {
+  public String getProgram() {
     return "ELR-Foundation";
   }
 }

@@ -164,9 +164,9 @@ public class TestPHLIP_OBX {
 
 
     // OBX-3 = TRAVEL05 / PHINQUESTION
-    // OBX-2 = ST
+    // OBX-2 = CWE
     OBX3 = new ComplexCodedElement("TRAVEL05", "PHINQUESTION", "", "");
-    OBX2 = "ST";
+    OBX2 = "CWE";
     result = testObject.checkOBX3_OBX2(OBX3, OBX2);
     assertEquals(0, result.size());
 
@@ -204,9 +204,9 @@ public class TestPHLIP_OBX {
     assertEquals(0, result.size());
 
     // OBX-3 = 21612-7 / LN
-    // OBX-2 = NM
+    // OBX-2 = SN
     OBX3 = new ComplexCodedElement("21612-7", "LN", "", "");
-    OBX2 = "NM";
+    OBX2 = "SN";
     result = testObject.checkOBX3_OBX2(OBX3, OBX2);
     assertEquals(0, result.size());
 
@@ -287,9 +287,9 @@ public class TestPHLIP_OBX {
     assertEquals(0, result.size());
 
     // OBX-3 = 94313-4/ LN
-    // OBX-2 = SN
+    // OBX-2 = NM
     OBX3 = new ComplexCodedElement("94313-4", "LN", "", "");
-    OBX2 = "SN";
+    OBX2 = "NM";
     result = testObject.checkOBX3_OBX2(OBX3, OBX2);
     assertEquals(0, result.size());
 

@@ -17,6 +17,7 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
 import org.glassfish.jersey.client.ClientConfig;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -35,7 +36,7 @@ import gov.nist.hit.elr.aphl.domain.vocab.ValueSets;
 
 public class WSUtils {
 
-  // private static Logger logger = Logger.getLogger(WSUtils.class.getName());
+  private static Logger logger = Logger.getLogger(WSUtils.class.getName());
 
   private Client client;
   public WSUtils() {
@@ -124,7 +125,7 @@ public class WSUtils {
   private String sendGET(WebService url, Program program, String resource)
       throws IOException, InterruptedException, URISyntaxException {
     URI uri = new URI(StringUtils.join(url, "/", program, "/", resource.replaceAll(" ", "%20")));
-    System.out.println(uri);
+    //logger.debug(uri);
     WSCache cache = WSCache.getInstance();
     // cache.clearCache();
     if (cache.getCache().containsKey(uri.toString())) {

@@ -3,7 +3,7 @@ package gov.nist.hit.elr.aphl.plugin.extra.csv;
 import java.io.IOException;
 
 import gov.nist.hit.elr.aphl.plugin.extra.MSH_3;
-import gov.nist.hit.elr.aphl.plugin.extra.PHLIP;
+import gov.nist.hit.elr.aphl.plugin.extra.context.PHLIP;
 import hl7.v2.instance.Element;
 
 public class PHLIP_MSH_3_csv extends MSH_3_csv {

@@ -1,33 +1,27 @@
 package gov.nist.hit.elr.aphl.plugin.extra;
 
-import java.io.IOException;
-
+import java.util.List;
+import gov.nist.hit.elr.aphl.plugin.extra.ws.PHLIP_OBX3_OBR4_ws;
+import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import hl7.v2.instance.Element;
 
-public class PHLIP_OBX3_OBR4 extends OBX3_OBR4 {
+public class PHLIP_OBX3_OBR4 implements OBX3_OBR4 {
 
-  public String getFOLDER() {
-    return PHLIP.getFOLDER();
+  private OBX3_OBR4 datasource;
+  
+  public PHLIP_OBX3_OBR4() {
+    datasource = new PHLIP_OBX3_OBR4_ws();
   }
 
-  public String getTEST_CSV() {
-    return PHLIP.getTEST_CSV();
+  @Override
+  public List<String> assertionWithCustomMessages(Element e) throws Exception {
+    return datasource.assertionWithCustomMessages(e);
   }
 
-  public String getOBSERVATIONS_CSV() {
-    return PHLIP.getOBSERVATIONS_CSV();
-  }
-
-  public String getORDERS() {
-    return PHLIP.getORDERS();
-  }
-
-  public String getVALUE_SETS_CSV() {
-    return PHLIP.getVALUE_SETS_CSV();
-  }
-
-  public java.util.List<String> assertionWithCustomMessages(Element e) throws IOException {
-    return super.assertionWithCustomMessages(e);
+  @Override
+  public List<String> check(ComplexCodedElement OBR4, List<ComplexCodedElement> OBX3s)
+      throws Exception {
+    return datasource.check(OBR4, OBX3s);
   }
 
 }

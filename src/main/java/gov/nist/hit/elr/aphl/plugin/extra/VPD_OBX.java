@@ -1,33 +1,32 @@
 package gov.nist.hit.elr.aphl.plugin.extra;
 
-import java.io.IOException;
+import java.util.List;
 
+import gov.nist.hit.elr.aphl.plugin.extra.ws.VPD_OBX_ws;
+import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import hl7.v2.instance.Element;
 
-public class VPD_OBX extends OBX {
+public class VPD_OBX implements OBX {
 
-  public String getFOLDER() {
-    return VPD.getFOLDER();
+  private OBX datasource;
+  
+  public VPD_OBX() {
+    datasource = new VPD_OBX_ws();
   }
 
-  public String getTEST_CSV() {
-    return VPD.getTEST_CSV();
+  @Override
+  public List<String> assertionWithCustomMessages(Element e) throws Exception {
+    return datasource.assertionWithCustomMessages(e);
   }
 
-  public String getOBSERVATIONS_CSV() {
-    return VPD.getOBSERVATIONS_CSV();
+  @Override
+  public List<String> checkOBX3_OBX2(ComplexCodedElement obx3, String obx2) throws Exception {
+    return datasource.checkOBX3_OBX2(obx3, obx2);
   }
 
-  public String getORDERS() {
-    return VPD.getORDERS();
-  }
-
-  public String getVALUE_SETS_CSV() {
-    return VPD.getVALUE_SETS_CSV();
-  }
-
-  public java.util.List<String> assertionWithCustomMessages(Element e) throws IOException {
-    return super.assertionWithCustomMessages(e);
+  @Override
+  public List<String> checkOBX3_OBX5_CWE(ComplexCodedElement obx3, ComplexCodedElement obx5) throws Exception {
+    return datasource.checkOBX3_OBX5_CWE(obx3, obx5);
   }
 
 }

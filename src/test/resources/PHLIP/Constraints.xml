@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    UUID="57450d0dd4c6f57e694d1e881586381183836"
+                    UUID="57450d0dd4c6f57e694d1e881600368390052"
                     xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
    <MetaData Date="No Date Info"
              Name="ELR_IG_APHL"
@@ -8,20 +8,9 @@
              Version="No Version Info"/>
    <Predicates>
       <Datatype>
-         <ByID ID="CWE_OBX5">
-            <Predicate FalseUsage="X" ID="CP_6[1]_0" Target="6[1]" TrueUsage="R">
-               <Description>If CWE.4 (Alternate Identifier) is valued</Description>
-               <Condition>
-                  <AND>
-                     <Presence Path="4[1]"/>
-                     <Presence Path="4[1]"/>
-                  </AND>
-               </Condition>
-            </Predicate>
-         </ByID>
-         <ByID ID="CNN_ELR">
-            <Predicate FalseUsage="X" ID="CP_10[1]_0" Target="10[1]" TrueUsage="R">
-               <Description>If CNN.1 (ID Number) is valued</Description>
+         <ByID ID="XCN_ELR_VPD">
+            <Predicate FalseUsage="X" ID="CP_9[1]_0" Target="9[1]" TrueUsage="R">
+               <Description>If XCN.1 (ID Number) is valued</Description>
                <Condition>
                   <AND>
                      <Presence Path="1[1]"/>
@@ -29,12 +18,12 @@
                   </AND>
                </Condition>
             </Predicate>
-            <Predicate FalseUsage="X" ID="CP_11[1]_0" Target="11[1]" TrueUsage="R">
-               <Description>If CNN.10 (Assigning Authority  - Universal ID) is valued</Description>
+            <Predicate FalseUsage="X" ID="CP_13[1]_0" Target="13[1]" TrueUsage="R">
+               <Description>If XCN.1 (ID Number) is valued</Description>
                <Condition>
                   <AND>
-                     <Presence Path="10[1]"/>
-                     <Presence Path="10[1]"/>
+                     <Presence Path="1[1]"/>
+                     <Presence Path="1[1]"/>
                   </AND>
                </Condition>
             </Predicate>
@@ -96,22 +85,13 @@
                </Condition>
             </Predicate>
          </ByID>
-         <ByID ID="XCN_ELR_VPD">
-            <Predicate FalseUsage="X" ID="CP_9[1]_0" Target="9[1]" TrueUsage="R">
-               <Description>If XCN.1 (ID Number) is valued</Description>
+         <ByID ID="CWE_OBX5">
+            <Predicate FalseUsage="X" ID="CP_6[1]_0" Target="6[1]" TrueUsage="R">
+               <Description>If CWE.4 (Alternate Identifier) is valued</Description>
                <Condition>
                   <AND>
-                     <Presence Path="1[1]"/>
-                     <Presence Path="1[1]"/>
-                  </AND>
-               </Condition>
-            </Predicate>
-            <Predicate FalseUsage="X" ID="CP_13[1]_0" Target="13[1]" TrueUsage="R">
-               <Description>If XCN.1 (ID Number) is valued</Description>
-               <Condition>
-                  <AND>
-                     <Presence Path="1[1]"/>
-                     <Presence Path="1[1]"/>
+                     <Presence Path="4[1]"/>
+                     <Presence Path="4[1]"/>
                   </AND>
                </Condition>
             </Predicate>
@@ -136,7 +116,84 @@
                </Condition>
             </Predicate>
          </ByID>
+         <ByID ID="CNN_ELR">
+            <Predicate FalseUsage="X" ID="CP_10[1]_0" Target="10[1]" TrueUsage="R">
+               <Description>If CNN.1 (ID Number) is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="1[1]"/>
+                     <Presence Path="1[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_11[1]_0" Target="11[1]" TrueUsage="R">
+               <Description>If CNN.10 (Assigning Authority  - Universal ID) is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="10[1]"/>
+                     <Presence Path="10[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+         </ByID>
          <ByID ID="CWE_ELR_ARLN">
+            <Predicate FalseUsage="X" ID="CP_2[1]_0" Target="2[1]" TrueUsage="RE">
+               <Description>If CWE.1 (Identifier) is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="1[1]"/>
+                     <Presence Path="1[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_3[1]_0" Target="3[1]" TrueUsage="R">
+               <Description>If CWE.1 (Identifier) is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="1[1]"/>
+                     <Presence Path="1[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_5[1]_0" Target="5[1]" TrueUsage="RE">
+               <Description>If CWE.4 (Alternate Identifier) is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="4[1]"/>
+                     <Presence Path="4[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_6[1]_0" Target="6[1]" TrueUsage="R">
+               <Description>If CWE.4 (Alternate Identifier) is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="4[1]"/>
+                     <Presence Path="4[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="RE" ID="undefined-9" Target="9[1]" TrueUsage="R">
+               <Description>[If CWE.1 (Identifier) is not valued] AND [If CWE.4 (Alternate Identifier) is not valued]</Description>
+               <Condition>
+                  <AND>
+                     <NOT>
+                        <AND>
+                           <Presence Path="1[1]"/>
+                           <Presence Path="1[1]"/>
+                        </AND>
+                     </NOT>
+                     <NOT>
+                        <AND>
+                           <Presence Path="4[1]"/>
+                           <Presence Path="4[1]"/>
+                        </AND>
+                     </NOT>
+                  </AND>
+               </Condition>
+            </Predicate>
+         </ByID>
+         <ByID ID="CWE_HHS">
             <Predicate FalseUsage="X" ID="CP_2[1]_0" Target="2[1]" TrueUsage="RE">
                <Description>If CWE.1 (Identifier) is valued</Description>
                <Condition>
@@ -244,6 +301,17 @@
                </Condition>
             </Predicate>
          </ByID>
+         <ByID ID="CE_OBX5">
+            <Predicate FalseUsage="X" ID="CP_6[1]_0" Target="6[1]" TrueUsage="R">
+               <Description>If CE.4 (Alternate Identifier) is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="4[1]"/>
+                     <Presence Path="4[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+         </ByID>
          <ByID ID="XON_ELR">
             <Predicate FalseUsage="RE" ID="CP_1[1]_0" Target="1[1]" TrueUsage="R">
                <Description>If XON.10 (Organization Identifier) is not valued</Description>
@@ -277,54 +345,7 @@
          </ByID>
       </Datatype>
       <Segment>
-         <ByID ID="MSH_ELR_Flu-1">
-            <Predicate FalseUsage="RE" ID="CP_15[1]_0" Target="15[1]" TrueUsage="R">
-               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
-               <Condition>
-                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_15"/>
-               </Condition>
-            </Predicate>
-            <Predicate FalseUsage="RE" ID="CP_16[1]_0" Target="16[1]" TrueUsage="R">
-               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
-               <Condition>
-                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_16"/>
-               </Condition>
-            </Predicate>
-         </ByID>
-         <ByID ID="NK1_ELR">
-            <Predicate FalseUsage="X" ID="CP_2[1]_0" Target="2[1]" TrueUsage="R">
-               <Description>If NK1-13[*] is not valued</Description>
-               <Condition>
-                  <NOT>
-                     <AND>
-                        <Presence Path="13[*]"/>
-                        <Presence Path="13[*]"/>
-                     </AND>
-                  </NOT>
-               </Condition>
-            </Predicate>
-            <Predicate FalseUsage="X" ID="CP_30[1]_0" Target="30[1]" TrueUsage="R">
-               <Description>If NK1-13[*] is valued</Description>
-               <Condition>
-                  <AND>
-                     <Presence Path="13[*]"/>
-                     <Presence Path="13[*]"/>
-                  </AND>
-               </Condition>
-            </Predicate>
-            <Predicate FalseUsage="X" ID="CP_13[1]_0" Target="13[1]" TrueUsage="R">
-               <Description>If NK1-2[*] is not valued</Description>
-               <Condition>
-                  <NOT>
-                     <AND>
-                        <Presence Path="2[*]"/>
-                        <Presence Path="2[*]"/>
-                     </AND>
-                  </NOT>
-               </Condition>
-            </Predicate>
-         </ByID>
-         <ByID ID="OBX_ELR_Flu-1">
+         <ByID ID="OBX_ELR_Flu-2">
             <Predicate FalseUsage="X" ID="CP_5[1]_0" Target="5[1]" TrueUsage="RE">
                <Description>If the value of OBX-11 is not 'X'.</Description>
                <Condition>
@@ -377,6 +398,34 @@
                      <Presence Path="5[1]"/>
                      <Presence Path="5[1]"/>
                   </AND>
+               </Condition>
+            </Predicate>
+         </ByID>
+         <ByID ID="MSH_ELR">
+            <Predicate FalseUsage="RE" ID="CP_15[1]_0" Target="15[1]" TrueUsage="R">
+               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
+               <Condition>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_15"/>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="RE" ID="CP_16[1]_0" Target="16[1]" TrueUsage="R">
+               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
+               <Condition>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_16"/>
+               </Condition>
+            </Predicate>
+         </ByID>
+         <ByID ID="MSH_HHS">
+            <Predicate FalseUsage="RE" ID="CP_15[1]_0" Target="15[1]" TrueUsage="R">
+               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
+               <Condition>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_15"/>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="RE" ID="CP_16[1]_0" Target="16[1]" TrueUsage="R">
+               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
+               <Condition>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_16"/>
                </Condition>
             </Predicate>
          </ByID>
@@ -436,6 +485,183 @@
                </Condition>
             </Predicate>
          </ByID>
+         <ByID ID="MSH_ELR_Flu-1">
+            <Predicate FalseUsage="RE" ID="CP_15[1]_0" Target="15[1]" TrueUsage="R">
+               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
+               <Condition>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_15"/>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="RE" ID="CP_16[1]_0" Target="16[1]" TrueUsage="R">
+               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
+               <Condition>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_16"/>
+               </Condition>
+            </Predicate>
+         </ByID>
+         <ByID ID="PID_ELR_Flu-1">
+            <Predicate FalseUsage="O" ID="CP_34[1]_0" Target="34[1]" TrueUsage="R">
+               <Description>If PID-33 is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="33[1]"/>
+                     <Presence Path="33[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+         </ByID>
+         <ByID ID="OBX_HHS">
+            <Predicate FalseUsage="X" ID="undefined-6" Target="6[1]" TrueUsage="R">
+               <Description>[[If the value of OBX-2 is 'NM'.] OR [If the value of OBX-2 is 'SN'.]] AND [If the value of OBX-11 is not 'X'.]</Description>
+               <Condition>
+                  <AND>
+                     <OR>
+                        <AND>
+                           <Presence Path="2[1]"/>
+                           <PlainText IgnoreCase="false" Path="2[1]" Text="NM"/>
+                        </AND>
+                        <AND>
+                           <Presence Path="2[1]"/>
+                           <PlainText IgnoreCase="true" Path="2[1]" Text="SN"/>
+                        </AND>
+                     </OR>
+                     <NOT>
+                        <AND>
+                           <Presence Path="11[1]"/>
+                           <PlainText IgnoreCase="true" Path="11[1]" Text="X"/>
+                        </AND>
+                     </NOT>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_8[1]_0" Target="8[1]" TrueUsage="RE">
+               <Description>If the value of OBX-11 is not 'X'.</Description>
+               <Condition>
+                  <NOT>
+                     <AND>
+                        <Presence Path="11[1]"/>
+                        <PlainText IgnoreCase="true" Path="11[1]" Text="X"/>
+                     </AND>
+                  </NOT>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_2[1]_0" Target="2[1]" TrueUsage="R">
+               <Description>If OBX-5 is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="5[1]"/>
+                     <Presence Path="5[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="R" ID="CP_23[1]_0" Target="23[1]" TrueUsage="O">
+               <Description>If the value of OBX-29 is 'QST'.</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="29[1]"/>
+                     <PlainText IgnoreCase="false" Path="29[1]" Text="QST"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="O" ID="CP_24[1]_0" Target="24[1]" TrueUsage="R">
+               <Description>If the value of OBX-29 is 'RSLT'.</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="29[1]"/>
+                     <PlainText IgnoreCase="false" Path="29[1]" Text="RSLT"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+         </ByID>
+         <ByID ID="OBX_ELR_Flu-1">
+            <Predicate FalseUsage="X" ID="CP_5[1]_0" Target="5[1]" TrueUsage="RE">
+               <Description>If the value of OBX-11 is not 'X'.</Description>
+               <Condition>
+                  <NOT>
+                     <AND>
+                        <Presence Path="11[1]"/>
+                        <PlainText IgnoreCase="false" Path="11[1]" Text="X"/>
+                     </AND>
+                  </NOT>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="undefined-6" Target="6[1]" TrueUsage="R">
+               <Description>[[If the value of OBX-2 is 'NM'.] OR [If the value of OBX-2 is 'SN'.]] AND [If the value of OBX-11 is not 'X'.]</Description>
+               <Condition>
+                  <AND>
+                     <OR>
+                        <AND>
+                           <Presence Path="2[1]"/>
+                           <PlainText IgnoreCase="false" Path="2[1]" Text="NM"/>
+                        </AND>
+                        <AND>
+                           <Presence Path="2[1]"/>
+                           <PlainText IgnoreCase="true" Path="2[1]" Text="SN"/>
+                        </AND>
+                     </OR>
+                     <NOT>
+                        <AND>
+                           <Presence Path="11[1]"/>
+                           <PlainText IgnoreCase="true" Path="11[1]" Text="X"/>
+                        </AND>
+                     </NOT>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_8[1]_0" Target="8[1]" TrueUsage="RE">
+               <Description>If the value of OBX-11 is not 'X'.</Description>
+               <Condition>
+                  <NOT>
+                     <AND>
+                        <Presence Path="11[1]"/>
+                        <PlainText IgnoreCase="true" Path="11[1]" Text="X"/>
+                     </AND>
+                  </NOT>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_2[1]_0" Target="2[1]" TrueUsage="R">
+               <Description>If OBX-5 is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="5[1]"/>
+                     <Presence Path="5[1]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+         </ByID>
+         <ByID ID="NK1_ELR">
+            <Predicate FalseUsage="X" ID="CP_2[1]_0" Target="2[1]" TrueUsage="R">
+               <Description>If NK1-13[*] is not valued</Description>
+               <Condition>
+                  <NOT>
+                     <AND>
+                        <Presence Path="13[*]"/>
+                        <Presence Path="13[*]"/>
+                     </AND>
+                  </NOT>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_30[1]_0" Target="30[1]" TrueUsage="R">
+               <Description>If NK1-13[*] is valued</Description>
+               <Condition>
+                  <AND>
+                     <Presence Path="13[*]"/>
+                     <Presence Path="13[*]"/>
+                  </AND>
+               </Condition>
+            </Predicate>
+            <Predicate FalseUsage="X" ID="CP_13[1]_0" Target="13[1]" TrueUsage="R">
+               <Description>If NK1-2[*] is not valued</Description>
+               <Condition>
+                  <NOT>
+                     <AND>
+                        <Presence Path="2[*]"/>
+                        <Presence Path="2[*]"/>
+                     </AND>
+                  </NOT>
+               </Condition>
+            </Predicate>
+         </ByID>
          <ByID ID="OBX_ELR_VPD">
             <Predicate FalseUsage="X" ID="undefined-6" Target="6[1]" TrueUsage="R">
                <Description>[[If the value of OBX-2 is 'NM'.] OR [If the value of OBX-2 is 'SN'.]] AND [If the value of OBX-11 is not 'X'.]</Description>
@@ -492,73 +718,6 @@
                </Condition>
             </Predicate>
          </ByID>
-         <ByID ID="OBX_ELR_Flu-2">
-            <Predicate FalseUsage="X" ID="CP_5[1]_0" Target="5[1]" TrueUsage="RE">
-               <Description>If the value of OBX-11 is not 'X'.</Description>
-               <Condition>
-                  <NOT>
-                     <AND>
-                        <Presence Path="11[1]"/>
-                        <PlainText IgnoreCase="false" Path="11[1]" Text="X"/>
-                     </AND>
-                  </NOT>
-               </Condition>
-            </Predicate>
-            <Predicate FalseUsage="X" ID="undefined-6" Target="6[1]" TrueUsage="R">
-               <Description>[[If the value of OBX-2 is 'NM'.] OR [If the value of OBX-2 is 'SN'.]] AND [If the value of OBX-11 is not 'X'.]</Description>
-               <Condition>
-                  <AND>
-                     <OR>
-                        <AND>
-                           <Presence Path="2[1]"/>
-                           <PlainText IgnoreCase="false" Path="2[1]" Text="NM"/>
-                        </AND>
-                        <AND>
-                           <Presence Path="2[1]"/>
-                           <PlainText IgnoreCase="true" Path="2[1]" Text="SN"/>
-                        </AND>
-                     </OR>
-                     <NOT>
-                        <AND>
-                           <Presence Path="11[1]"/>
-                           <PlainText IgnoreCase="true" Path="11[1]" Text="X"/>
-                        </AND>
-                     </NOT>
-                  </AND>
-               </Condition>
-            </Predicate>
-            <Predicate FalseUsage="X" ID="CP_8[1]_0" Target="8[1]" TrueUsage="RE">
-               <Description>If the value of OBX-11 is not 'X'.</Description>
-               <Condition>
-                  <NOT>
-                     <AND>
-                        <Presence Path="11[1]"/>
-                        <PlainText IgnoreCase="true" Path="11[1]" Text="X"/>
-                     </AND>
-                  </NOT>
-               </Condition>
-            </Predicate>
-            <Predicate FalseUsage="X" ID="CP_2[1]_0" Target="2[1]" TrueUsage="R">
-               <Description>If OBX-5 is valued</Description>
-               <Condition>
-                  <AND>
-                     <Presence Path="5[1]"/>
-                     <Presence Path="5[1]"/>
-                  </AND>
-               </Condition>
-            </Predicate>
-         </ByID>
-         <ByID ID="PID_ELR_Flu-1">
-            <Predicate FalseUsage="O" ID="CP_34[1]_0" Target="34[1]" TrueUsage="R">
-               <Description>If PID-33 is valued</Description>
-               <Condition>
-                  <AND>
-                     <Presence Path="33[1]"/>
-                     <Presence Path="33[1]"/>
-                  </AND>
-               </Condition>
-            </Predicate>
-         </ByID>
          <ByID ID="PID_ELR">
             <Predicate FalseUsage="O" ID="CP_34[1]_0" Target="34[1]" TrueUsage="R">
                <Description>If PID-33 is valued</Description>
@@ -570,23 +729,9 @@
                </Condition>
             </Predicate>
          </ByID>
-         <ByID ID="MSH_ELR">
-            <Predicate FalseUsage="RE" ID="CP_15[1]_0" Target="15[1]" TrueUsage="R">
-               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
-               <Condition>
-                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_15"/>
-               </Condition>
-            </Predicate>
-            <Predicate FalseUsage="RE" ID="CP_16[1]_0" Target="16[1]" TrueUsage="R">
-               <Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'</Description>
-               <Condition>
-                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_16"/>
-               </Condition>
-            </Predicate>
-         </ByID>
       </Segment>
       <Group>
-         <ByID ID="5e8e416316408b128ab704a2">
+         <ByID ID="5f63ae44b2663fb79381107b">
             <Predicate FalseUsage="O"
                        ID="CP_NOT Assigned_0"
                        Target="2[1].8[1]"
@@ -638,7 +783,7 @@
    </Predicates>
    <Constraints>
       <Datatype>
-         <ByID ID="EI_ELR">
+         <ByID ID="EI_ELR_A21280">
             <Constraint ID="ELR-005">
                <Description>The value of EI-4 (Universal ID Type) SHALL be 'ISO'.</Description>
                <Assertion>
@@ -652,7 +797,110 @@
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="EIP_ELR_A175">
+         <ByID ID="XAD_ELR_Rabies">
+            <Constraint ID="ELR-010">
+               <Description>The value of XAD-4 (State or Province) SHALL be one of codes in ValueSet: PHVS_State_FIPS_5-2_8121607.</Description>
+               <Assertion>
+                  <ValueSet BindingLocation="1"
+                            BindingStrength="R"
+                            Path="4[1]"
+                            ValueSetID="PHVS_State_FIPS_5-2_8121607"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-067">
+               <Description>The value of XAD-9 (County/Parish Code) SHALL be formatted with '^\d{5}$'.</Description>
+               <Assertion>
+                  <Format Path="9[1]" Regex="^\d{5}$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-011">
+               <Description>The value of XAD-5 (Zip or Postal Code) SHALL be formatted with '^\d{5}$|^\d{5}-\d{4}$|^[A-Z]{1}\d{1}[A-Z]{1}\d{1}[A-Z]{1}\d{1}$'.</Description>
+               <Assertion>
+                  <Format Path="5[1]"
+                          Regex="^\d{5}$|^\d{5}-\d{4}$|^[A-Z]{1}\d{1}[A-Z]{1}\d{1}[A-Z]{1}\d{1}$"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="TS_ELR">
+            <Constraint ID="TS.1 Format">
+               <Description>TS.1 (Time) SHALL be a valid date/time format</Description>
+               <Assertion>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.TS"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="XAD_ELR_Flu-1">
+            <Constraint ID="ELR-010">
+               <Description>The value of XAD-4 (State or Province) SHALL be one of codes in ValueSet: PHVS_State_FIPS_5-2_8121607.</Description>
+               <Assertion>
+                  <ValueSet BindingLocation="1"
+                            BindingStrength="R"
+                            Path="4[1]"
+                            ValueSetID="PHVS_State_FIPS_5-2_8121607"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-067">
+               <Description>The value of XAD-9 (County/Parish Code) SHALL be formatted with '^\d{5}$'.</Description>
+               <Assertion>
+                  <Format Path="9[1]" Regex="^\d{5}$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-011">
+               <Description>The value of XAD-5 (Zip or Postal Code) SHALL be formatted with '^\d{5}$|^\d{5}-\d{4}$|^[A-Z]{1}\d{1}[A-Z]{1}\d{1}[A-Z]{1}\d{1}$'.</Description>
+               <Assertion>
+                  <Format Path="5[1]"
+                          Regex="^\d{5}$|^\d{5}-\d{4}$|^[A-Z]{1}\d{1}[A-Z]{1}\d{1}[A-Z]{1}\d{1}$"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="SN_ELR-08_09">
+            <Constraint ID="ELR-009">
+               <Description>[The value of SN-3 (Separator/Suffix) SHALL be ':'.] OR [[[The value of SN-3 (Separator/Suffix) SHALL be '/'.] OR [The value of SN-3 (Separator/Suffix) SHALL be '.'.]] OR [[The value of SN-3 (Separator/Suffix) SHALL be '-'.] OR [The value of SN-3 (Separator/Suffix) SHALL be '+'.]]]</Description>
+               <Assertion>
+                  <OR>
+                     <PlainText IgnoreCase="false" Path="3[1]" Text=":"/>
+                     <OR>
+                        <OR>
+                           <PlainText IgnoreCase="false" Path="3[1]" Text="/"/>
+                           <PlainText IgnoreCase="false" Path="3[1]" Text="."/>
+                        </OR>
+                        <OR>
+                           <PlainText IgnoreCase="false" Path="3[1]" Text="-"/>
+                           <PlainText IgnoreCase="false" Path="3[1]" Text="+"/>
+                        </OR>
+                     </OR>
+                  </OR>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-008">
+               <Description>EXIST[The value of SN-1 (Comparator) SHALL be '='.][The value of SN-1 (Comparator) SHALL be '&amp;lt;'.][The value of SN-1 (Comparator) SHALL be '&amp;gt;'.][The value of SN-1 (Comparator) SHALL be '&amp;lt;&amp;gt;'.][The value of SN-1 (Comparator) SHALL be '&amp;lt;='.][The value of SN-1 (Comparator) SHALL be '&amp;gt;='.]</Description>
+               <Assertion>
+                  <EXIST>
+                     <PlainText IgnoreCase="false" Path="1[1]" Text="="/>
+                     <PlainText IgnoreCase="false" Path="1[1]" Text="&lt;"/>
+                     <PlainText IgnoreCase="false" Path="1[1]" Text="&gt;"/>
+                     <PlainText IgnoreCase="false" Path="1[1]" Text="&lt;&gt;"/>
+                     <PlainText IgnoreCase="false" Path="1[1]" Text="&lt;="/>
+                     <PlainText IgnoreCase="false" Path="1[1]" Text="&gt;="/>
+                  </EXIST>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="EI_ELR_A21280_A21236">
+            <Constraint ID="ELR-005">
+               <Description>The value of EI-4 (Universal ID Type) SHALL be 'ISO'.</Description>
+               <Assertion>
+                  <PlainText IgnoreCase="true" Path="4[1]" Text="ISO"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-004">
+               <Description>The value of EI-3 (Universal ID) SHALL be formatted with 'ISO-compliant OID'.</Description>
+               <Assertion>
+                  <Format Path="3[1]" Regex="[0-2](\.(0|[1-9][0-9]*))*"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="EIP_ELR">
             <Constraint ID="ELR-004">
                <Description>The value of EIP-2.3 (Universal ID) SHALL be formatted with 'ISO-compliant OID'.</Description>
                <Assertion>
@@ -666,17 +914,37 @@
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="EIP_ELR_A42776">
-            <Constraint ID="ELR-004">
-               <Description>The value of EIP-2.3 (Universal ID) SHALL be formatted with 'ISO-compliant OID'.</Description>
+         <ByID ID="CNN_ELR">
+            <Constraint ID="ELR-002">
+               <Description>The value of CNN-10 (Assigning Authority  - Universal ID) SHALL be formatted with 'ISO-compliant OID'.</Description>
                <Assertion>
-                  <Format Path="2[1].3[1]" Regex="[0-2](\.(0|[1-9][0-9]*))*"/>
+                  <Format Path="10[1]" Regex="[0-2](\.(0|[1-9][0-9]*))*"/>
                </Assertion>
             </Constraint>
-            <Constraint ID="ELR-005">
-               <Description>The value of EIP-2.4 (Universal ID Type) SHALL be 'ISO'.</Description>
+            <Constraint ID="ELR-003">
+               <Description>The value of CNN-11 (Assigning Authority  - Universal ID Type) SHALL be 'ISO'.</Description>
                <Assertion>
-                  <PlainText IgnoreCase="true" Path="2[1].4[1]" Text="ISO"/>
+                  <PlainText IgnoreCase="true" Path="11[1]" Text="ISO"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="CWE_ELR">
+            <Constraint ID="ELR-069">
+               <Description>IF [The value of CWE-3 (Name of Coding System) is 'LN'.] THEN [The value of CWE-1 (Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
+               <Assertion>
+                  <IMPLY>
+                     <PlainText IgnoreCase="false" Path="3[1]" Text="LN"/>
+                     <Format Path="1[1]" Regex="^\d{2,5}[-]\d{1}$"/>
+                  </IMPLY>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-070">
+               <Description>IF [The value of CWE-6 (Name of Alternate Coding System) is 'LN'.] THEN [The value of CWE-4 (Alternate Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
+               <Assertion>
+                  <IMPLY>
+                     <PlainText IgnoreCase="false" Path="6[1]" Text="LN"/>
+                     <Format Path="4[1]" Regex="^\d{2,5}[-]\d{1}$"/>
+                  </IMPLY>
                </Assertion>
             </Constraint>
          </ByID>
@@ -792,7 +1060,55 @@
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="XAD_ELR_Rabies">
+         <ByID ID="EIP_ELR_A87721">
+            <Constraint ID="ELR-004">
+               <Description>The value of EIP-2.3 (Universal ID) SHALL be formatted with 'ISO-compliant OID'.</Description>
+               <Assertion>
+                  <Format Path="2[1].3[1]" Regex="[0-2](\.(0|[1-9][0-9]*))*"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-005">
+               <Description>The value of EIP-2.4 (Universal ID Type) SHALL be 'ISO'.</Description>
+               <Assertion>
+                  <PlainText IgnoreCase="true" Path="2[1].4[1]" Text="ISO"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="CWE_ELR_ARLN">
+            <Constraint ID="ELR-069">
+               <Description>IF [The value of CWE-3 (Name of Coding System) is 'LN'.] THEN [The value of CWE-1 (Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
+               <Assertion>
+                  <IMPLY>
+                     <PlainText IgnoreCase="false" Path="3[1]" Text="LN"/>
+                     <Format Path="1[1]" Regex="^\d{2,5}[-]\d{1}$"/>
+                  </IMPLY>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-070">
+               <Description>IF [The value of CWE-6 (Name of Alternate Coding System) is 'LN'.] THEN [The value of CWE-4 (Alternate Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
+               <Assertion>
+                  <IMPLY>
+                     <PlainText IgnoreCase="false" Path="6[1]" Text="LN"/>
+                     <Format Path="4[1]" Regex="^\d{2,5}[-]\d{1}$"/>
+                  </IMPLY>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="EIP_ELR_A59401">
+            <Constraint ID="ELR-004">
+               <Description>The value of EIP-2.3 (Universal ID) SHALL be formatted with 'ISO-compliant OID'.</Description>
+               <Assertion>
+                  <Format Path="2[1].3[1]" Regex="[0-2](\.(0|[1-9][0-9]*))*"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-005">
+               <Description>The value of EIP-2.4 (Universal ID Type) SHALL be 'ISO'.</Description>
+               <Assertion>
+                  <PlainText IgnoreCase="true" Path="2[1].4[1]" Text="ISO"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="XAD_HHS">
             <Constraint ID="ELR-010">
                <Description>The value of XAD-4 (State or Province) SHALL be one of codes in ValueSet: PHVS_State_FIPS_5-2_8121607.</Description>
                <Assertion>
@@ -813,47 +1129,6 @@
                <Assertion>
                   <Format Path="5[1]"
                           Regex="^\d{5}$|^\d{5}-\d{4}$|^[A-Z]{1}\d{1}[A-Z]{1}\d{1}[A-Z]{1}\d{1}$"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="SN_ELR-08_09">
-            <Constraint ID="ELR-009">
-               <Description>[The value of SN-3 (Separator/Suffix) SHALL be ':'.] OR [[[The value of SN-3 (Separator/Suffix) SHALL be '/'.] OR [The value of SN-3 (Separator/Suffix) SHALL be '.'.]] OR [[The value of SN-3 (Separator/Suffix) SHALL be '-'.] OR [The value of SN-3 (Separator/Suffix) SHALL be '+'.]]]</Description>
-               <Assertion>
-                  <OR>
-                     <PlainText IgnoreCase="false" Path="3[1]" Text=":"/>
-                     <OR>
-                        <OR>
-                           <PlainText IgnoreCase="false" Path="3[1]" Text="/"/>
-                           <PlainText IgnoreCase="false" Path="3[1]" Text="."/>
-                        </OR>
-                        <OR>
-                           <PlainText IgnoreCase="false" Path="3[1]" Text="-"/>
-                           <PlainText IgnoreCase="false" Path="3[1]" Text="+"/>
-                        </OR>
-                     </OR>
-                  </OR>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-008">
-               <Description>EXIST[The value of SN-1 (Comparator) SHALL be '='.][The value of SN-1 (Comparator) SHALL be '&amp;lt;'.][The value of SN-1 (Comparator) SHALL be '&amp;gt;'.][The value of SN-1 (Comparator) SHALL be '&amp;lt;&amp;gt;'.][The value of SN-1 (Comparator) SHALL be '&amp;lt;='.][The value of SN-1 (Comparator) SHALL be '&amp;gt;='.]</Description>
-               <Assertion>
-                  <EXIST>
-                     <PlainText IgnoreCase="false" Path="1[1]" Text="="/>
-                     <PlainText IgnoreCase="false" Path="1[1]" Text="&lt;"/>
-                     <PlainText IgnoreCase="false" Path="1[1]" Text="&gt;"/>
-                     <PlainText IgnoreCase="false" Path="1[1]" Text="&lt;&gt;"/>
-                     <PlainText IgnoreCase="false" Path="1[1]" Text="&lt;="/>
-                     <PlainText IgnoreCase="false" Path="1[1]" Text="&gt;="/>
-                  </EXIST>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="TS_ELR">
-            <Constraint ID="TS.1 Format">
-               <Description>TS.1 (Time) SHALL be a valid date/time format</Description>
-               <Assertion>
-                  <Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.TS"/>
                </Assertion>
             </Constraint>
          </ByID>
@@ -969,26 +1244,6 @@
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="CWE_ELR">
-            <Constraint ID="ELR-069">
-               <Description>IF [The value of CWE-3 (Name of Coding System) is 'LN'.] THEN [The value of CWE-1 (Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
-               <Assertion>
-                  <IMPLY>
-                     <PlainText IgnoreCase="false" Path="3[1]" Text="LN"/>
-                     <Format Path="1[1]" Regex="^\d{2,5}[-]\d{1}$"/>
-                  </IMPLY>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-070">
-               <Description>IF [The value of CWE-6 (Name of Alternate Coding System) is 'LN'.] THEN [The value of CWE-4 (Alternate Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
-               <Assertion>
-                  <IMPLY>
-                     <PlainText IgnoreCase="false" Path="6[1]" Text="LN"/>
-                     <Format Path="4[1]" Regex="^\d{2,5}[-]\d{1}$"/>
-                  </IMPLY>
-               </Assertion>
-            </Constraint>
-         </ByID>
          <ByID ID="HD_ELR">
             <Constraint ID="ELR-063">
                <Description>IF [The value of HD-3 (Universal ID Type) is 'ISO'.] THEN [The value of HD-2 (Universal ID) SHALL be formatted with 'ISO-compliant OID'.]</Description>
@@ -1033,75 +1288,17 @@
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="EIP_ELR">
-            <Constraint ID="ELR-004">
-               <Description>The value of EIP-2.3 (Universal ID) SHALL be formatted with 'ISO-compliant OID'.</Description>
-               <Assertion>
-                  <Format Path="2[1].3[1]" Regex="[0-2](\.(0|[1-9][0-9]*))*"/>
-               </Assertion>
-            </Constraint>
+         <ByID ID="EI_ELR">
             <Constraint ID="ELR-005">
-               <Description>The value of EIP-2.4 (Universal ID Type) SHALL be 'ISO'.</Description>
+               <Description>The value of EI-4 (Universal ID Type) SHALL be 'ISO'.</Description>
                <Assertion>
-                  <PlainText IgnoreCase="true" Path="2[1].4[1]" Text="ISO"/>
+                  <PlainText IgnoreCase="true" Path="4[1]" Text="ISO"/>
                </Assertion>
             </Constraint>
-         </ByID>
-         <ByID ID="CNN_ELR">
-            <Constraint ID="ELR-002">
-               <Description>The value of CNN-10 (Assigning Authority  - Universal ID) SHALL be formatted with 'ISO-compliant OID'.</Description>
+            <Constraint ID="ELR-004">
+               <Description>The value of EI-3 (Universal ID) SHALL be formatted with 'ISO-compliant OID'.</Description>
                <Assertion>
-                  <Format Path="10[1]" Regex="[0-2](\.(0|[1-9][0-9]*))*"/>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-003">
-               <Description>The value of CNN-11 (Assigning Authority  - Universal ID Type) SHALL be 'ISO'.</Description>
-               <Assertion>
-                  <PlainText IgnoreCase="true" Path="11[1]" Text="ISO"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="XAD_ELR_Flu-1">
-            <Constraint ID="ELR-010">
-               <Description>The value of XAD-4 (State or Province) SHALL be one of codes in ValueSet: PHVS_State_FIPS_5-2_8121607.</Description>
-               <Assertion>
-                  <ValueSet BindingLocation="1"
-                            BindingStrength="R"
-                            Path="4[1]"
-                            ValueSetID="PHVS_State_FIPS_5-2_8121607"/>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-067">
-               <Description>The value of XAD-9 (County/Parish Code) SHALL be formatted with '^\d{5}$'.</Description>
-               <Assertion>
-                  <Format Path="9[1]" Regex="^\d{5}$"/>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-011">
-               <Description>The value of XAD-5 (Zip or Postal Code) SHALL be formatted with '^\d{5}$|^\d{5}-\d{4}$|^[A-Z]{1}\d{1}[A-Z]{1}\d{1}[A-Z]{1}\d{1}$'.</Description>
-               <Assertion>
-                  <Format Path="5[1]"
-                          Regex="^\d{5}$|^\d{5}-\d{4}$|^[A-Z]{1}\d{1}[A-Z]{1}\d{1}[A-Z]{1}\d{1}$"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="CWE_ELR_ARLN">
-            <Constraint ID="ELR-069">
-               <Description>IF [The value of CWE-3 (Name of Coding System) is 'LN'.] THEN [The value of CWE-1 (Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
-               <Assertion>
-                  <IMPLY>
-                     <PlainText IgnoreCase="false" Path="3[1]" Text="LN"/>
-                     <Format Path="1[1]" Regex="^\d{2,5}[-]\d{1}$"/>
-                  </IMPLY>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-070">
-               <Description>IF [The value of CWE-6 (Name of Alternate Coding System) is 'LN'.] THEN [The value of CWE-4 (Alternate Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
-               <Assertion>
-                  <IMPLY>
-                     <PlainText IgnoreCase="false" Path="6[1]" Text="LN"/>
-                     <Format Path="4[1]" Regex="^\d{2,5}[-]\d{1}$"/>
-                  </IMPLY>
+                  <Format Path="3[1]" Regex="[0-2](\.(0|[1-9][0-9]*))*"/>
                </Assertion>
             </Constraint>
          </ByID>
@@ -1126,6 +1323,26 @@
                <Assertion>
                   <Format Path="5[1]"
                           Regex="^\d{5}$|^\d{5}-\d{4}$|^[A-Z]{1}\d{1}[A-Z]{1}\d{1}[A-Z]{1}\d{1}$"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="CWE_HHS">
+            <Constraint ID="ELR-069">
+               <Description>IF [The value of CWE-3 (Name of Coding System) is 'LN'.] THEN [The value of CWE-1 (Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
+               <Assertion>
+                  <IMPLY>
+                     <PlainText IgnoreCase="false" Path="3[1]" Text="LN"/>
+                     <Format Path="1[1]" Regex="^\d{2,5}[-]\d{1}$"/>
+                  </IMPLY>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-070">
+               <Description>IF [The value of CWE-6 (Name of Alternate Coding System) is 'LN'.] THEN [The value of CWE-4 (Alternate Identifier) SHALL be formatted with '^\d{2,5}[-]\d{1}$'.]</Description>
+               <Assertion>
+                  <IMPLY>
+                     <PlainText IgnoreCase="false" Path="6[1]" Text="LN"/>
+                     <Format Path="4[1]" Regex="^\d{2,5}[-]\d{1}$"/>
+                  </IMPLY>
                </Assertion>
             </Constraint>
          </ByID>
@@ -1279,11 +1496,99 @@
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="NTE_ELR">
-            <Constraint ID="ELR-053">
-               <Description>The value of NTE-1 SHALL be valued sequentially starting with the value '1'.</Description>
+         <ByID ID="OBX_ELR_Flu-1">
+            <Constraint ID="ELR-049">
+               <Description>[The value of OBX-14.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of OBX-14.1 SHALL be '0000'.]</Description>
                <Assertion>
-                  <SetID Path="1[1]"/>
+                  <OR>
+                     <Format Path="14[1].1[1]"
+                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                     <PlainText IgnoreCase="false" Path="14[1].1[1]" Text="0000"/>
+                  </OR>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-052">
+               <Description>The value of OBX-19.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="19[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="OBX_PHLIP">
+               <Description>OBX-3, OBX-2 and OBX-5 SHALL be a valid combination for the PHLIP program</Description>
+               <Assertion>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.PHLIP_OBX"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="PV1_ELR">
+            <Constraint ID="ELR-030">
+               <Description>The value of PV1-1 SHALL be '1'.</Description>
+               <Assertion>
+                  <AND>
+                     <Presence Path="1[1]"/>
+                     <PlainText IgnoreCase="false" Path="1[1]" Text="1"/>
+                  </AND>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-031">
+               <Description>The value of PV1-44.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="44[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-032">
+               <Description>The value of PV1-45.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="45[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="PID_ELR">
+            <Constraint ID="ELR-026">
+               <Description>The value of PID-7.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="7[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-028">
+               <Description>The value of PID-29.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="29[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-029">
+               <Description>The value of PID-33.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="33[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-024">
+               <Description>The value of PID-1 SHALL be '1'.</Description>
+               <Assertion>
+                  <PlainText IgnoreCase="false" Path="1[1]" Text="1"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="ORC_ELR">
+            <Constraint ID="ELR-034">
+               <Description>The value of ORC-1 SHALL be 'RE'.</Description>
+               <Assertion>
+                  <PlainText IgnoreCase="false" Path="1[1]" Text="RE"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="SFT_ELR">
+            <Constraint ID="ELR-023">
+               <Description>The value of SFT-6.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="6[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
                </Assertion>
             </Constraint>
          </ByID>
@@ -1328,32 +1633,145 @@
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="PID_ELR_Flu-1">
-            <Constraint ID="ELR-026">
-               <Description>The value of PID-7.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+         <ByID ID="OBX_ELR">
+            <Constraint ID="ELR-049">
+               <Description>[The value of OBX-14.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of OBX-14.1 SHALL be '0000'.]</Description>
                <Assertion>
-                  <Format Path="7[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                  <OR>
+                     <Format Path="14[1].1[1]"
+                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                     <PlainText IgnoreCase="false" Path="14[1].1[1]" Text="0000"/>
+                  </OR>
                </Assertion>
             </Constraint>
-            <Constraint ID="ELR-028">
-               <Description>The value of PID-29.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+            <Constraint ID="ELR-052">
+               <Description>The value of OBX-19.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
                <Assertion>
-                  <Format Path="29[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                  <Format Path="19[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
                </Assertion>
             </Constraint>
-            <Constraint ID="ELR-029">
-               <Description>The value of PID-33.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+         </ByID>
+         <ByID ID="MSH_HHS">
+            <Constraint ID="ELR-012">
+               <Description>The value of MSH-1 SHALL be '|'.</Description>
                <Assertion>
-                  <Format Path="33[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                  <PlainText IgnoreCase="false" Path="1[1]" Text="|"/>
                </Assertion>
             </Constraint>
-            <Constraint ID="ELR-024">
-               <Description>The value of PID-1 SHALL be '1'.</Description>
+            <Constraint ID="ELR-014">
+               <Description>The value of MSH-7.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14})((\x2D|\x2B)\d{4})$'.</Description>
+               <Assertion>
+                  <Format Path="7[1].1[1]" Regex="^(\d{14}\.\d{1,4}|\d{14})((\x2D|\x2B)\d{4})$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-015">
+               <Description>The value of MSH-9.1 SHALL be 'ORU'.</Description>
+               <Assertion>
+                  <PlainText IgnoreCase="true" Path="9[1].1[1]" Text="ORU"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-016">
+               <Description>The value of MSH-9.2 SHALL be 'R01'.</Description>
+               <Assertion>
+                  <PlainText IgnoreCase="true" Path="9[1].2[1]" Text="R01"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-017">
+               <Description>The value of MSH-9.3 SHALL be 'ORU_R01'.</Description>
+               <Assertion>
+                  <PlainText IgnoreCase="true" Path="9[1].3[1]" Text="ORU_R01"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-019">
+               <Description>MSH-15 (Accept Acknowledgment Type) SHALL contain the constant value 'AL' IF any occurrence of MSH.21.1 (Entity Identifier) is 'PHLabReport-Ack', ELSE, if valued, SHALL contain the constant value 'NE'</Description>
+               <Assertion>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_019"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-020">
+               <Description>MSH-16 (Application Acknowledgement Type) SHALL contain the constant value 'AL', 'NE', 'ER', or 'SU', IF any occurrence of MSH-21.1 (Entity Identifier) is 'PHLabReport-Ack', ELSE, if valued, SHALL contain the constant value 'NE'</Description>
+               <Assertion>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_020"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="OBX_HHS">
+            <Constraint ID="ELR-049">
+               <Description>[The value of OBX-14.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of OBX-14.1 SHALL be '0000'.]</Description>
+               <Assertion>
+                  <OR>
+                     <Format Path="14[1].1[1]"
+                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                     <PlainText IgnoreCase="false" Path="14[1].1[1]" Text="0000"/>
+                  </OR>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-052">
+               <Description>The value of OBX-19.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="19[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="OBX_ELR_Flu-2">
+            <Constraint ID="ELR-049">
+               <Description>[The value of OBX-14.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of OBX-14.1 SHALL be '0000'.]</Description>
+               <Assertion>
+                  <OR>
+                     <Format Path="14[1].1[1]"
+                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                     <PlainText IgnoreCase="false" Path="14[1].1[1]" Text="0000"/>
+                  </OR>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-052">
+               <Description>The value of OBX-19.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="19[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="OBX_PHLIP">
+               <Description>OBX-3, OBX-2 and OBX-5 SHALL be a valid combination for the PHLIP program</Description>
+               <Assertion>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.PHLIP_OBX"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="SPM_ELR">
+            <Constraint ID="ELR-060">
+               <Description>The value of SPM-18.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="18[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-054">
+               <Description>The value of SPM-1 SHALL be '1'.</Description>
                <Assertion>
                   <PlainText IgnoreCase="false" Path="1[1]" Text="1"/>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-055">
+               <Description>[The value of SPM-17.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of SPM-17.1 SHALL be '0000'.]</Description>
+               <Assertion>
+                  <OR>
+                     <Format Path="17[1].1[1]"
+                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                     <PlainText IgnoreCase="false" Path="17[1].1[1]" Text="0000"/>
+                  </OR>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-058">
+               <Description>[The value of SPM-17.2 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of SPM-17.2 SHALL be '0000'.]</Description>
+               <Assertion>
+                  <OR>
+                     <Format Path="17[1].2[1]"
+                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                     <PlainText IgnoreCase="false" Path="17[1].2[1]" Text="0000"/>
+                  </OR>
                </Assertion>
             </Constraint>
          </ByID>
@@ -1383,39 +1801,6 @@
                <Assertion>
                   <Format Path="22[1].1[1]"
                           Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12})((\x2D|\x2B)\d{4})$"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="ORC_ELR">
-            <Constraint ID="ELR-034">
-               <Description>The value of ORC-1 SHALL be 'RE'.</Description>
-               <Assertion>
-                  <PlainText IgnoreCase="false" Path="1[1]" Text="RE"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="OBX_ELR_Flu-2">
-            <Constraint ID="ELR-049">
-               <Description>[The value of OBX-14.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of OBX-14.1 SHALL be '0000'.]</Description>
-               <Assertion>
-                  <OR>
-                     <Format Path="14[1].1[1]"
-                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
-                     <PlainText IgnoreCase="false" Path="14[1].1[1]" Text="0000"/>
-                  </OR>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-052">
-               <Description>The value of OBX-19.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
-               <Assertion>
-                  <Format Path="19[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="OBX_PHLIP">
-               <Description>OBX-3, OBX-2 and OBX-5 SHALL be a valid combination for the PHLIP program</Description>
-               <Assertion>
-                  <Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.PHLIP_OBX"/>
                </Assertion>
             </Constraint>
          </ByID>
@@ -1478,16 +1863,42 @@
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="SFT_ELR">
-            <Constraint ID="ELR-023">
-               <Description>The value of SFT-6.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
+         <ByID ID="NK1_ELR">
+            <Constraint ID="ELR-033">
+               <Description>The value of NK1-1 SHALL be valued sequentially starting with the value '1'.</Description>
                <Assertion>
-                  <Format Path="6[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                  <SetID Path="1[1]"/>
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="PID_ELR">
+         <ByID ID="OBX_ELR_VPD">
+            <Constraint ID="ELR-049">
+               <Description>[The value of OBX-14.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of OBX-14.1 SHALL be '0000'.]</Description>
+               <Assertion>
+                  <OR>
+                     <Format Path="14[1].1[1]"
+                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
+                     <PlainText IgnoreCase="false" Path="14[1].1[1]" Text="0000"/>
+                  </OR>
+               </Assertion>
+            </Constraint>
+            <Constraint ID="ELR-052">
+               <Description>The value of OBX-19.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
+               <Assertion>
+                  <Format Path="19[1].1[1]"
+                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="NTE_ELR">
+            <Constraint ID="ELR-053">
+               <Description>The value of NTE-1 SHALL be valued sequentially starting with the value '1'.</Description>
+               <Assertion>
+                  <SetID Path="1[1]"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="PID_ELR_Flu-1">
             <Constraint ID="ELR-026">
                <Description>The value of PID-7.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
                <Assertion>
@@ -1516,155 +1927,9 @@
                </Assertion>
             </Constraint>
          </ByID>
-         <ByID ID="PV1_ELR">
-            <Constraint ID="ELR-030">
-               <Description>The value of PV1-1 SHALL be '1'.</Description>
-               <Assertion>
-                  <AND>
-                     <Presence Path="1[1]"/>
-                     <PlainText IgnoreCase="false" Path="1[1]" Text="1"/>
-                  </AND>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-031">
-               <Description>The value of PV1-44.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
-               <Assertion>
-                  <Format Path="44[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-032">
-               <Description>The value of PV1-45.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.</Description>
-               <Assertion>
-                  <Format Path="45[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="OBX_ELR_Flu-1">
-            <Constraint ID="ELR-049">
-               <Description>[The value of OBX-14.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of OBX-14.1 SHALL be '0000'.]</Description>
-               <Assertion>
-                  <OR>
-                     <Format Path="14[1].1[1]"
-                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
-                     <PlainText IgnoreCase="false" Path="14[1].1[1]" Text="0000"/>
-                  </OR>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-052">
-               <Description>The value of OBX-19.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
-               <Assertion>
-                  <Format Path="19[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="OBX_PHLIP">
-               <Description>OBX-3, OBX-2 and OBX-5 SHALL be a valid combination for the PHLIP program</Description>
-               <Assertion>
-                  <Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.PHLIP_OBX"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="NK1_ELR">
-            <Constraint ID="ELR-033">
-               <Description>The value of NK1-1 SHALL be valued sequentially starting with the value '1'.</Description>
-               <Assertion>
-                  <SetID Path="1[1]"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="OBX_ELR_VPD">
-            <Constraint ID="ELR-049">
-               <Description>[The value of OBX-14.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of OBX-14.1 SHALL be '0000'.]</Description>
-               <Assertion>
-                  <OR>
-                     <Format Path="14[1].1[1]"
-                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
-                     <PlainText IgnoreCase="false" Path="14[1].1[1]" Text="0000"/>
-                  </OR>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-052">
-               <Description>The value of OBX-19.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
-               <Assertion>
-                  <Format Path="19[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="OBX_ELR">
-            <Constraint ID="ELR-049">
-               <Description>[The value of OBX-14.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of OBX-14.1 SHALL be '0000'.]</Description>
-               <Assertion>
-                  <OR>
-                     <Format Path="14[1].1[1]"
-                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
-                     <PlainText IgnoreCase="false" Path="14[1].1[1]" Text="0000"/>
-                  </OR>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-052">
-               <Description>The value of OBX-19.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
-               <Assertion>
-                  <Format Path="19[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="SPM_ELR">
-            <Constraint ID="ELR-060">
-               <Description>The value of SPM-18.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$'.</Description>
-               <Assertion>
-                  <Format Path="18[1].1[1]"
-                          Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8})((\x2D|\x2B)\d{4})?$"/>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-054">
-               <Description>The value of SPM-1 SHALL be '1'.</Description>
-               <Assertion>
-                  <PlainText IgnoreCase="false" Path="1[1]" Text="1"/>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-055">
-               <Description>[The value of SPM-17.1 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of SPM-17.1 SHALL be '0000'.]</Description>
-               <Assertion>
-                  <OR>
-                     <Format Path="17[1].1[1]"
-                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
-                     <PlainText IgnoreCase="false" Path="17[1].1[1]" Text="0000"/>
-                  </OR>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-058">
-               <Description>[The value of SPM-17.2 SHALL be formatted with '^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$'.] OR [The value of SPM-17.2 SHALL be '0000'.]</Description>
-               <Assertion>
-                  <OR>
-                     <Format Path="17[1].2[1]"
-                             Regex="^(\d{14}\.\d{1,4}|\d{14}|\d{12}|\d{10}|\d{8}|\d{6}|\d{4})((\x2D|\x2B)\d{4})?$"/>
-                     <PlainText IgnoreCase="false" Path="17[1].2[1]" Text="0000"/>
-                  </OR>
-               </Assertion>
-            </Constraint>
-         </ByID>
       </Segment>
       <Group>
-         <ByID ID="5e8e416316408b128ab704a4">
-            <Constraint ID="ELR-027">
-               <Description>If PID-7 (Date/Time of Birth) is not valued, then an OBX segment associated with the SPM segment SHALL be present to report patient age at specimen collection.</Description>
-               <Assertion>
-                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_027"/>
-               </Assertion>
-            </Constraint>
-            <Constraint ID="ELR-064">
-               <Description>Specimen (Specimen Group) SHALL be present in at least one occurrence of one Order_Observation Group.</Description>
-               <Assertion>
-                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_064"/>
-               </Assertion>
-            </Constraint>
-         </ByID>
-         <ByID ID="5e8e416316408b128ab7048e"/>
-         <ByID ID="5e8e416316408b128ab704a2">
+         <ByID ID="5f63ae44b2663fb79381107b">
             <Constraint ID="ELR-035">
                <Description>FORALL[The value of ORC.2.1 (Entity Identifier) SHALL be equal to the value of OBR.2.1 (Entity Identifier).][The value of ORC.2.2 (Namespace ID) SHALL be equal to the value of OBR.2.2 (Namespace ID).][The value of ORC.2.3 (Universal ID) SHALL be equal to the value of OBR.2.3 (Universal ID).][The value of ORC.2.4 (Universal ID Type) SHALL be equal to the value of OBR.2.4 (Universal ID Type).]</Description>
                <Assertion>
@@ -1739,8 +2004,14 @@
                   </OR>
                </Assertion>
             </Constraint>
+            <Constraint ID="OBX-4 Presence">
+               <Description>If there are multiple OBX segments associated with the same OBR segment that have the same OBX-3 (Observation Identifier) values for (OBX-3.1 (Identifier) + OBX-3.3 (Name of Coding System)) or (OBX-3.4 (Alternate Identifier) + OBX-3.6 (Name of Alternate Coding System)), OBX-4 SHALL be present.</Description>
+               <Assertion>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.OBX_4"/>
+               </Assertion>
+            </Constraint>
          </ByID>
-         <ByID ID="5e8e416316408b128ab7049b">
+         <ByID ID="5f63ae44b2663fb793811074">
             <Constraint ID="ELR-048">
                <Description>The value of OBX.1 (Set ID - OBX) SHALL be valued sequentially starting with the value '1'.</Description>
                <Assertion>
@@ -1748,6 +2019,15 @@
                </Assertion>
             </Constraint>
          </ByID>
+         <ByID ID="5f63ae44b2663fb79381107d">
+            <Constraint ID="ELR-064">
+               <Description>Specimen (Specimen Group) SHALL be present in at least one occurrence of one Order_Observation Group.</Description>
+               <Assertion>
+                  <Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_064"/>
+               </Assertion>
+            </Constraint>
+         </ByID>
+         <ByID ID="5f63ae44b2663fb793811067"/>
       </Group>
       <Message>
          <ByID ID="5d5d68ce6dc12f5d54495e15">

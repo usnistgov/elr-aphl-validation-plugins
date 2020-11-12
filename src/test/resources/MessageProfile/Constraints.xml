@@ -176,6 +176,13 @@
 						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.OBX_4"/>
 					</Assertion>
 				</Constraint>		
+				
+				<Constraint ID="OBX-4 OR">
+					<Description>If there are multiple OBX segments associated with the same OBR segment that have the same OBX-3 (Observation Identifier) values for (OBX-3.1 (Identifier) + OBX-3.3 (Name of Coding System)) or (OBX-3.4 (Alternate Identifier) + OBX-3.6 (Name of Alternate Coding System)), OBX-4 SHALL be present.</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.OBX_4_OR"/>
+					</Assertion>
+				</Constraint>	
 			</ByID>		
 		</Group>
 		<Message>

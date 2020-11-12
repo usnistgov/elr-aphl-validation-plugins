@@ -2,6 +2,7 @@ package gov.nist.hit.elr.aphl.plugin.extra;
 
 import java.io.IOException;
 
+import gov.nist.hit.elr.aphl.plugin.extra.context.PHLIP;
 import hl7.v2.instance.Element;
 
 public class PHLIP_MSH_4 extends MSH_4 {

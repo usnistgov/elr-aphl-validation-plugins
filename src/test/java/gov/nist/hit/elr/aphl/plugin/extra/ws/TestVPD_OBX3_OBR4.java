@@ -54,7 +54,7 @@ public class TestVPD_OBX3_OBR4 {
 
   @BeforeClass
   public static void setUp() {
-    testObject = new VPD_OBX3_OBR4();
+    testObject = new VPD_OBX3_OBR4_ws();
     OBX3s = new ArrayList<ComplexCodedElement>();
   }
 
@@ -66,7 +66,7 @@ public class TestVPD_OBX3_OBR4 {
 
   @Test
   public void testCheckSuccess()
-      throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
+      throws Exception {
     // OBX-3 = 12237-4 LN & OBR-4 = 12237-4 LN
 
     ComplexCodedElement OBX3_identifier = new ComplexCodedElement("12237-4", "LN", "", "");
@@ -98,7 +98,7 @@ public class TestVPD_OBX3_OBR4 {
 
   @Test
   public void testCheckFail()
-      throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
+      throws Exception {
     // OBX-3 = 00000-0 LN & OBR-4 = 12237-4 LN
 
     ComplexCodedElement OBX3_identifier = new ComplexCodedElement("00000-0", "LN", "", "");
@@ -133,7 +133,7 @@ public class TestVPD_OBX3_OBR4 {
 
   @Test
   public void testCheckWarning()
-      throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
+      throws Exception {
     // use case : OBX-3 in in "Tests", but OBR-4 is associated to another OBX-3
     // OBX-3 = 11483-5 LN & OBR-4 = 12237-4 LN
 

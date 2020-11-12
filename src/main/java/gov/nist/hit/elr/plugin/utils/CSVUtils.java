@@ -14,7 +14,7 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.log4j.Logger;
 
-import gov.nist.hit.elr.aphl.plugin.extra.VPD;
+import gov.nist.hit.elr.aphl.plugin.extra.context.VPD;
 
 public class CSVUtils {
 

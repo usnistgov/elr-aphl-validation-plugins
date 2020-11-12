@@ -204,13 +204,13 @@ public class TestPHLIP_OBX3_OBR4 {
 
     OBX3s.removeAll(OBX3s);
 
-    OBX3_identifier = new ComplexCodedElement("86317-5", "LN", "", "");
+    OBX3_identifier = new ComplexCodedElement("81326-1", "LN", "", "");
     OBX3s.add(OBX3_identifier);
-    OBX3_alternate = new ComplexCodedElement("", "", "86317-5", "LN");
+    OBX3_alternate = new ComplexCodedElement("", "", "81326-1", "LN");
     OBX3s.add(OBX3_alternate);
-    OBX3_identifier_2 = new ComplexCodedElement("86317-5", "LN", "ABC", "L");
+    OBX3_identifier_2 = new ComplexCodedElement("81326-1", "LN", "ABC", "L");
     OBX3s.add(OBX3_identifier_2);
-    OBX3_alternate_2 = new ComplexCodedElement("ABC", "L", "86317-5", "LN");
+    OBX3_alternate_2 = new ComplexCodedElement("ABC", "L", "81326-1", "LN");
     OBX3s.add(OBX3_alternate_2);
 
     OBR4 = new ComplexCodedElement("12237-4", "LN", "", "");

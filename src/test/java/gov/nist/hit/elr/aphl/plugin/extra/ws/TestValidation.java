@@ -18,13 +18,13 @@ public class TestValidation {
   @Test
   public void testValidation() throws Exception {
 
-    String globalFolder = "/WS";
+    String globalFolder = "/PHLIP";
 
     String profiles = StringUtils.join(globalFolder, "/Profile.xml");
     String constraints = StringUtils.join(globalFolder, "/Constraints.xml");
     String valueSets = StringUtils.join(globalFolder, "/ValueSets.xml");
 
-    String message1FileName = "WS/Message.txt";
+    String message1FileName = "PHLIP/Message.txt";
 
     SyncHL7Validator validator = Util.createValidator(profiles, constraints, null, valueSets);
     ClassLoader classLoader = getClass().getClassLoader();
@@ -42,11 +42,11 @@ public class TestValidation {
         for (Entry entry : entries) {
           switch (entry.getClassification()) {
             case "Error":
-              // Util.printEntry(entry);
+              Util.printEntry(entry);
               errors++;
               break;
             case "Alert":
-              // Util.printEntry(entry);
+            //  Util.printEntry(entry);
               alerts++;
               break;
           }

@@ -2,7 +2,7 @@ package gov.nist.hit.elr.aphl.plugin.extra.csv;
 
 import java.io.IOException;
 
-import gov.nist.hit.elr.aphl.plugin.extra.ARLN;
+import gov.nist.hit.elr.aphl.plugin.extra.context.ARLN;
 import hl7.v2.instance.Element;
 
 public class ARLN_OBX3_csv extends OBX3_OBR4_csv {

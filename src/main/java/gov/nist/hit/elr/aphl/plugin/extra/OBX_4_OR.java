@@ -4,18 +4,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import gov.nist.hit.elr.plugin.utils.CodedElement;
-import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import hl7.v2.instance.Element;
 import hl7.v2.instance.Query;
 import hl7.v2.instance.Simple;
 import scala.collection.Iterator;
 import scala.collection.immutable.List;
 
-public class OBX_4 {
+public class OBX_4_OR {
 
   /**
    * OBX-4 condition predicate/conformance statement : If there are multiple OBX segments associated
-   * with the same OBR segment that have the same OBX-3 values for (OBX-3.1 and OBX-3.3) and (OBX-3.4
+   * with the same OBR segment that have the same OBX-3 values for (OBX-3.1 and OBX-3.3) or (OBX-3.4
    * and OBX-3.6).
    */
 
@@ -32,7 +31,7 @@ public class OBX_4 {
       // no OBX, we can move on, no check performed
       return messages;
     }
-    java.util.List<ComplexCodedElement> _OBX3s = new ArrayList<ComplexCodedElement>();
+    java.util.List<CodedElement> _OBX3s = new ArrayList<CodedElement>();
     Iterator<Element> it = OBXList.iterator();
     while (it.hasNext()) {
 
@@ -50,15 +49,13 @@ public class OBX_4 {
 
       CodedElement identifierOBX3 = new CodedElement(OBX3_1, OBX3_3);
       CodedElement alternateOBX3 = new CodedElement(OBX3_4, OBX3_6);
-      
-      ComplexCodedElement obsIdentifier = new ComplexCodedElement(identifierOBX3, alternateOBX3);
-      ComplexCodedElement fobsIdentifier = new ComplexCodedElement(alternateOBX3, identifierOBX3);
 
-      if (!identifierOBX3.isEmpty() || !alternateOBX3.isEmpty()) {
-        _OBX3s.add(obsIdentifier);
-        _OBX3s.add(fobsIdentifier); // the order of identifier/alternate identifier does not matter
+      if (!identifierOBX3.isEmpty()) {
+        _OBX3s.add(identifierOBX3);
       }
-
+      if (!alternateOBX3.isEmpty()) {
+        _OBX3s.add(alternateOBX3);
+      }
 
     }
     Iterator<Element> it2 = OBXList.iterator();
@@ -78,22 +75,22 @@ public class OBX_4 {
 
       CodedElement identifierOBX3 = new CodedElement(OBX3_1, OBX3_3);
       CodedElement alternateOBX3 = new CodedElement(OBX3_4, OBX3_6);
-      
-      ComplexCodedElement obsIdentifier = new ComplexCodedElement(identifierOBX3, alternateOBX3);
 
       // OBX-4
       List<Simple> OBX4List = Query.queryAsSimple(OBX, "4[1]").get();
       String OBX4 = OBX4List.size() > 0 ? OBX4List.apply(0).value().raw() : "";
 
-      if (!identifierOBX3.isEmpty() || !alternateOBX3.isEmpty()) {
-        messages.addAll(check(_OBX3s, obsIdentifier, OBX4));
+      if (!identifierOBX3.isEmpty()) {
+        messages.addAll(check(_OBX3s, identifierOBX3, OBX4));
       }
-
+      if (!alternateOBX3.isEmpty()) {
+        messages.addAll(check(_OBX3s, alternateOBX3, OBX4));
+      }
     }
     return messages;
   }
 
-  public java.util.List<String> check(java.util.List<ComplexCodedElement> obx3s, ComplexCodedElement obx3,
+  public java.util.List<String> check(java.util.List<CodedElement> obx3s, CodedElement obx3,
       String obx4) {
     java.util.List<String> messages = new java.util.ArrayList<String>();
     int count = Collections.frequency(obx3s, obx3);

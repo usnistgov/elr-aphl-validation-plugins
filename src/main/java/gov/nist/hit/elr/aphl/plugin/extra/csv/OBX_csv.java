@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
+import gov.nist.hit.elr.aphl.plugin.extra.OBX;
 import gov.nist.hit.elr.plugin.utils.CSVUtils;
 import gov.nist.hit.elr.plugin.utils.CodedElement;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
@@ -12,7 +13,7 @@ import hl7.v2.instance.Query;
 import hl7.v2.instance.Simple;
 import scala.collection.immutable.List;
 
-public abstract class OBX_csv {
+public abstract class OBX_csv implements OBX {
 
   public abstract String getFOLDER();
 

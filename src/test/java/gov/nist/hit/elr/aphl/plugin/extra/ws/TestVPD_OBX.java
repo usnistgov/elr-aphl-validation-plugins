@@ -24,12 +24,12 @@ public class TestVPD_OBX {
 
   @BeforeClass
   public static void setUp() {
-    testObject = new VPD_OBX();
+    testObject = new VPD_OBX_ws();
   }
 
   @Test
   public void testCheckOBX3_OBX2_Success()
-      throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
+      throws Exception {
     // OBX-3 = PRT020/PHINQUESTION
     // OBX-2 = CWE
     OBX3 = new ComplexCodedElement("PRT020", "PHINQUESTION", "", "");
@@ -223,7 +223,7 @@ public class TestVPD_OBX {
 
   @Test
   public void testCheckOBX3_OBX2_Fail()
-      throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
+      throws Exception {
     // OBX-3 = PLT641 / PLT
     // OBX-2 = ED
     OBX3 = new ComplexCodedElement("PLT641", "PLT", "", "");
@@ -279,7 +279,7 @@ public class TestVPD_OBX {
 
   @Test
   public void testCheckOBX3_OBX5_CWE_Success()
-      throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
+      throws Exception {
     // OBX-3 = PLT355/PLT
     // OBX-2 = CWE
     // OBX-5 = 260373001 / SCT
@@ -401,7 +401,7 @@ public class TestVPD_OBX {
 
   @Test
   public void testCheckOBX3_OBX5_CWE_Fail()
-      throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
+      throws Exception {
     // OBX-3 = PLT355/PLT
     // OBX-2 = CWE
     // OBX-5 = UNK / NULLFL

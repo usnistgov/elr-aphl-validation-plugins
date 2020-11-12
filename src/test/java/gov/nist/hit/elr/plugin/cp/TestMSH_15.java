@@ -70,6 +70,10 @@ public class TestMSH_15 {
               Util.printEntry(entry);
               alerts++;
               break;
+            case "Spec Error":
+              Util.printEntry(entry);
+              alerts++;
+              break;
           }
         }
       }

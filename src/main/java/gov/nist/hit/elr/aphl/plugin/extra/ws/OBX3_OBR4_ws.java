@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import gov.nist.hit.elr.aphl.domain.Observation;
 import gov.nist.hit.elr.aphl.domain.Program;
 import gov.nist.hit.elr.aphl.domain.Test;
+import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4;
 import gov.nist.hit.elr.plugin.utils.CodedElement;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import gov.nist.hit.elr.plugin.utils.WSUtils;
@@ -19,7 +20,7 @@ import hl7.v2.instance.Simple;
 import scala.collection.Iterator;
 import scala.collection.immutable.List;
 
-public abstract class OBX3_OBR4_ws {
+public abstract class OBX3_OBR4_ws implements OBX3_OBR4 {
 
   private static Logger logger = Logger.getLogger(OBX3_OBR4_ws.class.getName());
 

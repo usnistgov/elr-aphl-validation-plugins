@@ -3,7 +3,7 @@ package gov.nist.hit.elr.aphl.plugin.extra.csv;
 import java.io.IOException;
 
 import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4;
-import gov.nist.hit.elr.aphl.plugin.extra.PHLIP;
+import gov.nist.hit.elr.aphl.plugin.extra.context.PHLIP;
 import hl7.v2.instance.Element;
 
 public class PHLIP_OBX3_OBR4_csv extends OBX3_OBR4_csv {
