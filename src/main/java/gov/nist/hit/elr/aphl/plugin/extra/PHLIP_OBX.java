@@ -1,17 +1,30 @@
 package gov.nist.hit.elr.aphl.plugin.extra;
 
+import java.io.IOException;
 import java.util.List;
 
+import gov.nist.hit.elr.aphl.plugin.extra.csv.PHLIP_OBX_csv;
 import gov.nist.hit.elr.aphl.plugin.extra.ws.PHLIP_OBX_ws;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
+import gov.nist.hit.elr.plugin.utils.PropertiesUtils;
 import hl7.v2.instance.Element;
 
 public class PHLIP_OBX implements OBX {
 
   private OBX datasource;
-  
-  public PHLIP_OBX() {
-    datasource = new PHLIP_OBX_ws();
+
+  public PHLIP_OBX() throws IOException {
+    String ds = (String) PropertiesUtils.getInstance().get("PHLIP_OBX");
+    switch(ds) {
+      case "CVS":
+        datasource = new PHLIP_OBX_csv();
+        break;
+      case "WS":
+        datasource = new PHLIP_OBX_ws();
+        break;
+      default:
+        datasource = new PHLIP_OBX_csv();
+    }
   }
 
   @Override

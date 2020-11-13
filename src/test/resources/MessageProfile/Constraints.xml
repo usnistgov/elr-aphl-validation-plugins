@@ -192,7 +192,14 @@
 					<Assertion>
 						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_040"/>
 					</Assertion>
-				</Constraint>			
+				</Constraint>		
+				
+				<Constraint ID="Candida-OBX3">
+					<Description>Candida OBX3</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.CandidaOBX3"/>
+					</Assertion>
+				</Constraint>		
 			</ByID>
 		</Message>
 	</Constraints>

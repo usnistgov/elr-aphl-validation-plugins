@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.nist.hit.elr</groupId>
-	<artifactId>elr-r1-validation-plugins</artifactId>
+	<artifactId>elr-r1-validation-plugins-daart</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<build>
 		<pluginManagement>
@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>gov.nist.healthcare</groupId>
 			<artifactId>hl7-v2-validation-plugin-utils</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency> 
 		<!-- junit -->
 		<dependency>
