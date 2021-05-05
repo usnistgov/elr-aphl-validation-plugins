@@ -72,6 +72,7 @@
 					<Case Value="XAD" Datatype="XAD" />
 					<Case Value="TS" Datatype="TS" />
 					<Case Value="NM" Datatype="NM" />
+					<Case Value="CWE" Datatype="CWE" />
 				</Mapping>
 			</DynamicMapping>
 			<Field Name="Set ID - OBX" Usage="O" Datatype="SI" MinLength="0" MaxLength="4" ConfLength="NA" Min="0" Max="1" ItemNo="00569" />
