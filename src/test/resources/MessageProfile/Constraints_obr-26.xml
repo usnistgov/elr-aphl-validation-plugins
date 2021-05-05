@@ -1,0 +1,30 @@
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd" UUID="5d4c59d984aecbc03a7d6e25">
+	<MetaData Name="ORU R01" OrgName="No Org Info" Version="No Version Info" Date="No Date Info" Status="Draft" />
+	<Predicates>
+		<Datatype />
+		<Segment>
+		</Segment>
+		<Group />
+		<Message />
+	</Predicates>
+	<Constraints>
+		<Datatype>
+
+		</Datatype>
+		<Segment>
+
+		</Segment>
+		<Group>
+			<ByID ID="PATIENT_RESULT">
+				<Constraint ID="OBR_26">
+					<Description>OBR_26</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.OBR_26"/>
+					</Assertion>
+				</Constraint>		
+			</ByID>		
+		</Group>
+		<Message>
+		</Message>
+	</Constraints>
+</ConformanceContext>
