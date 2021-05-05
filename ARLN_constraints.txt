@@ -1,0 +1,4760 @@
+<Constraint ID="OBX_225-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '225-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="225-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_73625-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '73625-6', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="73625-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_87734-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '87734-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="87734-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_12-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '12-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="12-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT733">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT733', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT733" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT733_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT733', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT733" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_73648-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '73648-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="73648-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT610">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT610', then the value of OBX-2[1] (Value Type) SHALL be 'DT'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT610" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="DT" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_142-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '142-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="142-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7008-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7008-6', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7008-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_32379-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '32379-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="32379-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_31037-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '31037-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="31037-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_421-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '421-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="421-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_41671-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '41671-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="41671-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85930-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85930-6', then the value of OBX-2[1] (Value Type) SHALL be 'DT'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85930-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="DT" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35774-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35774-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35774-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_73647-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '73647-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="73647-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT609">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT609', then the value of OBX-2[1] (Value Type) SHALL be 'DT'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT609" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="DT" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT608">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT608', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT608" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT608_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT608', then the value of OBX-5[1] () SHALL come from the 'yes no indicator' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT608" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="yes no indicator" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7019-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7019-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7019-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT605">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT605', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT605" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT605_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT605', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT605" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT604">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT604', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT604" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT604_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT604', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT604" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT603">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT603', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT603" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT603_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT603', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT603" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7057-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7057-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7057-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2069">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2069', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2069" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2069_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2069', then the value of OBX-5[1] () SHALL come from the 'carbapenemase phenotypic results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2069" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="carbapenemase phenotypic results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_226-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '226-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="226-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35800-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35800-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35800-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_249-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '249-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="249-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_76691-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '76691-5', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="76691-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_73624-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '73624-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="73624-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_90980-4">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '90980-4', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="90980-4" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_89264-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '89264-6', then the value of OBX-2[1] (Value Type) SHALL be 'DTM'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="89264-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="DTM" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6985-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6985-6', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6985-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6985-6_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6985-6', then the value of OBX-5[1] () SHALL come from the 'beta-lac results for gc' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6985-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="beta-lac results for gc" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_335-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '335-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="335-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_29553-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '29553-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="29553-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6644-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6644-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6644-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_8272-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '8272-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="8272-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_25653-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '25653-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="25653-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_58711-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '58711-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="58711-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7044-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7044-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7044-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_336-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '336-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="336-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35775-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35775-6', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35775-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_45-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '45-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="45-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_87735-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '87735-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="87735-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35809-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35809-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35809-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_54176-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '54176-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="54176-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_42352-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '42352-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="42352-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6982-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6982-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6982-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_86220-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '86220-1', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="86220-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_86220-1_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '86220-1', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="86220-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_280-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '280-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="280-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7002-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7002-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7002-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_33-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '33-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="33-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35832-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35832-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35832-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_509-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '509-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="509-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35769-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35769-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35769-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_44-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '44-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="44-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85824-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85824-1', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85824-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85824-1_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85824-1', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85824-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35659-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35659-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35659-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_15378-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '15378-3', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="15378-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_15378-3_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '15378-3', then the value of OBX-5[1] () SHALL come from the 'arln microorganism' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="15378-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="arln microorganism" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_90002-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '90002-7', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="90002-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_90002-7_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '90002-7', then the value of OBX-5[1] () SHALL come from the 'c auris culture result' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="90002-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="c auris culture result" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_86221-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '86221-9', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="86221-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_86221-9_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '86221-9', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="86221-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_205-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '205-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="205-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_412-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '412-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="412-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_496-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '496-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="496-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_41852-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '41852-5', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="41852-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_41852-5_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '41852-5', then the value of OBX-5[1] () SHALL come from the 'arln microorganism' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="41852-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="arln microorganism" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85500-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85500-7', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85500-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85500-7_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85500-7', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85500-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_32-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '32-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="32-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6995-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6995-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6995-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35810-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35810-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35810-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_508-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '508-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="508-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_81658-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '81658-7', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="81658-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_54187-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '54187-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="54187-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85825-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85825-8', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85825-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85825-8_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85825-8', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85825-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_20396-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '20396-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="20396-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_133-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '133-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="133-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6980-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6980-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6980-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_72893-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '72893-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="72893-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2242">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2242', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2242" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_21367-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '21367-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="21367-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_267-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '267-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="267-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_86930-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '86930-5', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="86930-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_86930-5_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '86930-5', then the value of OBX-5[1] () SHALL come from the 'carbapenemase phenotypic results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="86930-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="carbapenemase phenotypic results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2241">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2241', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2241" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2241_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2241', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2241" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2240">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2240', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2240" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2240_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2240', then the value of OBX-5[1] () SHALL come from the 'yes no indicator' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2240" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="yes no indicator" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85381-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85381-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85381-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_90003-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '90003-5', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="90003-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_90003-5_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '90003-5', then the value of OBX-5[1] () SHALL come from the 'acinetobacter culture result' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="90003-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="acinetobacter culture result" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_206-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '206-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="206-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_80-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '80-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="80-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_42354-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '42354-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="42354-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_413-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '413-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="413-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_18924-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '18924-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="18924-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_25452-4">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '25452-4', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="25452-4" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85501-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85501-5', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85501-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85501-5_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85501-5', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85501-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_82314-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '82314-6', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="82314-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_82314-6_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '82314-6', then the value of OBX-5[1] () SHALL come from the 'yes no indicator' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="82314-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="yes no indicator" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_108-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '108-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="108-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_33333-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '33333-6', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="33333-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2239">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2239', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2239" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2238">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2238', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2238" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT698">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT698', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT698" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85498-4">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85498-4', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85498-4" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85498-4_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85498-4', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85498-4" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2237">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2237', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2237" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT697">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT697', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT697" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2236">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2236', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2236" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT696">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT696', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT696" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2114">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2114', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2114" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2114_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2114', then the value of OBX-5[1] () SHALL come from the 'clinical sample or isolate' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2114" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="clinical sample or isolate" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT695">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT695', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT695" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT694">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT694', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT694" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT693">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT693', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT693" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT692">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT692', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT692" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT691">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT691', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT691" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT690">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT690', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT690" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35770-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35770-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35770-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_134-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '134-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="134-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_45187-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '45187-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="45187-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_87620-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '87620-1', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="87620-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_87620-1_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '87620-1', then the value of OBX-5[1] () SHALL come from the 'c auris pcr result' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="87620-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="c auris pcr result" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_77981-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '77981-9', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="77981-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_19156-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '19156-9', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="19156-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_19156-9_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '19156-9', then the value of OBX-5[1] () SHALL come from the 'cre ast method' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="19156-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre ast method" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT689">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT689', then the value of OBX-2[1] (Value Type) SHALL be 'DTM'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT689" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="DTM" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6653-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6653-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6653-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT688">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT688', then the value of OBX-2[1] (Value Type) SHALL be 'DTM'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT688" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="DTM" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT687">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT687', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT687" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT685">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT685', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT685" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85826-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85826-6', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85826-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85826-6_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85826-6', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85826-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT684">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT684', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT684" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT683">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT683', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT683" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT682">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT682', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT682" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT682_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT682', then the value of OBX-5[1] () SHALL come from the 'healthcare facility type' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT682" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="healthcare facility type" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT681">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT681', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT681" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT681_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT681', then the value of OBX-5[1] () SHALL come from the 'identifier type' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT681" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="identifier type" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_42355-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '42355-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="42355-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT680">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT680', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT680" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_268-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '268-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="268-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85427-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85427-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85427-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_73982-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '73982-1', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="73982-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_73982-1_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '73982-1', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="73982-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6989-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6989-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6989-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_31043-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '31043-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="31043-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7026-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7026-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7026-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_185-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '185-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="185-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT679">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT679', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT679" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT678">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT678', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT678" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT677">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT677', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT677" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT677_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT677', then the value of OBX-5[1] () SHALL come from the 'yes no unknown' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT677" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="yes no unknown" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT555">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT555', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT555" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT555_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT555', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT555" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT676">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT676', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT676" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT676_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT676', then the value of OBX-5[1] () SHALL come from the 'yes no unknown' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT676" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="yes no unknown" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT675">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT675', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT675" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT675_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT675', then the value of OBX-5[1] () SHALL come from the 'reason for screening' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT675" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="reason for screening" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT674">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT674', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT674" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT674_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT674', then the value of OBX-5[1] () SHALL come from the 'index case species' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT674" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="index case species" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT673">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT673', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT673" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT673_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT673', then the value of OBX-5[1] () SHALL come from the 'index case resistance gene' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT673" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="index case resistance gene" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85499-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85499-2', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85499-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85499-2_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85499-2', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85499-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT672">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT672', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT672" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85830-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85830-8', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85830-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85830-8_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85830-8', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85830-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT671">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT671', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT671" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT670">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT670', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT670" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6978-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6978-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6978-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_279-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '279-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="279-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6932-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6932-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6932-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_109-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '109-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="109-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT669">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT669', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT669" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT668">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT668', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT668" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT667">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT667', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT667" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT666">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT666', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT666" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6652-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6652-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6652-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT665">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT665', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT665" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT664">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT664', then the value of OBX-2[1] (Value Type) SHALL be one of [ST,CX].</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT664" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST,CX" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2202">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2202', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2202" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2202_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2202', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2202" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2201">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2201', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2201" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2201_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2201', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2201" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_555-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '555-3', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="555-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_555-3_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '555-3', then the value of OBX-5[1] () SHALL come from the 'arln microorganism' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="555-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="arln microorganism" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_42356-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '42356-6', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="42356-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35801-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35801-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35801-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_517-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '517-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="517-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_49617-4">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '49617-4', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="49617-4" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_49617-4_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '49617-4', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="49617-4" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_11502-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '11502-2', then the value of OBX-2[1] (Value Type) SHALL be 'ED'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="11502-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ED" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_18482-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '18482-0', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="18482-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7029-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7029-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7029-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_186-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '186-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="186-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT656">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT656', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT656" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT656_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT656', then the value of OBX-5[1] () SHALL come from the 'gc facility codes' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT656" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="gc facility codes" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT655">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT655', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT655" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_505-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '505-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="505-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6975-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6975-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6975-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6998-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6998-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6998-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35799-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35799-6', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35799-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_698-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '698-1', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="698-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_698-1_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '698-1', then the value of OBX-5[1] () SHALL come from the 'gc specimen quality' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="698-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="gc specimen quality" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT645">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT645', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT645" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT645_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT645', then the value of OBX-5[1] () SHALL come from the 'arln microorganism' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT645" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="arln microorganism" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7032-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7032-6', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7032-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT644">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT644', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT644" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT644_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT644', then the value of OBX-5[1] () SHALL come from the 'arln microorganism' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT644" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="arln microorganism" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT643">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT643', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT643" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT643_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT643', then the value of OBX-5[1] () SHALL come from the 'yes no unknown' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT643" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="yes no unknown" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_56031-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '56031-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="56031-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT642">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT642', then the value of OBX-2[1] (Value Type) SHALL be 'DT'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT642" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="DT" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7055-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7055-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7055-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT641">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT641', then the value of OBX-2[1] (Value Type) SHALL be 'TX'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT641" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="TX" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_43409-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '43409-2', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="43409-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_43409-2_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '43409-2', then the value of OBX-5[1] () SHALL come from the 'arln microorganism' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="43409-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="arln microorganism" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85828-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85828-2', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85828-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85828-2_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85828-2', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85828-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_53812-4">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '53812-4', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="53812-4" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_31041-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '31041-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="31041-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_516-5">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '516-5', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="516-5" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_6987-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '6987-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="6987-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7054-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7054-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7054-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_62237-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '62237-3', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="62237-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_62237-3_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '62237-3', then the value of OBX-5[1] () SHALL come from the 'carbapenemase phenotypic results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="62237-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="carbapenemase phenotypic results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2260">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2260', then the value of OBX-2[1] (Value Type) SHALL be 'CX'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2260" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CX" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_21612-7">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '21612-7', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="21612-7" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_35863-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '35863-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="35863-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_36-4">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '36-4', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="36-4" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT639">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT639', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT639" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT638">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT638', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT638" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_30525-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '30525-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="30525-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT633">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT633', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT633" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT633_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT633', then the value of OBX-5[1] () SHALL come from the 'jurisdiction phl codes for gc' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT633" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="jurisdiction phl codes for gc" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT632">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT632', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT632" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT632_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT632', then the value of OBX-5[1] () SHALL come from the 'phl - cre crpa' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT632" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="phl - cre crpa" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_76346-6">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '76346-6', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="76346-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_76346-6_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '76346-6', then the value of OBX-5[1] () SHALL come from the 'arln microorganism' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="76346-6" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="arln microorganism" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT631">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT631', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT631" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT631_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT631', then the value of OBX-5[1] () SHALL come from the 'arln regional labs' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT631" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="arln regional labs" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT630">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT630', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT630" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT630_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT630', then the value of OBX-5[1] () SHALL come from the 'gender' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT630" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="gender" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_141-2">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '141-2', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="141-2" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_504-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '504-1', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="504-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_13-3">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '13-3', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="13-3" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_77202-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '77202-0', then the value of OBX-2[1] (Value Type) SHALL be 'TX'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="77202-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="TX" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_420-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '420-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="420-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT2251">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT2251', then the value of OBX-2[1] (Value Type) SHALL be 'CX'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT2251" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CX" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85503-1">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85503-1', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85503-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_85503-1_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '85503-1', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="85503-1" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT628">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT628', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT628" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT627">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT627', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT627" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT627_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT627', then the value of OBX-5[1] () SHALL come from the 'cre pcr results' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT627" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr results" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT626">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT626', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT626" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT625">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT625', then the value of OBX-2[1] (Value Type) SHALL be 'ST'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT625" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="ST" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT624">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT624', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT624" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT624_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT624', then the value of OBX-5[1] () SHALL come from the 'cre phenotypic method' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT624" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre phenotypic method" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT623">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT623', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT623" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT623_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT623', then the value of OBX-5[1] () SHALL come from the 'cre ast method' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT623" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre ast method" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT622">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT622', then the value of OBX-2[1] (Value Type) SHALL be 'CWE'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT622" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="CWE" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_PLT622_vs ">
+<Description>If the value of OBX-3[1] (Observation Identifier) is 'PLT622', then the value of OBX-5[1] () SHALL come from the 'cre pcr method' value set.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="PLT622" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="PLT" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="5[1].1[1]" />
+<ValueSet ValueSetID="cre pcr method" Path="5[1]" BindingLocation="1" BindingStrength="R"/>
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_24-0">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '24-0', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="24-0" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_7016-9">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '7016-9', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="7016-9" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
+<Constraint ID="OBX_55343-8">
+<Description>If the value of OBX-3[1] (Observation Identifier) is '55343-8', then the value of OBX-2[1] (Value Type) SHALL be 'SN'.</Description>
+<Assertion>
+<IMPLY>
+<FORALL>
+<Presence Path="3[1].1[1]" />
+<PlainText Path="3[1].1[1]" Text="55343-8" IgnoreCase="false" />
+<Presence Path="3[1].3[1]" />
+<PlainText Path="3[1].3[1]" Text="LN" IgnoreCase="false" />
+</FORALL>
+<AND>
+<Presence Path="2[1]" />
+<StringList Path="2[1]" CSV="SN" IgnoreCase="false" />
+</AND>
+</IMPLY>
+</Assertion>
+</Constraint>
