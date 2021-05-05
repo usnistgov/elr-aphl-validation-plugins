@@ -54,7 +54,7 @@ public class ValueSets {
   }
 
   public Set<String> normalizeValueSetName(String valueSetName) {
-    // System.out.println(valueSetName);
+    System.out.println(valueSetName);
     Predicate<Resource> p1 =
         resource -> valueSetName.equalsIgnoreCase(resource.getResource().getName());
     Set<String> result = entry.stream().filter(p1).map(resource -> resource.getResource().getName())

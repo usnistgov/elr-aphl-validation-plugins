@@ -110,7 +110,7 @@ public class CSVUtils {
     parseValueSetsCSV(folder, valueSetsCsv);
   }
 
-  private void parseValueSetsCSV(String folder, String valueSetsCsv) throws IOException {
+  protected void parseValueSetsCSV(String folder, String valueSetsCsv) throws IOException {
     BufferedReader reader = new BufferedReader(new InputStreamReader(
         CSVUtils.class.getResourceAsStream("/" + folder + "/" + valueSetsCsv)));
 
@@ -136,7 +136,7 @@ public class CSVUtils {
     reader.close();
   }
 
-  private void parseTestCSV(String folder, String testCsv) throws IOException {
+  protected void parseTestCSV(String folder, String testCsv) throws IOException {
 
     BufferedReader reader = new BufferedReader(
         new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + testCsv)));

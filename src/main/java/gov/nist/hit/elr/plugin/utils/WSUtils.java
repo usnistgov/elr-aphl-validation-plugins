@@ -116,7 +116,7 @@ public class WSUtils {
 
   public List<Test> getTests(Program program)
       throws IOException, InterruptedException, ClassNotFoundException, URISyntaxException {
-    String json = sendGET(WebService.APHL_WS, program, "tests");
+    String json = sendGET(WebService.APHL_WS, program, "tests"); 
     ObjectMapper objectMapper = new ObjectMapper();
     Result<Test> result = objectMapper.readValue(json, new TypeReference<Result<Test>>() {});
     return result.getData();
@@ -128,6 +128,7 @@ public class WSUtils {
     logger.debug(uri);
     WSCache cache = WSCache.getInstance();
     // cache.clearCache();
+   // System.err.println(cache.getCache().keySet());
     if (cache.getCache().containsKey(uri.toString())) {
       Cache<String> cached = cache.getCache().get(uri.toString());
       Instant cachedInstant = cached.getInstant();
@@ -142,7 +143,7 @@ public class WSUtils {
     String response = target.
         request(MediaType.APPLICATION_JSON).
         get(String.class);
-       
+
     // save response in cache
     Cache<String> value = new Cache<String>(response);
     cache.getCache().put(uri.toString(), value);

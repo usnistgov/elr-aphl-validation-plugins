@@ -40,9 +40,7 @@ public abstract class OBX_ws implements OBX {
 
   public java.util.List<String> assertionWithCustomMessages(Element e)
       throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
-
     java.util.List<String> messages = new ArrayList<String>();
-
     // parse OBX-3
     List<Element> OBX3List = Query.query(e, "3[1]").get();
     if (OBX3List == null || OBX3List.size() == 0) {
@@ -50,7 +48,6 @@ public abstract class OBX_ws implements OBX {
       return messages;
     }
     Element OBX3 = OBX3List.apply(0);
-
     List<Simple> OBX3_1List = Query.queryAsSimple(OBX3, "1[1]").get();
     List<Simple> OBX3_3List = Query.queryAsSimple(OBX3, "3[1]").get();
     List<Simple> OBX3_4List = Query.queryAsSimple(OBX3, "4[1]").get();
@@ -77,7 +74,7 @@ public abstract class OBX_ws implements OBX {
     if (messages.size() > 0) {
       return messages;
     }
-
+    
     // parse OBX-5 - we only check for CE and CWE
     // TODO : do we want to do it for ID and IS as well ?
     if ("CWE".equals(_OBX2) || "CE".equals(_OBX2)) {
@@ -107,7 +104,7 @@ public abstract class OBX_ws implements OBX {
 
   public java.util.List<String> checkOBX3(ComplexCodedElement obx3)
       throws ClassNotFoundException, IOException, InterruptedException, URISyntaxException {
-
+    System.err.println(obx3.toString());
     WSUtils ws = new WSUtils();
     java.util.List<String> messages = new ArrayList<String>();
 
@@ -130,7 +127,6 @@ public abstract class OBX_ws implements OBX {
 
   public java.util.List<String> checkOBX3_OBX2(ComplexCodedElement obx3, String obx2)
       throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
-
     WSUtils ws = new WSUtils();
     java.util.List<String> messages = new ArrayList<String>();
 
@@ -138,10 +134,9 @@ public abstract class OBX_ws implements OBX {
     CodedElement alternate = obx3.getAlternateIdentifier();
 
     java.util.List<Test> tests = ws.getTests(getProgram());
-
     Set<Test> expectedTests =
         Test.findByOBX3(identifier.getIdentifier(), identifier.getCodeSystem(), tests);
-
+    
     if (expectedTests.size() > 0) {
       Set<String> expectedValues = expectedTests.stream()
           .map(expectedTest -> expectedTest.getObx2()).collect(Collectors.toSet());
@@ -228,6 +223,8 @@ public abstract class OBX_ws implements OBX {
         }
       }
 
+      //TODO : what if there is no value set ?
+      
       // we could not find OBX-5 in the value set(s)
       if (!obx5.getIdentifier().isEmpty() && !obx5.getAlternateIdentifier().isEmpty()) {
         messages
