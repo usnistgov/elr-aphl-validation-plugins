@@ -49,6 +49,14 @@ public class MyTreeNode<T> {
     return parent;
   }
 
+  public boolean hasChild(int i) {
+    return children.size() > i;
+  }
+
+  public MyTreeNode<?> getChild(int i) {
+    return children.get(i);
+  }
+
   @Override
   public int hashCode() {
     final int prime = 31;
