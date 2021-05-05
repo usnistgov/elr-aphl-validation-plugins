@@ -1,0 +1,51 @@
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd" UUID="5d4c59d984aecbc03a7d6e25">
+	<MetaData Name="ORU R01" OrgName="No Org Info" Version="No Version Info" Date="No Date Info" Status="Draft" />
+	<Predicates>
+		<Datatype />
+		<Segment>
+			<ByID ID="MSH">
+				<Predicate ID="CP_MSH-15" Target="15[1]" TrueUsage="R" FalseUsage="RE">
+					<Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'.</Description>
+					<Condition>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_15"/>
+					</Condition>
+				</Predicate>
+				<Predicate ID="CP_MSH-16" Target="16[1]" TrueUsage="R" FalseUsage="RE">
+					<Description>If the first component (Entity Identifier) of one occurrence of MSH-21 (Message Profile Identifier) is 'PHLabReport-Ack'.</Description>
+					<Condition>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cp.MSH_16"/>
+					</Condition>
+				</Predicate>
+			</ByID>
+		</Segment>
+		<Group />
+		<Message />
+	</Predicates>
+	<Constraints>
+		<Datatype>
+		</Datatype>
+		<Segment>
+			<ByID ID="OBX">
+				<Constraint ID="OBX-rabies">
+					<Description>OBX-rabies plugin</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.Rabies_OBX"/>
+					</Assertion>
+				</Constraint>
+			</ByID>
+		</Segment>
+		<Group>
+			<ByID ID="ORDER_OBSERVATION">
+				<Constraint ID="Rabies_OBX3_OBR4">
+					<Description>Rabies_OBX3_OBR4 plugin</Description>
+					<Assertion>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.extra.Rabies_OBX3_OBR4"/>
+					</Assertion>
+				</Constraint>		
+
+			</ByID>		
+		</Group>
+		<Message>
+		</Message>
+	</Constraints>
+</ConformanceContext>
