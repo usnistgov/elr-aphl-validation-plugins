@@ -3,8 +3,10 @@ package gov.nist.hit.elr.aphl.plugin.extra;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -15,13 +17,21 @@ import gov.nist.hit.elr.plugin.utils.CodedElement;
 public class TestCandidaExcludedOBX3 {
 
   private static CandidaExcludedOBX3 testObject;
+  private static List<CodedElement> OBX3s;
+
 
 
   @BeforeClass
   public static void setUp() {
     testObject = new CandidaExcludedOBX3();
+    OBX3s = new ArrayList<CodedElement>();
+
   }
 
+  @Before
+  public void resetData() {
+    OBX3s.removeAll(OBX3s);
+  }
 
 
   @Test
@@ -33,28 +43,16 @@ public class TestCandidaExcludedOBX3 {
     CodedElement ce2 = new CodedElement("DEF", "CS2");
     CodedElement ce3 = new CodedElement("GHI", "CS1");
 
-    List<String> result = testObject.check(loinc1);
+
+    OBX3s.add(ce1);
+    OBX3s.add(ce2);
+    OBX3s.add(ce3);
+    OBX3s.add(loinc1);
+    OBX3s.add(loinc2);
+    OBX3s.add(loinc3);
+
+    List<String> result = testObject.check(OBX3s);
     assertEquals(0, result.size());
-
-    result = testObject.check(loinc2);
-    assertEquals(0, result.size());
-
-    result = testObject.check(loinc3);
-    assertEquals(0, result.size());
-
-    result = testObject.check(ce1);
-    assertEquals(0, result.size());
-
-    result = testObject.check(ce2);
-    assertEquals(0, result.size());
-
-    result = testObject.check(ce3);
-    assertEquals(0, result.size());
-
-    result = testObject.check(new CodedElement("41852-5", "L"));
-    assertEquals(0, result.size());
-
-
   }
 
   @Test
@@ -62,7 +60,9 @@ public class TestCandidaExcludedOBX3 {
 
     CodedElement excluded = new CodedElement("41852-5", "LN");
 
-    List<String> result = testObject.check(excluded);
+    OBX3s.add(excluded);
+
+    List<String> result = testObject.check(OBX3s);
     assertEquals(1, result.size());
   }
 
