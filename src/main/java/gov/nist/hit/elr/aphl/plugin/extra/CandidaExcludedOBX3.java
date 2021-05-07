@@ -31,9 +31,8 @@ public class CandidaExcludedOBX3 {
   public java.util.List<String> assertionWithCustomMessages(Element e) throws Exception {
     java.util.List<String> messages = new java.util.ArrayList<String>();
     java.util.List<CodedElement> _OBX3s = new ArrayList<CodedElement>();
-
     // MSH-6 'CDC.ARLN.Candida^2.16.840.1.114222.4.1.219331^ISO'.
-    List<Element> MSH6List = Query.query(e, "6[1]").get();
+    List<Element> MSH6List = Query.query(e, "1[1].6[1]").get();
     if (MSH6List == null || MSH6List.size() == 0) {
       // no MSH-6, we can move on, no check performed
       return messages;
@@ -52,11 +51,10 @@ public class CandidaExcludedOBX3 {
     HierarchicDesignator _MSH6 = new HierarchicDesignator(MSH6_1, MSH6_2, MSH6_3);
 
     // check if this is the Candida program, based on MSH-6.2
-    if (_MSH6.getUniversalId().equals(candida.getUniversalId())) {
+    if (!_MSH6.getUniversalId().equals(candida.getUniversalId())) {
       // not candida, we stop
       return messages;
     }
-
 
     // The list of OBX-3
     List<Element> OBX3List = Query.query(e, "3[*].2[*].6[*].1[1].3[1]").get();
