@@ -110,10 +110,5 @@ public class TestELR_21_1 {
         }
       }
     }
-    
-    //XML
-  
-    
-    
   }
 }

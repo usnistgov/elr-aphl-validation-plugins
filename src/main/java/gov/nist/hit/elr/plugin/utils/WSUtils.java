@@ -3,9 +3,9 @@ package gov.nist.hit.elr.plugin.utils;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-//import java.net.http.HttpClient;
-//import java.net.http.HttpRequest;
-//import java.net.http.HttpResponse;
+// import java.net.http.HttpClient;
+// import java.net.http.HttpRequest;
+// import java.net.http.HttpResponse;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +39,7 @@ public class WSUtils {
   private static Logger logger = Logger.getLogger(WSUtils.class.getName());
 
   private Client client;
+
   public WSUtils() {
     ClientConfig config = new ClientConfig();
     client = ClientBuilder.newClient(config);
@@ -116,7 +117,7 @@ public class WSUtils {
 
   public List<Test> getTests(Program program)
       throws IOException, InterruptedException, ClassNotFoundException, URISyntaxException {
-    String json = sendGET(WebService.APHL_WS, program, "tests"); 
+    String json = sendGET(WebService.APHL_WS, program, "tests");
     ObjectMapper objectMapper = new ObjectMapper();
     Result<Test> result = objectMapper.readValue(json, new TypeReference<Result<Test>>() {});
     return result.getData();
@@ -125,10 +126,10 @@ public class WSUtils {
   private String sendGET(WebService url, Program program, String resource)
       throws IOException, InterruptedException, URISyntaxException {
     URI uri = new URI(StringUtils.join(url, "/", program, "/", resource.replaceAll(" ", "%20")));
-    logger.debug(uri);
+    // logger.debug(uri);
     WSCache cache = WSCache.getInstance();
     // cache.clearCache();
-   // System.err.println(cache.getCache().keySet());
+    // System.err.println(cache.getCache().keySet());
     if (cache.getCache().containsKey(uri.toString())) {
       Cache<String> cached = cache.getCache().get(uri.toString());
       Instant cachedInstant = cached.getInstant();
@@ -140,9 +141,7 @@ public class WSUtils {
     }
     // get data from webservice
     WebTarget target = client.target(uri);
-    String response = target.
-        request(MediaType.APPLICATION_JSON).
-        get(String.class);
+    String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
     // save response in cache
     Cache<String> value = new Cache<String>(response);

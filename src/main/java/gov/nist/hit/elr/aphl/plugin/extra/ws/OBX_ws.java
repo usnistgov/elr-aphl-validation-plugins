@@ -74,7 +74,7 @@ public abstract class OBX_ws implements OBX {
     if (messages.size() > 0) {
       return messages;
     }
-    
+
     // parse OBX-5 - we only check for CE and CWE
     // TODO : do we want to do it for ID and IS as well ?
     if ("CWE".equals(_OBX2) || "CE".equals(_OBX2)) {
@@ -104,7 +104,7 @@ public abstract class OBX_ws implements OBX {
 
   public java.util.List<String> checkOBX3(ComplexCodedElement obx3)
       throws ClassNotFoundException, IOException, InterruptedException, URISyntaxException {
-    System.err.println(obx3.toString());
+    // System.err.println(obx3.toString());
     WSUtils ws = new WSUtils();
     java.util.List<String> messages = new ArrayList<String>();
 
@@ -136,7 +136,7 @@ public abstract class OBX_ws implements OBX {
     java.util.List<Test> tests = ws.getTests(getProgram());
     Set<Test> expectedTests =
         Test.findByOBX3(identifier.getIdentifier(), identifier.getCodeSystem(), tests);
-    
+
     if (expectedTests.size() > 0) {
       Set<String> expectedValues = expectedTests.stream()
           .map(expectedTest -> expectedTest.getObx2()).collect(Collectors.toSet());
@@ -223,8 +223,8 @@ public abstract class OBX_ws implements OBX {
         }
       }
 
-      //TODO : what if there is no value set ?
-      
+      // TODO : what if there is no value set ?
+
       // we could not find OBX-5 in the value set(s)
       if (!obx5.getIdentifier().isEmpty() && !obx5.getAlternateIdentifier().isEmpty()) {
         messages

@@ -930,7 +930,7 @@
 				<Constraint ID="ARLN-21">
 					<Description>One occurrence of MSH-21 SHALL be valued 'PHLabReport-NoAck^phLabResultsELRv251^2.16.840.1.113883.9.11^ISO'</Description>
 					<Assertion>
-						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.cs.ARLN_21" />
+						<Plugin QualifiedClassName="gov.nist.hit.elr.aphl.plugin.cs.ELR_21_1" />
 					</Assertion>
 				</Constraint>
 			</ByID>
@@ -1079,16 +1079,7 @@
 				<Constraint ID="ELR-038">
 					<Description>FORALL[The value of ORC.14[*].2 (Telecommunication Use Code) SHALL be equal to the value of OBR.17[*].2 (Telecommunication Use Code).][The value of ORC.14[*].3 (Telecommunication Equipment Type) SHALL be equal to the value of OBR.17[*].3 (Telecommunication Equipment Type).][The value of ORC.14[*].4 (Email Address) SHALL be equal to the value of OBR.17[*].4 (Email Address).][The value of ORC.14[*].5 (Country Code) SHALL be equal to the value of OBR.17[*].5 (Country Code).][The value of ORC.14[*].6 (Area/City Code) SHALL be equal to the value of OBR.17[*].6 (Area/City Code).][The value of ORC.14[*].7 (Local Number) SHALL be equal to the value of OBR.17[*].7 (Local Number).][The value of ORC.14[*].8 (Extension) SHALL be equal to the value of OBR.17[*].8 (Extension).][The value of ORC.14[*].9 (Any Text) SHALL be equal to the value of OBR.17[*].9 (Any Text).]</Description>
 					<Assertion>
-						<FORALL>
-							<PathValue Path1="1[1].14[*].2[1]" Operator="EQ" Path2="2[1].17[*].2[1]" />
-							<PathValue Path1="1[1].14[*].3[1]" Operator="EQ" Path2="2[1].17[*].3[1]" />
-							<PathValue Path1="1[1].14[*].4[1]" Operator="EQ" Path2="2[1].17[*].4[1]" />
-							<PathValue Path1="1[1].14[*].5[1]" Operator="EQ" Path2="2[1].17[*].5[1]" />
-							<PathValue Path1="1[1].14[*].6[1]" Operator="EQ" Path2="2[1].17[*].6[1]" />
-							<PathValue Path1="1[1].14[*].7[1]" Operator="EQ" Path2="2[1].17[*].7[1]" />
-							<PathValue Path1="1[1].14[*].8[1]" Operator="EQ" Path2="2[1].17[*].8[1]" />
-							<PathValue Path1="1[1].14[*].9[1]" Operator="EQ" Path2="2[1].17[*].9[1]" />
-						</FORALL>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_038"/>
 					</Assertion>
 				</Constraint>
 				<Constraint ID="OBX3_OBR4">
@@ -1197,16 +1188,7 @@
 				<Constraint ID="ELR-038">
 					<Description>FORALL[The value of ORC.14[*].2 (Telecommunication Use Code) SHALL be equal to the value of OBR.17[*].2 (Telecommunication Use Code).][The value of ORC.14[*].3 (Telecommunication Equipment Type) SHALL be equal to the value of OBR.17[*].3 (Telecommunication Equipment Type).][The value of ORC.14[*].4 (Email Address) SHALL be equal to the value of OBR.17[*].4 (Email Address).][The value of ORC.14[*].5 (Country Code) SHALL be equal to the value of OBR.17[*].5 (Country Code).][The value of ORC.14[*].6 (Area/City Code) SHALL be equal to the value of OBR.17[*].6 (Area/City Code).][The value of ORC.14[*].7 (Local Number) SHALL be equal to the value of OBR.17[*].7 (Local Number).][The value of ORC.14[*].8 (Extension) SHALL be equal to the value of OBR.17[*].8 (Extension).][The value of ORC.14[*].9 (Any Text) SHALL be equal to the value of OBR.17[*].9 (Any Text).]</Description>
 					<Assertion>
-						<FORALL>
-							<PathValue Path1="1[1].14[*].2[1]" Operator="EQ" Path2="2[1].17[*].2[1]" />
-							<PathValue Path1="1[1].14[*].3[1]" Operator="EQ" Path2="2[1].17[*].3[1]" />
-							<PathValue Path1="1[1].14[*].4[1]" Operator="EQ" Path2="2[1].17[*].4[1]" />
-							<PathValue Path1="1[1].14[*].5[1]" Operator="EQ" Path2="2[1].17[*].5[1]" />
-							<PathValue Path1="1[1].14[*].6[1]" Operator="EQ" Path2="2[1].17[*].6[1]" />
-							<PathValue Path1="1[1].14[*].7[1]" Operator="EQ" Path2="2[1].17[*].7[1]" />
-							<PathValue Path1="1[1].14[*].8[1]" Operator="EQ" Path2="2[1].17[*].8[1]" />
-							<PathValue Path1="1[1].14[*].9[1]" Operator="EQ" Path2="2[1].17[*].9[1]" />
-						</FORALL>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_038"/>
 					</Assertion>
 				</Constraint>
 			</ByID>
@@ -1303,16 +1285,7 @@
 				<Constraint ID="ELR-038">
 					<Description>FORALL[The value of ORC.14[*].2 (Telecommunication Use Code) SHALL be equal to the value of OBR.17[*].2 (Telecommunication Use Code).][The value of ORC.14[*].3 (Telecommunication Equipment Type) SHALL be equal to the value of OBR.17[*].3 (Telecommunication Equipment Type).][The value of ORC.14[*].4 (Email Address) SHALL be equal to the value of OBR.17[*].4 (Email Address).][The value of ORC.14[*].5 (Country Code) SHALL be equal to the value of OBR.17[*].5 (Country Code).][The value of ORC.14[*].6 (Area/City Code) SHALL be equal to the value of OBR.17[*].6 (Area/City Code).][The value of ORC.14[*].7 (Local Number) SHALL be equal to the value of OBR.17[*].7 (Local Number).][The value of ORC.14[*].8 (Extension) SHALL be equal to the value of OBR.17[*].8 (Extension).][The value of ORC.14[*].9 (Any Text) SHALL be equal to the value of OBR.17[*].9 (Any Text).]</Description>
 					<Assertion>
-						<FORALL>
-							<PathValue Path1="1[1].14[*].2[1]" Operator="EQ" Path2="2[1].17[*].2[1]" />
-							<PathValue Path1="1[1].14[*].3[1]" Operator="EQ" Path2="2[1].17[*].3[1]" />
-							<PathValue Path1="1[1].14[*].4[1]" Operator="EQ" Path2="2[1].17[*].4[1]" />
-							<PathValue Path1="1[1].14[*].5[1]" Operator="EQ" Path2="2[1].17[*].5[1]" />
-							<PathValue Path1="1[1].14[*].6[1]" Operator="EQ" Path2="2[1].17[*].6[1]" />
-							<PathValue Path1="1[1].14[*].7[1]" Operator="EQ" Path2="2[1].17[*].7[1]" />
-							<PathValue Path1="1[1].14[*].8[1]" Operator="EQ" Path2="2[1].17[*].8[1]" />
-							<PathValue Path1="1[1].14[*].9[1]" Operator="EQ" Path2="2[1].17[*].9[1]" />
-						</FORALL>
+						<Plugin QualifiedClassName="gov.nist.hit.elr.plugin.cs.ELR_038"/>
 					</Assertion>
 				</Constraint>
 			</ByID>

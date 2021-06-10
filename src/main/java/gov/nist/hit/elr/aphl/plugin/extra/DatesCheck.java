@@ -35,9 +35,9 @@ public class DatesCheck {
     if (!"".equals(defaultTz)) {
       java.util.List<LocationDateList> datesToCheck = checkMessageContext(e);
       result.addAll(check(datesToCheck));
-      if (result.size() > 0) {
-        logger.debug(result);
-      }
+      // if (result.size() > 0) {
+      // logger.debug(result);
+      // }
     }
     return result;
   }

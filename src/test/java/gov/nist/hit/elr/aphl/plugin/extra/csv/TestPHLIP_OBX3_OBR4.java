@@ -14,8 +14,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4;
-import gov.nist.hit.elr.aphl.plugin.extra.PHLIP_OBX3_OBR4;
 import gov.nist.hit.elr.plugin.util.Util;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import gov.nist.validation.report.Entry;
@@ -198,32 +196,35 @@ public class TestPHLIP_OBX3_OBR4 {
     // use case : OBX-3 is not present in "Tests", but is present in "Observations",
     // OBR-4 is present in "Tests"
 
-    OBX3s.removeAll(OBX3s);
+    // no code in spreadsheet to test that use case
 
-    OBX3_identifier = new ComplexCodedElement("86317-5", "LN", "", "");
-    OBX3s.add(OBX3_identifier);
-    OBX3_alternate = new ComplexCodedElement("", "", "86317-5", "LN");
-    OBX3s.add(OBX3_alternate);
-    OBX3_identifier_2 = new ComplexCodedElement("86317-5", "LN", "ABC", "L");
-    OBX3s.add(OBX3_identifier_2);
-    OBX3_alternate_2 = new ComplexCodedElement("ABC", "L", "86317-5", "LN");
-    OBX3s.add(OBX3_alternate_2);
 
-    OBR4 = new ComplexCodedElement("12237-4", "LN", "", "");
-    result = testObject.check(OBR4, OBX3s);
-    assertEquals(0, result.size());
-
-    OBR4 = new ComplexCodedElement("", "", "12237-4", "LN");
-    result = testObject.check(OBR4, OBX3s);
-    assertEquals(0, result.size());
-
-    OBR4 = new ComplexCodedElement("12237-4", "LN", "ABC", "L");
-    result = testObject.check(OBR4, OBX3s);
-    assertEquals(0, result.size());
-
-    OBR4 = new ComplexCodedElement("ABC", "L", "12237-4", "LN");
-    result = testObject.check(OBR4, OBX3s);
-    assertEquals(0, result.size());
+    // OBX3s.removeAll(OBX3s);
+    //
+    // OBX3_identifier = new ComplexCodedElement("86317-5", "LN", "", "");
+    // OBX3s.add(OBX3_identifier);
+    // OBX3_alternate = new ComplexCodedElement("", "", "86317-5", "LN");
+    // OBX3s.add(OBX3_alternate);
+    // OBX3_identifier_2 = new ComplexCodedElement("86317-5", "LN", "ABC", "L");
+    // OBX3s.add(OBX3_identifier_2);
+    // OBX3_alternate_2 = new ComplexCodedElement("ABC", "L", "86317-5", "LN");
+    // OBX3s.add(OBX3_alternate_2);
+    //
+    // OBR4 = new ComplexCodedElement("12237-4", "LN", "", "");
+    // result = testObject.check(OBR4, OBX3s);
+    // assertEquals(0, result.size());
+    //
+    // OBR4 = new ComplexCodedElement("", "", "12237-4", "LN");
+    // result = testObject.check(OBR4, OBX3s);
+    // assertEquals(0, result.size());
+    //
+    // OBR4 = new ComplexCodedElement("12237-4", "LN", "ABC", "L");
+    // result = testObject.check(OBR4, OBX3s);
+    // assertEquals(0, result.size());
+    //
+    // OBR4 = new ComplexCodedElement("ABC", "L", "12237-4", "LN");
+    // result = testObject.check(OBR4, OBX3s);
+    // assertEquals(0, result.size());
 
     // use case : OBX-3 is not present in "Tests", but is present in "Observations",
     // OBR-4 is not present in "Tests", but it is present in "Orders"

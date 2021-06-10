@@ -77,7 +77,6 @@ public class TestARLN_OBX3 {
 
     OBR4 = new ComplexCodedElement("68991-9", "LN", "", "");
     List<String> result = testObject.check(OBR4, OBX3s);
-    System.out.println(result);
     assertEquals(0, result.size());
 
     OBR4 = new ComplexCodedElement("", "", "68991-9", "LN");

@@ -23,7 +23,7 @@ public class DTM {
     // get segment name
     if (e instanceof Segment) {
       Segment s = (Segment) e;
-      System.err.println(s.location().path());
+      // System.err.println(s.location().path());
       name = s.location().path();
     }
     List<Simple> DTMList;
@@ -212,7 +212,7 @@ public class DTM {
       default:
         return messages;
     }
-    System.err.println(messages);
+    // System.err.println(messages);
     return messages;
   }
 

@@ -6,7 +6,7 @@ public class PHLIP {
 
   public static final Program program = Program.PHLIP;
 
-  private static final String FOLDER = "phlip/20200416_2";
+  private static final String FOLDER = "phlip/20210607";
 
   private static final String FOLDER_MSH = "phlip/20191003";
   private static final String MSH3_CSV = "MSH3.csv";
