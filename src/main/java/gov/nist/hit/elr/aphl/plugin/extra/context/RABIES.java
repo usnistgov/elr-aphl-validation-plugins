@@ -6,11 +6,10 @@ public class RABIES {
 
   public static final Program program = Program.RABIES;
 
-
   private static final String WEBSERVICE_URL =
       "https://hit-dev.nist.gov:8097/aphl-service/aphl/rabies/";
 
-  private static final String FOLDER = "rabies/";
+  private static final String FOLDER = "rabies/20210408";
 
   private static final String TEST_CSV = "IGAMT_Rabies_Tests.csv";
   private static final String OBSERVATIONS_CSV = "IGAMT_Rabies_Observations.csv";

@@ -139,6 +139,7 @@ public class WSUtils {
         return cached.getCachedObject();
       }
     }
+    System.err.println(uri);
     // get data from webservice
     WebTarget target = client.target(uri);
     String response = target.request(MediaType.APPLICATION_JSON).get(String.class);

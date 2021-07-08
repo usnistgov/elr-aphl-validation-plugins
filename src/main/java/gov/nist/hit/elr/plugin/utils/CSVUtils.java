@@ -2,6 +2,7 @@ package gov.nist.hit.elr.plugin.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -13,8 +14,6 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.log4j.Logger;
-
-import gov.nist.hit.elr.aphl.plugin.extra.context.VPD;
 
 public class CSVUtils {
 
@@ -111,6 +110,7 @@ public class CSVUtils {
   }
 
   protected void parseValueSetsCSV(String folder, String valueSetsCsv) throws IOException {
+    System.out.println("parseValueSetsCSV");
     BufferedReader reader = new BufferedReader(new InputStreamReader(
         CSVUtils.class.getResourceAsStream("/" + folder + "/" + valueSetsCsv)));
 
@@ -137,7 +137,7 @@ public class CSVUtils {
   }
 
   protected void parseTestCSV(String folder, String testCsv) throws IOException {
-
+    System.out.println("parseTestCSV");
     BufferedReader reader = new BufferedReader(
         new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + testCsv)));
 
@@ -197,6 +197,7 @@ public class CSVUtils {
   }
 
   private void parseObservationsCSV(String folder, String observationsCsv) throws IOException {
+    System.out.println("parseObservationsCSV");
 
     BufferedReader reader = new BufferedReader(new InputStreamReader(
         CSVUtils.class.getResourceAsStream("/" + folder + "/" + observationsCsv)));
@@ -219,12 +220,25 @@ public class CSVUtils {
   }
 
   private void parseOrdersCSV(String folder, String orderCsv) throws IOException {
-    
-    BufferedReader reader = new BufferedReader(
-        new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + orderCsv)));
-    
-    CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
-    CSVParser csvParser = new CSVParser(reader, format);
+    System.out.println("parseOrdersCSV 0");
+
+    InputStream in = CSVUtils.class.getResourceAsStream("/" + folder + "/" + orderCsv);
+    System.out.println("parseOrdersCSV 1");
+
+    BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+    System.out.println("parseOrdersCSV 2");
+
+    CSVFormat format = null;
+    CSVParser csvParser = null;
+    try {
+      format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
+      csvParser = new CSVParser(reader, format);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+    System.out.println("parseOrdersCSV 3");
+
 
     for (CSVRecord csvRecord : csvParser) {
       String OBR4Identifier = csvRecord.get("OBR4 Code");
@@ -235,8 +249,14 @@ public class CSVUtils {
       this.OBR4.add(OBR4);
 
     }
+    System.out.println("parseOrdersCSV 4");
+
     csvParser.close();
+    System.out.println("parseOrdersCSV 5");
+
     reader.close();
+    System.out.println("parseOrdersCSV 6");
+
   }
 
   public void parseSpecimenTypeCSV(String folder, String specimentTypeCsv) throws IOException {

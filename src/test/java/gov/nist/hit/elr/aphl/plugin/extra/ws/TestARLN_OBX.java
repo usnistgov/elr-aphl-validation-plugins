@@ -10,9 +10,9 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
+@Ignore
 public class TestARLN_OBX {
 
   private static OBX_ws testObject;
@@ -632,17 +632,17 @@ public class TestARLN_OBX {
     OBX5 = new ComplexCodedElement("WI", "FIPS5_2", "", "");
     result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
     assertEquals(0, result.size());
-    
+
     OBX3 = new ComplexCodedElement("PLT645", "PLT", "", "");
     OBX5 = new ComplexCodedElement("OTH", "NULLFL", "", "");
     result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
     assertEquals(0, result.size());
-    
+
     OBX3 = new ComplexCodedElement("555-3", "LN", "", "");
     OBX5 = new ComplexCodedElement("243450000", "SCT", "", "");
     result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
     assertEquals(0, result.size());
-    
+
     OBX3 = new ComplexCodedElement("15378-3", "LN", "", "");
     OBX5 = new ComplexCodedElement("243450000", "SCT", "", "");
     result = testObject.checkOBX3_OBX5_CWE(OBX3, OBX5);
