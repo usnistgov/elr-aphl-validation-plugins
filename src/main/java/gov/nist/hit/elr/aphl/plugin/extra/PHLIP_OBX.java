@@ -29,7 +29,6 @@ public class PHLIP_OBX implements OBX {
 
   @Override
   public List<String> assertionWithCustomMessages(Element e) throws Exception {
-    System.out.println("je rentre dans le plugin PHLIP_OBX");
     return datasource.assertionWithCustomMessages(e);
   }
 

@@ -110,7 +110,6 @@ public class CSVUtils {
   }
 
   protected void parseValueSetsCSV(String folder, String valueSetsCsv) throws IOException {
-    System.out.println("parseValueSetsCSV");
     BufferedReader reader = new BufferedReader(new InputStreamReader(
         CSVUtils.class.getResourceAsStream("/" + folder + "/" + valueSetsCsv)));
 
@@ -137,7 +136,6 @@ public class CSVUtils {
   }
 
   protected void parseTestCSV(String folder, String testCsv) throws IOException {
-    System.out.println("parseTestCSV");
     BufferedReader reader = new BufferedReader(
         new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + testCsv)));
 
@@ -197,7 +195,6 @@ public class CSVUtils {
   }
 
   private void parseObservationsCSV(String folder, String observationsCsv) throws IOException {
-    System.out.println("parseObservationsCSV");
 
     BufferedReader reader = new BufferedReader(new InputStreamReader(
         CSVUtils.class.getResourceAsStream("/" + folder + "/" + observationsCsv)));
@@ -220,13 +217,9 @@ public class CSVUtils {
   }
 
   private void parseOrdersCSV(String folder, String orderCsv) throws IOException {
-    System.out.println("parseOrdersCSV 0");
 
     InputStream in = CSVUtils.class.getResourceAsStream("/" + folder + "/" + orderCsv);
-    System.out.println("parseOrdersCSV 1");
-
     BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-    System.out.println("parseOrdersCSV 2");
 
     CSVFormat format = null;
     CSVParser csvParser = null;
@@ -237,9 +230,6 @@ public class CSVUtils {
       e.printStackTrace();
     }
 
-    System.out.println("parseOrdersCSV 3");
-
-
     for (CSVRecord csvRecord : csvParser) {
       String OBR4Identifier = csvRecord.get("OBR4 Code");
       String OBR4CodeSystem = csvRecord.get("OBR4 Code System");
@@ -249,14 +239,8 @@ public class CSVUtils {
       this.OBR4.add(OBR4);
 
     }
-    System.out.println("parseOrdersCSV 4");
-
     csvParser.close();
-    System.out.println("parseOrdersCSV 5");
-
     reader.close();
-    System.out.println("parseOrdersCSV 6");
-
   }
 
   public void parseSpecimenTypeCSV(String folder, String specimentTypeCsv) throws IOException {
