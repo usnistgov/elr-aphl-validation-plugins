@@ -118,9 +118,6 @@ public abstract class OBX3_OBR4_ws implements OBX3_OBR4 {
       CodedElement identifierOBX3 = OBX3.getIdentifier();
       CodedElement alternateOBX3 = OBX3.getAlternateIdentifier();
 
-      // System.err.println(identifierOBX3.toString());
-      // System.err.println(alternateOBX3.toString());
-
       // 1. Check if OBX-3 is in 'Test'
       long identifierOBX3Count =
           Test.countByOBX3(identifierOBX3.getIdentifier(), identifierOBX3.getCodeSystem(), tests);

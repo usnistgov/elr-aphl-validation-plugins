@@ -9,12 +9,14 @@ import java.util.List;
 import java.util.Set;
 
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.aphl.domain.Program;
 import gov.nist.hit.elr.aphl.domain.vocab.ValueSet;
 import gov.nist.hit.elr.plugin.utils.WSUtils;
 
+@Ignore
 public class TestValueSetWS {
 
   private static Set<String> ARLN;

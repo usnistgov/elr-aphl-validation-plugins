@@ -35,6 +35,7 @@ public abstract class OBX_csv implements OBX {
       // no OBX-3, we can move on, no check performed
       return messages;
     }
+
     Element OBX3 = OBX3List.apply(0);
 
     List<Simple> OBX3_1List = Query.queryAsSimple(OBX3, "1[1]").get();
@@ -55,6 +56,7 @@ public abstract class OBX_csv implements OBX {
       // no OBX-2, we can move on, no check performed
       return messages;
     }
+
     String _OBX2 = OBX2List.size() > 0 ? OBX2List.apply(0).value().raw() : "";
 
     // OBX-3 to OBX-2
@@ -87,6 +89,7 @@ public abstract class OBX_csv implements OBX {
       }
       messages = checkOBX3_OBX5_CWE(_OBX3, _OBX5);
     }
+
     return messages;
   }
 
@@ -94,7 +97,13 @@ public abstract class OBX_csv implements OBX {
   public java.util.List<String> checkOBX3_OBX2(ComplexCodedElement obx3, String obx2)
       throws IOException {
     CSVUtils util = new CSVUtils();
-    util.parse(getFOLDER(), getTEST_CSV(), getOBSERVATIONS_CSV(), getORDERS(), getVALUE_SETS_CSV());
+    try {
+      util.parse(getFOLDER(), getTEST_CSV(), getOBSERVATIONS_CSV(), getORDERS(),
+          getVALUE_SETS_CSV());
+    } catch (IOException e) {
+      e.printStackTrace();
+      throw e;
+    }
 
     java.util.List<String> messages = new ArrayList<String>();
 

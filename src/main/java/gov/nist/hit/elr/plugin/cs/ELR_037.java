@@ -63,8 +63,6 @@ public class ELR_037 {
   }
 
   public boolean check(Set<MyTreeNode<String>> orc12, Set<MyTreeNode<String>> obr16) {
-    // System.err.println(orc12.toString());
-    // System.err.println(obr16.toString());
     return orc12.equals(obr16);
   }
 

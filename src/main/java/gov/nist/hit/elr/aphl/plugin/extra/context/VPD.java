@@ -6,13 +6,13 @@ public class VPD {
 
   public static final Program program = Program.VPD;
 
-  private static final String FOLDER = "vpd/20200624";
+  private static final String FOLDER = "vpd/20210616";
   private static final String FOLDER_SPM = "vpd/20200624";
 
 
-  //private static final String FOLDER_MSH = "vpd/20200624";
-  //private static final String MSH3_CSV = "MSH3.csv";
-  //private static final String MSH4_CSV = "MSH4.csv";
+  // private static final String FOLDER_MSH = "vpd/20200624";
+  // private static final String MSH3_CSV = "MSH3.csv";
+  // private static final String MSH4_CSV = "MSH4.csv";
 
   private static final String TEST_CSV = "IGAMT_VPD_Tests.csv";
   private static final String OBSERVATIONS_CSV = "IGAMT_VPD_Observations.csv";
@@ -52,17 +52,17 @@ public class VPD {
     return SPECIMEN_TYPE_CSV;
   }
 
-//  public static String getFOLDER_MSH() {
-//    return FOLDER_MSH;
-//  }
-//
-//  public static String getMSH3_CSV() {
-//    return MSH3_CSV;
-//  }
-//
-//  public static String getMSH4_CSV() {
-//    return MSH4_CSV;
-//  }
+  // public static String getFOLDER_MSH() {
+  // return FOLDER_MSH;
+  // }
+  //
+  // public static String getMSH3_CSV() {
+  // return MSH3_CSV;
+  // }
+  //
+  // public static String getMSH4_CSV() {
+  // return MSH4_CSV;
+  // }
 
   public static String getWEBSERVICE_URL() {
     return WEBSERVICE_URL;

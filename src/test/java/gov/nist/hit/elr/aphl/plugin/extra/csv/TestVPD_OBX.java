@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra.ws;
+package gov.nist.hit.elr.aphl.plugin.extra.csv;
 
 import static org.junit.Assert.assertEquals;
 
@@ -22,7 +22,7 @@ public class TestVPD_OBX {
 
   @BeforeClass
   public static void setUp() {
-    testObject = new VPD_OBX_ws();
+    testObject = new VPD_OBX_csv();
   }
 
   @Test

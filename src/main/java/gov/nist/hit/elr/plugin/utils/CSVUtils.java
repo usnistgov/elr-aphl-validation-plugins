@@ -2,6 +2,7 @@ package gov.nist.hit.elr.plugin.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -13,8 +14,6 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.log4j.Logger;
-
-import gov.nist.hit.elr.aphl.plugin.extra.context.VPD;
 
 public class CSVUtils {
 
@@ -137,7 +136,6 @@ public class CSVUtils {
   }
 
   protected void parseTestCSV(String folder, String testCsv) throws IOException {
-
     BufferedReader reader = new BufferedReader(
         new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + testCsv)));
 
@@ -219,12 +217,18 @@ public class CSVUtils {
   }
 
   private void parseOrdersCSV(String folder, String orderCsv) throws IOException {
-    
-    BufferedReader reader = new BufferedReader(
-        new InputStreamReader(CSVUtils.class.getResourceAsStream("/" + folder + "/" + orderCsv)));
-    
-    CSVFormat format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
-    CSVParser csvParser = new CSVParser(reader, format);
+
+    InputStream in = CSVUtils.class.getResourceAsStream("/" + folder + "/" + orderCsv);
+    BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+
+    CSVFormat format = null;
+    CSVParser csvParser = null;
+    try {
+      format = CSVFormat.EXCEL.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim();
+      csvParser = new CSVParser(reader, format);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
 
     for (CSVRecord csvRecord : csvParser) {
       String OBR4Identifier = csvRecord.get("OBR4 Code");

@@ -15,7 +15,7 @@ public class PHLIP_OBX implements OBX {
 
   public PHLIP_OBX() throws IOException {
     String ds = (String) PropertiesUtils.getInstance().get("PHLIP_OBX");
-    switch(ds) {
+    switch (ds) {
       case "CVS":
         datasource = new PHLIP_OBX_csv();
         break;
@@ -38,7 +38,8 @@ public class PHLIP_OBX implements OBX {
   }
 
   @Override
-  public List<String> checkOBX3_OBX5_CWE(ComplexCodedElement obx3, ComplexCodedElement obx5) throws Exception {
+  public List<String> checkOBX3_OBX5_CWE(ComplexCodedElement obx3, ComplexCodedElement obx5)
+      throws Exception {
     return datasource.checkOBX3_OBX5_CWE(obx3, obx5);
   }
 

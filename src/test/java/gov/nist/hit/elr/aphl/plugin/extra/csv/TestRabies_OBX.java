@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra.ws;
+package gov.nist.hit.elr.aphl.plugin.extra.csv;
 
 import static org.junit.Assert.assertEquals;
 
@@ -23,7 +23,7 @@ import hl7.v2.validation.SyncHL7Validator;
 @Ignore
 public class TestRabies_OBX {
 
-  private static OBX_ws testObject;
+  private static OBX_csv testObject;
 
   private static ComplexCodedElement OBX3;
   private static String OBX2;
@@ -31,7 +31,7 @@ public class TestRabies_OBX {
 
   @BeforeClass
   public static void setUp() {
-    testObject = new Rabies_OBX_ws();
+    testObject = new Rabies_OBX_csv();
   }
 
   @Test

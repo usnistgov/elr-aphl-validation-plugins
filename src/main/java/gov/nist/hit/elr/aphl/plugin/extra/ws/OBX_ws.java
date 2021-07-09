@@ -40,6 +40,7 @@ public abstract class OBX_ws implements OBX {
 
   public java.util.List<String> assertionWithCustomMessages(Element e)
       throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
+
     java.util.List<String> messages = new ArrayList<String>();
     // parse OBX-3
     List<Element> OBX3List = Query.query(e, "3[1]").get();
@@ -104,7 +105,6 @@ public abstract class OBX_ws implements OBX {
 
   public java.util.List<String> checkOBX3(ComplexCodedElement obx3)
       throws ClassNotFoundException, IOException, InterruptedException, URISyntaxException {
-    // System.err.println(obx3.toString());
     WSUtils ws = new WSUtils();
     java.util.List<String> messages = new ArrayList<String>();
 

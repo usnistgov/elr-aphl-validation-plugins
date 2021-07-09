@@ -1,0 +1,8 @@
+MSH|^~\&#|CLIMS.NY.Stag^2.16.840.1.114222.4.3.3.2.17.2^ISO|NY.Wadsworth.Biggs^2.16.840.1.114222.4.1.131913^ISO|US WHO Collab LabSys^2.16.840.1.114222.4.3.3.7^ISO|CDC-EPI Surv Branch^2.16.840.1.114222.4.1.10416^ISO|20190606125117.2104-0400||ORU^R01^ORU_R01|PHLIP UAT ELR 001 Valid|T|2.5.1|||||||||PHLabReport-NoAck^ELR251R1_Rcvr_Prof^2.16.840.1.113883.9.11^ISO~PHLIP_ELSM_251^PHLIP_Profile_Flu^2.16.840.1.113883.9.179^ISO
+SFT|Orion Health^D^^^^Orion Health&2.16.840.1.113883.3.89&ISO^XX^^^1|4.1.0.64168|Orion Rhapsody|4.1.0.64168
+PID|1||PT[0000058591]^^^CLIMS.NY.Stag&2.16.840.1.114222.4.3.3.2.17.2&ISO^MR||~^^^^^^S||19531215|M||2076-8^Native Hawaiian or Other Pacific Islander^CDCREC|^^^VT
+NTE|1|P|This is a sample NTE segment~with multiple comments~embedded in it
+ORC|RE||FO10.0^^2.16.840.1.113883.3.72.5.20^ISO||||||||||||||||||University Hospital|^^^^^^^^42043|^^^^^^7771234
+OBR|1||FO10.0^^2.16.840.1.113883.3.72.5.20^ISO|54245-6^Resp virus Ag XXX IF^LN|||20140617|||||||||||||||201406180000-0500|||F
+OBX|1|CWE|54245-6^Resp virus Ag XXX IF^LN||91072000^Human echovirus 26^SCT||||||F|||20140617|||||201406180000-0500||||PHLIP-Test-Lab|^^^PA
+SPM|1|^SID10.0&&2.16.840.1.113883.3.72.5.20&ISO||258500001^Nasopharyngeal swab (specimen)^SCT^^^^^^Da Nose^Blood Specimen^SCT|||||||||||||20140617|20140618100038
