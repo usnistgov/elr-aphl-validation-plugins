@@ -1,0 +1,303 @@
+OBR4 Code,OBR4 Code System,OBX3 Code,OBX3 Code System,OBX2,Value Set Name
+PLT337,PLT,PLT337,PLT,ST,(Non-coded string value)
+PLT341,PLT,PLT341,PLT,ST,(Non-coded string value)
+68991-9,LN,PLT610,PLT,TS,(Non-coded date/time value)
+68991-9,LN,35659-2,LN,NM,(Non-coded numeric value)
+68991-9,LN,29553-5,LN,NM,(Non-coded numeric value)
+68991-9,LN,21612-7,LN,NM,(Non-coded numeric value)
+68991-9,LN,11368-8,LN,TS,(Non-coded date/time value)
+68991-9,LN,30952-6,LN,TS,(Non-coded date/time value)
+68991-9,LN,VAC103,PHINQUESTION,TS,(Non-coded date/time value)
+68991-9,LN,PRT023,PHINQUESTION,TS,(Non-coded date/time value)
+68991-9,LN,MUM122,PHINQUESTION,CWE,"Yes, No, Unknown"
+68991-9,LN,MEA039,PHINQUESTION,CWE,"Yes, No, Unknown"
+68991-9,LN,PRT044,PHINQUESTION,CWE,"Yes, No, Unknown"
+68991-9,LN,PRT021,PHINQUESTION,CWE,Antibiotics for pertussis
+68991-9,LN,PRT020,PHINQUESTION,CWE,"Yes, No, Unknown"
+68991-9,LN,PLT667,PLT,ST,(Non-coded string value)
+68991-9,LN,PLT668,PLT,ST,(Non-coded string value)
+68991-9,LN,PLT641,PLT,TX,(Non-coded text)
+5244-9,LN,35275-7,LN,CWE,Serology ordinal
+5244-9,LN,5244-9,LN,NM,(Non-coded numeric value)
+25421-9,LN,35276-5,LN,CWE,Serology ordinal
+25421-9,LN,25421-9,LN,NM,(Non-coded numeric value)
+35276-5,LN,35276-5,LN,CWE,Serology ordinal
+53537-7,LN,53537-7,LN,CWE,Serology ordinal
+85806-8,LN,68993-5,LN,CWE,RNase P PCR ordinal
+85806-8,LN,48508-6,LN,CWE,PCR ordinal with Indeterminate
+85806-8,LN,85798-7,LN,NM,(Non-coded numeric value)
+85806-8,LN,PLT352,PLT,CWE,Ct interpretation with Indeterminate
+85806-8,LN,88875-0,LN,CWE,PCR ordinal
+85806-8,LN,88876-8,LN,NM,(Non-coded numeric value)
+85806-8,LN,PLT2037,PLT,CWE,Ct interpretation with Indeterminate
+85806-8,LN,60422-3,LN,CWE,Measles genotyping
+85806-8,LN,PLT542,PLT,ED,(FASTA file)
+88875-0,LN,88875-0,LN,CWE,PCR ordinal
+88875-0,LN,88876-8,LN,NM,(Non-coded numeric value)
+88875-0,LN,PLT2037,PLT,CWE,Ct interpretation with Indeterminate
+48508-6,LN,68993-5,LN,CWE,RNase P PCR ordinal
+48508-6,LN,48508-6,LN,CWE,PCR ordinal with Indeterminate
+48508-6,LN,85798-7,LN,NM,(Non-coded numeric value)
+48508-6,LN,PLT352,PLT,CWE,Ct interpretation with Indeterminate
+60422-3,LN,88875-0,LN,CWE,PCR ordinal
+60422-3,LN,88876-8,LN,NM,(Non-coded numeric value)
+60422-3,LN,PLT2037,PLT,CWE,Ct interpretation with Indeterminate
+60422-3,LN,60422-3,LN,CWE,Measles genotyping
+60422-3,LN,PLT542,PLT,ED,(FASTA file)
+25418-5,LN,25418-5,LN,NM,(Non-coded numeric value)
+25418-5,LN,6476-6,LN,CWE,Serology ordinal
+6478-2,LN,6478-2,LN,CWE,Serology ordinal
+85808-4,LN,68993-5,LN,CWE,RNase P PCR ordinal
+85808-4,LN,85800-1,LN,NM,(Non-coded numeric value)
+85808-4,LN,PLT351,PLT,CWE,Ct value interpretation
+85808-4,LN,47532-7,LN,CWE,PCR ordinal
+47532-7,LN,68993-5,LN,CWE,RNase P PCR ordinal
+47532-7,LN,85800-1,LN,NM,(Non-coded numeric value)
+47532-7,LN,PLT351,PLT,CWE,Ct value interpretation
+47532-7,LN,47532-7,LN,CWE,PCR ordinal
+47532-7,LN,PLT539,PLT,ED,(FASTA file)
+85807-6,LN,85807-6,LN,CWE,Mumps genotyping
+85807-6,LN,PLT539,PLT,ED,(FASTA file)
+5334-8,LN,40667-8,LN,CWE,Serology ordinal
+5334-8,LN,5334-8,LN,NM,(Non-coded numeric value)
+5335-5,LN,5335-5,LN,NM,(Non-coded numeric value)
+85795-3,LN,68993-5,LN,CWE,RNase P PCR ordinal
+85795-3,LN,54091-4,LN,CWE,PCR ordinal
+85795-3,LN,85796-1,LN,NM,(Non-coded numeric value)
+85795-3,LN,PLT353,PLT,CWE,Ct value interpretation
+85795-3,LN,PLT543,PLT,ED,(FASTA file)
+54091-4,LN,68993-5,LN,CWE,RNase P PCR ordinal
+54091-4,LN,54091-4,LN,CWE,PCR ordinal
+54091-4,LN,85796-1,LN,NM,(Non-coded numeric value)
+54091-4,LN,PLT353,PLT,CWE,Ct value interpretation
+85690-6,LN,85690-6,LN,CWE,Rubella genotyping
+85690-6,LN,PLT543,PLT,ED,(FASTA file)
+5882-6,LN,5882-6,LN,CWE,Serology ordinal
+5403-1,LN,15410-4,LN,CWE,Serology ordinal
+5403-1,LN,5403-1,LN,NM,(Non-coded numeric value)
+5404-9,LN,5404-9,LN,NM,(Non-coded numeric value)
+5404-9,LN,29662-4,LN,CWE,Serology ordinal
+33027-4,LN,68993-5,LN,CWE,RNase P PCR ordinal
+33027-4,LN,11483-5,LN,CWE,PCR ordinal
+86502-2,LN,68993-5,LN,CWE,RNase P PCR ordinal
+86502-2,LN,86502-2,LN,CWE,VZV strain PCR
+86502-2,LN,PLT360,PLT,CWE,PCR ordinal
+86502-2,LN,PLT361,PLT,CWE,PCR ordinal
+11483-5,LN,11483-5,LN,CWE,PCR ordinal
+86509-7,LN,86509-7,LN,CWE,VZV genotyping
+86509-7,LN,PLT546,PLT,ED,(FASTA file)
+86509-7,LN,PLT544,PLT,ED,(FASTA file)
+86509-7,LN,PLT545,PLT,ED,(FASTA file)
+61366-1,LN,61366-1,LN,CWE,PCR ordinal
+61366-1,LN,68993-5,LN,CWE,RNase P PCR ordinal
+61366-1,LN,86316-7,LN,NM,(Non-coded numeric value)
+61366-1,LN,85627-8,LN,NM,(Non-coded numeric value)
+61366-1,LN,PLT450,PLT,CWE,Ct value interpretation
+58473-0,LN,58473-0,LN,CWE,H. influenzae serotyping PCR
+58473-0,LN,PLT444,PLT,NM,(Non-coded numeric value)
+58473-0,LN,85678-1,LN,NM,(Non-coded numeric value)
+58473-0,LN,85683-1,LN,NM,(Non-coded numeric value)
+58473-0,LN,85682-3,LN,NM,(Non-coded numeric value)
+58473-0,LN,85681-5,LN,NM,(Non-coded numeric value)
+58473-0,LN,85680-7,LN,NM,(Non-coded numeric value)
+58473-0,LN,85679-9,LN,NM,(Non-coded numeric value)
+58473-0,LN,PLT430,PLT,CWE,Ct value interpretation
+58473-0,LN,PLT431,PLT,CWE,Ct value interpretation
+58473-0,LN,PLT432,PLT,CWE,Ct value interpretation
+58473-0,LN,PLT433,PLT,CWE,Ct value interpretation
+58473-0,LN,PLT434,PLT,CWE,Ct value interpretation
+58473-0,LN,PLT435,PLT,CWE,Ct value interpretation
+49671-1,LN,68993-5,LN,CWE,RNase P PCR ordinal
+49671-1,LN,86316-7,LN,NM,(Non-coded numeric value)
+49671-1,LN,85628-6,LN,CWE,PCR ordinal
+49671-1,LN,PLT466,PLT,NM,(Non-coded numeric value)
+71788-4,LN,71788-4,LN,CWE,N. meningitidis serogrouping PCR
+71788-4,LN,86234-2,LN,NM,(Non-coded numeric value)
+71788-4,LN,86235-9,LN,NM,(Non-coded numeric value)
+71788-4,LN,86236-7,LN,NM,(Non-coded numeric value)
+71788-4,LN,86237-5,LN,NM,(Non-coded numeric value)
+71788-4,LN,86238-3,LN,NM,(Non-coded numeric value)
+71788-4,LN,PLT464,PLT,NM,(Non-coded numeric value)
+549-6,LN,549-6,LN,CWE,Culture ordinal
+549-6,LN,48741-3,LN,CWE,Culture ordinal
+24127-3,LN,24127-3,LN,NM,(Non-coded numeric value)
+24127-3,LN,85684-9,LN,CWE,Pertussis toxin serology ordinal
+62426-2,LN,68993-5,LN,CWE,RNase P PCR ordinal
+62426-2,LN,86316-7,LN,NM,(Non-coded numeric value)
+62426-2,LN,62428-8,LN,CWE,Bordetella sp PCR
+62426-2,LN,23826-1,LN,CWE,PCR ordinal with Indeterminate
+62426-2,LN,62427-0,LN,CWE,PCR ordinal with Indeterminate
+62426-2,LN,29723-4,LN,CWE,PCR ordinal with Indeterminate
+62426-2,LN,45294-6,LN,CWE,PCR ordinal with Indeterminate
+62426-2,LN,86325-8,LN,NM,(Non-coded numeric value)
+62426-2,LN,86326-6,LN,NM,(Non-coded numeric value)
+62426-2,LN,86327-4,LN,NM,(Non-coded numeric value)
+62426-2,LN,85799-5,LN,NM,(Non-coded numeric value)
+62426-2,LN,PLT451,PLT,CWE,Ct value interpretation
+62426-2,LN,PLT355,PLT,CWE,Ct value interpretation
+62426-2,LN,PLT356,PLT,CWE,Ct value interpretation
+62426-2,LN,PLT354,PLT,CWE,Ct interpretation with Indeterminate
+62426-2,LN,PLT547,PLT,ED,(FASTA file)
+38353-9,LN,38353-9,LN,CWE,Streptococcus culture
+49672-9,LN,68993-5,LN,CWE,RNase P PCR ordinal
+49672-9,LN,86316-7,LN,NM,(Non-coded numeric value)
+49672-9,LN,49672-9,LN,CWE,PCR ordinal
+49672-9,LN,85688-0,LN,NM,(Non-coded numeric value)
+49672-9,LN,PLT452,PLT,CWE,Ct value interpretation
+PLT612,PLT,PLT612,PLT,CWE,S. pneumoniae serotype
+86503-0,LN,86503-0,LN,CWE,S. pneumoniae serotyping PCR conventional
+85496-8,LN,85496-8,LN,CWE,S. pneumoniae serotyping PCR real time
+50545-3,LN,28-1,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,6932-8,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,116-4,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,108-1,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,141-2,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,137-0,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,73627-2,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,6652-2,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,20396-8,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,233-7,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,61188-9,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,193-3,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,173-5,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,225-3,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,35788-9,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,23641-4,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,29254-0,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,428-3,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,516-5,LN,SN,(Non-coded structured numeric value)
+50545-3,LN,524-9,LN,SN,(Non-coded structured numeric value)
+6463-4,LN,6463-4,LN,CWE,Bacterial culture
+PLT2250,PLT,PLT2250,PLT,CWE,S. pneumoniae WGS result
+49671-1,LN,49671-1,LN,CWE,PCR ordinal
+71788-4,LN,74539-8,LN,CWE,PCR ordinal
+71788-4,LN,74538-0,LN,CWE,PCR ordinal
+71788-4,LN,74537-2,LN,CWE,PCR ordinal
+71788-4,LN,74536-4,LN,CWE,PCR ordinal
+71788-4,LN,74535-6,LN,CWE,PCR ordinal
+71788-4,LN,74534-9,LN,CWE,PCR ordinal
+PLT319,PLT,74539-8,LN,CWE,PCR ordinal
+PLT319,PLT,74538-0,LN,CWE,PCR ordinal
+PLT319,PLT,74537-2,LN,CWE,PCR ordinal
+PLT319,PLT,74536-4,LN,CWE,PCR ordinal
+PLT319,PLT,74535-6,LN,CWE,PCR ordinal
+PLT319,PLT,74534-9,LN,CWE,PCR ordinal
+PLT319,PLT,71788-4,LN,CWE,N. meningitidis serogrouping PCR
+PLT319,PLT,86234-2,LN,NM,(Non-coded numeric value)
+PLT319,PLT,86235-9,LN,NM,(Non-coded numeric value)
+PLT319,PLT,86236-7,LN,NM,(Non-coded numeric value)
+PLT319,PLT,86237-5,LN,NM,(Non-coded numeric value)
+PLT319,PLT,86238-3,LN,NM,(Non-coded numeric value)
+PLT319,PLT,PLT464,PLT,NM,(Non-coded numeric value)
+54091-4,LN,PLT313,PLT,NM,(Non-coded numeric value)
+85795-3,LN,PLT313,PLT,NM,(Non-coded numeric value)
+13921-2,LN,13921-2,LN,CWE,Culture ordinal
+12237-4,LN,12237-4,LN,CWE,Serology ordinal
+85496-8,LN,PLT445,PLT,NM,(Non-coded numeric value)
+85496-8,LN,85747-4,LN,NM,(Non-coded numeric value)
+85496-8,LN,85744-1,LN,NM,(Non-coded numeric value)
+85496-8,LN,85743-3,LN,NM,(Non-coded numeric value)
+85496-8,LN,85742-5,LN,NM,(Non-coded numeric value)
+85496-8,LN,85741-7,LN,NM,(Non-coded numeric value)
+85496-8,LN,85740-9,LN,NM,(Non-coded numeric value)
+85496-8,LN,85754-0,LN,NM,(Non-coded numeric value)
+85496-8,LN,85753-2,LN,NM,(Non-coded numeric value)
+85496-8,LN,85748-2,LN,NM,(Non-coded numeric value)
+85496-8,LN,85752-4,LN,NM,(Non-coded numeric value)
+85496-8,LN,85759-9,LN,NM,(Non-coded numeric value)
+85496-8,LN,85758-1,LN,NM,(Non-coded numeric value)
+85496-8,LN,85746-6,LN,NM,(Non-coded numeric value)
+85496-8,LN,85757-3,LN,NM,(Non-coded numeric value)
+85496-8,LN,85751-6,LN,NM,(Non-coded numeric value)
+85496-8,LN,85756-5,LN,NM,(Non-coded numeric value)
+85496-8,LN,85760-7,LN,NM,(Non-coded numeric value)
+85496-8,LN,85745-8,LN,NM,(Non-coded numeric value)
+85496-8,LN,85749-0,LN,NM,(Non-coded numeric value)
+85496-8,LN,85750-8,LN,NM,(Non-coded numeric value)
+85496-8,LN,85755-7,LN,NM,(Non-coded numeric value)
+85496-8,LN,PLT421,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT425,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT427,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT428,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT429,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT414,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT415,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT420,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT416,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT409,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT410,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT422,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT411,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT417,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT412,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT423,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT424,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT419,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT418,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT426,PLT,CWE,Ct value interpretation
+85496-8,LN,PLT413,PLT,CWE,Ct value interpretation
+PLT2259,PLT,68993-5,LN,CWE,RNase P PCR ordinal
+PLT2259,PLT,85800-1,LN,NM,(Non-coded numeric value)
+PLT2259,PLT,PLT351,PLT,CWE,Ct value interpretation
+PLT2259,PLT,47532-7,LN,CWE,PCR ordinal
+PLT2259,PLT,PLT2258,PLT,NM,(Non-coded numeric value)
+47532-7,LN,PLT2258,PLT,NM,(Non-coded numeric value)
+68991-9,LN,PLT2114,PLT,CWE,Clinical specimen or isolate
+93750-8,LN,93749-0,LN,NM,(Non-coded numeric value)
+86509-7,LN,PLT2278,PLT,ED,(FASTA file)
+86509-7,LN,PLT2279,PLT,ED,(FASTA file)
+86509-7,LN,PLT2280,PLT,ED,(FASTA file)
+86509-7,LN,PLT2281,PLT,ED,(FASTA file)
+PLT2353,PLT,PLT400,PLT,NM,(Non-coded numeric value)
+PLT2353,PLT,PLT401,PLT,NM,(Non-coded numeric value)
+PLT2353,PLT,PLT403,PLT,NM,(Non-coded numeric value)
+PLT2353,PLT,PLT404,PLT,NM,(Non-coded numeric value)
+PLT2353,PLT,PLT406,PLT,NM,(Non-coded numeric value)
+PLT2353,PLT,PLT407,PLT,NM,(Non-coded numeric value)
+PLT2403,PLT,61366-1,LN,CWE,PCR ordinal
+PLT2403,PLT,58473-0,LN,CWE,H. influenzae serotyping PCR
+PLT2404,PLT,85627-8,LN,NM,(Non-coded numeric value)
+PLT2404,PLT,85678-1,LN,NM,(Non-coded numeric value)
+PLT2404,PLT,85683-1,LN,NM,(Non-coded numeric value)
+PLT2404,PLT,85682-3,LN,NM,(Non-coded numeric value)
+PLT2404,PLT,85681-5,LN,NM,(Non-coded numeric value)
+PLT2404,PLT,85680-7,LN,NM,(Non-coded numeric value)
+PLT2404,PLT,85679-9,LN,NM,(Non-coded numeric value)
+PLT2406,PLT,49671-1,LN,CWE,PCR ordinal
+PLT2406,PLT,71788-4,LN,CWE,N. meningitidis serogrouping PCR
+PLT2407,PLT,PLT2313,PLT,NM,(Non-coded numeric value)
+PLT2407,PLT,86234-2,LN,NM,(Non-coded numeric value)
+PLT2407,PLT,86235-9,LN,NM,(Non-coded numeric value)
+PLT2407,PLT,86236-7,LN,NM,(Non-coded numeric value)
+PLT2407,PLT,86237-5,LN,NM,(Non-coded numeric value)
+PLT2407,PLT,86238-3,LN,NM,(Non-coded numeric value)
+PLT2407,PLT,86198-9,LN,NM,(Non-coded numeric value)
+PLT647,PLT,PLT612,PLT,CWE,S. pneumoniae serotype
+PLT647,PLT,PLT2250,PLT,CWE,S. pneumoniae WGS result
+PLT2716,PLT,49672-9,LN,CWE,PCR ordinal
+PLT2716,PLT,85496-8,LN,CWE,S. pneumoniae serotyping PCR real time
+PLT2717,PLT,86316-7,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85688-0,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85747-4,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85744-1,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85743-3,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85742-5,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85741-7,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85740-9,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85754-0,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85753-2,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85748-2,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85752-4,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85759-9,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85758-1,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85746-6,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85757-3,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85751-6,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85756-5,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85760-7,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85745-8,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85749-0,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85750-8,LN,NM,(Non-coded numeric value)
+PLT2717,PLT,85755-7,LN,NM,(Non-coded numeric value)
+PLT647,PLT,77202-0,LN,TX,(Non-coded text)
+PLR2353,PLT,PLT2785,PLT,NM,(Non-coded numeric value)

@@ -6,7 +6,7 @@ public class VPD {
 
   public static final Program program = Program.VPD;
 
-  private static final String FOLDER = "vpd/20210616";
+  private static final String FOLDER = "vpd/20220223";
   private static final String FOLDER_SPM = "vpd/20200624";
 
 
