@@ -2,8 +2,8 @@ package gov.nist.hit.elr.aphl.domain;
 
 public enum WebService {
 
-  APHL_WS("https://hit-dev.nist.gov:8097/aphl-service/aphl"), VALUESETS_WS(
-      "https://hit-dev.nist.gov:8095/vocabulary-service");
+  APHL_WS("http://hit-dev-admin.nist.gov:8097/aphl-service/aphl"), VALUESETS_WS(
+      "http://hit-dev-admin.nist.gov:8095/vocabulary-service");
 
   private String url;
 
