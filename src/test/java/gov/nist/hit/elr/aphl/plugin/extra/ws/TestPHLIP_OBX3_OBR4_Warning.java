@@ -9,12 +9,11 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
-@Ignore
+
 public class TestPHLIP_OBX3_OBR4_Warning {
 
   // SUCCESS

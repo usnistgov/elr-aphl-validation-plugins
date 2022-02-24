@@ -13,7 +13,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.plugin.util.Util;
@@ -22,7 +21,7 @@ import gov.nist.validation.report.Entry;
 import gov.nist.validation.report.Report;
 import hl7.v2.validation.SyncHL7Validator;
 
-@Ignore
+
 public class TestARLN_OBX3 {
 
   // SUCCESS
@@ -130,7 +129,6 @@ public class TestARLN_OBX3 {
   }
 
   @Test
-  @Ignore
   public void testMessage() throws Exception {
 
     String globalFolder = "/ARLN";

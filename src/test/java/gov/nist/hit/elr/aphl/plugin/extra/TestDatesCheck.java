@@ -11,7 +11,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.aphl.plugin.extra.DatesCheck.LocationDateList;
@@ -186,7 +185,6 @@ public class TestDatesCheck {
   }
 
   @Test
-  @Ignore
   public void testMessage() throws Exception {
 
     String globalFolder = "";
@@ -202,7 +200,7 @@ public class TestDatesCheck {
     ClassLoader classLoader = getClass().getClassLoader();
     File message1 = new File(classLoader.getResource(message1FileName).getFile());
     String messageString = FileUtils.readFileToString(message1);
-    Report report = validator.check(messageString, "5d52faf184aeb5b33d8a5bf0");
+    Report report = validator.check(messageString, "5d5d68ce6dc12f5d54495e15");
 
     Set<String> keys = report.getEntries().keySet();
     int errors = 0;

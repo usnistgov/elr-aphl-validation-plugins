@@ -8,7 +8,8 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -19,7 +20,7 @@ import hl7.v2.validation.SyncHL7Validator;
 
 public class TestELR_020 {
 
-  private static Logger logger = Logger.getLogger(TestELR_020.class.getName());
+  private static Logger logger = LogManager.getLogger();
 
   private static String globalFolder = "/MessageProfile";
 

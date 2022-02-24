@@ -14,8 +14,6 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import gov.nist.hit.elr.aphl.plugin.extra.ARLN_SPM4;
-import gov.nist.hit.elr.aphl.plugin.extra.SPM_4;
 import gov.nist.hit.elr.plugin.util.Util;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 import gov.nist.validation.report.Entry;
@@ -54,6 +52,10 @@ public class TestARLN_SPM4 {
     assertEquals(0, result.size());
 
     SPM4 = new ComplexCodedElement("", "", "116155002", "SCT");
+    result = testObject.check(SPM4);
+    assertEquals(0, result.size());
+
+    SPM4 = new ComplexCodedElement("74964007", "SCT", "", "");
     result = testObject.check(SPM4);
     assertEquals(0, result.size());
 

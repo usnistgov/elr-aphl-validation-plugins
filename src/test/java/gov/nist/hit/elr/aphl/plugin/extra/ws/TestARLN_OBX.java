@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
-@Ignore
+
 public class TestARLN_OBX {
 
   private static OBX_ws testObject;

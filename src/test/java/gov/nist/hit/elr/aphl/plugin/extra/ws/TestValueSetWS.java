@@ -9,14 +9,13 @@ import java.util.List;
 import java.util.Set;
 
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.aphl.domain.Program;
 import gov.nist.hit.elr.aphl.domain.vocab.ValueSet;
 import gov.nist.hit.elr.plugin.utils.WSUtils;
 
-@Ignore
+
 public class TestValueSetWS {
 
   private static Set<String> ARLN;
@@ -203,8 +202,14 @@ public class TestValueSetWS {
     Rabies.add("YesNoUnknown");
 
     VPD = new HashSet<String>();
-    // value sets tab 20200624
+    // tests tab 20210828
     VPD.add("(FASTA file)");
+    // VPD.add("(Non-coded date/time value)");
+    VPD.add("(Non-coded numeric value)");
+    VPD.add("(Non-coded string value)");
+    VPD.add("(Non-coded structured numeric value)");
+    VPD.add("(Non-coded text)");
+    VPD.add("(PDF file result)");
     VPD.add("Antibiotics for pertussis");
     VPD.add("Bacterial culture");
     VPD.add("Bordetella ptxS1 marker Ct interpretation");
@@ -225,22 +230,29 @@ public class TestValueSetWS {
     VPD.add("Positive, Negative");
     VPD.add("RNase P PCR ordinal");
     VPD.add("Rubella genotyping");
-    VPD.add("S. pneumoniae WGS result");
     VPD.add("S. pneumoniae serotype");
     VPD.add("S. pneumoniae serotyping PCR conventional");
     VPD.add("S. pneumoniae serotyping PCR real time");
+    VPD.add("S. pneumoniae WGS result");
     VPD.add("Serology ordinal");
     VPD.add("Streptococcus culture");
+    VPD.add("VPD Specimen Type");
     VPD.add("VZV genotyping");
     VPD.add("VZV strain PCR");
     VPD.add("VZV strain SNP PCR");
     VPD.add("Yes, No, Unknown");
-    // tests tab 20200624
+
+    // tests tab 20210828
     VPD.add("(FASTA file)");
+    // VPD.add("(Non-coded date/time value)");
+    VPD.add("(Non-coded numeric value)");
+    VPD.add("(Non-coded string value)");
+    VPD.add("(Non-coded structured numeric value)");
+    VPD.add("(Non-coded text)");
     VPD.add("Antibiotics for pertussis");
     VPD.add("Bacterial culture");
     VPD.add("Bordetella sp PCR");
-    VPD.add("Clinical sample or isolate");
+    VPD.add("Clinical specimen or isolate");
     VPD.add("Ct interpretation with Indeterminate");
     VPD.add("Ct value interpretation");
     VPD.add("Culture ordinal");
@@ -253,15 +265,16 @@ public class TestValueSetWS {
     VPD.add("Pertussis toxin serology ordinal");
     VPD.add("RNase P PCR ordinal");
     VPD.add("Rubella genotyping");
-    VPD.add("S. pneumoniae WGS result");
     VPD.add("S. pneumoniae serotype");
     VPD.add("S. pneumoniae serotyping PCR conventional");
     VPD.add("S. pneumoniae serotyping PCR real time");
+    VPD.add("S. pneumoniae WGS result");
     VPD.add("Serology ordinal");
     VPD.add("Streptococcus culture");
     VPD.add("VZV genotyping");
     VPD.add("VZV strain PCR");
     VPD.add("Yes, No, Unknown");
+
 
   }
 
@@ -297,6 +310,7 @@ public class TestValueSetWS {
   public void testVPD() throws IOException, InterruptedException, URISyntaxException {
     WSUtils ws = new WSUtils();
     for (String valueSetName : VPD) {
+      // System.err.println(valueSetName);
       List<ValueSet> valueSet = ws.getValueSet(Program.APHL_VPD, valueSetName);
       if (valueSet.size() == 0) {
         System.err.println(valueSetName);

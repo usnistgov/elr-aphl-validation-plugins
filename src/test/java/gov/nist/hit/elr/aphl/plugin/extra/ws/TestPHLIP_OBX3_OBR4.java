@@ -22,7 +22,7 @@ import gov.nist.validation.report.Entry;
 import gov.nist.validation.report.Report;
 import hl7.v2.validation.SyncHL7Validator;
 
-@Ignore
+
 public class TestPHLIP_OBX3_OBR4 {
 
   // SUCCESS

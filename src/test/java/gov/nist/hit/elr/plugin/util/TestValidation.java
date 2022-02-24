@@ -1,4 +1,4 @@
-package gov.nist.hit.elr.aphl.plugin.extra.ws;
+package gov.nist.hit.elr.plugin.util;
 
 import java.io.File;
 import java.util.List;
@@ -9,12 +9,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import gov.nist.hit.elr.plugin.util.Util;
 import gov.nist.validation.report.Entry;
 import gov.nist.validation.report.Report;
 import hl7.v2.validation.SyncHL7Validator;
 
-// @Ignore
 public class TestValidation {
 
   @Test

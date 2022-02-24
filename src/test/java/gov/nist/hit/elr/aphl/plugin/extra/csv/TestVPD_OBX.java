@@ -11,7 +11,6 @@ import org.junit.Test;
 import gov.nist.hit.elr.aphl.plugin.extra.OBX;
 import gov.nist.hit.elr.plugin.utils.ComplexCodedElement;
 
-@Ignore
 public class TestVPD_OBX {
 
   private static OBX testObject;

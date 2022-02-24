@@ -11,7 +11,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4;
@@ -23,7 +22,6 @@ import gov.nist.validation.report.Entry;
 import gov.nist.validation.report.Report;
 import hl7.v2.validation.SyncHL7Validator;
 
-@Ignore
 public class TestVPD_OBX3_OBR4 {
 
   // SUCCESS
