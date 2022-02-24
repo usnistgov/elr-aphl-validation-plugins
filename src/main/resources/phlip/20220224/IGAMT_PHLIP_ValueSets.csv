@@ -1,0 +1,1792 @@
+Value Set Name,Code,CodeSystem
+Race,2131-1,CDCREC
+Race,2106-3,CDCREC
+Race,UNK,NULLFL
+Ethnicity,2135-2,CDCREC
+Ethnicity,2186-5,CDCREC
+Ethnicity,UNK,NULLFL
+Patient location,I,HL70004
+Patient location,282E00000X,HCPTNUCC
+Patient location,O,HL70004
+Pregnancy status,60001007,SCT
+Pregnancy status,77386006,SCT
+Pregnancy status,UNK,NULLFL
+Program list,PLR136,PLR
+Program list,PLR135,PLR
+Program list,PLR138,PLR
+CF IF Neut result,281267002,SCT
+CF IF Neut result,260385009,SCT
+CF IF Neut result,10828004,SCT
+CF IF Neut result,123840003,SCT
+CF IF Neut result,125159002,SCT
+CF IF Neut result,281273001,SCT
+CF IF Neut result,125154007,SCT
+CF IF Neut result,373121007,SCT
+Conclusion PCR result,260373001,SCT
+Conclusion PCR result,42425007,SCT
+Conclusion PCR result,419984006,SCT
+Conclusion PCR result,281267002,SCT
+Conclusion PCR result,260415000,SCT
+Conclusion PCR result,123840003,SCT
+Conclusion PCR result,125159002,SCT
+(Non-coded date),(Date),(none)
+(Non-coded date/time),(DateTime),(none)
+(Non-coded number),(Numeric),(none)
+(Non-coded structured number),(StructNum),(none)
+(Non-coded string),(String),(none)
+(Non-coded text),(Text),(none)
+(Non-coded ID format),(Identifier),(none)
+Age value units,d,UCUM
+Age value units,h,UCUM
+Age value units,min,UCUM
+Age value units,mo,UCUM
+Age value units,s,UCUM
+Age value units,UNK,NULLFL
+Age value units,wk,UCUM
+Age value units,a,UCUM
+Units of measure,{Ct},UCUM
+Units of measure,IU/mL,UCUM
+Units of measure,ug/mL,UCUM
+Units of measure,mm,UCUM
+Units of measure,mg/L,UCUM
+Units of measure,d,UCUM
+Units of measure,h,UCUM
+Units of measure,min,UCUM
+Units of measure,mo,UCUM
+Units of measure,s,UCUM
+Units of measure,wk,UCUM
+Units of measure,a,UCUM
+Units of measure,%,UCUM
+Yes No,N,HL70136
+Yes No,Y,HL70136
+Yes No Unknown,N,HL70136
+Yes No Unknown,UNK,NULLFL
+Yes No Unknown,Y,HL70136
+Sex,F,HL70001
+Sex,M,HL70001
+Sex,U,HL70001
+Race,1002-5,CDCREC
+Race,2028-9,CDCREC
+Race,2054-5,CDCREC
+Race,2076-8,CDCREC
+Conclusion PCR result,281273001,SCT
+Conclusion PCR result,125154007,SCT
+Conclusion PCR result,373121007,SCT
+Drug test result,281267002,SCT
+Drug test result,82334004,SCT
+Drug test result,30714006,SCT
+Drug test result,123840003,SCT
+Drug test result,125159002,SCT
+Drug test result,281273001,SCT
+Drug test result,125154007,SCT
+Drug test result,131196009,SCT
+Drug test result,373121007,SCT
+Echovirus,39164004,SCT
+Echovirus,36204005,SCT
+Echovirus,37870004,SCT
+Echovirus,70855006,SCT
+Echovirus,82519006,SCT
+Echovirus,21206001,SCT
+Echovirus,74533001,SCT
+Echovirus,38419004,SCT
+Echovirus,7746003,SCT
+Echovirus,75565006,SCT
+Echovirus,43794009,SCT
+Echovirus,427004,SCT
+Echovirus,4433000,SCT
+Echovirus,46506009,SCT
+Echovirus,53038008,SCT
+Echovirus,66619009,SCT
+Echovirus,281267002,SCT
+Echovirus,260385009,SCT
+Echovirus,123840003,SCT
+Echovirus,125159002,SCT
+Echovirus,281273001,SCT
+Echovirus,125154007,SCT
+Echovirus,373121007,SCT
+EIA result,260373001,SCT
+EIA result,281267002,SCT
+EIA result,82334004,SCT
+EIA result,260415000,SCT
+EIA result,123840003,SCT
+EIA result,125159002,SCT
+EIA result,281273001,SCT
+EIA result,125154007,SCT
+EIA result,373121007,SCT
+EV culture result,260373001,SCT
+EV culture result,281267002,SCT
+EV culture result,82334004,SCT
+EV culture result,264868006,SCT
+EV culture result,260415000,SCT
+EV culture result,264887000,SCT
+EV culture result,123840003,SCT
+EV culture result,125159002,SCT
+EV culture result,281273001,SCT
+EV culture result,125154007,SCT
+EV culture result,373121007,SCT
+Flu A B virus screen DFA,419984006,SCT
+Flu A B virus screen DFA,281267002,SCT
+Flu A B virus screen DFA,407479009,SCT
+Flu A B virus screen DFA,407480007,SCT
+Flu A B virus screen DFA,260385009,SCT
+Flu A B virus screen DFA,123840003,SCT
+Flu A B virus screen DFA,125159002,SCT
+Flu A B virus screen DFA,281273001,SCT
+Flu A B virus screen DFA,125154007,SCT
+Flu A B virus screen DFA,373121007,SCT
+Flu A H subtype,419984006,SCT
+Flu A H subtype,941000124100,SCT
+Flu A H subtype,951000124103,SCT
+Flu A H subtype,281267002,SCT
+Flu A H subtype,PLR11,PLR
+Flu A H subtype,PLR12,PLR
+Flu A H subtype,PLR13,PLR
+Flu A H subtype,PLR14,PLR
+Flu A H subtype,PLR15,PLR
+Flu A H subtype,PLR16,PLR
+Flu A H subtype,PLR4,PLR
+Flu A H subtype,PLR8,PLR
+Flu A H subtype,PLR19,PLR
+Flu A H subtype,446396002,SCT
+Flu A H subtype,221000124104,SCT
+Flu A H subtype,446397006,SCT
+Flu A H subtype,446645007,SCT
+Flu A H subtype,446648009,SCT
+Flu A H subtype,446649001,SCT
+Flu A H subtype,PLR6,PLR
+Flu A H subtype,PLR144,PLR
+Flu A H subtype,PLR159,PLR
+Flu A H subtype,123840003,SCT
+Flu A H subtype,125159002,SCT
+Flu A H subtype,281273001,SCT
+Flu A H subtype,125154007,SCT
+Flu A H subtype,373121007,SCT
+Flu A N subtype,419984006,SCT
+Flu A N subtype,82334004,SCT
+Respiratory pathogen PCR,2185006,SCT
+Respiratory pathogen PCR,417810000,SCT
+Respiratory pathogen PCR,417811001,SCT
+Respiratory pathogen PCR,448520007,SCT
+Respiratory pathogen PCR,704980004,SCT
+Respiratory pathogen PCR,2247004,SCT
+Respiratory pathogen PCR,68957002,SCT
+Respiratory pathogen PCR,46957004,SCT
+Respiratory pathogen PCR,66111006,SCT
+Respiratory pathogen PCR,417812008,SCT
+Respiratory pathogen PCR,417813003,SCT
+Respiratory pathogen PCR,PLR355,PLR
+Respiratory pathogen PCR,417814009,SCT
+Respiratory pathogen PCR,417815005,SCT
+Respiratory pathogen PCR,417816006,SCT
+Respiratory pathogen PCR,725064005,SCT
+Respiratory pathogen PCR,446373002,SCT
+Respiratory pathogen PCR,84101006,SCT
+Respiratory pathogen PCR,407370007,SCT
+Respiratory pathogen PCR,697942007,SCT
+Respiratory pathogen PCR,417818007,SCT
+Respiratory pathogen PCR,407371006,SCT
+Respiratory pathogen PCR,57757007,SCT
+Respiratory pathogen PCR,53744000,SCT
+Respiratory pathogen PCR,72254008,SCT
+Respiratory pathogen PCR,38203008,SCT
+Respiratory pathogen PCR,52657009,SCT
+Respiratory pathogen PCR,2793000,SCT
+Respiratory pathogen PCR,7543009,SCT
+Respiratory pathogen PCR,24747003,SCT
+Respiratory pathogen PCR,72593000,SCT
+Respiratory pathogen PCR,42067008,SCT
+Respiratory pathogen PCR,58445002,SCT
+Respiratory pathogen PCR,30840007,SCT
+Respiratory pathogen PCR,38889001,SCT
+Respiratory pathogen PCR,23831003,SCT
+Respiratory pathogen PCR,6771007,SCT
+Respiratory pathogen PCR,72597004,SCT
+Respiratory pathogen PCR,83593001,SCT
+Respiratory pathogen PCR,72877003,SCT
+Respiratory pathogen PCR,55982000,SCT
+Respiratory pathogen PCR,86886003,SCT
+Respiratory pathogen PCR,38219001,SCT
+Respiratory pathogen PCR,24071003,SCT
+Respiratory pathogen PCR,74924008,SCT
+Respiratory pathogen PCR,1293004,SCT
+Respiratory pathogen PCR,3096006,SCT
+Respiratory pathogen PCR,49018005,SCT
+Respiratory pathogen PCR,82059001,SCT
+Respiratory pathogen PCR,27555004,SCT
+Respiratory pathogen PCR,89585007,SCT
+Respiratory pathogen PCR,41988004,SCT
+Respiratory pathogen PCR,62408001,SCT
+Respiratory pathogen PCR,48171002,SCT
+Respiratory pathogen PCR,39164004,SCT
+Respiratory pathogen PCR,36204005,SCT
+Flu A N subtype,448803002,SCT
+Flu A N subtype,448835002,SCT
+Flu B lineage,419984006,SCT
+Flu B lineage,281267002,SCT
+Flu B lineage,427672003,SCT
+Flu B lineage,426959005,SCT
+Flu B lineage,260415000,SCT
+Flu B lineage,123840003,SCT
+Flu B lineage,125159002,SCT
+Flu B lineage,281273001,SCT
+Flu B lineage,125154007,SCT
+Flu B lineage,373121007,SCT
+Flu B lineage PCR,419984006,SCT
+Flu B lineage PCR,PLR364,PLR
+Flu B lineage PCR,PLR219,PLR
+Flu B lineage PCR,281267002,SCT
+Flu B lineage PCR,427672003,SCT
+Flu B lineage PCR,426959005,SCT
+Flu B lineage PCR,260415000,SCT
+Flu B lineage PCR,123840003,SCT
+Flu B lineage PCR,125159002,SCT
+Flu B lineage PCR,281273001,SCT
+Flu B lineage PCR,125154007,SCT
+Flu B lineage PCR,373121007,SCT
+Flu viruses,419984006,SCT
+Flu viruses,941000124100,SCT
+Flu viruses,951000124103,SCT
+Flu viruses,281267002,SCT
+Flu viruses,PLR11,PLR
+Flu viruses,PLR12,PLR
+Flu viruses,PLR13,PLR
+Flu viruses,PLR14,PLR
+Flu viruses,PLR15,PLR
+Flu viruses,PLR16,PLR
+Flu viruses,PLR4,PLR
+Flu viruses,PLR8,PLR
+Flu viruses,PLR19,PLR
+Flu viruses,407479009,SCT
+Flu viruses,446396002,SCT
+Flu viruses,221000124104,SCT
+Flu viruses,700349009,SCT
+Flu viruses,446397006,SCT
+Flu viruses,446645007,SCT
+Flu viruses,446648009,SCT
+Flu viruses,446649001,SCT
+Flu viruses,407480007,SCT
+Flu viruses,427672003,SCT
+Flu viruses,426959005,SCT
+Flu viruses,407482004,SCT
+Flu viruses,PLR6,PLR
+Flu viruses,264868006,SCT
+Flu viruses,264887000,SCT
+Flu viruses,PLR144,PLR
+Flu viruses,123840003,SCT
+Flu viruses,125159002,SCT
+Flu viruses,281273001,SCT
+Flu viruses,125154007,SCT
+Flu viruses,373121007,SCT
+Flu viruses HAI,281267002,SCT
+Flu viruses HAI,446396002,SCT
+Flu viruses HAI,221000124104,SCT
+Flu viruses HAI,446645007,SCT
+Flu viruses HAI,427672003,SCT
+Flu viruses HAI,426959005,SCT
+Flu viruses HAI,260385009,SCT
+Flu viruses HAI,123840003,SCT
+Flu viruses HAI,125159002,SCT
+Flu viruses HAI,281273001,SCT
+Flu viruses HAI,125154007,SCT
+Flu viruses HAI,373121007,SCT
+HAI results,260373001,SCT
+HAI results,281267002,SCT
+HAI results,PLR365,PLR
+HAI results,260415000,SCT
+HAI results,123840003,SCT
+HAI results,125159002,SCT
+HAI results,281273001,SCT
+HAI results,125154007,SCT
+HAI results,373121007,SCT
+Non-respiratory pathogens,419984006,SCT
+Non-respiratory pathogens,281267002,SCT
+Non-respiratory pathogens,919722731000087109,SCT
+Non-respiratory pathogens,347362891000087107,SCT
+Non-respiratory pathogens,260415000,SCT
+Non-respiratory pathogens,123840003,SCT
+Non-respiratory pathogens,125159002,SCT
+Non-respiratory pathogens,281273001,SCT
+Non-respiratory pathogens,125154007,SCT
+Non-respiratory pathogens,373121007,SCT
+Pre-screen method,104257009,SCT
+Pre-screen method,PLR250,PLR
+Pre-screen method,9718006,SCT
+Pre-screen method,12717000,SCT
+Pre-screen results,419984006,SCT
+Pre-screen results,PLR19,PLR
+Pre-screen results,407479009,SCT
+Pre-screen results,PLR2580,PLR
+Pre-screen results,446396002,SCT
+Pre-screen results,221000124104,SCT
+Pre-screen results,446645007,SCT
+Pre-screen results,407480007,SCT
+Pre-screen results,PLR249,PLR
+Pre-screen results,455371000124106,SCT
+Pre-screen results,373121007,SCT
+Pre-screen results,260415000,SCT
+Pyro results,PLR100,PLR
+Pyro results,PLR101,PLR
+Pyro results,103709008,SCT
+Pyro results,PLR86,PLR
+Pyro results,PLR87,PLR
+Pyro results,PLR89,PLR
+Pyro results,PLR93,PLR
+Pyro results,PLR94,PLR
+Pyro results,PLR92,PLR
+Pyro results,PLR91,PLR
+Pyro results,PLR90,PLR
+Pyro results,281267002,SCT
+Pyro results,82334004,SCT
+Pyro results,PLR106,PLR
+Pyro results,PLR107,PLR
+Pyro results,PLR103,PLR
+Pyro results,PLR104,PLR
+Pyro results,123840003,SCT
+Pyro results,125159002,SCT
+Pyro results,281273001,SCT
+Pyro results,125154007,SCT
+Pyro results,373068000,SCT
+Ql culture result,62604006,SCT
+Ql culture result,281267002,SCT
+Ql culture result,82334004,SCT
+Ql culture result,46651001,SCT
+Ql culture result,264868006,SCT
+Ql culture result,264887000,SCT
+Ql culture result,123840003,SCT
+Ql culture result,125159002,SCT
+Ql culture result,281273001,SCT
+Ql culture result,125154007,SCT
+Ql culture result,373121007,SCT
+Respiratory pathogen PCR,243579005,SCT
+Respiratory pathogen PCR,26183002,SCT
+Respiratory pathogen PCR,5247005,SCT
+Respiratory pathogen PCR,103514009,SCT
+Respiratory pathogen PCR,407444007,SCT
+Respiratory pathogen PCR,PLR456,PLR
+Respiratory pathogen PCR,PLR457,PLR
+Respiratory pathogen PCR,PLR450,PLR
+Respiratory pathogen PCR,PLR451,PLR
+Respiratory pathogen PCR,PLR452,PLR
+Respiratory pathogen PCR,PLR461,PLR
+Respiratory viruses,29576004,SCT
+Respiratory viruses,417802001,SCT
+Respiratory viruses,417803006,SCT
+Respiratory viruses,417804000,SCT
+Respiratory viruses,417805004,SCT
+Respiratory viruses,417806003,SCT
+Respiratory viruses,417807007,SCT
+Respiratory viruses,417808002,SCT
+Respiratory viruses,417809005,SCT
+Respiratory viruses,2185006,SCT
+Respiratory viruses,417810000,SCT
+Respiratory viruses,417811001,SCT
+Respiratory viruses,448520007,SCT
+Respiratory viruses,704980004,SCT
+Respiratory viruses,2247004,SCT
+Respiratory viruses,68957002,SCT
+Respiratory viruses,46957004,SCT
+Respiratory viruses,66111006,SCT
+Respiratory viruses,417812008,SCT
+Respiratory viruses,417813003,SCT
+Respiratory viruses,PLR355,PLR
+Respiratory viruses,417815005,SCT
+Respiratory viruses,417816006,SCT
+Respiratory viruses,725064005,SCT
+Respiratory viruses,446373002,SCT
+Respiratory viruses,84101006,SCT
+Respiratory viruses,407370007,SCT
+Respiratory viruses,407371006,SCT
+Respiratory viruses,57757007,SCT
+Respiratory viruses,53744000,SCT
+Respiratory viruses,72254008,SCT
+Respiratory viruses,38203008,SCT
+Respiratory viruses,52657009,SCT
+Respiratory viruses,2793000,SCT
+Results PLT103,941000124100,SCT
+Results PLT103,281267002,SCT
+Results PLT103,407479009,SCT
+Results PLT103,221000124104,SCT
+Results PLT103,260415000,SCT
+Results PLT103,123840003,SCT
+Results PLT103,125159002,SCT
+Results PLT103,281273001,SCT
+Results PLT103,125154007,SCT
+Results PLT103,373121007,SCT
+Results PLT171,260373001,SCT
+Respiratory viruses,7543009,SCT
+Respiratory viruses,24747003,SCT
+Respiratory viruses,72593000,SCT
+Respiratory viruses,42067008,SCT
+Respiratory viruses,34632007,SCT
+Respiratory viruses,30154001,SCT
+Respiratory viruses,43794009,SCT
+Respiratory viruses,31183009,SCT
+Respiratory viruses,17833003,SCT
+Respiratory viruses,59056002,SCT
+Respiratory viruses,79968007,SCT
+Respiratory viruses,60066004,SCT
+Respiratory viruses,427004,SCT
+Respiratory viruses,103515005,SCT
+Respiratory viruses,16815003,SCT
+Respiratory viruses,4433000,SCT
+Respiratory viruses,46506009,SCT
+Respiratory viruses,53038008,SCT
+Respiratory viruses,66619009,SCT
+Respiratory viruses,69239002,SCT
+Respiratory viruses,12997006,SCT
+Respiratory viruses,78434004,SCT
+Respiratory viruses,90779008,SCT
+Respiratory viruses,68874003,SCT
+Respiratory viruses,421603003,SCT
+Respiratory viruses,421124007,SCT
+Respiratory viruses,421887001,SCT
+Respiratory viruses,420441008,SCT
+Respiratory viruses,421170000,SCT
+Respiratory viruses,19965007,SCT
+Respiratory viruses,15302007,SCT
+Respiratory viruses,13687007,SCT
+Respiratory viruses,19551004,SCT
+Respiratory viruses,416730002,SCT
+Respiratory viruses,407489008,SCT
+Respiratory viruses,407491000,SCT
+Respiratory viruses,407493002,SCT
+Respiratory viruses,89117003,SCT
+Respiratory viruses,128359006,SCT
+Respiratory viruses,128360001,SCT
+Respiratory viruses,407498006,SCT
+Respiratory viruses,450615008,SCT
+Respiratory viruses,450616009,SCT
+Respiratory viruses,473282007,SCT
+Respiratory viruses,473283002,SCT
+Respiratory viruses,473284008,SCT
+Respiratory viruses,473285009,SCT
+Respiratory viruses,473286005,SCT
+Respiratory viruses,473287001,SCT
+Respiratory viruses,44172002,SCT
+Respiratory viruses,22580008,SCT
+Respiratory viruses,55174004,SCT
+Respiratory viruses,16362001,SCT
+Respiratory viruses,6415009,SCT
+Respiratory viruses,417770000,SCT
+Respiratory viruses,417771001,SCT
+Respiratory viruses,38220007,SCT
+Respiratory viruses,422298007,SCT
+Respiratory viruses,450869008,SCT
+Respiratory viruses,450870009,SCT
+Respiratory viruses,417820005,SCT
+Respiratory viruses,941000124100,SCT
+Respiratory viruses,951000124103,SCT
+Respiratory viruses,281267002,SCT
+Respiratory viruses,PLR11,PLR
+Respiratory viruses,PLR12,PLR
+Respiratory viruses,PLR13,PLR
+Respiratory viruses,PLR14,PLR
+Respiratory viruses,PLR15,PLR
+Respiratory viruses,PLR16,PLR
+Respiratory viruses,PLR4,PLR
+Respiratory viruses,PLR8,PLR
+Respiratory viruses,PLR19,PLR
+Respiratory viruses,407479009,SCT
+Respiratory viruses,446396002,SCT
+Respiratory viruses,221000124104,SCT
+Respiratory viruses,700349009,SCT
+Respiratory viruses,446397006,SCT
+Respiratory viruses,446645007,SCT
+Respiratory viruses,446648009,SCT
+Respiratory viruses,446649001,SCT
+Respiratory viruses,407480007,SCT
+Respiratory viruses,427672003,SCT
+Respiratory viruses,426959005,SCT
+Respiratory viruses,407482004,SCT
+Respiratory viruses,PLR6,PLR
+Respiratory viruses,PLR83,PLR
+Respiratory viruses,281268007,SCT
+Respiratory viruses,46651001,SCT
+Respiratory viruses,80897008,SCT
+Respiratory viruses,52584002,SCT
+Respiratory viruses,50384007,SCT
+Respiratory viruses,PLR21,PLR
+Respiratory viruses,264868006,SCT
+Respiratory viruses,PLR50,PLR
+Respiratory viruses,260415000,SCT
+Respiratory pathogen PCR,PLR458,PLR
+Respiratory pathogen PCR,PLR459,PLR
+Respiratory pathogen PCR,PLR460,PLR
+Respiratory pathogen PCR,PLR453,PLR
+Respiratory pathogen PCR,PLR454,PLR
+Respiratory pathogen PCR,PLR455,PLR
+Respiratory pathogen PCR,74871001,SCT
+Respiratory pathogen PCR,53349007,SCT
+Respiratory pathogen PCR,54435006,SCT
+Respiratory pathogen PCR,30490000,SCT
+Respiratory pathogen PCR,23376009,SCT
+Respiratory pathogen PCR,37443004,SCT
+Respiratory pathogen PCR,7479004,SCT
+Respiratory pathogen PCR,33974008,SCT
+Respiratory pathogen PCR,62313001,SCT
+Respiratory pathogen PCR,9141005,SCT
+Respiratory pathogen PCR,10722007,SCT
+Respiratory pathogen PCR,49787000,SCT
+Respiratory pathogen PCR,81190003,SCT
+Respiratory pathogen PCR,74922007,SCT
+Respiratory pathogen PCR,85158000,SCT
+Respiratory pathogen PCR,19493000,SCT
+Respiratory pathogen PCR,42084002,SCT
+Respiratory pathogen PCR,15030000,SCT
+Respiratory pathogen PCR,5488007,SCT
+Respiratory pathogen PCR,73993004,SCT
+Respiratory pathogen PCR,89860009,SCT
+Respiratory pathogen PCR,22212008,SCT
+Respiratory pathogen PCR,66122005,SCT
+Respiratory pathogen PCR,1098002,SCT
+Respiratory pathogen PCR,41476007,SCT
+Respiratory pathogen PCR,12612001,SCT
+Respiratory pathogen PCR,85881001,SCT
+Respiratory pathogen PCR,15646009,SCT
+Respiratory pathogen PCR,65003007,SCT
+Respiratory pathogen PCR,32522009,SCT
+Respiratory pathogen PCR,90717001,SCT
+Respiratory pathogen PCR,91125002,SCT
+Respiratory pathogen PCR,79804005,SCT
+Respiratory pathogen PCR,90336009,SCT
+Respiratory pathogen PCR,23684001,SCT
+Respiratory pathogen PCR,68883008,SCT
+Respiratory pathogen PCR,29576004,SCT
+Respiratory pathogen PCR,417802001,SCT
+Respiratory pathogen PCR,417803006,SCT
+Respiratory pathogen PCR,417804000,SCT
+Respiratory pathogen PCR,417805004,SCT
+Respiratory pathogen PCR,417806003,SCT
+Respiratory pathogen PCR,417807007,SCT
+Respiratory pathogen PCR,417808002,SCT
+Respiratory pathogen PCR,417809005,SCT
+Respiratory pathogen PCR,37870004,SCT
+Respiratory pathogen PCR,58657002,SCT
+Respiratory pathogen PCR,15652005,SCT
+Respiratory pathogen PCR,74305002,SCT
+Respiratory pathogen PCR,50346001,SCT
+Respiratory pathogen PCR,70855006,SCT
+Respiratory pathogen PCR,21813007,SCT
+Respiratory pathogen PCR,19319001,SCT
+Respiratory pathogen PCR,82519006,SCT
+Respiratory pathogen PCR,21206001,SCT
+Respiratory pathogen PCR,74533001,SCT
+Respiratory pathogen PCR,12842000,SCT
+Respiratory pathogen PCR,38419004,SCT
+Respiratory pathogen PCR,18582009,SCT
+Respiratory pathogen PCR,7746003,SCT
+Respiratory pathogen PCR,75565006,SCT
+Respiratory pathogen PCR,91072000,SCT
+Respiratory pathogen PCR,34632007,SCT
+Respiratory pathogen PCR,30154001,SCT
+Respiratory pathogen PCR,43794009,SCT
+Respiratory pathogen PCR,31183009,SCT
+Respiratory pathogen PCR,17833003,SCT
+Respiratory pathogen PCR,59056002,SCT
+Respiratory pathogen PCR,79968007,SCT
+Respiratory pathogen PCR,60066004,SCT
+Respiratory pathogen PCR,427004,SCT
+Respiratory pathogen PCR,103515005,SCT
+Respiratory pathogen PCR,16815003,SCT
+Respiratory pathogen PCR,4433000,SCT
+Respiratory pathogen PCR,46506009,SCT
+Respiratory pathogen PCR,53038008,SCT
+Respiratory pathogen PCR,66619009,SCT
+Respiratory pathogen PCR,69239002,SCT
+Respiratory pathogen PCR,12997006,SCT
+Respiratory pathogen PCR,78434004,SCT
+Respiratory pathogen PCR,90779008,SCT
+Respiratory pathogen PCR,68874003,SCT
+Respiratory pathogen PCR,421603003,SCT
+Respiratory pathogen PCR,421124007,SCT
+Respiratory pathogen PCR,421887001,SCT
+Respiratory pathogen PCR,420441008,SCT
+Respiratory pathogen PCR,421170000,SCT
+Respiratory pathogen PCR,19965007,SCT
+Respiratory pathogen PCR,15302007,SCT
+Respiratory pathogen PCR,13687007,SCT
+Respiratory pathogen PCR,19551004,SCT
+Respiratory pathogen PCR,416730002,SCT
+Respiratory pathogen PCR,407489008,SCT
+Respiratory pathogen PCR,407491000,SCT
+Respiratory pathogen PCR,407493002,SCT
+Respiratory pathogen PCR,89117003,SCT
+Respiratory pathogen PCR,128359006,SCT
+Respiratory pathogen PCR,128360001,SCT
+Respiratory pathogen PCR,407498006,SCT
+Respiratory pathogen PCR,450615008,SCT
+Respiratory pathogen PCR,450616009,SCT
+Respiratory pathogen PCR,473282007,SCT
+Respiratory pathogen PCR,473283002,SCT
+Respiratory pathogen PCR,473284008,SCT
+Respiratory pathogen PCR,473285009,SCT
+Respiratory pathogen PCR,473286005,SCT
+Respiratory pathogen PCR,473287001,SCT
+Respiratory pathogen PCR,6415009,SCT
+Respiratory pathogen PCR,417770000,SCT
+Respiratory pathogen PCR,417771001,SCT
+Respiratory pathogen PCR,1838001,SCT
+Respiratory pathogen PCR,38220007,SCT
+Respiratory pathogen PCR,417820005,SCT
+Respiratory pathogen PCR,419984006,SCT
+Respiratory pathogen PCR,281267002,SCT
+Respiratory pathogen PCR,407479009,SCT
+Respiratory pathogen PCR,446396002,SCT
+Respiratory pathogen PCR,221000124104,SCT
+Respiratory pathogen PCR,446645007,SCT
+Respiratory pathogen PCR,407480007,SCT
+Respiratory pathogen PCR,281268007,SCT
+Respiratory pathogen PCR,80897008,SCT
+Respiratory pathogen PCR,697932005,SCT
+Respiratory pathogen PCR,58720004,SCT
+Respiratory pathogen PCR,260415000,SCT
+Respiratory pathogen PCR,123840003,SCT
+Respiratory pathogen PCR,125159002,SCT
+Respiratory pathogen PCR,281273001,SCT
+Respiratory pathogen PCR,125154007,SCT
+Respiratory pathogen PCR,373121007,SCT
+Respiratory viruses,407444007,SCT
+Respiratory viruses,112652003,SCT
+Respiratory viruses,243633006,SCT
+Respiratory viruses,74871001,SCT
+Respiratory viruses,53349007,SCT
+Respiratory viruses,54435006,SCT
+Respiratory viruses,30490000,SCT
+Respiratory viruses,23376009,SCT
+Respiratory viruses,37443004,SCT
+Respiratory viruses,7479004,SCT
+Respiratory viruses,33974008,SCT
+Respiratory viruses,62313001,SCT
+Respiratory viruses,9141005,SCT
+Respiratory viruses,10722007,SCT
+Respiratory viruses,49787000,SCT
+Respiratory viruses,81190003,SCT
+Respiratory viruses,74922007,SCT
+Respiratory viruses,85158000,SCT
+Respiratory viruses,19493000,SCT
+Respiratory viruses,42084002,SCT
+Respiratory viruses,15030000,SCT
+Respiratory viruses,5488007,SCT
+Respiratory viruses,73993004,SCT
+Respiratory viruses,89860009,SCT
+Respiratory viruses,22212008,SCT
+Respiratory viruses,66122005,SCT
+Respiratory viruses,1098002,SCT
+Respiratory viruses,41476007,SCT
+Respiratory viruses,12612001,SCT
+Respiratory viruses,85881001,SCT
+Respiratory viruses,15646009,SCT
+Respiratory viruses,65003007,SCT
+Respiratory viruses,32522009,SCT
+Respiratory viruses,90717001,SCT
+Respiratory viruses,91125002,SCT
+Respiratory viruses,79804005,SCT
+Respiratory viruses,90336009,SCT
+Respiratory viruses,23684001,SCT
+Respiratory viruses,68883008,SCT
+Respiratory viruses,58445002,SCT
+Respiratory viruses,30840007,SCT
+Respiratory viruses,38889001,SCT
+Respiratory viruses,23831003,SCT
+Respiratory viruses,6771007,SCT
+Respiratory viruses,72597004,SCT
+Respiratory viruses,83593001,SCT
+Respiratory viruses,72877003,SCT
+Respiratory viruses,55982000,SCT
+Respiratory viruses,86886003,SCT
+Respiratory viruses,38219001,SCT
+Respiratory viruses,24071003,SCT
+Respiratory viruses,74924008,SCT
+Respiratory viruses,1293004,SCT
+Respiratory viruses,3096006,SCT
+Respiratory viruses,49018005,SCT
+Respiratory viruses,82059001,SCT
+Respiratory viruses,27555004,SCT
+Respiratory viruses,89585007,SCT
+Respiratory viruses,41988004,SCT
+Respiratory viruses,62408001,SCT
+Respiratory viruses,48171002,SCT
+Respiratory viruses,243579005,SCT
+Respiratory viruses,39164004,SCT
+Respiratory viruses,36204005,SCT
+Respiratory viruses,37870004,SCT
+Respiratory viruses,58657002,SCT
+Respiratory viruses,15652005,SCT
+Respiratory viruses,74305002,SCT
+Respiratory viruses,50346001,SCT
+Respiratory viruses,70855006,SCT
+Respiratory viruses,21813007,SCT
+Respiratory viruses,19319001,SCT
+Respiratory viruses,82519006,SCT
+Respiratory viruses,21206001,SCT
+Respiratory viruses,74533001,SCT
+Respiratory viruses,12842000,SCT
+Respiratory viruses,38419004,SCT
+Respiratory viruses,18582009,SCT
+Respiratory viruses,7746003,SCT
+Respiratory viruses,75565006,SCT
+Respiratory viruses,91072000,SCT
+Respiratory viruses,264887000,SCT
+Respiratory viruses,106551006,SCT
+Respiratory viruses,PLR144,PLR
+Respiratory viruses,5210005,SCT
+Respiratory viruses,123840003,SCT
+Respiratory viruses,125159002,SCT
+Respiratory viruses,281273001,SCT
+Respiratory viruses,125154007,SCT
+Respiratory viruses,373121007,SCT
+Respiratory viruses,6596007,SCT
+Respiratory viruses,373068000,SCT
+Respiratory viruses,417831002,SCT
+Respiratory viruses,446613002,SCT
+Respiratory viruses,260385009,SCT
+Respiratory viruses,10828004,SCT
+Results PLT103,42425007,SCT
+Results PLT103,419984006,SCT
+Results PLT171,419984006,SCT
+Results PLT171,PLR364,PLR
+Results PLT171,941000124100,SCT
+Results PLT171,951000124103,SCT
+Results PLT171,PLR219,PLR
+Results PLT171,281267002,SCT
+Results PLT171,PLR19,PLR
+Results PLT171,PLR71,PLR
+Results PLT171,407479009,SCT
+Results PLT171,446396002,SCT
+Results PLT171,221000124104,SCT
+Results PLT171,446645007,SCT
+Results PLT171,446648009,SCT
+Results PLT171,PLR70,PLR
+Results PLT171,407480007,SCT
+Results PLT171,427672003,SCT
+Results PLT171,426959005,SCT
+Results PLT171,260415000,SCT
+Results PLT171,PLR144,PLR
+Results PLT171,PLR159,PLR
+Results PLT171,123840003,SCT
+Results PLT171,125159002,SCT
+Results PLT171,281273001,SCT
+Results PLT171,125154007,SCT
+Results PLT171,373121007,SCT
+Results PLT196,419984006,SCT
+Results PLT196,PLR364,PLR
+Results PLT196,941000124100,SCT
+Results PLT196,951000124103,SCT
+Results PLT196,281267002,SCT
+Results PLT196,PLR19,PLR
+Results PLT196,407479009,SCT
+Results PLT196,446396002,SCT
+Results PLT196,221000124104,SCT
+Results PLT196,446645007,SCT
+Results PLT196,446648009,SCT
+Results PLT196,260415000,SCT
+Results PLT196,PLR144,PLR
+Results PLT196,PLR159,PLR
+Results PLT196,123840003,SCT
+Results PLT196,125159002,SCT
+Results PLT196,281273001,SCT
+Results PLT196,125154007,SCT
+Results PLT196,373121007,SCT
+Sample type tested results,119303007,SCT
+Sample type tested results,123038009,SCT
+Target PCR result,260373001,SCT
+Target PCR result,419984006,SCT
+Target PCR result,281267002,SCT
+Target PCR result,260415000,SCT
+Target PCR result,123840003,SCT
+Target PCR result,125159002,SCT
+Target PCR result,281273001,SCT
+Target PCR result,125154007,SCT
+Target PCR result,373121007,SCT
+Country,AF,ISO3166_1
+Country,AX,ISO3166_1
+Country,AL,ISO3166_1
+Country,DZ,ISO3166_1
+Country,AS,ISO3166_1
+Country,AD,ISO3166_1
+Country,AO,ISO3166_1
+Country,AI,ISO3166_1
+Country,AQ,ISO3166_1
+Country,AG,ISO3166_1
+Country,AR,ISO3166_1
+Country,AM,ISO3166_1
+Country,AW,ISO3166_1
+Country,AU,ISO3166_1
+Country,AT,ISO3166_1
+Country,AZ,ISO3166_1
+Country,BS,ISO3166_1
+Country,BH,ISO3166_1
+Country,BD,ISO3166_1
+Country,BB,ISO3166_1
+Country,BY,ISO3166_1
+Country,BE,ISO3166_1
+Country,BZ,ISO3166_1
+Country,BJ,ISO3166_1
+Country,BM,ISO3166_1
+Country,BT,ISO3166_1
+Country,BO,ISO3166_1
+Country,BA,ISO3166_1
+Country,BW,ISO3166_1
+Country,BV,ISO3166_1
+Country,BR,ISO3166_1
+Country,IO,ISO3166_1
+Country,BN,ISO3166_1
+Country,BG,ISO3166_1
+Country,BF,ISO3166_1
+Country,BI,ISO3166_1
+Country,KH,ISO3166_1
+Country,CM,ISO3166_1
+Country,CA,ISO3166_1
+Country,CV,ISO3166_1
+Country,KY,ISO3166_1
+Country,CF,ISO3166_1
+Country,TD,ISO3166_1
+Country,CL,ISO3166_1
+Country,CN,ISO3166_1
+Country,CX,ISO3166_1
+Country,CC,ISO3166_1
+Country,CO,ISO3166_1
+Country,KM,ISO3166_1
+Country,CG,ISO3166_1
+Country,CD,ISO3166_1
+Country,CK,ISO3166_1
+Country,CR,ISO3166_1
+Country,CI,ISO3166_1
+Country,HR,ISO3166_1
+Country,CU,ISO3166_1
+Country,CY,ISO3166_1
+Country,CZ,ISO3166_1
+Country,DK,ISO3166_1
+Country,DJ,ISO3166_1
+Country,DM,ISO3166_1
+Country,DO,ISO3166_1
+Country,EC,ISO3166_1
+Country,EG,ISO3166_1
+Country,SV,ISO3166_1
+Country,GQ,ISO3166_1
+Country,ER,ISO3166_1
+Country,EE,ISO3166_1
+Country,ET,ISO3166_1
+Country,FK,ISO3166_1
+Country,FO,ISO3166_1
+Country,FJ,ISO3166_1
+Country,FI,ISO3166_1
+Country,FR,ISO3166_1
+Country,GF,ISO3166_1
+Country,PF,ISO3166_1
+Country,TF,ISO3166_1
+Country,GA,ISO3166_1
+Country,GM,ISO3166_1
+Country,GE,ISO3166_1
+Country,DE,ISO3166_1
+Country,GH,ISO3166_1
+Country,GI,ISO3166_1
+Country,GR,ISO3166_1
+Country,GL,ISO3166_1
+Country,GD,ISO3166_1
+Country,GP,ISO3166_1
+Country,GU,ISO3166_1
+Country,GT,ISO3166_1
+Country,GG,ISO3166_1
+Country,GN,ISO3166_1
+Country,GW,ISO3166_1
+Country,GY,ISO3166_1
+Country,HT,ISO3166_1
+Country,HM,ISO3166_1
+Country,VA,ISO3166_1
+Country,HN,ISO3166_1
+Country,HK,ISO3166_1
+Country,HU,ISO3166_1
+Country,IS,ISO3166_1
+Country,IN,ISO3166_1
+Country,ID,ISO3166_1
+Country,IR,ISO3166_1
+Country,IQ,ISO3166_1
+Country,IE,ISO3166_1
+Country,IM,ISO3166_1
+Country,IL,ISO3166_1
+Country,IT,ISO3166_1
+Country,JM,ISO3166_1
+Country,JP,ISO3166_1
+Country,JE,ISO3166_1
+Country,JO,ISO3166_1
+Country,KZ,ISO3166_1
+Country,KE,ISO3166_1
+Country,KI,ISO3166_1
+Country,KP,ISO3166_1
+Country,KR,ISO3166_1
+Country,KW,ISO3166_1
+Country,KG,ISO3166_1
+Country,LA,ISO3166_1
+Country,LV,ISO3166_1
+Country,LB,ISO3166_1
+Country,LS,ISO3166_1
+Country,LR,ISO3166_1
+Country,LY,ISO3166_1
+Country,LI,ISO3166_1
+Country,LT,ISO3166_1
+Country,LU,ISO3166_1
+Country,MO,ISO3166_1
+Country,MK,ISO3166_1
+Country,MG,ISO3166_1
+Country,MW,ISO3166_1
+Country,MY,ISO3166_1
+Country,MV,ISO3166_1
+Country,ML,ISO3166_1
+Country,MT,ISO3166_1
+Country,MH,ISO3166_1
+Country,MQ,ISO3166_1
+Country,MR,ISO3166_1
+Country,MU,ISO3166_1
+Country,YT,ISO3166_1
+Country,MX,ISO3166_1
+Country,FM,ISO3166_1
+Country,MD,ISO3166_1
+Country,MC,ISO3166_1
+Country,MN,ISO3166_1
+Country,ME,ISO3166_1
+Country,MS,ISO3166_1
+Country,MA,ISO3166_1
+Country,MZ,ISO3166_1
+Country,MM,ISO3166_1
+Country,NA,ISO3166_1
+Country,NR,ISO3166_1
+Country,NP,ISO3166_1
+Country,NL,ISO3166_1
+Country,AN,ISO3166_1
+Country,NC,ISO3166_1
+Country,NZ,ISO3166_1
+Country,NI,ISO3166_1
+Country,NE,ISO3166_1
+Country,NG,ISO3166_1
+Country,NU,ISO3166_1
+Country,NF,ISO3166_1
+Country,MP,ISO3166_1
+Country,NO,ISO3166_1
+Country,OM,ISO3166_1
+Country,PK,ISO3166_1
+Country,PW,ISO3166_1
+Country,PS,ISO3166_1
+Country,PA,ISO3166_1
+Country,PG,ISO3166_1
+Country,PY,ISO3166_1
+Country,PE,ISO3166_1
+Country,PH,ISO3166_1
+Country,PN,ISO3166_1
+Country,PL,ISO3166_1
+Country,PT,ISO3166_1
+Country,PR,ISO3166_1
+Country,QA,ISO3166_1
+Country,RE,ISO3166_1
+Country,RO,ISO3166_1
+Country,RU,ISO3166_1
+Country,RW,ISO3166_1
+Country,SH,ISO3166_1
+Country,KN,ISO3166_1
+Country,LC,ISO3166_1
+Country,PM,ISO3166_1
+Country,VC,ISO3166_1
+Country,WS,ISO3166_1
+Country,SM,ISO3166_1
+Country,ST,ISO3166_1
+Country,SA,ISO3166_1
+Country,SN,ISO3166_1
+Country,RS,ISO3166_1
+Country,SC,ISO3166_1
+Country,SL,ISO3166_1
+Country,SG,ISO3166_1
+Country,SK,ISO3166_1
+Country,SI,ISO3166_1
+Country,SB,ISO3166_1
+Country,SO,ISO3166_1
+Country,ZA,ISO3166_1
+Country,GS,ISO3166_1
+Country,ES,ISO3166_1
+Country,LK,ISO3166_1
+Country,SD,ISO3166_1
+Country,SR,ISO3166_1
+Country,SJ,ISO3166_1
+Country,SZ,ISO3166_1
+Country,SE,ISO3166_1
+Country,CH,ISO3166_1
+Country,SY,ISO3166_1
+Country,TW,ISO3166_1
+Country,TJ,ISO3166_1
+Country,TZ,ISO3166_1
+Country,TH,ISO3166_1
+Country,TL,ISO3166_1
+Country,TG,ISO3166_1
+Country,TK,ISO3166_1
+Country,TO,ISO3166_1
+Country,TT,ISO3166_1
+Country,TN,ISO3166_1
+Country,TR,ISO3166_1
+Country,TM,ISO3166_1
+Country,TC,ISO3166_1
+Country,TV,ISO3166_1
+Country,UG,ISO3166_1
+Country,UA,ISO3166_1
+Country,AE,ISO3166_1
+Country,GB,ISO3166_1
+Country,US,ISO3166_1
+Country,UM,ISO3166_1
+Country,UY,ISO3166_1
+Country,UZ,ISO3166_1
+Country,VU,ISO3166_1
+Country,VE,ISO3166_1
+Country,VN,ISO3166_1
+Country,VG,ISO3166_1
+Country,VI,ISO3166_1
+Country,WF,ISO3166_1
+Country,EH,ISO3166_1
+Country,YE,ISO3166_1
+Country,ZM,ISO3166_1
+Country,ZW,ISO3166_1
+Sex,O,HL70001
+Sex,N,HL70001
+Sex,A,HL70001
+Ethnicity,H,HL70189
+Ethnicity,N,HL70189
+Ethnicity,UNK,HL70189
+PCR Commercial Conclusion result,260373001,SCT
+PCR Commercial Conclusion result,419984006,SCT
+PCR Commercial Conclusion result,260415000,SCT
+PCR Commercial Conclusion result,125154007,SCT
+PCR Commercial Conclusion result,720735008,SCT
+PCR Commercial Conclusion result,455371000124106,SCT
+PCR Commercial Conclusion result,10828004,SCT
+PCR Commercial Conclusion result,260385009,SCT
+IA result,10828004,SCT
+IA result,260408008,SCT
+IA result,260385009,SCT
+IA result,82334004,SCT
+IA result,42425007,SCT
+Respiratory pathogen PCR,840533007,SCT
+Symptom,49727002,SCT
+Symptom,426000000,SCT
+Symptom,267036007,SCT
+Symptom,84229001,SCT
+Symptom,25064002,SCT
+Symptom,62315008,SCT
+Symptom,103001002,SCT
+Symptom,43724002,SCT
+Symptom,230145002,SCT
+Symptom,68962001,SCT
+Symptom,36955009,SCT
+Symptom,44169009,SCT
+Symptom,162397003,SCT
+Symptom,68235000,SCT
+Symptom,64531003,SCT
+Symptom,422587007,SCT
+Respiratory pathogen PCR,716254000,SCT
+Respiratory pathogen PCR,716255004,SCT
+Respiratory viruses,716255004,SCT
+Symptom,272041007,SCT
+Respiratory viruses,49872002,SCT
+SARS-CoV-2 variant lineage,OTH,NULLFL
+SARS-CoV-2 variant lineage,PLR4499,PLR
+SARS-CoV-2 variant lineage,PLR4478,PLR
+SARS-CoV-2 variant lineage,PLR4500,PLR
+SARS-CoV-2 variant lineage,PLR4501,PLR
+SARS-CoV-2 variant lineage,PLR4502,PLR
+SARS-CoV-2 variant lineage,PLR4503,PLR
+SARS-CoV-2 variant lineage,PLR4504,PLR
+SARS-CoV-2 variant lineage,PLR4490,PLR
+SARS-CoV-2 variant lineage,PLR4479,PLR
+SARS-CoV-2 variant lineage,PLR4505,PLR
+SARS-CoV-2 variant lineage,PLR4506,PLR
+SARS-CoV-2 variant lineage,PLR4507,PLR
+SARS-CoV-2 variant lineage,PLR4508,PLR
+SARS-CoV-2 variant lineage,PLR4509,PLR
+SARS-CoV-2 variant lineage,PLR4510,PLR
+SARS-CoV-2 variant lineage,PLR4511,PLR
+SARS-CoV-2 variant lineage,PLR4512,PLR
+SARS-CoV-2 variant lineage,PLR4397,PLR
+SARS-CoV-2 variant lineage,PLR4513,PLR
+SARS-CoV-2 variant lineage,PLR4514,PLR
+SARS-CoV-2 variant lineage,PLR4480,PLR
+SARS-CoV-2 variant lineage,PLR4515,PLR
+SARS-CoV-2 variant lineage,PLR4516,PLR
+SARS-CoV-2 variant lineage,PLR4517,PLR
+SARS-CoV-2 variant lineage,PLR4518,PLR
+SARS-CoV-2 variant lineage,PLR4519,PLR
+SARS-CoV-2 variant lineage,PLR4520,PLR
+SARS-CoV-2 variant lineage,PLR4521,PLR
+SARS-CoV-2 variant lineage,PLR4522,PLR
+SARS-CoV-2 variant lineage,PLR4523,PLR
+SARS-CoV-2 variant lineage,PLR4524,PLR
+SARS-CoV-2 variant lineage,PLR4525,PLR
+SARS-CoV-2 variant lineage,PLR4526,PLR
+SARS-CoV-2 variant lineage,PLR4527,PLR
+SARS-CoV-2 variant lineage,PLR4528,PLR
+SARS-CoV-2 variant lineage,PLR4529,PLR
+SARS-CoV-2 variant lineage,PLR4530,PLR
+SARS-CoV-2 variant lineage,PLR4531,PLR
+SARS-CoV-2 variant lineage,PLR4532,PLR
+SARS-CoV-2 variant lineage,PLR4533,PLR
+SARS-CoV-2 variant lineage,PLR4534,PLR
+SARS-CoV-2 variant lineage,PLR4535,PLR
+SARS-CoV-2 variant lineage,PLR4536,PLR
+SARS-CoV-2 variant lineage,PLR4537,PLR
+SARS-CoV-2 variant lineage,PLR4538,PLR
+SARS-CoV-2 variant lineage,PLR4539,PLR
+SARS-CoV-2 variant lineage,PLR4540,PLR
+SARS-CoV-2 variant lineage,PLR4541,PLR
+SARS-CoV-2 variant lineage,PLR4542,PLR
+SARS-CoV-2 variant lineage,PLR4543,PLR
+SARS-CoV-2 variant lineage,PLR4544,PLR
+SARS-CoV-2 variant lineage,PLR4545,PLR
+SARS-CoV-2 variant lineage,PLR4546,PLR
+SARS-CoV-2 variant lineage,PLR4547,PLR
+SARS-CoV-2 variant lineage,PLR4548,PLR
+SARS-CoV-2 variant lineage,PLR4549,PLR
+SARS-CoV-2 variant lineage,PLR4550,PLR
+SARS-CoV-2 variant lineage,PLR4551,PLR
+SARS-CoV-2 variant lineage,PLR4552,PLR
+SARS-CoV-2 variant lineage,PLR4553,PLR
+SARS-CoV-2 variant lineage,PLR4484,PLR
+SARS-CoV-2 variant lineage,PLR4554,PLR
+SARS-CoV-2 variant lineage,PLR4366,PLR
+SARS-CoV-2 variant lineage,PLR4555,PLR
+SARS-CoV-2 variant lineage,PLR4556,PLR
+SARS-CoV-2 variant lineage,PLR4557,PLR
+SARS-CoV-2 variant lineage,PLR4558,PLR
+SARS-CoV-2 variant lineage,PLR4559,PLR
+SARS-CoV-2 variant lineage,PLR4560,PLR
+SARS-CoV-2 variant lineage,PLR4561,PLR
+SARS-CoV-2 variant lineage,PLR4562,PLR
+SARS-CoV-2 variant lineage,PLR4563,PLR
+SARS-CoV-2 variant lineage,PLR4564,PLR
+SARS-CoV-2 variant lineage,PLR4565,PLR
+SARS-CoV-2 variant lineage,PLR4566,PLR
+SARS-CoV-2 variant lineage,PLR4567,PLR
+SARS-CoV-2 variant lineage,PLR4568,PLR
+SARS-CoV-2 variant lineage,PLR4569,PLR
+SARS-CoV-2 variant lineage,PLR4481,PLR
+SARS-CoV-2 variant lineage,PLR4570,PLR
+SARS-CoV-2 variant lineage,PLR4571,PLR
+SARS-CoV-2 variant lineage,PLR4572,PLR
+SARS-CoV-2 variant lineage,PLR4485,PLR
+SARS-CoV-2 variant lineage,PLR4573,PLR
+SARS-CoV-2 variant lineage,PLR4574,PLR
+SARS-CoV-2 variant lineage,PLR4575,PLR
+SARS-CoV-2 variant lineage,PLR4486,PLR
+SARS-CoV-2 variant lineage,PLR4576,PLR
+SARS-CoV-2 variant lineage,PLR4577,PLR
+SARS-CoV-2 variant lineage,PLR4482,PLR
+SARS-CoV-2 variant lineage,PLR4578,PLR
+SARS-CoV-2 variant lineage,PLR4579,PLR
+SARS-CoV-2 variant lineage,PLR4580,PLR
+SARS-CoV-2 variant lineage,PLR4581,PLR
+SARS-CoV-2 variant lineage,PLR4582,PLR
+SARS-CoV-2 variant lineage,PLR4583,PLR
+SARS-CoV-2 variant lineage,PLR4584,PLR
+SARS-CoV-2 variant lineage,PLR4585,PLR
+SARS-CoV-2 variant lineage,PLR4586,PLR
+SARS-CoV-2 variant lineage,PLR4587,PLR
+SARS-CoV-2 variant lineage,PLR4588,PLR
+SARS-CoV-2 variant lineage,PLR4589,PLR
+SARS-CoV-2 variant lineage,PLR4590,PLR
+SARS-CoV-2 variant lineage,PLR4367,PLR
+SARS-CoV-2 variant lineage,PLR4398,PLR
+SARS-CoV-2 variant lineage,PLR4399,PLR
+SARS-CoV-2 variant lineage,PLR4497,PLR
+SARS-CoV-2 variant lineage,PLR4591,PLR
+SARS-CoV-2 variant lineage,PLR4592,PLR
+SARS-CoV-2 variant lineage,PLR4593,PLR
+SARS-CoV-2 variant lineage,PLR4594,PLR
+SARS-CoV-2 variant lineage,PLR4595,PLR
+SARS-CoV-2 variant lineage,PLR4596,PLR
+SARS-CoV-2 variant lineage,PLR4597,PLR
+SARS-CoV-2 variant lineage,PLR4598,PLR
+SARS-CoV-2 variant lineage,PLR4599,PLR
+SARS-CoV-2 variant lineage,PLR4600,PLR
+SARS-CoV-2 variant lineage,PLR4601,PLR
+SARS-CoV-2 variant lineage,PLR4602,PLR
+SARS-CoV-2 variant lineage,PLR4603,PLR
+SARS-CoV-2 variant lineage,PLR4604,PLR
+SARS-CoV-2 variant lineage,PLR4605,PLR
+SARS-CoV-2 variant lineage,PLR4606,PLR
+SARS-CoV-2 variant lineage,PLR4607,PLR
+SARS-CoV-2 variant lineage,PLR4608,PLR
+SARS-CoV-2 variant lineage,PLR4609,PLR
+SARS-CoV-2 variant lineage,PLR4610,PLR
+SARS-CoV-2 variant lineage,PLR4611,PLR
+SARS-CoV-2 variant lineage,PLR4612,PLR
+SARS-CoV-2 variant lineage,PLR4613,PLR
+SARS-CoV-2 variant lineage,PLR4614,PLR
+SARS-CoV-2 variant lineage,PLR4615,PLR
+SARS-CoV-2 variant lineage,PLR4616,PLR
+SARS-CoV-2 variant lineage,PLR4617,PLR
+SARS-CoV-2 variant lineage,PLR4371,PLR
+SARS-CoV-2 variant lineage,PLR4369,PLR
+SARS-CoV-2 variant lineage,PLR4400,PLR
+SARS-CoV-2 variant lineage,PLR4618,PLR
+SARS-CoV-2 variant lineage,PLR4619,PLR
+SARS-CoV-2 variant lineage,PLR4620,PLR
+SARS-CoV-2 variant lineage,PLR4621,PLR
+SARS-CoV-2 variant lineage,PLR4622,PLR
+SARS-CoV-2 variant lineage,PLR4623,PLR
+SARS-CoV-2 variant lineage,PLR4624,PLR
+SARS-CoV-2 variant lineage,PLR4625,PLR
+SARS-CoV-2 variant lineage,PLR4626,PLR
+SARS-CoV-2 variant lineage,PLR4627,PLR
+SARS-CoV-2 variant lineage,PLR4628,PLR
+SARS-CoV-2 variant lineage,PLR4629,PLR
+SARS-CoV-2 variant lineage,PLR4630,PLR
+SARS-CoV-2 variant lineage,PLR4631,PLR
+SARS-CoV-2 variant lineage,PLR4632,PLR
+SARS-CoV-2 variant lineage,PLR4401,PLR
+SARS-CoV-2 variant lineage,PLR4370,PLR
+SARS-CoV-2 variant lineage,PLR4402,PLR
+SARS-CoV-2 variant lineage,PLR4403,PLR
+SARS-CoV-2 variant lineage,PLR4498,PLR
+SARS-CoV-2 variant lineage,PLR4633,PLR
+SARS-CoV-2 variant lineage,PLR4634,PLR
+SARS-CoV-2 variant lineage,PLR4635,PLR
+SARS-CoV-2 variant lineage,PLR4636,PLR
+SARS-CoV-2 variant lineage,PLR4637,PLR
+SARS-CoV-2 variant lineage,PLR4638,PLR
+SARS-CoV-2 variant lineage,PLR4639,PLR
+SARS-CoV-2 variant lineage,PLR4640,PLR
+SARS-CoV-2 variant lineage,PLR4641,PLR
+SARS-CoV-2 variant lineage,PLR4642,PLR
+SARS-CoV-2 variant lineage,PLR4643,PLR
+SARS-CoV-2 variant lineage,PLR4644,PLR
+SARS-CoV-2 variant lineage,PLR4645,PLR
+SARS-CoV-2 variant lineage,PLR4487,PLR
+SARS-CoV-2 variant lineage,PLR4646,PLR
+SARS-CoV-2 variant lineage,PLR4647,PLR
+SARS-CoV-2 variant lineage,PLR4648,PLR
+SARS-CoV-2 variant lineage,PLR4649,PLR
+SARS-CoV-2 variant lineage,PLR4650,PLR
+SARS-CoV-2 variant lineage,PLR4651,PLR
+SARS-CoV-2 variant lineage,PLR4652,PLR
+SARS-CoV-2 variant lineage,PLR4653,PLR
+SARS-CoV-2 variant lineage,PLR4654,PLR
+SARS-CoV-2 variant lineage,PLR4488,PLR
+SARS-CoV-2 variant lineage,PLR4655,PLR
+SARS-CoV-2 variant lineage,PLR4656,PLR
+SARS-CoV-2 variant lineage,PLR4657,PLR
+SARS-CoV-2 variant lineage,PLR4658,PLR
+SARS-CoV-2 variant lineage,PLR4659,PLR
+SARS-CoV-2 variant lineage,PLR4660,PLR
+SARS-CoV-2 variant lineage,PLR4661,PLR
+SARS-CoV-2 variant lineage,PLR4493,PLR
+SARS-CoV-2 variant lineage,PLR4494,PLR
+SARS-CoV-2 variant lineage,PLR4495,PLR
+SARS-CoV-2 variant lineage,PLR4496,PLR
+SARS-CoV-2 variant lineage,PLR4662,PLR
+SARS-CoV-2 variant lineage,PLR4663,PLR
+SARS-CoV-2 variant lineage,PLR4664,PLR
+SARS-CoV-2 variant lineage,PLR4483,PLR
+SARS-CoV-2 variant lineage,PLR4665,PLR
+SARS-CoV-2 variant lineage,PLR4666,PLR
+SARS-CoV-2 variant lineage,PLR4667,PLR
+SARS-CoV-2 variant lineage,PLR4668,PLR
+SARS-CoV-2 variant lineage,PLR4669,PLR
+SARS-CoV-2 variant lineage,PLR4670,PLR
+SARS-CoV-2 variant lineage,PLR4671,PLR
+SARS-CoV-2 variant lineage,PLR4672,PLR
+SARS-CoV-2 variant lineage,PLR4673,PLR
+SARS-CoV-2 variant lineage,PLR4368,PLR
+SARS-CoV-2 variant lineage,PLR4491,PLR
+SARS-CoV-2 variant lineage,PLR4372,PLR
+SARS-CoV-2 variant lineage,PLR4489,PLR
+SARS-CoV-2 variant lineage,PLR4674,PLR
+SARS-CoV-2 variant lineage,PLR4675,PLR
+SARS-CoV-2 variant lineage,PLR168,PLR
+Respiratory pathogen PCR,PLR4374,PLR
+Respiratory pathogen PCR,PLR4375,PLR
+Respiratory pathogen PCR,PLR4376,PLR
+Respiratory pathogen PCR,PLR4378,PLR
+Respiratory pathogen PCR,PLR4379,PLR
+Respiratory pathogen PCR,PLR4380,PLR
+Respiratory pathogen PCR,PLR4381,PLR
+Respiratory pathogen PCR,PLR4382,PLR
+Respiratory pathogen PCR,PLR4383,PLR
+Respiratory pathogen PCR,PLR4384,PLR
+Respiratory pathogen PCR,PLR4385,PLR
+Respiratory pathogen PCR,PLR4386,PLR
+Respiratory pathogen PCR,PLR4387,PLR
+Respiratory pathogen PCR,PLR4388,PLR
+Respiratory pathogen PCR,PLR4389,PLR
+Respiratory pathogen PCR,PLR4390,PLR
+Respiratory pathogen PCR,PLR4391,PLR
+Respiratory pathogen PCR,PLR4393,PLR
+Respiratory pathogen PCR,PLR4394,PLR
+Respiratory pathogen PCR,PLR4395,PLR
+Respiratory pathogen PCR,PLR4396,PLR
+Respiratory pathogen PCR,PLR4405,PLR
+Respiratory pathogen PCR,PLR4406,PLR
+Respiratory pathogen PCR,PLR4407,PLR
+Respiratory pathogen PCR,PLR4408,PLR
+Respiratory pathogen PCR,PLR4409,PLR
+Respiratory pathogen PCR,PLR4410,PLR
+Respiratory pathogen PCR,PLR4411,PLR
+Respiratory pathogen PCR,PLR4412,PLR
+Respiratory pathogen PCR,PLR4413,PLR
+Respiratory pathogen PCR,PLR4414,PLR
+Respiratory pathogen PCR,PLR4415,PLR
+Respiratory pathogen PCR,PLR4416,PLR
+Respiratory pathogen PCR,PLR4417,PLR
+Respiratory pathogen PCR,PLR4418,PLR
+Respiratory pathogen PCR,PLR4419,PLR
+Respiratory pathogen PCR,PLR4420,PLR
+Respiratory pathogen PCR,PLR4421,PLR
+Respiratory pathogen PCR,PLR4422,PLR
+Respiratory pathogen PCR,PLR4423,PLR
+Respiratory pathogen PCR,PLR4424,PLR
+Respiratory pathogen PCR,PLR4425,PLR
+Respiratory pathogen PCR,PLR4426,PLR
+Respiratory pathogen PCR,PLR4427,PLR
+Respiratory pathogen PCR,PLR4428,PLR
+Respiratory pathogen PCR,PLR4429,PLR
+Respiratory pathogen PCR,PLR4430,PLR
+Respiratory pathogen PCR,PLR4431,PLR
+Respiratory pathogen PCR,PLR4432,PLR
+Respiratory pathogen PCR,PLR4433,PLR
+Respiratory pathogen PCR,PLR4434,PLR
+Respiratory pathogen PCR,PLR4435,PLR
+Respiratory pathogen PCR,PLR4436,PLR
+Respiratory pathogen PCR,PLR4437,PLR
+Respiratory pathogen PCR,PLR4438,PLR
+Respiratory pathogen PCR,PLR4439,PLR
+Respiratory pathogen PCR,PLR4440,PLR
+Respiratory pathogen PCR,PLR4441,PLR
+Respiratory pathogen PCR,PLR4442,PLR
+Respiratory pathogen PCR,PLR4443,PLR
+Respiratory pathogen PCR,PLR4444,PLR
+Respiratory pathogen PCR,PLR4445,PLR
+Respiratory pathogen PCR,PLR4446,PLR
+Respiratory pathogen PCR,PLR4447,PLR
+Respiratory pathogen PCR,PLR4448,PLR
+Respiratory pathogen PCR,PLR4449,PLR
+Respiratory pathogen PCR,PLR4450,PLR
+Respiratory pathogen PCR,PLR4451,PLR
+Respiratory pathogen PCR,PLR4452,PLR
+Respiratory pathogen PCR,PLR4453,PLR
+Respiratory pathogen PCR,PLR4454,PLR
+Respiratory pathogen PCR,PLR4455,PLR
+Respiratory pathogen PCR,PLR4456,PLR
+Respiratory pathogen PCR,PLR4457,PLR
+Respiratory pathogen PCR,PLR4458,PLR
+Respiratory pathogen PCR,PLR4459,PLR
+Respiratory pathogen PCR,PLR4460,PLR
+Respiratory pathogen PCR,PLR4461,PLR
+Respiratory pathogen PCR,PLR4462,PLR
+Respiratory pathogen PCR,PLR4463,PLR
+Respiratory pathogen PCR,PLR4464,PLR
+Respiratory pathogen PCR,PLR4465,PLR
+Respiratory pathogen PCR,PLR4466,PLR
+Respiratory pathogen PCR,PLR4467,PLR
+Respiratory pathogen PCR,PLR4468,PLR
+Respiratory pathogen PCR,PLR4469,PLR
+Respiratory pathogen PCR,PLR4470,PLR
+Respiratory pathogen PCR,PLR4471,PLR
+Respiratory pathogen PCR,PLR4472,PLR
+Respiratory pathogen PCR,PLR4473,PLR
+Respiratory pathogen PCR,PLR4474,PLR
+Respiratory pathogen PCR,PLR4475,PLR
+Respiratory pathogen PCR,PLR4374,PLR
+Respiratory pathogen PCR,PLR4375,PLR
+Respiratory pathogen PCR,PLR4376,PLR
+Respiratory pathogen PCR,PLR4377,PLR
+Respiratory pathogen PCR,PLR4378,PLR
+Respiratory pathogen PCR,PLR4379,PLR
+Respiratory pathogen PCR,PLR4380,PLR
+Respiratory pathogen PCR,PLR4381,PLR
+Respiratory pathogen PCR,PLR4382,PLR
+Respiratory pathogen PCR,PLR4383,PLR
+Respiratory pathogen PCR,PLR4384,PLR
+Respiratory pathogen PCR,PLR4385,PLR
+Respiratory pathogen PCR,PLR4386,PLR
+Respiratory pathogen PCR,PLR4387,PLR
+Respiratory pathogen PCR,PLR4388,PLR
+Respiratory pathogen PCR,PLR4389,PLR
+Respiratory pathogen PCR,PLR4390,PLR
+Respiratory pathogen PCR,PLR4391,PLR
+Respiratory pathogen PCR,PLR4393,PLR
+Respiratory pathogen PCR,PLR4394,PLR
+Respiratory pathogen PCR,PLR4395,PLR
+Respiratory pathogen PCR,PLR4396,PLR
+Respiratory pathogen PCR,PLR4405,PLR
+Respiratory pathogen PCR,PLR4406,PLR
+Respiratory pathogen PCR,PLR4407,PLR
+Respiratory pathogen PCR,PLR4408,PLR
+Respiratory pathogen PCR,PLR4409,PLR
+Respiratory pathogen PCR,PLR4410,PLR
+Respiratory pathogen PCR,PLR4411,PLR
+Respiratory pathogen PCR,PLR4412,PLR
+Respiratory pathogen PCR,PLR4413,PLR
+Respiratory pathogen PCR,PLR4414,PLR
+Respiratory pathogen PCR,PLR4415,PLR
+Respiratory pathogen PCR,PLR4416,PLR
+Respiratory pathogen PCR,PLR4417,PLR
+Respiratory pathogen PCR,PLR4418,PLR
+Respiratory pathogen PCR,PLR4419,PLR
+Respiratory pathogen PCR,PLR4420,PLR
+Respiratory pathogen PCR,PLR4421,PLR
+Respiratory pathogen PCR,PLR4422,PLR
+Respiratory pathogen PCR,PLR4423,PLR
+Respiratory pathogen PCR,PLR4424,PLR
+Respiratory pathogen PCR,PLR4425,PLR
+Respiratory pathogen PCR,PLR4426,PLR
+Respiratory pathogen PCR,PLR4427,PLR
+Respiratory pathogen PCR,PLR4428,PLR
+Respiratory pathogen PCR,PLR4429,PLR
+Respiratory pathogen PCR,PLR4430,PLR
+Respiratory pathogen PCR,PLR4431,PLR
+Respiratory pathogen PCR,PLR4432,PLR
+Respiratory pathogen PCR,PLR4433,PLR
+Respiratory pathogen PCR,PLR4434,PLR
+Respiratory pathogen PCR,PLR4435,PLR
+Respiratory pathogen PCR,PLR4436,PLR
+Respiratory pathogen PCR,PLR4437,PLR
+Respiratory pathogen PCR,PLR4438,PLR
+Respiratory pathogen PCR,PLR4439,PLR
+Respiratory pathogen PCR,PLR4440,PLR
+Respiratory pathogen PCR,PLR4441,PLR
+Respiratory pathogen PCR,PLR4442,PLR
+Respiratory pathogen PCR,PLR4443,PLR
+Respiratory pathogen PCR,PLR4444,PLR
+Respiratory pathogen PCR,PLR4445,PLR
+Respiratory pathogen PCR,PLR4446,PLR
+Respiratory pathogen PCR,PLR4447,PLR
+Respiratory pathogen PCR,PLR4448,PLR
+Respiratory pathogen PCR,PLR4449,PLR
+Respiratory pathogen PCR,PLR4450,PLR
+Respiratory pathogen PCR,PLR4451,PLR
+Respiratory pathogen PCR,PLR4452,PLR
+Respiratory pathogen PCR,PLR4453,PLR
+Respiratory pathogen PCR,PLR4454,PLR
+Respiratory pathogen PCR,PLR4455,PLR
+Respiratory pathogen PCR,PLR4456,PLR
+Respiratory pathogen PCR,PLR4457,PLR
+Respiratory pathogen PCR,PLR4458,PLR
+Respiratory pathogen PCR,PLR4459,PLR
+Respiratory pathogen PCR,PLR4460,PLR
+Respiratory pathogen PCR,PLR4461,PLR
+Respiratory pathogen PCR,PLR4462,PLR
+Respiratory pathogen PCR,PLR4463,PLR
+Respiratory pathogen PCR,PLR4464,PLR
+Respiratory pathogen PCR,PLR4465,PLR
+Respiratory pathogen PCR,PLR4466,PLR
+Respiratory pathogen PCR,PLR4467,PLR
+Respiratory pathogen PCR,PLR4468,PLR
+Respiratory pathogen PCR,PLR4469,PLR
+Respiratory pathogen PCR,PLR4470,PLR
+Respiratory pathogen PCR,PLR4471,PLR
+Respiratory pathogen PCR,PLR4472,PLR
+Respiratory pathogen PCR,PLR4473,PLR
+Respiratory pathogen PCR,PLR4474,PLR
+Respiratory pathogen PCR,PLR4475,PLR
+SARS-CoV-2 variant lineage,PLR4676,PLR
+SARS-CoV-2 variant lineage,PLR4677,PLR
+SARS-CoV-2 variant lineage,PLR4678,PLR
+SARS-CoV-2 variant lineage,PLR4679,PLR
+SARS-CoV-2 variant lineage,PLR4680,PLR
+SARS-CoV-2 variant lineage,PLR4681,PLR
+SARS-CoV-2 variant lineage,PLR4682,PLR
+SARS-CoV-2 variant lineage,PLR4683,PLR
+SARS-CoV-2 variant lineage,PLR4684,PLR
+SARS-CoV-2 variant lineage,PLR4685,PLR
+SARS-CoV-2 variant lineage,PLR4686,PLR
+SARS-CoV-2 variant lineage,PLR4687,PLR
+SARS-CoV-2 variant lineage,PLR4688,PLR
+SARS-CoV-2 variant lineage,PLR4689,PLR
+SARS-CoV-2 variant lineage,PLR4690,PLR
+SARS-CoV-2 variant lineage,PLR4691,PLR
+SARS-CoV-2 variant lineage,PLR4692,PLR
+SARS-CoV-2 variant lineage,PLR4693,PLR
+SARS-CoV-2 variant lineage,PLR4694,PLR
+SARS-CoV-2 variant lineage,PLR4695,PLR
+SARS-CoV-2 variant lineage,PLR4696,PLR
+SARS-CoV-2 variant lineage,PLR4697,PLR
+SARS-CoV-2 variant lineage,PLR4698,PLR
+SARS-CoV-2 variant lineage,PLR4699,PLR
+SARS-CoV-2 variant lineage,PLR4700,PLR
+SARS-CoV-2 variant lineage,PLR4701,PLR
+SARS-CoV-2 variant lineage,PLR4702,PLR
+SARS-CoV-2 variant lineage,PLR4703,PLR
+SARS-CoV-2 variant lineage,PLR4704,PLR
+SARS-CoV-2 variant lineage,PLR4705,PLR
+SARS-CoV-2 variant lineage,PLR4706,PLR
+SARS-CoV-2 variant lineage,PLR4707,PLR
+SARS-CoV-2 variant lineage,PLR4708,PLR
+SARS-CoV-2 variant lineage,PLR4709,PLR
+SARS-CoV-2 variant lineage,PLR4710,PLR
+SARS-CoV-2 variant lineage,PLR4711,PLR
+SARS-CoV-2 variant lineage,PLR4712,PLR
+SARS-CoV-2 variant lineage,PLR4713,PLR
+SARS-CoV-2 variant lineage,PLR4714,PLR
+SARS-CoV-2 variant lineage,PLR4715,PLR
+SARS-CoV-2 variant lineage,PLR4716,PLR
+SARS-CoV-2 variant lineage,PLR4717,PLR
+SARS-CoV-2 variant lineage,PLR4718,PLR
+SARS-CoV-2 variant lineage,PLR4719,PLR
+SARS-CoV-2 variant lineage,PLR4720,PLR
+SARS-CoV-2 variant lineage,PLR4721,PLR
+SARS-CoV-2 variant lineage,PLR4722,PLR
+SARS-CoV-2 variant lineage,PLR4723,PLR
+SARS-CoV-2 variant lineage,PLR4724,PLR
+SARS-CoV-2 variant lineage,PLR4725,PLR
+SARS-CoV-2 variant lineage,PLR4726,PLR
+SARS-CoV-2 variant lineage,PLR4727,PLR
+SARS-CoV-2 variant lineage,PLR4728,PLR
+SARS-CoV-2 variant lineage,PLR4729,PLR
+SARS-CoV-2 variant lineage,PLR4730,PLR
+SARS-CoV-2 variant lineage,PLR4731,PLR
+SARS-CoV-2 variant lineage,PLR4732,PLR
+SARS-CoV-2 variant lineage,PLR4733,PLR
+SARS-CoV-2 variant lineage,PLR4734,PLR
+SARS-CoV-2 variant lineage,PLR4735,PLR
+SARS-CoV-2 variant lineage,PLR4736,PLR
+SARS-CoV-2 variant lineage,PLR4737,PLR
+SARS-CoV-2 variant lineage,PLR4738,PLR
+SARS-CoV-2 variant lineage,PLR4739,PLR
+SARS-CoV-2 variant lineage,PLR4740,PLR
+SARS-CoV-2 variant lineage,PLR4741,PLR
+SARS-CoV-2 variant lineage,PLR4742,PLR
+SARS-CoV-2 variant lineage,PLR4743,PLR
+SARS-CoV-2 variant lineage,PLR4744,PLR
+SARS-CoV-2 variant lineage,PLR4745,PLR
+SARS-CoV-2 variant lineage,PLR4746,PLR
+SARS-CoV-2 variant lineage,PLR4747,PLR
+SARS-CoV-2 variant lineage,PLR4748,PLR
+SARS-CoV-2 variant lineage,PLR4749,PLR
+SARS-CoV-2 variant lineage,PLR4750,PLR
+SARS-CoV-2 variant lineage,PLR4751,PLR
+SARS-CoV-2 variant lineage,PLR4752,PLR
+SARS-CoV-2 variant lineage,PLR4753,PLR
+SARS-CoV-2 variant lineage,PLR4754,PLR
+SARS-CoV-2 variant lineage,PLR4755,PLR
+SARS-CoV-2 variant lineage,PLR4756,PLR
+SARS-CoV-2 variant lineage,PLR4757,PLR
+SARS-CoV-2 variant lineage,PLR4758,PLR
+SARS-CoV-2 variant lineage,PLR4759,PLR
+SARS-CoV-2 variant lineage,PLR4760,PLR
+SARS-CoV-2 variant lineage,PLR4761,PLR
+SARS-CoV-2 variant lineage,PLR4762,PLR
+SARS-CoV-2 variant lineage,PLR4763,PLR
+SARS-CoV-2 variant lineage,PLR4764,PLR
+SARS-CoV-2 variant lineage,PLR4765,PLR
+SARS-CoV-2 variant lineage,PLR4766,PLR
+SARS-CoV-2 variant lineage,PLR4767,PLR
+SARS-CoV-2 variant lineage,PLR4768,PLR
+SARS-CoV-2 variant lineage,PLR4769,PLR
+SARS-CoV-2 variant lineage,PLR4770,PLR
+SARS-CoV-2 variant lineage,PLR4771,PLR
+SARS-CoV-2 variant lineage,PLR4772,PLR
+SARS-CoV-2 variant lineage,PLR4773,PLR
+SARS-CoV-2 variant lineage,PLR4774,PLR
+SARS-CoV-2 variant lineage,PLR4775,PLR
+SARS-CoV-2 variant lineage,PLR4776,PLR
+SARS-CoV-2 variant lineage,PLR4777,PLR
+SARS-CoV-2 variant lineage,PLR4778,PLR
+SARS-CoV-2 variant lineage,PLR4779,PLR
+SARS-CoV-2 variant lineage,PLR4780,PLR
+SARS-CoV-2 variant lineage,PLR4781,PLR
+SARS-CoV-2 variant lineage,PLR4782,PLR
+SARS-CoV-2 variant lineage,PLR4783,PLR
+SARS-CoV-2 variant lineage,PLR4784,PLR
+SARS-CoV-2 variant lineage,PLR4785,PLR
+SARS-CoV-2 variant lineage,PLR4786,PLR
+SARS-CoV-2 variant lineage,PLR4787,PLR
+SARS-CoV-2 variant lineage,PLR4788,PLR
+SARS-CoV-2 variant lineage,PLR4789,PLR
+SARS-CoV-2 variant lineage,PLR4790,PLR
+SARS-CoV-2 variant lineage,PLR4791,PLR
+SARS-CoV-2 variant lineage,PLR4792,PLR
+SARS-CoV-2 variant lineage,PLR4793,PLR
+SARS-CoV-2 variant lineage,PLR4794,PLR
+SARS-CoV-2 variant lineage,PLR4795,PLR
+SARS-CoV-2 variant lineage,PLR4796,PLR
+SARS-CoV-2 variant lineage,PLR4797,PLR
+SARS-CoV-2 variant lineage,PLR4798,PLR
+SARS-CoV-2 variant lineage,PLR4799,PLR
+SARS-CoV-2 variant lineage,PLR4800,PLR
+SARS-CoV-2 variant lineage,PLR4801,PLR
+SARS-CoV-2 variant lineage,PLR4802,PLR
+SARS-CoV-2 variant lineage,PLR4803,PLR
+SARS-CoV-2 variant lineage,PLR4804,PLR
+SARS-CoV-2 variant lineage,PLR4806,PLR
+SARS-CoV-2 variant lineage,PLR4807,PLR
+SARS-CoV-2 variant lineage,PLR4808,PLR
+SARS-CoV-2 variant lineage,PLR4809,PLR
+SARS-CoV-2 variant lineage,PLR4810,PLR
+SARS-CoV-2 variant lineage,PLR4811,PLR
+SARS-CoV-2 variant lineage,PLR4812,PLR
+SARS-CoV-2 variant lineage,PLR4813,PLR
+SARS-CoV-2 variant lineage,PLR4814,PLR
+SARS-CoV-2 variant lineage,PLR4815,PLR
+SARS-CoV-2 variant lineage,PLR4816,PLR
+SARS-CoV-2 variant lineage,PLR4817,PLR
+SARS-CoV-2 variant lineage,PLR4818,PLR
+SARS-CoV-2 variant lineage,PLR4819,PLR
+SARS-CoV-2 variant lineage,PLR4820,PLR
+SARS-CoV-2 variant lineage,PLR4821,PLR
+SARS-CoV-2 variant lineage,PLR4822,PLR
+SARS-CoV-2 variant lineage,PLR4823,PLR
+SARS-CoV-2 variant lineage,PLR4824,PLR
+SARS-CoV-2 variant lineage,PLR4825,PLR
+SARS-CoV-2 variant lineage,PLR4826,PLR
+SARS-CoV-2 variant lineage,PLR4827,PLR
+SARS-CoV-2 variant lineage,PLR4828,PLR
+SARS-CoV-2 variant lineage,PLR4829,PLR
+SARS-CoV-2 variant lineage,PLR4830,PLR
+SARS-CoV-2 variant lineage,PLR4831,PLR
+SARS-CoV-2 variant lineage,PLR4832,PLR
+SARS-CoV-2 variant lineage,PLR4833,PLR
+SARS-CoV-2 variant lineage,PLR4834,PLR
+SARS-CoV-2 variant lineage,PLR4835,PLR
+SARS-CoV-2 variant lineage,PLR4836,PLR
+SARS-CoV-2 variant lineage,PLR4837,PLR
+SARS-CoV-2 variant lineage,PLR4838,PLR
+SARS-CoV-2 variant lineage,PLR4839,PLR
+SARS-CoV-2 variant lineage,PLR4840,PLR
+SARS-CoV-2 variant lineage,PLR4841,PLR
+SARS-CoV-2 variant lineage,PLR4842,PLR
+SARS-CoV-2 variant lineage,PLR4843,PLR
+SARS-CoV-2 variant lineage,PLR4844,PLR
+SARS-CoV-2 variant lineage,PLR4845,PLR
+SARS-CoV-2 variant lineage,PLR4846,PLR
+SARS-CoV-2 variant lineage,PLR4847,PLR
+SARS-CoV-2 variant lineage,PLR4848,PLR
+SARS-CoV-2 variant lineage,PLR4849,PLR
+SARS-CoV-2 variant lineage,PLR4850,PLR
+SARS-CoV-2 variant lineage,PLR4851,PLR
+SARS-CoV-2 variant lineage,PLR4852,PLR
+SARS-CoV-2 variant lineage,PLR4853,PLR
+SARS-CoV-2 variant lineage,PLR4854,PLR
+SARS-CoV-2 variant lineage,PLR4855,PLR
+SARS-CoV-2 variant lineage,PLR4856,PLR
+SARS-CoV-2 variant lineage,PLR4857,PLR
+SARS-CoV-2 variant lineage,PLR4858,PLR
+SARS-CoV-2 variant lineage,PLR4859,PLR
+SARS-CoV-2 variant lineage,PLR4860,PLR
+SARS-CoV-2 variant lineage,PLR4861,PLR
+SARS-CoV-2 variant lineage,PLR4862,PLR
+SARS-CoV-2 variant lineage,PLR4863,PLR
+SARS-CoV-2 variant lineage,PLR4864,PLR
+SARS-CoV-2 variant lineage,PLR4865,PLR
+SARS-CoV-2 variant lineage,PLR4866,PLR
+SARS-CoV-2 variant lineage,PLR4867,PLR
+SARS-CoV-2 variant lineage,PLR4868,PLR
+SARS-CoV-2 variant lineage,PLR4869,PLR
+SARS-CoV-2 variant lineage,PLR4870,PLR
+SARS-CoV-2 variant lineage,PLR4871,PLR
+SARS-CoV-2 variant lineage,PLR4872,PLR
+SARS-CoV-2 variant lineage,PLR4873,PLR
+SARS-CoV-2 variant lineage,PLR4874,PLR
+SARS-CoV-2 variant lineage,PLR4875,PLR
+SARS-CoV-2 variant lineage,PLR4876,PLR
+SARS-CoV-2 variant lineage,PLR4877,PLR
+SARS-CoV-2 variant lineage,PLR4878,PLR
+SARS-CoV-2 variant lineage,PLR4879,PLR
+SARS-CoV-2 variant lineage,PLR4880,PLR
+SARS-CoV-2 variant lineage,PLR4881,PLR
+SARS-CoV-2 variant lineage,PLR4882,PLR
+SARS-CoV-2 variant lineage,PLR4883,PLR
+SARS-CoV-2 variant lineage,PLR4884,PLR
+SARS-CoV-2 variant lineage,PLR4885,PLR
+SARS-CoV-2 variant lineage,PLR4886,PLR
+SARS-CoV-2 variant lineage,PLR4887,PLR
+SARS-CoV-2 variant lineage,PLR4888,PLR
+SARS-CoV-2 variant lineage,PLR4889,PLR
+SARS-CoV-2 variant lineage,PLR4890,PLR
+SARS-CoV-2 variant lineage,PLR4891,PLR
+SARS-CoV-2 variant lineage,PLR4892,PLR
+SARS-CoV-2 variant lineage,PLR4893,PLR
+SARS-CoV-2 variant lineage,PLR4894,PLR
+SARS-CoV-2 variant lineage,PLR4895,PLR
+SARS-CoV-2 variant lineage,PLR4896,PLR
+SARS-CoV-2 variant lineage,PLR4897,PLR
+SARS-CoV-2 variant lineage,PLR4898,PLR
+SARS-CoV-2 variant lineage,PLR4899,PLR
+SARS-CoV-2 variant lineage,PLR4900,PLR
+SARS-CoV-2 variant lineage,PLR4901,PLR
+SARS-CoV-2 variant lineage,PLR4902,PLR
+SARS-CoV-2 variant lineage,PLR4903,PLR
+SARS-CoV-2 variant lineage,PLR4904,PLR
+SARS-CoV-2 variant lineage,PLR4905,PLR
+SARS-CoV-2 variant lineage,PLR4906,PLR
+SARS-CoV-2 variant lineage,PLR4907,PLR
+SARS-CoV-2 variant lineage,PLR4908,PLR
+SARS-CoV-2 variant lineage,PLR4909,PLR
+SARS-CoV-2 variant lineage,PLR4910,PLR
+SARS-CoV-2 variant lineage,PLR4911,PLR
+SARS-CoV-2 variant lineage,PLR4912,PLR
+SARS-CoV-2 variant lineage,PLR4913,PLR
+SARS-CoV-2 variant lineage,PLR4914,PLR
+SARS-CoV-2 variant lineage,PLR4915,PLR
+SARS-CoV-2 variant lineage,PLR4916,PLR
+SARS-CoV-2 variant lineage,PLR4917,PLR
+SARS-CoV-2 variant lineage,PLR4918,PLR
+SARS-CoV-2 variant lineage,PLR4919,PLR
+SARS-CoV-2 variant lineage,PLR4920,PLR
+SARS-CoV-2 variant lineage,PLR4921,PLR
+SARS-CoV-2 variant lineage,PLR4922,PLR
+SARS-CoV-2 variant lineage,PLR4923,PLR
+SARS-CoV-2 variant lineage,PLR4924,PLR
+SARS-CoV-2 variant lineage,PLR4925,PLR
+SARS-CoV-2 variant lineage,PLR4926,PLR
+SARS-CoV-2 variant lineage,PLR4927,PLR
+SARS-CoV-2 variant lineage,PLR4928,PLR
+SARS-CoV-2 variant lineage,PLR4929,PLR
+SARS-CoV-2 variant lineage,PLR4930,PLR
+SARS-CoV-2 variant lineage,PLR4931,PLR
+SARS-CoV-2 variant lineage,PLR4932,PLR
+SARS-CoV-2 variant lineage,PLR4933,PLR
+SARS-CoV-2 variant lineage,PLR4934,PLR
+SARS-CoV-2 variant lineage,PLR4935,PLR
+SARS-CoV-2 variant lineage,PLR4936,PLR
+SARS-CoV-2 variant lineage,PLR4937,PLR
+SARS-CoV-2 variant lineage,PLR4938,PLR
+SARS-CoV-2 variant lineage,PLR4939,PLR
+SARS-CoV-2 variant lineage,PLR4940,PLR
+SARS-CoV-2 variant lineage,PLR4941,PLR
+SARS-CoV-2 variant lineage,PLR4942,PLR
+SARS-CoV-2 variant lineage,PLR4943,PLR
+SARS-CoV-2 variant lineage,PLR4944,PLR
+SARS-CoV-2 variant lineage,PLR4945,PLR
+SARS-CoV-2 variant lineage,PLR4946,PLR
+SARS-CoV-2 variant lineage,PLR4947,PLR
+SARS-CoV-2 variant lineage,PLR4948,PLR
+SARS-CoV-2 variant lineage,PLR4949,PLR
+SARS-CoV-2 variant lineage,PLR4950,PLR
+SARS-CoV-2 variant lineage,PLR4951,PLR
+SARS-CoV-2 variant lineage,PLR4952,PLR
+SARS-CoV-2 variant lineage,PLR4953,PLR
+SARS-CoV-2 variant lineage,PLR4954,PLR
+SARS-CoV-2 variant lineage,PLR4955,PLR
+SARS-CoV-2 variant lineage,PLR4956,PLR
+SARS-CoV-2 variant lineage,PLR4957,PLR
+SARS-CoV-2 variant lineage,PLR4958,PLR
+SARS-CoV-2 variant lineage,PLR4959,PLR
+SARS-CoV-2 variant lineage,PLR4960,PLR
+SARS-CoV-2 variant lineage,PLR4961,PLR
+SARS-CoV-2 variant lineage,PLR4962,PLR
+SARS-CoV-2 variant lineage,PLR4963,PLR
+SARS-CoV-2 variant lineage,PLR4964,PLR
+SARS-CoV-2 variant lineage,PLR4965,PLR
+SARS-CoV-2 variant lineage,PLR4966,PLR
+SARS-CoV-2 variant lineage,PLR4967,PLR
+SARS-CoV-2 variant lineage,PLR4968,PLR
+SARS-CoV-2 variant lineage,PLR4969,PLR
+SARS-CoV-2 variant lineage,PLR4970,PLR
+SARS-CoV-2 variant lineage,PLR4971,PLR
+SARS-CoV-2 variant lineage,PLR4972,PLR
+SARS-CoV-2 variant lineage,PLR4973,PLR
+SARS-CoV-2 variant lineage,PLR4974,PLR
+SARS-CoV-2 variant lineage,PLR4975,PLR
+SARS-CoV-2 variant lineage,PLR4976,PLR
+SARS-CoV-2 variant lineage,PLR4977,PLR
+SARS-CoV-2 variant lineage,PLR4978,PLR
+SARS-CoV-2 variant lineage,PLR4979,PLR
+SARS-CoV-2 variant lineage,PLR4980,PLR
+SARS-CoV-2 variant lineage,PLR4981,PLR
+SARS-CoV-2 variant lineage,PLR4982,PLR
+SARS-CoV-2 variant lineage,PLR4983,PLR
+SARS-CoV-2 variant lineage,PLR4984,PLR
+SARS-CoV-2 variant lineage,PLR4985,PLR

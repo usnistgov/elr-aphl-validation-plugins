@@ -1,0 +1,705 @@
+OBR4 Code,OBR4 Code System,OBX3 Code,OBX3 Code System,OBX2,Value Set Name
+29257-3,LN,29257-3,LN,CWE,Target PCR result
+29591-5,LN,29591-5,LN,CWE,Target PCR result
+29908-1,LN,29908-1,LN,CWE,Target PCR result
+29909-9,LN,29909-9,LN,CWE,Target PCR result
+29910-7,LN,29910-7,LN,CWE,Target PCR result
+34487-9,LN,34487-9,LN,CWE,Target PCR result
+34645-2,LN,34645-2,LN,CWE,Target PCR result
+38270-5,LN,38270-5,LN,CWE,Target PCR result
+38272-1,LN,38272-1,LN,CWE,Conclusion PCR result
+38917-1,LN,38917-1,LN,CWE,Target PCR result
+39311-6,LN,39311-6,LN,CWE,CF IF Neut result
+39312-4,LN,39312-4,LN,CWE,CF IF Neut result
+39313-2,LN,39313-2,LN,CWE,CF IF Neut result
+39314-0,LN,39314-0,LN,CWE,CF IF Neut result
+39315-7,LN,39315-7,LN,CWE,CF IF Neut result
+39316-5,LN,39316-5,LN,CWE,CF IF Neut result
+39317-3,LN,39317-3,LN,CWE,CF IF Neut result
+39318-1,LN,39318-1,LN,CWE,CF IF Neut result
+39319-9,LN,39319-9,LN,CWE,CF IF Neut result
+39528-5,LN,39528-5,LN,CWE,Target PCR result
+39536-8,LN,39536-8,LN,CWE,CF IF Neut result
+12237-4,LN,12237-4,LN,CWE,CF IF Neut result
+12272-1,LN,12272-1,LN,CWE,Respiratory viruses
+13327-2,LN,13327-2,LN,CWE,CF IF Neut result
+13921-2,LN,13921-2,LN,CWE,Ql culture result
+17520-8,LN,17520-8,LN,CWE,Respiratory viruses
+21363-7,LN,21363-7,LN,CWE,Target PCR result
+22822-1,LN,22822-1,LN,CWE,EIA result
+22827-0,LN,22827-0,LN,CWE,Flu A H subtype
+40436-8,LN,40436-8,LN,CWE,Respiratory viruses
+40979-7,LN,40979-7,LN,CWE,CF IF Neut result
+40982-1,LN,40982-1,LN,CWE,Target PCR result
+40988-8,LN,40988-8,LN,CWE,Target PCR result
+40991-2,LN,40991-2,LN,CWE,Target PCR result
+41000-1,LN,41000-1,LN,CWE,Respiratory pathogen PCR
+41010-0,LN,41010-0,LN,CWE,Target PCR result
+41461-5,LN,41461-5,LN,CWE,Respiratory viruses
+41461-5,LN,48509-4,LN,CWE,Results PLT171
+41461-5,LN,50024-9,LN,CWE,Respiratory viruses
+41461-5,LN,55097-0,LN,CWE,Ql culture result
+41461-5,LN,55098-8,LN,CWE,Ql culture result
+41461-5,LN,55099-6,LN,CWE,Ql culture result
+41461-5,LN,5855-2,LN,CWE,EIA result
+41461-5,LN,6584-7,LN,CWE,Respiratory viruses
+43364-9,LN,43364-9,LN,CWE,Respiratory viruses
+44263-2,LN,44263-2,LN,CWE,Drug test result
+44556-9,LN,44556-9,LN,CWE,CF IF Neut result
+44568-4,LN,44568-4,LN,CWE,CF IF Neut result
+47532-7,LN,47532-7,LN,CWE,Target PCR result
+48509-4,LN,22827-0,LN,CWE,Flu A H subtype
+48509-4,LN,34487-9,LN,CWE,Target PCR result
+48509-4,LN,38272-1,LN,CWE,Conclusion PCR result
+48509-4,LN,40982-1,LN,CWE,Target PCR result
+48509-4,LN,48509-4,LN,CWE,Results PLT171
+48509-4,LN,49521-8,LN,CWE,Target PCR result
+48509-4,LN,49523-4,LN,CWE,Target PCR result
+48509-4,LN,49524-2,LN,CWE,Target PCR result
+48509-4,LN,55464-2,LN,CWE,Target PCR result
+48509-4,LN,55465-9,LN,CWE,Target PCR result
+48509-4,LN,60494-2,LN,CWE,Conclusion PCR result
+48509-4,LN,68986-9,LN,CWE,Target PCR result
+48509-4,LN,68987-7,LN,CWE,Target PCR result
+48509-4,LN,68993-5,LN,CWE,Target PCR result
+48509-4,LN,74785-7,LN,CWE,Target PCR result
+48509-4,LN,74786-5,LN,CWE,Target PCR result
+48509-4,LN,81428-5,LN,CWE,Target PCR result
+49519-2,LN,49519-2,LN,NM,(Non-coded number)
+49520-0,LN,49520-0,LN,CWE,Target PCR result
+49521-8,LN,49521-8,LN,CWE,Target PCR result
+49522-6,LN,49522-6,LN,CWE,CF IF Neut result
+49523-4,LN,49523-4,LN,CWE,Target PCR result
+49524-2,LN,49524-2,LN,CWE,Target PCR result
+49525-9,LN,49525-9,LN,CWE,EIA result
+49526-7,LN,49526-7,LN,CWE,Conclusion PCR result
+49527-5,LN,49527-5,LN,CWE,Target PCR result
+49528-3,LN,49528-3,LN,CWE,Target PCR result
+49529-1,LN,49522-6,LN,CWE,CF IF Neut result
+49529-1,LN,49529-1,LN,CWE,CF IF Neut result
+49529-1,LN,50701-2,LN,CWE,CF IF Neut result
+49532-5,LN,49532-5,LN,CWE,Target PCR result
+49533-3,LN,49533-3,LN,CWE,EIA result
+49534-1,LN,49534-1,LN,CWE,CF IF Neut result
+49535-8,LN,49535-8,LN,CWE,Target PCR result
+49537-4,LN,49535-8,LN,CWE,Target PCR result
+49537-4,LN,49537-4,LN,CWE,Results PLT171
+49538-2,LN,49538-2,LN,CWE,Flu viruses
+50024-9,LN,50024-9,LN,CWE,Respiratory viruses
+50548-7,LN,29591-5,LN,CWE,Target PCR result
+50548-7,LN,29908-1,LN,CWE,Target PCR result
+50548-7,LN,29909-9,LN,CWE,Target PCR result
+50548-7,LN,29910-7,LN,CWE,Target PCR result
+50548-7,LN,30075-6,LN,CWE,Target PCR result
+50548-7,LN,30076-4,LN,CWE,Target PCR result
+50548-7,LN,34487-9,LN,CWE,Target PCR result
+50548-7,LN,38917-1,LN,CWE,Target PCR result
+50548-7,LN,39528-5,LN,CWE,Target PCR result
+50548-7,LN,40982-1,LN,CWE,Target PCR result
+50548-7,LN,40988-8,LN,CWE,Target PCR result
+50548-7,LN,41003-5,LN,CWE,Target PCR result
+50548-7,LN,41005-0,LN,CWE,Target PCR result
+50548-7,LN,41009-2,LN,CWE,Target PCR result
+50548-7,LN,41010-0,LN,CWE,Target PCR result
+50548-7,LN,49521-8,LN,CWE,Target PCR result
+50548-7,LN,49524-2,LN,CWE,Target PCR result
+50548-7,LN,50548-7,LN,CWE,Respiratory pathogen PCR
+50548-7,LN,55465-9,LN,CWE,Target PCR result
+50548-7,LN,62423-9,LN,CWE,Target PCR result
+50548-7,LN,73754-4,LN,CWE,Target PCR result
+50548-7,LN,73755-1,LN,CWE,Target PCR result
+50548-7,LN,7993-9,LN,CWE,Target PCR result
+50548-7,LN,PLT345,PLT,CWE,Target PCR result
+50548-7,LN,PLT346,PLT,CWE,Target PCR result
+50548-7,LN,PLT347,PLT,CWE,Target PCR result
+50548-7,LN,PLT363,PLT,CWE,Target PCR result
+50699-8,LN,50699-8,LN,CWE,Drug test result
+50701-2,LN,50701-2,LN,CWE,CF IF Neut result
+50703-8,LN,50703-8,LN,CWE,Drug test result
+50709-5,LN,50709-5,LN,NM,(Non-coded number)
+50710-3,LN,50699-8,LN,CWE,Drug test result
+50710-3,LN,PLT205,PLT,NM,(Non-coded number)
+50710-3,LN,PLT206,PLT,NM,(Non-coded number)
+50710-3,LN,PLT208,PLT,CWE,Sample type tested results
+50710-3,LN,PLT237,PLT,CWE,Pyro results
+50710-3,LN,PLT238,PLT,CWE,Pyro results
+50710-3,LN,PLT239,PLT,CWE,Pyro results
+50710-3,LN,PLT240,PLT,CWE,Pyro results
+50710-3,LN,PLT241,PLT,CWE,Pyro results
+50710-3,LN,PLT242,PLT,NM,(Non-coded number)
+50710-3,LN,PLT243,PLT,NM,(Non-coded number)
+50710-3,LN,PLT244,PLT,NM,(Non-coded number)
+50710-3,LN,PLT245,PLT,CWE,Pyro results
+50710-3,LN,PLT246,PLT,CWE,Pyro results
+50710-3,LN,PLT270,PLT,CWE,Pyro results
+50710-3,LN,PLT271,PLT,CWE,Pyro results
+50710-3,LN,PLT272,PLT,CWE,Pyro results
+51991-8,LN,19146-0,LN,CWE,Respiratory viruses
+5229-0,LN,5229-0,LN,NM,(Non-coded number)
+5230-8,LN,5230-8,LN,NM,(Non-coded number)
+54245-6,LN,13327-2,LN,CWE,CF IF Neut result
+54245-6,LN,43364-9,LN,CWE,Respiratory viruses
+54245-6,LN,54245-6,LN,CWE,Respiratory viruses
+55101-0,LN,16291-7,LN,CWE,Ql culture result
+55101-0,LN,38382-8,LN,CWE,Ql culture result
+55101-0,LN,44484-4,LN,CWE,Ql culture result
+55101-0,LN,48310-7,LN,CWE,Ql culture result
+55101-0,LN,55095-4,LN,CWE,Ql culture result
+55101-0,LN,55097-0,LN,CWE,Ql culture result
+55101-0,LN,55098-8,LN,CWE,Ql culture result
+55101-0,LN,55099-6,LN,CWE,Ql culture result
+55101-0,LN,55100-2,LN,CWE,Ql culture result
+55463-4,LN,34487-9,LN,CWE,Target PCR result
+55463-4,LN,49521-8,LN,CWE,Target PCR result
+55463-4,LN,55463-4,LN,CWE,Results PLT103
+55466-7,LN,34487-9,LN,CWE,Target PCR result
+55466-7,LN,49521-8,LN,CWE,Target PCR result
+55466-7,LN,55463-4,LN,CWE,Results PLT103
+55466-7,LN,55464-2,LN,CWE,Target PCR result
+55466-7,LN,55465-9,LN,CWE,Target PCR result
+5833-9,LN,5833-9,LN,CWE,EIA result
+5834-7,LN,5834-7,LN,CWE,CF IF Neut result
+5843-8,LN,5843-8,LN,CWE,Respiratory viruses
+5862-8,LN,5862-8,LN,CWE,EIA result
+5863-6,LN,5863-6,LN,CWE,CF IF Neut result
+5866-9,LN,5866-9,LN,CWE,EIA result
+5867-7,LN,5867-7,LN,CWE,CF IF Neut result
+5869-3,LN,5869-3,LN,CWE,CF IF Neut result
+5871-9,LN,5871-9,LN,CWE,CF IF Neut result
+5873-5,LN,5873-5,LN,CWE,CF IF Neut result
+5876-8,LN,5876-8,LN,CWE,EIA result
+5877-6,LN,5877-6,LN,CWE,CF IF Neut result
+59423-4,LN,59423-4,LN,CWE,Results PLT196
+60494-2,LN,60494-2,LN,CWE,Conclusion PCR result
+60528-7,LN,60528-7,LN,CWE,Respiratory pathogen PCR
+60566-7,LN,29908-1,LN,CWE,Target PCR result
+60566-7,LN,29909-9,LN,CWE,Target PCR result
+60566-7,LN,29910-7,LN,CWE,Target PCR result
+60566-7,LN,30075-6,LN,CWE,Target PCR result
+60566-7,LN,30076-4,LN,CWE,Target PCR result
+60566-7,LN,34487-9,LN,CWE,Target PCR result
+60566-7,LN,38917-1,LN,CWE,Target PCR result
+60566-7,LN,39528-5,LN,CWE,Target PCR result
+60566-7,LN,40982-1,LN,CWE,Target PCR result
+60566-7,LN,49521-8,LN,CWE,Target PCR result
+60566-7,LN,49524-2,LN,CWE,Target PCR result
+60566-7,LN,7993-9,LN,CWE,Target PCR result
+61102-0,LN,61102-0,LN,CWE,Flu A B virus screen DFA
+62424-7,LN,62424-7,LN,CWE,Target PCR result
+62426-2,LN,29723-4,LN,CWE,Target PCR result
+6306-5,LN,6306-5,LN,CWE,EIA result
+63430-3,LN,41003-5,LN,CWE,Target PCR result
+63430-3,LN,41005-0,LN,CWE,Target PCR result
+63430-3,LN,41009-2,LN,CWE,Target PCR result
+63430-3,LN,62423-9,LN,CWE,Target PCR result
+6437-8,LN,5862-8,LN,CWE,EIA result
+6437-8,LN,5866-9,LN,CWE,EIA result
+6437-8,LN,6437-8,LN,CWE,EIA result
+6584-7,LN,14084-8,LN,CWE,CF IF Neut result
+6584-7,LN,14085-5,LN,CWE,CF IF Neut result
+6584-7,LN,54239-9,LN,CWE,Ql culture result
+6584-7,LN,5838-8,LN,CWE,Ql culture result
+6584-7,LN,5840-4,LN,CWE,Respiratory viruses
+6584-7,LN,5846-1,LN,CWE,Ql culture result
+6584-7,LN,5849-5,LN,CWE,Ql culture result
+6584-7,LN,5869-3,LN,CWE,CF IF Neut result
+6584-7,LN,5871-9,LN,CWE,CF IF Neut result
+6584-7,LN,5873-5,LN,CWE,CF IF Neut result
+6584-7,LN,6584-7,LN,CWE,Respiratory viruses
+6584-7,LN,67805-2,LN,CWE,CF IF Neut result
+6584-7,LN,67808-6,LN,CWE,CF IF Neut result
+6584-7,LN,67809-4,LN,CWE,CF IF Neut result
+6584-7,LN,67810-2,LN,CWE,CF IF Neut result
+6584-7,LN,67811-0,LN,CWE,CF IF Neut result
+6584-7,LN,68460-5,LN,CWE,CF IF Neut result
+6604-3,LN,38382-8,LN,CWE,Ql culture result
+6604-3,LN,48310-7,LN,CWE,Ql culture result
+6604-3,LN,6604-3,LN,CWE,Flu viruses
+6608-4,LN,6608-4,LN,CWE,Respiratory viruses
+68991-9,LN,11368-8,LN,TS,(Non-coded date)
+68991-9,LN,11449-6,LN,CWE,Pregnancy status
+68991-9,LN,21612-7,LN,SN,(Non-coded number)
+68991-9,LN,85069-3,LN,CWE,Pre-screen method
+68991-9,LN,86952-9,LN,CWE,Yes No Unknown
+68991-9,LN,86953-7,LN,CWE,Pre-screen results
+68991-9,LN,86955-2,LN,CWE,Yes No Unknown
+68991-9,LN,FLU001,PHINQUESTION,CWE,Yes No Unknown
+68991-9,LN,FLU002,PHINQUESTION,CWE,Yes No Unknown
+68991-9,LN,Lab202,PHINQUESTION,varies,(Non-coded ID format)
+68991-9,LN,LAB330,PHINQUESTION,CWE,Patient location
+68991-9,LN,LAB514,PHINQUESTION,CWE,Yes No Unknown
+68991-9,LN,LAB515,PHINQUESTION,CWE,Yes No Unknown
+68991-9,LN,LAB517,PHINQUESTION,varies,(Non-coded ID format)
+68991-9,LN,PHLIP01,PHINQUESTION,CWE,Yes No Unknown
+68991-9,LN,PHLIP02,PHINQUESTION,TX,(Non-coded text)
+68991-9,LN,PLT248,PLT,varies,(Non-coded ID format)
+68991-9,LN,PLT249,PLT,CWE,Program list
+68991-9,LN,TRAVEL05,PHINQUESTION,CWE,Country
+74408-6,LN,74472-2,LN,CWE,Target PCR result
+74408-6,LN,74473-0,LN,CWE,Target PCR result
+74408-6,LN,74474-8,LN,CWE,Target PCR result
+74408-6,LN,74475-5,LN,CWE,Conclusion PCR result
+74475-5,LN,68993-5,LN,CWE,Target PCR result
+74475-5,LN,74472-2,LN,CWE,Target PCR result
+74475-5,LN,74473-0,LN,CWE,Target PCR result
+74475-5,LN,74474-8,LN,CWE,Target PCR result
+74475-5,LN,74475-5,LN,CWE,Conclusion PCR result
+74784-0,LN,74784-0,LN,CWE,Flu B lineage PCR
+74787-3,LN,68993-5,LN,CWE,Target PCR result
+74787-3,LN,74784-0,LN,CWE,Flu B lineage PCR
+74787-3,LN,74785-7,LN,CWE,Target PCR result
+74787-3,LN,74786-5,LN,CWE,Target PCR result
+76072-8,LN,76072-8,LN,CWE,Conclusion PCR result
+76628-7,LN,76628-7,LN,CWE,Non-respiratory pathogens
+77029-7,LN,73754-4,LN,CWE,Target PCR result
+77029-7,LN,73755-1,LN,CWE,Target PCR result
+77029-7,LN,76078-5,LN,CWE,Target PCR result
+77029-7,LN,76080-1,LN,CWE,Target PCR result
+77029-7,LN,76084-3,LN,CWE,Target PCR result
+77029-7,LN,76085-0,LN,CWE,Target PCR result
+77029-7,LN,76086-8,LN,CWE,Target PCR result
+77029-7,LN,77022-2,LN,CWE,Target PCR result
+77029-7,LN,77023-0,LN,CWE,Target PCR result
+77029-7,LN,77024-8,LN,CWE,Target PCR result
+77029-7,LN,77025-5,LN,CWE,Target PCR result
+95941-1,LN,94502-2,LN,CWE,PCR Commercial Conclusion result
+96091-4,LN,96091-4,LN,CWE,PCR Commercial Conclusion result
+96119-3,LN,96119-3,LN,CWE,IA result
+78922-2,LN,94759-8,LN,CWE,PCR Commercial Conclusion result
+81233-9,LN,81326-1,LN,NM,(Non-coded number)
+96123-5,LN,96123-5,LN,CWE,PCR Commercial Conclusion result
+95942-9,LN,95209-3,LN,CWE,IA result
+95942-9,LN,80382-5,LN,CWE,IA result
+95942-9,LN,80383-3,LN,CWE,IA result
+96118-5,LN,94761-4,LN,CWE,IA result
+96118-5,LN,95416-4,LN,CWE,IA result
+96742-2,LN,96742-2,LN,CWE,IA result
+96742-2,LN,94563-4,LN,CWE,IA result
+96603-6,LN,96603-6,LN,CWE,IA result
+95422-2,LN,94500-6,LN,CWE,PCR Commercial Conclusion result
+95422-2,LN,81309-7,LN,NM,(Non-coded number)
+95422-2,LN,86316-7,LN,NM,(Non-coded number)
+PLT2381,PLT,PLT2381,PLT,CWE,Respiratory pathogen PCR
+PLT2384,PLT,74038-1,LN,NM,(Non-coded number)
+PLT2384,PLT,74039-9,LN,NM,(Non-coded number)
+PLT2384,PLT,88835-4,LN,NM,(Non-coded number)
+PLT2384,PLT,81305-5,LN,NM,(Non-coded number)
+PLT2384,PLT,81327-9,LN,NM,(Non-coded number)
+PLT2384,PLT,81325-3,LN,NM,(Non-coded number)
+PLT2384,PLT,59423-4,LN,CWE,Results PLT196
+PLT2384,PLT,74784-0,LN,CWE,Flu B lineage PCR
+81233-9,LN,49521-8,LN,CWE,Target PCR result
+81233-9,LN,49524-2,LN,CWE,Target PCR result
+81233-9,LN,55464-2,LN,CWE,Target PCR result
+77029-7,LN,77026-3,LN,CWE,Target PCR result
+77029-7,LN,77027-1,LN,CWE,Target PCR result
+77029-7,LN,77028-9,LN,CWE,Target PCR result
+78922-2,LN,29257-3,LN,CWE,Target PCR result
+78922-2,LN,29908-1,LN,CWE,Target PCR result
+78922-2,LN,29909-9,LN,CWE,Target PCR result
+78922-2,LN,29910-7,LN,CWE,Target PCR result
+78922-2,LN,34645-2,LN,CWE,Target PCR result
+78922-2,LN,38381-0,LN,CWE,Target PCR result
+78922-2,LN,38917-1,LN,CWE,Target PCR result
+78922-2,LN,40982-1,LN,CWE,Target PCR result
+78922-2,LN,40988-8,LN,CWE,Target PCR result
+78922-2,LN,40991-2,LN,CWE,Target PCR result
+78922-2,LN,41005-0,LN,CWE,Target PCR result
+78922-2,LN,41009-2,LN,CWE,Target PCR result
+78922-2,LN,41010-0,LN,CWE,Target PCR result
+78922-2,LN,42588-4,LN,CWE,Target PCR result
+78922-2,LN,43913-3,LN,CWE,Target PCR result
+78922-2,LN,45271-4,LN,CWE,Target PCR result
+78922-2,LN,49521-8,LN,CWE,Target PCR result
+78922-2,LN,49524-2,LN,CWE,Target PCR result
+78922-2,LN,55465-9,LN,CWE,Target PCR result
+78922-2,LN,62423-9,LN,CWE,Target PCR result
+78922-2,LN,76074-4,LN,CWE,Target PCR result
+78922-2,LN,76078-5,LN,CWE,Target PCR result
+85810-0,LN,86334-0,LN,CWE,Conclusion PCR result
+86322-5,LN,86322-5,LN,CWE,Ql culture result
+86323-3,LN,86323-3,LN,CWE,CF IF Neut result
+86328-2,LN,86328-2,LN,CWE,Conclusion PCR result
+86329-0,LN,86329-0,LN,CWE,Conclusion PCR result
+86330-8,LN,86330-8,LN,CWE,Conclusion PCR result
+86331-6,LN,86331-6,LN,CWE,Conclusion PCR result
+86332-4,LN,86332-4,LN,CWE,Conclusion PCR result
+78922-2,LN,76080-1,LN,CWE,Target PCR result
+78922-2,LN,76084-3,LN,CWE,Target PCR result
+78922-2,LN,76085-0,LN,CWE,Target PCR result
+78922-2,LN,76086-8,LN,CWE,Target PCR result
+78922-2,LN,76087-6,LN,CWE,Target PCR result
+78922-2,LN,76089-2,LN,CWE,Target PCR result
+78922-2,LN,77008-1,LN,CWE,Target PCR result
+78922-2,LN,77022-2,LN,CWE,Target PCR result
+78922-2,LN,77023-0,LN,CWE,Target PCR result
+78922-2,LN,77024-8,LN,CWE,Target PCR result
+78922-2,LN,77025-5,LN,CWE,Target PCR result
+78922-2,LN,77026-3,LN,CWE,Target PCR result
+78922-2,LN,77027-1,LN,CWE,Target PCR result
+78922-2,LN,77028-9,LN,CWE,Target PCR result
+78922-2,LN,80586-1,LN,CWE,Target PCR result
+78922-2,LN,80587-9,LN,CWE,Target PCR result
+78922-2,LN,80588-7,LN,CWE,Target PCR result
+78922-2,LN,80589-5,LN,CWE,Target PCR result
+78922-2,LN,80590-3,LN,CWE,Target PCR result
+78922-2,LN,80591-1,LN,CWE,Target PCR result
+78922-2,LN,80592-9,LN,CWE,Target PCR result
+78922-2,LN,80593-7,LN,CWE,Target PCR result
+78922-2,LN,80594-5,LN,CWE,Target PCR result
+78922-2,LN,80595-2,LN,CWE,Target PCR result
+78922-2,LN,80596-0,LN,CWE,Target PCR result
+78922-2,LN,80597-8,LN,CWE,Target PCR result
+78922-2,LN,80598-6,LN,CWE,Target PCR result
+78922-2,LN,80599-4,LN,CWE,Target PCR result
+78922-2,LN,80600-0,LN,CWE,Target PCR result
+78922-2,LN,80601-8,LN,CWE,Target PCR result
+78922-2,LN,88716-6,LN,CWE,Target PCR result
+78922-2,LN,88718-2,LN,CWE,Target PCR result
+78922-2,LN,88719-0,LN,CWE,Target PCR result
+78922-2,LN,88720-8,LN,CWE,Target PCR result
+78922-2,LN,88721-6,LN,CWE,Target PCR result
+7993-9,LN,7993-9,LN,CWE,Target PCR result
+81233-9,LN,74039-9,LN,NM,(Non-coded number)
+81233-9,LN,81305-5,LN,NM,(Non-coded number)
+81233-9,LN,81307-1,LN,NM,(Non-coded number)
+81233-9,LN,81308-9,LN,NM,(Non-coded number)
+81233-9,LN,81309-7,LN,NM,(Non-coded number)
+81233-9,LN,81320-4,LN,NM,(Non-coded number)
+81233-9,LN,81321-2,LN,NM,(Non-coded number)
+81233-9,LN,81325-3,LN,NM,(Non-coded number)
+81233-9,LN,81327-9,LN,NM,(Non-coded number)
+81233-9,LN,88835-4,LN,NM,(Non-coded number)
+81428-5,LN,81428-5,LN,CWE,Target PCR result
+82159-5,LN,82160-3,LN,CWE,Target PCR result
+82159-5,LN,82161-1,LN,CWE,Target PCR result
+82159-5,LN,82162-9,LN,CWE,Target PCR result
+82159-5,LN,82163-7,LN,CWE,Target PCR result
+82159-5,LN,82164-5,LN,CWE,Target PCR result
+82159-5,LN,82165-2,LN,CWE,Target PCR result
+82159-5,LN,82166-0,LN,CWE,Target PCR result
+82159-5,LN,82167-8,LN,CWE,Target PCR result
+82159-5,LN,82168-6,LN,CWE,Target PCR result
+82159-5,LN,82169-4,LN,CWE,Target PCR result
+82159-5,LN,82170-2,LN,CWE,Target PCR result
+82159-5,LN,82171-0,LN,CWE,Target PCR result
+82159-5,LN,82172-8,LN,CWE,Target PCR result
+82159-5,LN,82173-6,LN,CWE,Target PCR result
+82159-5,LN,82174-4,LN,CWE,Target PCR result
+82159-5,LN,82175-1,LN,CWE,Target PCR result
+82159-5,LN,82176-9,LN,CWE,Target PCR result
+82159-5,LN,82177-7,LN,CWE,Target PCR result
+82159-5,LN,82178-5,LN,CWE,Target PCR result
+82159-5,LN,82179-3,LN,CWE,Target PCR result
+82159-5,LN,87621-9,LN,CWE,Target PCR result
+82159-5,LN,PLT357,PLT,CWE,Respiratory pathogen PCR
+82195-9,LN,80348-6,LN,CWE,Target PCR result
+82195-9,LN,80349-4,LN,CWE,Target PCR result
+82195-9,LN,80350-2,LN,CWE,Target PCR result
+82195-9,LN,80351-0,LN,CWE,Target PCR result
+82195-9,LN,82196-7,LN,CWE,Target PCR result
+82195-9,LN,82197-5,LN,CWE,Target PCR result
+82195-9,LN,82198-3,LN,CWE,Target PCR result
+82195-9,LN,82199-1,LN,CWE,Target PCR result
+82195-9,LN,82200-7,LN,CWE,Target PCR result
+82195-9,LN,82201-5,LN,CWE,Target PCR result
+82195-9,LN,82202-3,LN,CWE,Target PCR result
+82195-9,LN,82203-1,LN,CWE,Target PCR result
+82195-9,LN,82204-9,LN,CWE,Target PCR result
+82195-9,LN,82205-6,LN,CWE,Target PCR result
+82195-9,LN,82206-4,LN,CWE,Target PCR result
+82195-9,LN,82207-2,LN,CWE,Target PCR result
+82195-9,LN,82208-0,LN,CWE,Target PCR result
+82195-9,LN,82209-8,LN,CWE,Target PCR result
+82195-9,LN,82210-6,LN,CWE,Target PCR result
+82195-9,LN,82211-4,LN,CWE,Target PCR result
+82195-9,LN,82212-2,LN,CWE,Target PCR result
+82195-9,LN,82213-0,LN,CWE,Target PCR result
+85810-0,LN,86328-2,LN,CWE,Conclusion PCR result
+85810-0,LN,86329-0,LN,CWE,Conclusion PCR result
+85810-0,LN,86330-8,LN,CWE,Conclusion PCR result
+85810-0,LN,86331-6,LN,CWE,Conclusion PCR result
+85810-0,LN,86332-4,LN,CWE,Conclusion PCR result
+85810-0,LN,86333-2,LN,CWE,Conclusion PCR result
+86333-2,LN,86333-2,LN,CWE,Conclusion PCR result
+86334-0,LN,86334-0,LN,CWE,Conclusion PCR result
+9782-4,LN,9782-4,LN,CWE,Respiratory viruses
+PLT108,PLT,PLT108,PLT,CWE,Flu viruses
+PLT2063,PLT,PLT2063,PLT,CWE,CF IF Neut result
+PLT2070,PLT,PLT2070,PLT,CWE,Ql culture result
+PLT2071,PLT,PLT2071,PLT,CWE,EIA result
+PLT26,PLT,PLT26,PLT,CWE,EIA result
+PLT263,PLT,PLT263,PLT,CWE,CF IF Neut result
+PLT275,PLT,85801-9,LN,NM,(Non-coded number)
+PLT275,PLT,85802-7,LN,NM,(Non-coded number)
+PLT275,PLT,85803-5,LN,NM,(Non-coded number)
+PLT275,PLT,PLT281,PLT,NM,(Non-coded number)
+PLT282,PLT,PLT283,PLT,CWE,CF IF Neut result
+PLT282,PLT,PLT519,PLT,CWE,CF IF Neut result
+PLT282,PLT,PLT520,PLT,CWE,CF IF Neut result
+PLT357,PLT,22827-0,LN,CWE,Flu A H subtype
+PLT357,PLT,23826-1,LN,CWE,Target PCR result
+PLT357,PLT,29257-3,LN,CWE,Target PCR result
+PLT357,PLT,29908-1,LN,CWE,Target PCR result
+PLT357,PLT,29909-9,LN,CWE,Target PCR result
+PLT357,PLT,29910-7,LN,CWE,Target PCR result
+PLT357,PLT,34487-9,LN,CWE,Target PCR result
+PLT357,PLT,34645-2,LN,CWE,Target PCR result
+PLT357,PLT,38917-1,LN,CWE,Target PCR result
+PLT357,PLT,39528-5,LN,CWE,Target PCR result
+PLT357,PLT,40982-1,LN,CWE,Target PCR result
+PLT357,PLT,40988-8,LN,CWE,Target PCR result
+PLT357,PLT,40991-2,LN,CWE,Target PCR result
+PLT357,PLT,41000-1,LN,CWE,Respiratory pathogen PCR
+PLT357,PLT,41003-5,LN,CWE,Target PCR result
+PLT357,PLT,41005-0,LN,CWE,Target PCR result
+PLT357,PLT,41009-2,LN,CWE,Target PCR result
+PLT357,PLT,41010-0,LN,CWE,Target PCR result
+PLT357,PLT,49521-8,LN,CWE,Target PCR result
+PLT357,PLT,49524-2,LN,CWE,Target PCR result
+PLT357,PLT,55465-9,LN,CWE,Target PCR result
+PLT357,PLT,60494-2,LN,CWE,Conclusion PCR result
+PLT357,PLT,62423-9,LN,CWE,Target PCR result
+PLT357,PLT,7993-9,LN,CWE,Target PCR result
+PLT357,PLT,PLT344,PLT,CWE,Respiratory pathogen PCR
+PLT357,PLT,PLT357,PLT,CWE,Respiratory pathogen PCR
+PLT55,PLT,PLT55,PLT,CWE,Flu A H subtype
+PLT72,PLT,85821-7,LN,CWE,HAI results
+PLT72,PLT,86318-3,LN,CWE,HAI results
+PLT72,PLT,PLT72,PLT,CWE,Flu B lineage
+PLT73,PLT,PLT73,PLT,CWE,Flu B lineage
+PLT76,PLT,PLT76,PLT,CWE,Flu viruses
+PLT77,PLT,49522-6,LN,CWE,CF IF Neut result
+PLT77,PLT,50701-2,LN,CWE,CF IF Neut result
+PLT94,PLT,PLT94,PLT,CWE,Flu A B virus screen DFA
+PLT96,PLT,34487-9,LN,CWE,Target PCR result
+PLT96,PLT,38272-1,LN,CWE,Conclusion PCR result
+PLT96,PLT,40982-1,LN,CWE,Target PCR result
+PLT96,PLT,49521-8,LN,CWE,Target PCR result
+PLT96,PLT,49523-4,LN,CWE,Target PCR result
+PLT96,PLT,PLT96,PLT,CWE,Flu viruses
+PLT97,PLT,PLT14,PLT,CWE,HAI results
+PLT97,PLT,PLT20,PLT,CWE,HAI results
+PLT97,PLT,PLT491,PLT,CWE,HAI results
+PLT97,PLT,PLT97,PLT,CWE,Flu viruses HAI
+PLT99,PLT,PLT99,PLT,CWE,Respiratory viruses
+59423-4,LN,34487-9,LN,CWE,Target PCR result
+59423-4,LN,49524-2,LN,CWE,Target PCR result
+59423-4,LN,55464-2,LN,CWE,Target PCR result
+59423-4,LN,55465-9,LN,CWE,Target PCR result
+59423-4,LN,68986-9,LN,CWE,Target PCR result
+59423-4,LN,68987-7,LN,CWE,Target PCR result
+74787-3,LN,40982-1,LN,CWE,Target PCR result
+81428-5,LN,34487-9,LN,CWE,Target PCR result
+68991-9,LN,29553-5,LN,NM,(Non-coded number)
+68991-9,LN,35659-2,LN,NM,(Non-coded number)
+PLT357,PLT,30075-6,LN,CWE,Target PCR result
+PLT357,PLT,30076-4,LN,CWE,Target PCR result
+PLT357,PLT,62424-7,LN,CWE,Target PCR result
+79381-0,LN,70242-3,LN,CWE,Target PCR result
+79381-0,LN,79388-5,LN,CWE,Target PCR result
+79381-0,LN,80675-2,LN,CWE,Target PCR result
+79381-0,LN,80676-0,LN,CWE,Target PCR result
+79381-0,LN,80677-8,LN,CWE,Target PCR result
+79381-0,LN,80678-6,LN,CWE,Target PCR result
+79381-0,LN,80679-4,LN,CWE,Target PCR result
+79381-0,LN,80681-0,LN,CWE,Target PCR result
+79381-0,LN,80683-6,LN,CWE,Target PCR result
+79381-0,LN,80684-4,LN,CWE,Target PCR result
+79381-0,LN,80685-1,LN,CWE,Target PCR result
+56748-7,LN,56748-7,LN,CWE,Target PCR result
+40976-3,LN,40976-3,LN,CWE,Respiratory pathogen PCR
+77029-7,LN,88716-6,LN,CWE,Target PCR result
+77029-7,LN,88719-0,LN,CWE,Target PCR result
+77029-7,LN,88721-6,LN,CWE,Target PCR result
+77029-7,LN,76087-6,LN,CWE,Target PCR result
+77029-7,LN,88718-2,LN,CWE,Target PCR result
+77029-7,LN,88720-8,LN,CWE,Target PCR result
+48509-4,LN,59423-4,LN,CWE,Results PLT196
+48509-4,LN,74784-0,LN,CWE,Flu B lineage PCR
+14084-8,LN,14084-8,LN,CWE,CF IF Neut result
+67805-2,LN,67805-2,LN,CWE,CF IF Neut result
+68460-5,LN,68460-5,LN,CWE,CF IF Neut result
+88627-5,LN,88627-5,LN,CWE,Target PCR result
+33027-4,LN,33027-4,LN,CWE,Target PCR result
+48508-6,LN,48508-6,LN,CWE,Target PCR result
+67806-0,LN,67806-0,LN,CWE,CF IF Neut result
+76626-1,LN,76626-1,LN,CWE,Ql culture result
+9571-1,LN,9571-1,LN,CWE,Target PCR result
+41001-9,LN,41001-9,LN,CWE,Respiratory pathogen PCR
+51669-0,LN,51669-0,LN,CWE,Target PCR result
+90449-0,LN,90449-0,LN,CWE,Non-respiratory pathogens
+16130-7,LN,16130-7,LN,CWE,Target PCR result
+16131-5,LN,16131-5,LN,CWE,Target PCR result
+11483-5,LN,11483-5,LN,CWE,Target PCR result
+88701-8,LN,54905-5,LN,CWE,Target PCR Result
+88701-8,LN,54906-3,LN,CWE,Target PCR Result
+94309-2,LN,94309-2,LN,CWE,PCR Commercial Conclusion result
+94306-8,LN,94307-6,LN,CWE,PCR Commercial Conclusion result
+94306-8,LN,94308-4,LN,CWE,PCR Commercial Conclusion result
+94306-8,LN,94310-0,LN,CWE,PCR Commercial Conclusion result
+94306-8,LN,94311-8,LN,NM,(Non-coded number)
+94306-8,LN,94312-6,LN,NM,(Non-coded number)
+94306-8,LN,94313-4,LN,NM,(Non-coded number)
+94306-8,LN,68993-5,LN,CWE,Target PCR result
+94306-8,LN,86316-7,LN,NM,(Non-coded number)
+94306-8,LN,94309-2,LN,CWE,PCR Commercial Conclusion result
+94500-6,LN,94500-6,LN,CWE,PCR Commercial Conclusion result
+94502-2,LN,94502-2,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94533-7,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94534-5,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94500-6,LN,CWE,PCR Commercial Conclusion result
+94534-5,LN,94534-5,LN,CWE,PCR Commercial Conclusion result
+94565-9,LN,94565-9,LN,CWE,PCR Commercial Conclusion result
+94533-7,LN,94533-7,LN,CWE,PCR Commercial Conclusion result
+94503-0,LN,94507-1,LN,CWE,IA result
+94503-0,LN,94508-9,LN,CWE,IA result
+94504-8,LN,94562-6,LN,CWE,IA result
+94504-8,LN,94563-4,LN,CWE,IA result
+94504-8,LN,94564-2,LN,CWE,IA result
+94504-8,LN,94661-6,LN,CWE,IA result
+82159-5,LN,94500-6,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94559-2,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94502-2,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,68993-5,LN,CWE,Target PCR result
+94531-1,LN,94310-0,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94315-9,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94307-6,LN,CWE,PCR Commercial Conclusion result
+94559-2,LN,94559-2,LN,CWE,PCR Commercial Conclusion result
+PLT2338,PLT,94563-4,LN,CWE,IA result
+PLT2338,PLT,94505-5,LN,SN,(Non-coded number)
+94531-1,LN,94758-0,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94640-0,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,90101-7,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94756-4,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94757-2,LN,CWE,PCR Commercial Conclusion result
+82159-5,LN,94759-8,LN,CWE,PCR Commercial Conclusion result
+94762-2,LN,94762-2,LN,CWE,IA result
+94503-0,LN,94661-6,LN,CWE,IA result
+94563-4,LN,94563-4,LN,CWE,IA result
+PLT2337,PLT,94720-0,LN,SN,(Non-coded number)
+PLT2337,PLT,94562-6,LN,CWE,IA result
+94760-6,LN,94760-6,LN,CWE,PCR Commercial Conclusion result
+94759-8,LN,94759-8,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94759-8,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94760-6,LN,CWE,PCR Commercial Conclusion result
+94531-1,LN,94316-7,LN,CWE,PCR Commercial Conclusion result
+94547-7,LN,94547-7,LN,CWE,IA result
+94756-4,LN,94756-4,LN,CWE,PCR Commercial Conclusion result
+85476-0,LN,85477-8,LN,CWE,Conclusion PCR result
+85476-0,LN,85478-6,LN,CWE,Conclusion PCR result
+85476-0,LN,85479-4,LN,CWE,Conclusion PCR result
+92882-0,LN,85477-8,LN,CWE,Conclusion PCR result
+92882-0,LN,85478-6,LN,CWE,Conclusion PCR result
+95422-2,LN,95423-0,LN,CWE,Respiratory pathogen PCR
+95422-2,LN,92142-9,LN,CWE,Target PCR Result
+95422-2,LN,92141-1,LN,CWE,Target PCR Result
+95422-2,LN,94533-7,LN,CWE,PCR Commercial Conclusion result
+95422-2,LN,68993-5,LN,CWE,Target PCR result
+95422-2,LN,94510-5,LN,NM,(Non-coded number)
+95422-2,LN,81308-9,LN,NM,(Non-coded number)
+95422-2,LN,81309-7,LN,NM,(Non-coded number)
+94845-5,LN,94845-5,LN,CWE,PCR Commercial Conclusion result
+95209-3,LN,95209-3,LN,CWE,IA result
+95406-5,LN,95406-5,LN,CWE,PCR Commercial Conclusion result
+95409-9,LN,95406-5,LN,CWE,PCR Commercial Conclusion result
+95409-9,LN,95409-9,LN,CWE,PCR Commercial Conclusion result
+94764-8,LN,95424-8,LN,CWE,PCR Commercial Conclusion result
+95424-8,LN,95424-8,LN,CWE,PCR Commercial Conclusion result
+95425-5,LN,95425-5,LN,CWE,PCR Commercial Conclusion result
+95542-7,LN,95542-7,LN,CWE,IA result
+95608-6,LN,95608-6,LN,CWE,PCR Commercial Conclusion result
+94764-8,LN,94764-8,LN,CWE,PCR Commercial Conclusion result
+50548-7,LN,94760-6,LN,CWE,PCR Commercial Conclusion result
+82159-5,LN,94565-9,LN,CWE,PCR Commercial Conclusion result
+94306-8,LN,94845-5,LN,CWE,PCR Commercial Conclusion result
+94504-8,LN,94761-4,LN,CWE,IA result
+94504-8,LN,95416-4,LN,CWE,IA result
+94558-4,LN,94558-4,LN,CWE,IA result
+94564-2,LN,94564-2,LN,CWE,IA result
+94640-0,LN,94640-0,LN,CWE,PCR Commercial Conclusion result
+94757-2,LN,94757-2,LN,CWE,PCR Commercial Conclusion result
+95406-5,LN,95409-9,LN,CWE,PCR Commercial Conclusion result
+95424-8,LN,94764-8,LN,CWE,PCR Commercial Conclusion result
+95609-4,LN,95609-4,LN,CWE,PCR Commercial Conclusion result
+94756-4,LN,94756-4,LN,CWE,PCR Commercial Conclusion result
+94507-1,LN,94507-1,LN,CWE,IA result
+95380-2,LN,95423-0,LN,CWE,Respiratory pathogen PCR
+94316-7,LN,94316-7,LN,CWE,PCR Commercial Conclusion result
+68991-9,LN,82810-3,LN,CWE,Pregnancy Status
+68991-9,LN,95417-2,LN,CWE,Yes No Unknown
+68991-9,LN,95418-0,LN,CWE,Yes No Unknown
+68991-9,LN,95419-8,LN,CWE,Yes No Unknown
+68991-9,LN,77974-4,LN,CWE,Yes No Unknown
+68991-9,LN,95420-6,LN,CWE,Yes No Unknown
+68991-9,LN,95421-4,LN,CWE,Yes No Unknown
+68991-9,LN,75325-1,LN,CWE,Symptom
+68991-9,LN,65222-2,LN,TS,(Non-coded date)
+68991-9,LN,30525-0,LN,NM,(Non-coded number)
+6584-7,LN,55100-2,LN,CWE,Ql culture result
+6584-7,LN,55097-0,LN,CWE,Ql culture result
+6584-7,LN,55098-8,LN,CWE,Ql culture result
+6584-7,LN,55099-6,LN,CWE,Ql culture result
+6584-7,LN,55095-4,LN,CWE,Ql culture result
+6584-7,LN,48310-7,LN,CWE,Ql culture result
+6584-7,LN,38382-8,LN,CWE,Ql culture result
+6584-7,LN,86322-5,LN,CWE,Ql culture result
+6584-7,LN,PLT2375,LN,CWE,Ql culture result
+81233-9,LN,86316-7,LN,NM,(Non-coded number)
+79381-0,LN,80674-5,LN,CWE,Target PCR result
+79381-0,LN,80680-2,LN,CWE,Target PCR result
+79381-0,LN,80682-8,LN,CWE,Target PCR result
+94563-4,LN,94505-5,LN,SN,(Non-coded number)
+78922-2,LN,76070-2,LN,CWE,Target PCR result
+78922-2,LN,88604-4,LN,CWE,PCR Commercial Conclusion result
+78922-2,LN,88610-1,LN,CWE,PCR Commercial Conclusion result
+78922-2,LN,88618-4,LN,CWE,PCR Commercial Conclusion result
+78922-2,LN,88626-7,LN,CWE,PCR Commercial Conclusion result
+94505-5,LN,94505-5,LN,SN,(Non-coded number)
+94505-5,LN,94563-4,LN,CWE,IA result
+94758-0,LN,94758-0,LN,CWE,PCR Commercial Conclusion result
+94769-7,LN,94762-2,LN,CWE,IA result
+94769-7,LN,94769-7,LN,CWE,PCR Commercial Conclusion result
+95380-2,LN,92141-1,LN,CWE,Target PCR Result
+95380-2,LN,92142-9,LN,CWE,Target PCR Result
+95380-2,LN,94559-2,LN,CWE,PCR Commercial Conclusion result
+95380-2,LN,94758-0,LN,CWE,PCR Commercial Conclusion result
+95422-2,LN,94559-2,LN,CWE,PCR Commercial Conclusion result
+95826-4,LN,94845-5,LN,CWE,PCR Commercial Conclusion result
+95941-1,LN,92131-2,LN,CWE,PCR Commercial Conclusion result
+95941-1,LN,92141-1,LN,CWE,Target PCR Result
+95941-1,LN,92142-9,LN,CWE,Target PCR Result
+81233-9,LN,55465-9,LN,CWE,Target PCR result
+81233-9,LN,38270-5,LN,CWE,Target PCR result
+81233-9,LN,38272-1,LN,CWE,Conclusion PCR result
+81233-9,LN,68986-9,LN,CWE,Target PCR result
+81233-9,LN,68987-7,LN,CWE,Target PCR result
+81233-9,LN,74785-7,LN,CWE,Target PCR result
+81233-9,LN,74786-5,LN,CWE,Target PCR result
+81233-9,LN,81428-5,LN,CWE,Target PCR result
+PLT2408,PLT,PLT2408,PLT,CWE,CF IF Neut result
+PLT2396,PLT,PLT2396,LN,CWE,Respiratory pathogen PCR
+96741-4,LN,96741-4,LN,CWE,SARS-CoV-2 variant lineage
+6584-7,LN,96741-4,LN,CWE,SARS-CoV-2 variant lineage
+6584-7,LN,95423-0,LN,CWE,Respiratory pathogen PCR
+40988-8,LN,30075-6,LN,CWE,Target PCR result
+40988-8,LN,30076-4,LN,CWE,Target PCR result
+96741-4,LN,96895-8,LN,CWE,SARS-CoV-2 variant lineage
+96741-4,LN,98062-3,LN,ST,SARS-CoV-2 variant lineage
+95491-1,LN,94500-6,LN,CWE,PCR Commercial Conclusion result
+95491-1,LN,62462-7,LN,CWE,Target PCR result
+59423-4,LN,68993-5,LN,CWE,Target PCR result
+40991-2,LN,7993-9,LN,CWE,Target PCR result
+40991-2,LN,29591-5,LN,CWE,Target PCR result
+96894-1,LN,PLT2730,PLT,CWE,Target PCR result
+96894-1,LN,PLT2731,PLT,CWE,Target PCR result
+96894-1,LN,PLT2732,PLT,CWE,Target PCR result
+96894-1,LN,PLT2733,PLT,CWE,Target PCR result
+96894-1,LN,PLT2734,PLT,CWE,Target PCR result
+96894-1,LN,PLT2735,PLT,CWE,Target PCR result
+96894-1,LN,PLT2736,PLT,CWE,Target PCR result
+96894-1,LN,PLT2737,PLT,CWE,Target PCR result
+96894-1,LN,PLT2738,PLT,CWE,Target PCR result
+96894-1,LN,PLT2739,PLT,CWE,Target PCR result
+96894-1,LN,PLT2740,PLT,CWE,Target PCR result
+96894-1,LN,PLT2741,PLT,CWE,Target PCR result
