@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4;
 import gov.nist.hit.elr.plugin.utils.CSVUtils;
@@ -18,7 +19,7 @@ import scala.collection.immutable.List;
 
 public abstract class OBX3_OBR4_csv implements OBX3_OBR4 {
 
-  private static Logger logger = Logger.getLogger(OBX3_OBR4_csv.class.getName());
+  private static Logger logger = LogManager.getLogger();
 
   public abstract String getFOLDER();
 

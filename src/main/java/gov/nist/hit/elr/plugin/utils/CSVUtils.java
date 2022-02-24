@@ -13,11 +13,12 @@ import java.util.Set;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class CSVUtils {
 
-  private static Logger logger = Logger.getLogger(CSVUtils.class.getName());
+  private static Logger logger = LogManager.getLogger();
 
   private Set<CodedElement> OBR4;
   private Set<CodedElement> OBX3;

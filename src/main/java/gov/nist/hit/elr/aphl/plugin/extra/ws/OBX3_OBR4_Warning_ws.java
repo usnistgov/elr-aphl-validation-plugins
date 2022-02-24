@@ -5,7 +5,8 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import gov.nist.hit.elr.aphl.domain.Observation;
 import gov.nist.hit.elr.aphl.domain.Order;
@@ -23,7 +24,7 @@ import scala.collection.immutable.List;
 
 public abstract class OBX3_OBR4_Warning_ws implements OBX3_OBR4_Warning {
 
-  private static Logger logger = Logger.getLogger(OBX3_OBR4_Warning_ws.class.getName());
+  private static Logger logger = LogManager.getLogger();
 
   public abstract Program getProgram();
 

@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import gov.nist.hit.elr.aphl.domain.Program;
 import gov.nist.hit.elr.aphl.domain.Test;
@@ -23,7 +24,7 @@ import scala.collection.immutable.List;
 
 public abstract class OBX_ws implements OBX {
 
-  private static Logger logger = Logger.getLogger(OBX_ws.class.getName());
+  private static Logger logger = LogManager.getLogger();
 
   public abstract Program getProgram();
 

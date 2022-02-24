@@ -3,7 +3,8 @@ package gov.nist.hit.elr.aphl.plugin.extra;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import gov.nist.healthcare.utils.date.DateUtilNew;
 import hl7.v2.instance.Element;
@@ -14,7 +15,7 @@ import scala.collection.immutable.List;
 
 public class DatesCheck {
 
-  private static Logger logger = Logger.getLogger(DatesCheck.class.getName());
+  private static Logger logger = LogManager.getLogger();
 
   private String defaultTz = "";
 
@@ -35,9 +36,9 @@ public class DatesCheck {
     if (!"".equals(defaultTz)) {
       java.util.List<LocationDateList> datesToCheck = checkMessageContext(e);
       result.addAll(check(datesToCheck));
-      // if (result.size() > 0) {
-      // logger.debug(result);
-      // }
+      if (result.size() > 0) {
+        logger.debug(result);
+      }
     }
     return result;
   }
@@ -97,28 +98,41 @@ public class DatesCheck {
           // test for equal to
           if (!ext1.isEqual(ext2)) {
             result.add(String.format(
-                "The date/time at location %s (%s) is different from the date/time at location %s (%s)",
-                a.getLocation(), a.getDate(), b.getLocation(), b.getDate()));
+                "The date/time at location %s (%s) is different from the date/time at location %s (%s).%s%s",
+                a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
+                checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
           }
         } else if ((a.getLocation().equals("SPM-17.2") || a.getLocation().equals("OBR-8"))
             && ((b.getLocation().equals("SPM-17.2") || b.getLocation().equals("OBR-8")))) {
           // test for equal to
           if (!ext1.isEqual(ext2)) {
             result.add(String.format(
-                "The date/time at location %s (%s) is different from the date/time at location %s (%s)",
-                a.getLocation(), a.getDate(), b.getLocation(), b.getDate()));
+                "The date/time at location %s (%s) is different from the date/time at location %s (%s).%s%s",
+                a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
+                checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
           }
         } else {
           // test for lesser or equal to
           if (ext1.isAfter(ext2)) {
             result.add(String.format(
-                "The date/time at location %s (%s) is later than the date/time at location %s (%s)",
-                a.getLocation(), a.getDate(), b.getLocation(), b.getDate()));
+                "The date/time at location %s (%s) is later than the date/time at location %s (%s).%s%s",
+                a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
+                checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
           }
         }
       }
     }
     // logger.debug(result);
+    return result;
+  }
+
+  private String checkTZ(String location, String date) {
+    if (date.contains("-") || date.contains("+")) {
+      return "";
+    }
+    String result = String.format(
+        " The date/time at location %s (%s) did not contain a timezone offset and the default value of [%s] was used.",
+        location, date, defaultTz);
     return result;
   }
 

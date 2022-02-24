@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4_Warning;
 import gov.nist.hit.elr.plugin.utils.CSVUtils;
@@ -18,7 +19,7 @@ import scala.collection.immutable.List;
 
 public abstract class OBX3_OBR4_Warning_csv implements OBX3_OBR4_Warning {
 
-  private static Logger logger = Logger.getLogger(OBX3_OBR4_Warning_csv.class.getName());
+  private static Logger logger = LogManager.getLogger();
 
   public abstract String getFOLDER();
 
@@ -134,7 +135,7 @@ public abstract class OBX3_OBR4_Warning_csv implements OBX3_OBR4_Warning {
         if (util.getOBR4_OBX3().containsKey(obx4)) {
           messages.add("[WARNING] The OBR-4 value (" + obx4.prettyPrint()
               + ") should not be associated with this OBX-3 value (" + obx3.prettyPrint() + ")");
- //         logger.debug("WARNING 1");
+          // logger.debug("WARNING 1");
           continue;
         }
         // 1.3 Check if OBR-4 is present in "Orders"
@@ -142,13 +143,13 @@ public abstract class OBX3_OBR4_Warning_csv implements OBX3_OBR4_Warning {
           // TODO should be a warning
           messages.add("[WARNING] The OBR-4 value (" + obx4.prettyPrint()
               + ") should not be associated with this OBX-3 value (" + obx3.prettyPrint() + ")");
-//          logger.debug("WARNING 2");
+          // logger.debug("WARNING 2");
           continue;
         }
         // 1.4 OBR-4 is not present in either "Tests", nor in "Orders"
         messages.add("[WARNING] The OBR-4 value (" + OBR4.prettyPrint()
             + ") should not be associated with this OBX-3 value (" + obx3.prettyPrint() + ")");
-//        logger.debug("WARNING 3");
+        // logger.debug("WARNING 3");
       }
 
       if (!obx3InTests) {
@@ -167,20 +168,20 @@ public abstract class OBX3_OBR4_Warning_csv implements OBX3_OBR4_Warning {
         if (util.getOBR4_OBX3().containsKey(obx4)) {
           messages.add("[WARNING] The OBR-4 value (" + obx4.prettyPrint()
               + ") should not be associated with this OBX-3 value (" + obx3.prettyPrint() + ")");
-//          logger.debug("WARNING 4");
+          // logger.debug("WARNING 4");
           continue;
         }
         // 2.3 Check if OBR-4 is in "Orders"
         if (util.getOBR4().contains(obx4)) {
           messages.add("[WARNING] The OBR-4 value (" + obx4.prettyPrint()
               + ") should not be associated with this OBX-3 value (" + obx3.prettyPrint() + ")");
- //         logger.debug("WARNING 5");
+          // logger.debug("WARNING 5");
           continue;
         }
         // 2.4 OBR-4 is not present in either "Tests", nor in "Orders"
         messages.add("[WARNING] The OBR-4 value (" + OBR4.prettyPrint()
             + ") should not be associated with this OBX-3 value (" + obx3.prettyPrint() + ")");
-//        logger.debug("WARNING 6");
+        // logger.debug("WARNING 6");
       }
     }
     // logger.debug(messages);

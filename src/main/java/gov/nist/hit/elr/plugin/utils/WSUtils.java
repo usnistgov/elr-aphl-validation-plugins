@@ -17,7 +17,8 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.glassfish.jersey.client.ClientConfig;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -36,7 +37,7 @@ import gov.nist.hit.elr.aphl.domain.vocab.ValueSets;
 
 public class WSUtils {
 
-  private static Logger logger = Logger.getLogger(WSUtils.class.getName());
+  private static Logger logger = LogManager.getLogger();
 
   private Client client;
 
@@ -139,7 +140,7 @@ public class WSUtils {
         return cached.getCachedObject();
       }
     }
-    System.err.println(uri);
+    // System.err.println(uri);
     // get data from webservice
     WebTarget target = client.target(uri);
     String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
