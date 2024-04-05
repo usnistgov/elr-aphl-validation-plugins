@@ -1,11 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.nist.hit.elr</groupId>
 	<!-- <artifactId>elr-r1-validation-plugins-daart</artifactId> -->
 	<artifactId>elr-r1-validation-plugins</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -39,7 +37,8 @@
 	<scm>
 		<connection>scm:git:https://github.com/usnistgov/elr-aphl-validation-plugins.git</connection>
 		<developerConnection>scm:git:https://github.com/usnistgov/elr-aphl-validation-plugins.git</developerConnection>
-	</scm>
+	  <tag>elr-r1-validation-plugins-1.0.0</tag>
+  </scm>
 	<dependencies>
 		<dependency>
 			<groupId>gov.nist.healthcare</groupId>
