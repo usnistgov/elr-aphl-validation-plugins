@@ -77,9 +77,6 @@ public class DatesCheck {
         String dtm1 = a.getDate();
         String dtm2 = b.getDate();
 
-        // logger.debug("Compare " + a.getLocation() + "[" + a.getDate() + "] to " + b.getLocation()
-        // + " [" + b.getDate() + "]");
-
         if (!DateUtilNew.isValid(dtm1, defaultTz) || !DateUtilNew.isValid(dtm2, defaultTz)) {
           continue;
         }
@@ -87,9 +84,6 @@ public class DatesCheck {
         OffsetDateTime ext1 = DateUtilNew.parseDTM(dtm1, defaultTz);
         OffsetDateTime ext2 = DateUtilNew.parseDTM(dtm2, defaultTz);
 
-
-        // logger.debug("Compare " + a.getLocation() + "[" + ext1 + "] to " + b.getLocation() + " ["
-        // + ext2 + "]");
 
         if ((a.getLocation().equals("OBR-7") || a.getLocation().equals("OBX-14")
             || a.getLocation().equals("SPM-17.1"))
@@ -111,9 +105,9 @@ public class DatesCheck {
                 a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
                 checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
           }
-        } else {
-          // test for lesser or equal to
+        } else if (!"0000".equals(dtm1) && !"0000".equals(dtm2)) {
           if (ext1.isAfter(ext2)) {
+            // test for lesser or equal to
             result.add(String.format(
                 "The date/time at location %s (%s) is later than the date/time at location %s (%s).%s%s",
                 a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
@@ -122,7 +116,6 @@ public class DatesCheck {
         }
       }
     }
-    // logger.debug(result);
     return result;
   }
 
@@ -189,6 +182,7 @@ public class DatesCheck {
     // OBR-7
     List<Simple> OBR7List = Query.queryAsSimple(oo, "2[1].7[1].1[1]").get();
     String OBR7 = OBR7List.size() > 0 ? OBR7List.apply(0).value().raw() : "";
+
     // OBR-8
     List<Simple> OBR8List = Query.queryAsSimple(oo, "2[1].8[1].1[1]").get();
     String OBR8 = OBR8List.size() > 0 ? OBR8List.apply(0).value().raw() : "";
@@ -206,7 +200,6 @@ public class DatesCheck {
     // SPM-18
     List<Simple> SPM18List = Query.queryAsSimple(oo, "9[1].1[1].18[1].1[1]").get();
     String SPM18 = SPM18List.size() > 0 ? SPM18List.apply(0).value().raw() : "";
-
 
     // OBX
     List<Element> OBXList = Query.query(oo, "6[*].1[1]").get();

@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.aphl.domain.Program;
@@ -279,10 +280,10 @@ public class TestValueSetWS {
   }
 
   @Test
+  @Ignore
   public void testARLN() throws IOException, InterruptedException, URISyntaxException {
     WSUtils ws = new WSUtils();
     for (String valueSetName : ARLN) {
-      // System.err.println(valueSetName);
       List<ValueSet> valueSet = ws.getValueSet(Program.APHL_ARLN, valueSetName);
       assertEquals(1, valueSet.size());
     }

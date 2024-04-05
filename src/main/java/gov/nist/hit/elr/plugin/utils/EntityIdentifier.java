@@ -32,6 +32,11 @@ public class EntityIdentifier {
     return universalIDType;
   }
 
+  public boolean isEmpty() {
+    return "".equals(entityIdentifier) && "".equals(namespaceID) && "".equals(universalID)
+        && "".equals(universalIDType);
+  }
+
   @Override
   public int hashCode() {
     final int prime = 31;
@@ -73,6 +78,21 @@ public class EntityIdentifier {
     } else if (!universalIDType.equals(other.universalIDType))
       return false;
     return true;
+  }
+
+  @Override
+  public String toString() {
+    return "EntityIdentifier [entityIdentifier=" + entityIdentifier + ", namespaceID=" + namespaceID
+        + ", universalID=" + universalID + ", universalIDType=" + universalIDType + "]";
+  }
+
+
+  public String toShortString() {
+    if (isEmpty()) {
+      return "[]";
+    }
+    return "[" + entityIdentifier + ", " + namespaceID + ", " + universalID + ", " + universalIDType
+        + "]";
   }
 
 }

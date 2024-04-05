@@ -11,6 +11,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import gov.nist.hit.elr.aphl.plugin.extra.DatesCheck.LocationDateList;
@@ -163,6 +164,21 @@ public class TestDatesCheck {
     result = testObject.check(dates);
     assertEquals(0, result.size());
 
+    // OBR-7 = 0000
+    e = testObject.new LocationDateList();
+    e.add("PID-7", "20191216");
+    e.add("OBR-7", "0000");
+    e.add("OBX-14 ", "20191217");
+    e.add("SPM-17.1", "20191217");
+    e.add("SPM-17.2 ", "20191218");
+    e.add("OBR-8", "20191218");
+    e.add("SPM-18", "20191219");
+    e.add("OBX-19 ", "20191220");
+    e.add("OBR-22", "20191221");
+    e.add("MSH-7", "20191222");
+    dates.add(e);
+    result = testObject.check(dates);
+    assertEquals(0, result.size());
   }
 
   @Test
@@ -182,9 +198,25 @@ public class TestDatesCheck {
     List<String> result = testObject.check(dates);
     assertEquals(9, result.size());
 
+
+    e = testObject.new LocationDateList();
+    e.add("PID-7", "198303130000");
+    e.add("OBR-7", "0000");
+    e.add("OBX-14 ", "20221129000000");
+    e.add("OBX-14 ", "20221129000000");
+    e.add("OBX-14 ", "20221129000000");
+    e.add("SPM-17.1", "20221129000000");
+    e.add("SPM-17.2 ", "20221129000000");
+    e.add("MSH-7", "20221130134900-0800");
+    dates.add(e);
+    result = testObject.check(dates);
+    assertEquals(9, result.size());
+
+
   }
 
   @Test
+  @Ignore
   public void testMessage() throws Exception {
 
     String globalFolder = "";

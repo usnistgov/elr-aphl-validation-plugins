@@ -1,6 +1,8 @@
 package gov.nist.hit.elr.plugin.util;
 
 import java.io.File;
+import java.io.InputStream;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
@@ -12,24 +14,43 @@ import org.junit.Test;
 import gov.nist.validation.report.Entry;
 import gov.nist.validation.report.Report;
 import hl7.v2.validation.SyncHL7Validator;
+import hl7.v2.validation.ValidationContext;
+import hl7.v2.validation.ValidationContextBuilder;
 
 public class TestValidation {
 
   @Test
   public void testValidation() throws Exception {
 
-    String globalFolder = "/PHLIP";
-    String profiles = StringUtils.join(globalFolder, "/Profile.xml");
+    String globalFolder = "/radx";
+    String profile = StringUtils.join(globalFolder, "/Profile.xml");
     String constraints = StringUtils.join(globalFolder, "/Constraints.xml");
-    String valueSets = StringUtils.join(globalFolder, "/ValueSets.xml");
+    String valueSetLibrary = StringUtils.join(globalFolder, "/ValueSets.xml");
+    String valueSetBindings = StringUtils.join(globalFolder, "/ValueSetBindings.xml");
 
-    String message1FileName = "PHLIP/Message.txt";
+    InputStream profileXML = TestValidation.class.getResourceAsStream(profile);
+    InputStream constraintsXML = TestValidation.class.getResourceAsStream(constraints);
+    InputStream valueSetLibraryXML = TestValidation.class.getResourceAsStream(valueSetLibrary);
+    InputStream valueSetBindingsXML = TestValidation.class.getResourceAsStream(valueSetBindings);
 
-    SyncHL7Validator validator = Util.createValidator(profiles, constraints, null, valueSets);
+
+    String message1FileName = "radx/Message.txt";
+
+
+    ValidationContext context = new ValidationContextBuilder(profileXML)
+        .useConformanceContext(Arrays.asList(constraintsXML)) // Optional
+        .useValueSetLibrary(valueSetLibraryXML) // Optional
+        .useVsBindings(valueSetBindingsXML) // Optional
+        // .useSlicingContext(slicingsXML) // Optional
+        // .useCoConstraintsContext(coConstraintsXML) // Optional
+        .getValidationContext();
+
+    SyncHL7Validator validator = new SyncHL7Validator(context);
+
     ClassLoader classLoader = getClass().getClassLoader();
     File message1 = new File(classLoader.getResource(message1FileName).getFile());
     String messageString = FileUtils.readFileToString(message1);
-    Report report = validator.check(messageString, "5d5d68ce6dc12f5d54495e15");
+    Report report = validator.check(messageString, "62878a0d8b87bc0007558731");
     Set<String> keys = report.getEntries().keySet();
     int errors = 0;
     int alerts = 0;
@@ -43,10 +64,14 @@ public class TestValidation {
               Util.printEntry(entry);
               errors++;
               break;
-            case "Alert":
-              // Util.printEntry(entry);
+            case "Spec Error":
+              Util.printEntry(entry);
               alerts++;
               break;
+            // case "Alert":
+            // Util.printEntry(entry);
+            // alerts++;
+            // break;
           }
         }
       }

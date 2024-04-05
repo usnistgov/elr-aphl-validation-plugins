@@ -46,6 +46,12 @@
 			<artifactId>hl7-v2-validation-plugin-utils</artifactId>
 			<version>0.0.1</version>
 		</dependency> 
+		<!-- ELR QUEST profile plugins -->
+		<dependency>
+			<groupId>gov.nist.hit.elr.quest</groupId>
+			<artifactId>elr-r1-quest-validation-plugins</artifactId>
+			<version>1.0.0</version>
+		</dependency> 	
 		<!-- junit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -62,7 +68,7 @@
 		<dependency>
 			<groupId>gov.nist</groupId>
 			<artifactId>hl7-v2-validation</artifactId>
-			<version>1.5.1</version>
+			<version>1.6.4</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -87,21 +93,23 @@
 			<artifactId>commons-csv</artifactId>
 			<version>1.5</version>
 		</dependency>
+		<dependency>
+		  <groupId>org.apache.commons</groupId>
+		  <artifactId>commons-text</artifactId>
+		  <version>1.1</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
 		    <artifactId>jackson-annotations</artifactId>
-		    <version>2.11.0.rc1</version>
+		    <version>2.17.0-rc1</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
 		<dependency>
 		    <groupId>org.glassfish.jersey.core</groupId>
 		    <artifactId>jersey-client</artifactId>
 		    <version>2.25.1</version>
 		</dependency>
-
 	</dependencies>
-	<properties>
-		<project.scm.id>git</project.scm.id>
-	</properties>
 </project>
