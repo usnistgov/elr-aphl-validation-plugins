@@ -3,7 +3,7 @@
 	<groupId>gov.nist.hit.elr</groupId>
 	<!-- <artifactId>elr-r1-validation-plugins-daart</artifactId> -->
 	<artifactId>elr-r1-validation-plugins</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -37,7 +37,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/usnistgov/elr-aphl-validation-plugins.git</connection>
 		<developerConnection>scm:git:https://github.com/usnistgov/elr-aphl-validation-plugins.git</developerConnection>
-	  <tag>elr-r1-validation-plugins-1.0.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<dependencies>
 		<dependency>
