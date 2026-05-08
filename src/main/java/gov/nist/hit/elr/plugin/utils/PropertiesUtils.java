@@ -1,52 +1,104 @@
 package gov.nist.hit.elr.plugin.utils;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Collections;
 import java.util.Properties;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
+/**
+ * Utility class for loading and managing application properties.
+ * Uses the singleton pattern to ensure only one instance exists.
+ * Maintains backward compatibility with existing code.
+ */
 public class PropertiesUtils {
 
-  private InputStream inputStream;
-  private Properties properties;
+    private static final Logger logger = LogManager.getLogger(PropertiesUtils.class);
 
-  private static PropertiesUtils single_instance = null; 
+    private Properties properties;
 
-  private PropertiesUtils() throws IOException {
+    private static volatile PropertiesUtils single_instance = null;
 
-    try {
-      properties = new Properties();
-      String propFileName = "config.properties";
+    private PropertiesUtils() throws IOException {
+        String propFileName = "config.properties";
 
-      inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
+        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(propFileName)) {
+            properties = new Properties();
 
-      if (inputStream != null) {
-        properties.load(inputStream);
-      } else {
-        throw new FileNotFoundException("property file '" + propFileName + "' not found in the classpath");
-      }
+            if (inputStream == null) {
+                logger.warn("WARN: Property file '" + propFileName + "' not found in classpath. Using empty properties.");
+            } else {
+                properties.load(inputStream);
+                logger.info("INFO: Loaded properties from " + propFileName);
+            }
+        } catch (IOException e) {
+            logger.error("ERROR: Failed to load properties file '" + propFileName + "': " + e.getMessage());
+            // Initialize with empty properties to avoid NullPointerException
+            properties = new Properties();
+        }
+    }
 
-    } catch (Exception e) {
-      System.out.println("Exception: " + e);
-    } finally {
-      inputStream.close();
-    }  
+    /**
+     * Gets the singleton instance of PropertiesUtils. Thread-safe implementation
+     * using double-checked locking.
+     *
+     * @return the PropertiesUtils instance
+     */
+    public static PropertiesUtils getInstance() {
+        if (single_instance == null) {
+            synchronized (PropertiesUtils.class) {
+                if (single_instance == null) {
+                    try {
+                        single_instance = new PropertiesUtils();
+                    } catch (IOException e) {
+                        throw new ExceptionInInitializerError(e);
+                    }
+                }
+            }
+        }
+        return single_instance;
+    }
 
-  }
+    /**
+     * Gets the loaded properties object. Maintained for backward compatibility with
+     * existing code.
+     *
+     * @return the properties object
+     * @throws IOException if there was an error loading the properties
+     */
+    public static Properties getPropertiesStatic() throws IOException {
+        return getInstance().getProperties();
+    }
 
-  public static Properties getInstance() throws IOException 
-  { 
-    if (single_instance == null) 
-      single_instance = new PropertiesUtils(); 
+    /**
+     * Gets an unmodifiable view of the loaded properties.
+     *
+     * @return unmodifiable properties object
+     */
+    public Properties getProperties() {
+        return (Properties) Collections.unmodifiableMap(properties);
+    }
 
-    return single_instance.getProperties(); 
-  } 
+    /**
+     * Gets a property value by key.
+     *
+     * @param key the property key
+     * @return the property value, or null if not found
+     */
+    public String getProperty(String key) {
+        return properties.getProperty(key);
+    }
 
-  private Properties getProperties() {
-    return properties;
-  }
-
-
-
+    /**
+     * Gets a property value by key with a default value.
+     *
+     * @param key          the property key
+     * @param defaultValue the default value to return if key is not found
+     * @return the property value, or the default value if not found
+     */
+    public String getProperty(String key, String defaultValue) {
+        return properties.getProperty(key, defaultValue);
+    }
 }

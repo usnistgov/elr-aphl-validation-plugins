@@ -3,30 +3,29 @@ package gov.nist.hit.elr.aphl.plugin.extra.ws;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
-import gov.nist.hit.elr.aphl.domain.Program;
+import gov.nist.hit.elr.aphl.plugin.extra.context.VPD;
 import hl7.v2.instance.Element;
 
 public class VPD_OBX3_OBR4_ws extends OBX3_OBR4_ws {
 
-  public java.util.List<String> assertionWithCustomMessages(Element e)
-      throws ClassNotFoundException, IOException, InterruptedException, URISyntaxException {
-    try {
-      return super.assertionWithCustomMessages(e);
-    } catch (Exception e1) {
-      System.out.println(e1);
-      throw e1;
-    }
-  }
+	@Override
+	public String getPROGRAM() {
+		return VPD.getPROGRAM();
+	}
 
-  @Override
-  public Program getProgram() {
-    return Program.VPD;
-  }
+	@Override
+	public String getWEBSERVICE_URL() {
+		return VPD.getWEBSERVICE_URL();
+	}
 
-  @Override
-  public Program getValueSetProgram() {
-    return Program.APHL_VPD;
-  }
+	@Override
+	public String getVOCAB_WEBSERVICE_URL() {
+		return VPD.getVOCAB_WEBSERVICE_URL();
+	}
 
+	public java.util.List<String> assertionWithCustomMessages(Element e)
+			throws ClassNotFoundException, IOException, InterruptedException, URISyntaxException {
+		return super.assertionWithCustomMessages(e);
+	}
 
 }

@@ -3,6 +3,11 @@ package gov.nist.hit.elr.plugin.utils;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Generic tree node implementation for hierarchical data structures.
+ * Each node contains data of type T and can have multiple child nodes.
+ * @param <T> The type of data stored in the node
+ */
 public class MyTreeNode<T> {
   private T data = null;
   private List<MyTreeNode<?>> children = new ArrayList<>();

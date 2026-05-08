@@ -15,266 +15,262 @@ import scala.collection.immutable.List;
 
 public class DatesCheck {
 
-  private static Logger logger = LogManager.getLogger();
+	private static final Logger logger = LogManager.getLogger(DatesCheck.class);
 
-  private String defaultTz = "";
+	private String defaultTz = "";
 
-  /**
-   * PID.7 <= (OBR.7 = OBX.14 = SPM.17.1) <= (SPM.17.2 = OBR.8) <= SPM.18 <= OBX.19 <= OBR.22 <=
-   * MSH.7
-   */
+	/**
+	 * PID.7 <= (OBR.7 = OBX.14 = SPM.17.1) <= (SPM.17.2 = OBR.8) <= SPM.18 <=
+	 * OBX.19 <= OBR.22 <= MSH.7
+	 */
 
-  /**
-   * 
-   * @param e the message
-   * @return
-   */
-  public java.util.List<String> assertionWithCustomMessages(Element e) {
-    java.util.List<String> result = new java.util.ArrayList<String>();
-    // we extract the default timezone first (from MSH-7). If not present, we don't check anything
-    defaultTz = extractDefaultTZ(e);
-    if (!"".equals(defaultTz)) {
-      java.util.List<LocationDateList> datesToCheck = checkMessageContext(e);
-      result.addAll(check(datesToCheck));
-      if (result.size() > 0) {
-        logger.debug(result);
-      }
-    }
-    return result;
-  }
+	/**
+	 * 
+	 * @param e the message
+	 * @return
+	 */
+	public java.util.List<String> assertionWithCustomMessages(Element e) {
+		java.util.List<String> result = new java.util.ArrayList<String>();
+		// we extract the default timezone first (from MSH-7). If not present, we don't
+		// check anything
+		defaultTz = extractDefaultTZ(e);
+		if (!"".equals(defaultTz)) {
+			java.util.List<LocationDateList> datesToCheck = checkMessageContext(e);
+			result.addAll(check(datesToCheck));
+			if (result.size() > 0) {
+				logger.debug(result);
+			}
+		}
+		return result;
+	}
 
+	public String getDefaultTz() {
+		return defaultTz;
+	}
 
-  public String getDefaultTz() {
-    return defaultTz;
-  }
+	public void setDefaultTz(String defaultTz) {
+		this.defaultTz = defaultTz;
+	}
 
+	private String extractDefaultTZ(Element m) {
+		// MSH-7
+		List<Simple> MSH7List = Query.queryAsSimple(m, "1[1].7[1].1[1]").get();
+		String MSH7 = MSH7List.size() > 0 ? MSH7List.apply(0).value().raw() : "";
 
-  public void setDefaultTz(String defaultTz) {
-    this.defaultTz = defaultTz;
-  }
+		int max = Math.max(MSH7.indexOf("+"), MSH7.indexOf("-"));
+		if (max > -1) {
+			return MSH7.substring(max);
+		}
+		return "";
+	}
 
+	public java.util.List<String> check(java.util.List<LocationDateList> dates) {
+		java.util.List<String> result = new ArrayList<String>();
+		for (LocationDateList dateList : dates) {
+			// logger.debug("---");
+			for (int i = 0; i < dateList.size() - 1; i++) {
+				LocationDate a = dateList.get(i);
+				LocationDate b = dateList.get(i + 1);
 
-  private String extractDefaultTZ(Element m) {
-    // MSH-7
-    List<Simple> MSH7List = Query.queryAsSimple(m, "1[1].7[1].1[1]").get();
-    String MSH7 = MSH7List.size() > 0 ? MSH7List.apply(0).value().raw() : "";
+				String dtm1 = a.getDate();
+				String dtm2 = b.getDate();
 
-    int max = Math.max(MSH7.indexOf("+"), MSH7.indexOf("-"));
-    if (max > -1) {
-      return MSH7.substring(max);
-    }
-    return "";
-  }
+				if (!DateUtilNew.isValid(dtm1, defaultTz) || !DateUtilNew.isValid(dtm2, defaultTz)) {
+					continue;
+				}
 
-  public java.util.List<String> check(java.util.List<LocationDateList> dates) {
-    java.util.List<String> result = new ArrayList<String>();
-    for (LocationDateList dateList : dates) {
-      // logger.debug("---");
-      for (int i = 0; i < dateList.size() - 1; i++) {
-        LocationDate a = dateList.get(i);
-        LocationDate b = dateList.get(i + 1);
+				OffsetDateTime ext1 = DateUtilNew.parseDTM(dtm1, defaultTz);
+				OffsetDateTime ext2 = DateUtilNew.parseDTM(dtm2, defaultTz);
 
-        String dtm1 = a.getDate();
-        String dtm2 = b.getDate();
+				if ((a.getLocation().equals("OBR-7") || a.getLocation().equals("OBX-14")
+						|| a.getLocation().equals("SPM-17.1"))
+						&& ((b.getLocation().equals("OBR-7") || b.getLocation().equals("OBX-14")
+								|| b.getLocation().equals("SPM-17.1")))) {
+					// test for equal to
+					if (!ext1.isEqual(ext2)) {
+						result.add(String.format(
+								"The date/time at location %s (%s) is different from the date/time at location %s (%s).%s%s",
+								a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
+								checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
+					}
+				} else if ((a.getLocation().equals("SPM-17.2") || a.getLocation().equals("OBR-8"))
+						&& ((b.getLocation().equals("SPM-17.2") || b.getLocation().equals("OBR-8")))) {
+					// test for equal to
+					if (!ext1.isEqual(ext2)) {
+						result.add(String.format(
+								"The date/time at location %s (%s) is different from the date/time at location %s (%s).%s%s",
+								a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
+								checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
+					}
+				} else if (!"0000".equals(dtm1) && !"0000".equals(dtm2)) {
+					if (ext1.isAfter(ext2)) {
+						// test for lesser or equal to
+						result.add(String.format(
+								"The date/time at location %s (%s) is later than the date/time at location %s (%s).%s%s",
+								a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
+								checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
+					}
+				}
+			}
+		}
+		return result;
+	}
 
-        if (!DateUtilNew.isValid(dtm1, defaultTz) || !DateUtilNew.isValid(dtm2, defaultTz)) {
-          continue;
-        }
+	private String checkTZ(String location, String date) {
+		if (date.contains("-") || date.contains("+")) {
+			return "";
+		}
+		String result = String.format(
+				" The date/time at location %s (%s) did not contain a timezone offset and the default value of [%s] was used.",
+				location, date, defaultTz);
+		return result;
+	}
 
-        OffsetDateTime ext1 = DateUtilNew.parseDTM(dtm1, defaultTz);
-        OffsetDateTime ext2 = DateUtilNew.parseDTM(dtm2, defaultTz);
+	private java.util.List<LocationDateList> checkMessageContext(Element m) {
 
+		java.util.List<LocationDateList> result = new ArrayList<LocationDateList>();
 
-        if ((a.getLocation().equals("OBR-7") || a.getLocation().equals("OBX-14")
-            || a.getLocation().equals("SPM-17.1"))
-            && ((b.getLocation().equals("OBR-7") || b.getLocation().equals("OBX-14")
-                || b.getLocation().equals("SPM-17.1")))) {
-          // test for equal to
-          if (!ext1.isEqual(ext2)) {
-            result.add(String.format(
-                "The date/time at location %s (%s) is different from the date/time at location %s (%s).%s%s",
-                a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
-                checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
-          }
-        } else if ((a.getLocation().equals("SPM-17.2") || a.getLocation().equals("OBR-8"))
-            && ((b.getLocation().equals("SPM-17.2") || b.getLocation().equals("OBR-8")))) {
-          // test for equal to
-          if (!ext1.isEqual(ext2)) {
-            result.add(String.format(
-                "The date/time at location %s (%s) is different from the date/time at location %s (%s).%s%s",
-                a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
-                checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
-          }
-        } else if (!"0000".equals(dtm1) && !"0000".equals(dtm2)) {
-          if (ext1.isAfter(ext2)) {
-            // test for lesser or equal to
-            result.add(String.format(
-                "The date/time at location %s (%s) is later than the date/time at location %s (%s).%s%s",
-                a.getLocation(), a.getDate(), b.getLocation(), b.getDate(),
-                checkTZ(a.getLocation(), a.getDate()), checkTZ(b.getLocation(), b.getDate())));
-          }
-        }
-      }
-    }
-    return result;
-  }
+		// MSH-7
+		List<Simple> MSH7List = Query.queryAsSimple(m, "1[1].7[1].1[1]").get();
+		String MSH7 = MSH7List.size() > 0 ? MSH7List.apply(0).value().raw() : "";
 
-  private String checkTZ(String location, String date) {
-    if (date.contains("-") || date.contains("+")) {
-      return "";
-    }
-    String result = String.format(
-        " The date/time at location %s (%s) did not contain a timezone offset and the default value of [%s] was used.",
-        location, date, defaultTz);
-    return result;
-  }
+		// PATIENT RESULT
+		List<Element> prList = Query.query(m, "3[*]").get();
+		Iterator<Element> it = prList.iterator();
+		while (it.hasNext()) {
+			Element pr = it.next();
+			java.util.List<LocationDateList> toto = checkPatientResultContext(pr);
+			for (LocationDateList list : toto) {
+				if (DateUtilNew.isValid(MSH7, defaultTz)) {
+					list.add("MSH-7", MSH7);
+				}
+				result.add(list);
+			}
+		}
+		return result;
+	}
 
-  private java.util.List<LocationDateList> checkMessageContext(Element m) {
+	private java.util.List<LocationDateList> checkPatientResultContext(Element pr) {
 
-    java.util.List<LocationDateList> result = new ArrayList<LocationDateList>();
+		java.util.List<LocationDateList> result = new ArrayList<LocationDateList>();
 
-    // MSH-7
-    List<Simple> MSH7List = Query.queryAsSimple(m, "1[1].7[1].1[1]").get();
-    String MSH7 = MSH7List.size() > 0 ? MSH7List.apply(0).value().raw() : "";
+		// PID-7
+		List<Simple> PID7List = Query.queryAsSimple(pr, "1[1].1[1].7[1].1[1]").get();
+		String PID7 = PID7List.size() > 0 ? PID7List.apply(0).value().raw() : "";
 
-    // PATIENT RESULT
-    List<Element> prList = Query.query(m, "3[*]").get();
-    Iterator<Element> it = prList.iterator();
-    while (it.hasNext()) {
-      Element pr = it.next();
-      java.util.List<LocationDateList> toto = checkPatientResultContext(pr);
-      for (LocationDateList list : toto) {
-        if (DateUtilNew.isValid(MSH7, defaultTz)) {
-          list.add("MSH-7", MSH7);
-        }
-        result.add(list);
-      }
-    }
-    return result;
-  }
+		// ORDER OBSERVATION
+		List<Element> ooList = Query.query(pr, "2[*]").get();
+		Iterator<Element> it = ooList.iterator();
+		while (it.hasNext()) {
+			Element oo = it.next();
+			java.util.List<LocationDateList> toto = checkOrderObservationContext(oo);
+			for (LocationDateList list : toto) {
+				list.add(0, "PID-7", PID7);
+				result.add(list);
+			}
+		}
+		return result;
+	}
 
-  private java.util.List<LocationDateList> checkPatientResultContext(Element pr) {
+	private java.util.List<LocationDateList> checkOrderObservationContext(Element oo) {
 
-    java.util.List<LocationDateList> result = new ArrayList<LocationDateList>();
+		java.util.List<LocationDateList> result = new ArrayList<LocationDateList>();
 
-    // PID-7
-    List<Simple> PID7List = Query.queryAsSimple(pr, "1[1].1[1].7[1].1[1]").get();
-    String PID7 = PID7List.size() > 0 ? PID7List.apply(0).value().raw() : "";
+		// OBR-7
+		List<Simple> OBR7List = Query.queryAsSimple(oo, "2[1].7[1].1[1]").get();
+		String OBR7 = OBR7List.size() > 0 ? OBR7List.apply(0).value().raw() : "";
 
-    // ORDER OBSERVATION
-    List<Element> ooList = Query.query(pr, "2[*]").get();
-    Iterator<Element> it = ooList.iterator();
-    while (it.hasNext()) {
-      Element oo = it.next();
-      java.util.List<LocationDateList> toto = checkOrderObservationContext(oo);
-      for (LocationDateList list : toto) {
-        list.add(0, "PID-7", PID7);
-        result.add(list);
-      }
-    }
-    return result;
-  }
+		// OBR-8
+		List<Simple> OBR8List = Query.queryAsSimple(oo, "2[1].8[1].1[1]").get();
+		String OBR8 = OBR8List.size() > 0 ? OBR8List.apply(0).value().raw() : "";
+		// OBR-22
+		List<Simple> OBR22List = Query.queryAsSimple(oo, "2[1].22[1].1[1]").get();
+		String ORB22 = OBR22List.size() > 0 ? OBR22List.apply(0).value().raw() : "";
 
-  private java.util.List<LocationDateList> checkOrderObservationContext(Element oo) {
+		// SPM-17.1
+		List<Simple> SPM17_1List = Query.queryAsSimple(oo, "9[1].1[1].17[1].1[1].1[1]").get();
+		String SPM17_1 = SPM17_1List.size() > 0 ? SPM17_1List.apply(0).value().raw() : "";
+		// SPM-17.2
+		List<Simple> SPM17_2List = Query.queryAsSimple(oo, "9[1].1[1].17[1].2[1].1[1]").get();
+		String SPM17_2 = SPM17_2List.size() > 0 ? SPM17_2List.apply(0).value().raw() : "";
+		// SPM-18
+		List<Simple> SPM18List = Query.queryAsSimple(oo, "9[1].1[1].18[1].1[1]").get();
+		String SPM18 = SPM18List.size() > 0 ? SPM18List.apply(0).value().raw() : "";
 
-    java.util.List<LocationDateList> result = new ArrayList<LocationDateList>();
+		// OBX
+		List<Element> OBXList = Query.query(oo, "6[*].1[1]").get();
 
-    // OBR-7
-    List<Simple> OBR7List = Query.queryAsSimple(oo, "2[1].7[1].1[1]").get();
-    String OBR7 = OBR7List.size() > 0 ? OBR7List.apply(0).value().raw() : "";
+		if (OBXList.size() > 0) {
+			Iterator<Element> it = OBXList.iterator();
+			while (it.hasNext()) {
+				Element OBX = it.next();
+				// OBX-14
+				List<Simple> OBX14List = Query.queryAsSimple(OBX, "14[1].1[1]").get();
+				String OBX14 = OBX14List.size() > 0 ? OBX14List.apply(0).value().raw() : "";
+				// OBX-19
+				List<Simple> OBX19List = Query.queryAsSimple(OBX, "19[1].1[1]").get();
+				String OBX19 = OBX19List.size() > 0 ? OBX19List.apply(0).value().raw() : "";
 
-    // OBR-8
-    List<Simple> OBR8List = Query.queryAsSimple(oo, "2[1].8[1].1[1]").get();
-    String OBR8 = OBR8List.size() > 0 ? OBR8List.apply(0).value().raw() : "";
-    // OBR-22
-    List<Simple> OBR22List = Query.queryAsSimple(oo, "2[1].22[1].1[1]").get();
-    String ORB22 = OBR22List.size() > 0 ? OBR22List.apply(0).value().raw() : "";
+				LocationDateList list = new LocationDateList();
+				list.add("OBR-7", OBR7);
+				list.add("OBX-14", OBX14);
+				list.add("SPM-17.1", SPM17_1);
+				list.add("SPM-17.2", SPM17_2);
+				list.add("OBR-8", OBR8);
+				list.add("SPM-18", SPM18);
+				list.add("OBX-19", OBX19);
+				list.add("OBR-22", ORB22);
 
+				result.add(list);
+			}
+		} else {
+			LocationDateList list = new LocationDateList();
+			list.add("OBR-7", OBR7);
+			list.add("SPM-17.1", SPM17_1);
+			list.add("SPM-17.2", SPM17_2);
+			list.add("OBR-8", OBR8);
+			list.add("SPM-18", SPM18);
+			list.add("OBR-22", ORB22);
 
-    // SPM-17.1
-    List<Simple> SPM17_1List = Query.queryAsSimple(oo, "9[1].1[1].17[1].1[1].1[1]").get();
-    String SPM17_1 = SPM17_1List.size() > 0 ? SPM17_1List.apply(0).value().raw() : "";
-    // SPM-17.2
-    List<Simple> SPM17_2List = Query.queryAsSimple(oo, "9[1].1[1].17[1].2[1].1[1]").get();
-    String SPM17_2 = SPM17_2List.size() > 0 ? SPM17_2List.apply(0).value().raw() : "";
-    // SPM-18
-    List<Simple> SPM18List = Query.queryAsSimple(oo, "9[1].1[1].18[1].1[1]").get();
-    String SPM18 = SPM18List.size() > 0 ? SPM18List.apply(0).value().raw() : "";
+			result.add(list);
+		}
 
-    // OBX
-    List<Element> OBXList = Query.query(oo, "6[*].1[1]").get();
+		return result;
+	}
 
-    if (OBXList.size() > 0) {
-      Iterator<Element> it = OBXList.iterator();
-      while (it.hasNext()) {
-        Element OBX = it.next();
-        // OBX-14
-        List<Simple> OBX14List = Query.queryAsSimple(OBX, "14[1].1[1]").get();
-        String OBX14 = OBX14List.size() > 0 ? OBX14List.apply(0).value().raw() : "";
-        // OBX-19
-        List<Simple> OBX19List = Query.queryAsSimple(OBX, "19[1].1[1]").get();
-        String OBX19 = OBX19List.size() > 0 ? OBX19List.apply(0).value().raw() : "";
+	public class LocationDateList extends ArrayList<LocationDate> {
 
-        LocationDateList list = new LocationDateList();
-        list.add("OBR-7", OBR7);
-        list.add("OBX-14", OBX14);
-        list.add("SPM-17.1", SPM17_1);
-        list.add("SPM-17.2", SPM17_2);
-        list.add("OBR-8", OBR8);
-        list.add("SPM-18", SPM18);
-        list.add("OBX-19", OBX19);
-        list.add("OBR-22", ORB22);
+		protected boolean add(String location, String date) {
+			if (DateUtilNew.isValid(date, defaultTz)) {
+//				if (DateUtilNew.isValid(date, defaultTz) && !"0000".equals(date)) {
+				LocationDate locationDate = new LocationDate(location, date);
+				return this.add(locationDate);
+			}
+			return false;
+		}
 
-        result.add(list);
-      }
-    } else {
-      LocationDateList list = new LocationDateList();
-      list.add("OBR-7", OBR7);
-      list.add("SPM-17.1", SPM17_1);
-      list.add("SPM-17.2", SPM17_2);
-      list.add("OBR-8", OBR8);
-      list.add("SPM-18", SPM18);
-      list.add("OBR-22", ORB22);
+		protected void add(int position, String location, String date) {
+			LocationDate locationDate = new LocationDate(location, date);
+			this.add(position, locationDate);
+		}
+	}
 
-      result.add(list);
-    }
+	private class LocationDate {
 
-    return result;
-  }
+		private String location;
+		private String date;
 
-  public class LocationDateList extends ArrayList<LocationDate> {
+		protected LocationDate(String location, String date) {
+			this.location = location;
+			this.date = date;
+		}
 
-    protected boolean add(String location, String date) {
-      if (DateUtilNew.isValid(date, defaultTz)) {
-        LocationDate locationDate = new LocationDate(location, date);
-        return this.add(locationDate);
-      }
-      return false;
-    }
+		public String getLocation() {
+			return location;
+		}
 
-
-    protected void add(int position, String location, String date) {
-      LocationDate locationDate = new LocationDate(location, date);
-      this.add(position, locationDate);
-    }
-  }
-
-  private class LocationDate {
-
-    private String location;
-    private String date;
-
-    protected LocationDate(String location, String date) {
-      this.location = location;
-      this.date = date;
-    }
-
-    public String getLocation() {
-      return location;
-    }
-
-    public String getDate() {
-      return date;
-    }
-  };
+		public String getDate() {
+			return date;
+		}
+	};
 }

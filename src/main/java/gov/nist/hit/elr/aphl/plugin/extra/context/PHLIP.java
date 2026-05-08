@@ -1,71 +1,90 @@
 package gov.nist.hit.elr.aphl.plugin.extra.context;
 
-import gov.nist.hit.elr.aphl.domain.Program;
+import gov.nist.hit.elr.plugin.utils.PropertiesUtils;
 
+/**
+ * Configuration for PHLIP plugin. Values are loaded from config.properties with
+ * fallback to defaults.
+ */
 public class PHLIP {
 
-  public static final Program program = Program.PHLIP;
+	private static final String PROGRAM_DEFAULT = "PHLIP";
+	private static final String MSH3_CSV_DEFAULT = "todo.csv";
+	private static final String MSH4_CSV_DEFAULT = "todo.csv";
+	private static final String SPM4_CSV_DEFAULT = "todo.csv";
+	private static final String TEST_CSV_DEFAULT = "todo.csv";
+	private static final String OBSERVATIONS_CSV_DEFAULT = "todo.csv";
+	private static final String ORDERS_CSV_DEFAULT = "todo.csv";
+	private static final String VALUE_SETS_CSV_DEFAULT = "todo.csv";
+	private static final String WEBSERVICE_URL_DEFAULT = "https://aphl.nist.gov/aphl-service/aphl/phlip/";
+	private static final String VOCAB_WEBSERVICE_URL_DEFAULT = "https://vocab.nist.gov/vocabulary-service/aphl_phlip";
 
-  private static final String FOLDER = "phlip/20220805";
+	private static String PROGRAM;
+	private static String MSH3_CSV;
+	private static String MSH4_CSV;
+	private static String SPM4_CSV;
+	private static String TEST_CSV;
+	private static String OBSERVATIONS_CSV;
+	private static String ORDERS_CSV;
+	private static String VALUE_SETS_CSV;
+	private static String WEBSERVICE_URL;
+	private static String VOCAB_WEBSERVICE_URL;
 
-  private static final String FOLDER_MSH = "phlip/20191003";
-  private static final String MSH3_CSV = "MSH3.csv";
-  private static final String MSH4_CSV = "MSH4.csv";
+	static {
+		PROGRAM = getProp("PHLIP_PROGRAM", PROGRAM_DEFAULT);
+		MSH3_CSV = getProp("PHLIP_MSH3_CSV", MSH3_CSV_DEFAULT);
+		MSH4_CSV = getProp("PHLIP_MSH4_CSV", MSH4_CSV_DEFAULT);
+		SPM4_CSV = getProp("PHLIP_SPM4_CSV", SPM4_CSV_DEFAULT);
+		TEST_CSV = getProp("PHLIP_TEST_CSV", TEST_CSV_DEFAULT);
+		OBSERVATIONS_CSV = getProp("PHLIP_OBSERVATIONS_CSV", OBSERVATIONS_CSV_DEFAULT);
+		ORDERS_CSV = getProp("PHLIP_ORDERS_CSV", ORDERS_CSV_DEFAULT);
+		VALUE_SETS_CSV = getProp("PHLIP_VALUE_SETS_CSV", VALUE_SETS_CSV_DEFAULT);
+		WEBSERVICE_URL = getProp("PHLIP_WEBSERVICE_URL", WEBSERVICE_URL_DEFAULT);
+		VOCAB_WEBSERVICE_URL = getProp("PHLIP_VOCAB_WEBSERVICE_URL", VOCAB_WEBSERVICE_URL_DEFAULT);
+	}
 
-  private static final String TEST_CSV = "IGAMT_PHLIP_Tests.csv";
-  private static final String OBSERVATIONS_CSV = "IGAMT_PHLIP_Observations.csv";
-  private static final String ORDERS = "IGAMT_PHLIP_Orders.csv";
-  private static final String VALUE_SETS_CSV = "IGAMT_PHLIP_ValueSets.csv";
+	private static String getProp(String key, String defaultValue) {
+		String value = PropertiesUtils.getInstance().getProperty(key);
+		return (value != null) ? value : defaultValue;
+	}
 
-  // private static final String FOLDER_SPM = "";
-  // private static final String SPECIMEN_TYPE_CSV = "";
+	public static String getPROGRAM() {
+		return PROGRAM;
+	}
 
-  private static final String WEBSERVICE_URL =
-      "https://hit-dev.nist.gov:8097/aphl-service/aphl/phlip/";
+	public static String getTEST_CSV() {
+		return TEST_CSV;
+	}
 
-  public static String getFOLDER() {
-    return FOLDER;
-  }
+	public static String getOBSERVATIONS_CSV() {
+		return OBSERVATIONS_CSV;
+	}
 
-  public static String getTEST_CSV() {
-    return TEST_CSV;
-  }
+	public static String getORDERS_CSV() {
+		return ORDERS_CSV;
+	}
 
-  public static String getOBSERVATIONS_CSV() {
-    return OBSERVATIONS_CSV;
-  }
+	public static String getVALUE_SETS_CSV() {
+		return VALUE_SETS_CSV;
+	}
 
-  public static String getORDERS() {
-    return ORDERS;
-  }
+	public static String getSPM4_CSV() {
+		return SPM4_CSV;
+	}
 
-  public static String getVALUE_SETS_CSV() {
-    return VALUE_SETS_CSV;
-  }
+	public static String getMSH3_CSV() {
+		return MSH3_CSV;
+	}
 
-  public static String getFOLDER_SPM() {
-    return ELR_FOUNDATION.getFOLDER_SPM();
-  }
+	public static String getMSH4_CSV() {
+		return MSH4_CSV;
+	}
 
-  public static String getSPECIMEN_TYPE_CSV() {
-    return ELR_FOUNDATION.getSPECIMEN_TYPE_CSV();
-  }
+	public static String getWEBSERVICE_URL() {
+		return WEBSERVICE_URL;
+	}
 
-  public static String getFOLDER_MSH() {
-    return FOLDER_MSH;
-  }
-
-  public static String getMSH3_CSV() {
-    return MSH3_CSV;
-  }
-
-  public static String getMSH4_CSV() {
-    return MSH4_CSV;
-  }
-
-  public static String getWEBSERVICE_URL() {
-    return WEBSERVICE_URL;
-  }
-
-
+	public static String getVOCAB_WEBSERVICE_URL() {
+		return VOCAB_WEBSERVICE_URL;
+	}
 }

@@ -8,33 +8,36 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+/**
+ * Generic result wrapper containing a count and list of data items.
+ * Used for returning paginated or counted results from service methods.
+ * @param <T> The type of data items contained in the result
+ */
 public class Result<T> {
 
-  private int count;
-  private List<T> data;
+	private int count;
+	private List<T> data;
 
-  @JsonCreator
-  public Result(@JsonProperty("count") int count, @JsonProperty("data") List<T> data) {
-    super();
-    this.count = count;
-    this.data = data;
-  }
+	@JsonCreator
+	public Result(@JsonProperty("count") int count, @JsonProperty("data") List<T> data) {
+		super();
+		this.count = count;
+		this.data = data;
+	}
 
-  @JsonGetter("count")
-  public int getCount() {
-    return count;
-  }
+	@JsonGetter("count")
+	public int getCount() {
+		return count;
+	}
 
-  @JsonGetter("data")
-  public List<T> getData() {
-    return data;
-  }
+	@JsonGetter("data")
+	public List<T> getData() {
+		return data;
+	}
 
-  @Override
-  public String toString() {
-    return "Result [count=" + count + ", data=" + data + "]";
-  }
-
-
+	@Override
+	public String toString() {
+		return "Result [count=" + count + ", data=" + data + "]";
+	}
 
 }

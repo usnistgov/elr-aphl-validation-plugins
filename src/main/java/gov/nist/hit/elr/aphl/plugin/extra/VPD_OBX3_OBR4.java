@@ -11,30 +11,29 @@ import hl7.v2.instance.Element;
 
 public class VPD_OBX3_OBR4 implements OBX3_OBR4 {
 
-  private OBX3_OBR4 datasource;
-  
-  public VPD_OBX3_OBR4() throws IOException {
-    String ds = (String) PropertiesUtils.getInstance().get("VPD_OBX3_OBR4");
-    switch(ds) {
-      case "CVS":
-        datasource = new VPD_OBX3_OBR4_csv();
-        break;
-      case "WS":
-        datasource = new VPD_OBX3_OBR4_ws();
-        break;
-      default:
-        datasource = new VPD_OBX3_OBR4_csv();
-    }
-  }
+	private OBX3_OBR4 datasource;
 
-  @Override
-  public List<String> assertionWithCustomMessages(Element e) throws Exception {
-    return datasource.assertionWithCustomMessages(e);
-  }
+	public VPD_OBX3_OBR4() throws IOException {
+		String ds = (String) PropertiesUtils.getInstance().getProperty("VPD_OBX3_OBR4");
+		switch (ds) {
+		case "CSV":
+			datasource = new VPD_OBX3_OBR4_csv();
+			break;
+		case "WS":
+			datasource = new VPD_OBX3_OBR4_ws();
+			break;
+		default:
+			datasource = new VPD_OBX3_OBR4_csv();
+		}
+	}
 
-  @Override
-  public List<String> check(ComplexCodedElement OBR4, List<ComplexCodedElement> OBX3s)
-      throws Exception {
-    return datasource.check(OBR4, OBX3s);
-  }
+	@Override
+	public List<String> assertionWithCustomMessages(Element e) throws Exception {
+		return datasource.assertionWithCustomMessages(e);
+	}
+
+	@Override
+	public List<String> check(ComplexCodedElement OBR4, List<ComplexCodedElement> OBX3s) throws Exception {
+		return datasource.check(OBR4, OBX3s);
+	}
 }

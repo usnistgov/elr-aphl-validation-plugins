@@ -9,35 +9,32 @@ import gov.nist.hit.elr.plugin.utils.PropertiesUtils;
 import hl7.v2.instance.Element;
 
 public class PHLIP_SPM4 implements SPM_4 {
-  
-  private SPM_4 datasource;
 
-  public PHLIP_SPM4() throws IOException{
-    String ds = (String) PropertiesUtils.getInstance().get("PHLIP_SPM4");
-    switch(ds) {
-      case "CVS":
-        datasource = new PHLIP_SPM4_csv();
-        break;
-//      case "WS":
-//        datasource = new PHLIP_SPM4_ws();
-//        break;
-      default:
-        datasource = new PHLIP_SPM4_csv();
-    }
-  }
+	private SPM_4 datasource;
 
-  @Override
-  public java.util.List<String> assertionWithCustomMessages(Element e) throws Exception {
-    return datasource.assertionWithCustomMessages(e);
-  }
+	public PHLIP_SPM4() throws IOException {
+		String ds = (String) PropertiesUtils.getInstance().getProperty("PHLIP_SPM4");
+		switch (ds) {
+		case "CSV":
+			datasource = new PHLIP_SPM4_csv();
+			break;
+		default:
+			datasource = new PHLIP_SPM4_csv();
+		}
+	}
 
-  @Override
-  public List<String> check(ComplexCodedElement SPM4) throws Exception {
-    return datasource.check(SPM4);
-  }
-  
-  @Override
-  public String getProgram() {
-    return datasource.getProgram();
-  }
+	@Override
+	public java.util.List<String> assertionWithCustomMessages(Element e) throws Exception {
+		return datasource.assertionWithCustomMessages(e);
+	}
+
+	@Override
+	public List<String> check(ComplexCodedElement SPM4) throws Exception {
+		return datasource.check(SPM4);
+	}
+
+	@Override
+	public String getProgram() {
+		return datasource.getProgram();
+	}
 }

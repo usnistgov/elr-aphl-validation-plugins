@@ -11,36 +11,35 @@ import hl7.v2.instance.Element;
 
 public class Rabies_OBX implements OBX {
 
-  private OBX datasource;
+	private OBX datasource;
 
-  public Rabies_OBX() throws IOException {
-    String ds = (String) PropertiesUtils.getInstance().get("Rabies_OBX");
-    switch (ds) {
-      case "CVS":
-        datasource = new Rabies_OBX_csv();
-        break;
-      case "WS":
-        datasource = new Rabies_OBX_ws();
-        break;
-      default:
-        datasource = new Rabies_OBX_csv();
-    }
-  }
+	public Rabies_OBX() throws IOException {
+		String ds = (String) PropertiesUtils.getInstance().getProperty("Rabies_OBX");
+		switch (ds) {
+		case "CSV":
+			datasource = new Rabies_OBX_csv();
+			break;
+		case "WS":
+			datasource = new Rabies_OBX_ws();
+			break;
+		default:
+			datasource = new Rabies_OBX_csv();
+		}
+	}
 
-  @Override
-  public List<String> assertionWithCustomMessages(Element e) throws Exception {
-    return datasource.assertionWithCustomMessages(e);
-  }
+	@Override
+	public List<String> assertionWithCustomMessages(Element e) throws Exception {
+		return datasource.assertionWithCustomMessages(e);
+	}
 
-  @Override
-  public List<String> checkOBX3_OBX2(ComplexCodedElement obx3, String obx2) throws Exception {
-    return datasource.checkOBX3_OBX2(obx3, obx2);
-  }
+	@Override
+	public List<String> checkOBX3_OBX2(ComplexCodedElement obx3, String obx2) throws Exception {
+		return datasource.checkOBX3_OBX2(obx3, obx2);
+	}
 
-  @Override
-  public List<String> checkOBX3_OBX5_CWE(ComplexCodedElement obx3, ComplexCodedElement obx5)
-      throws Exception {
-    return datasource.checkOBX3_OBX5_CWE(obx3, obx5);
-  }
+	@Override
+	public List<String> checkOBX3_OBX5_CWE(ComplexCodedElement obx3, ComplexCodedElement obx5) throws Exception {
+		return datasource.checkOBX3_OBX5_CWE(obx3, obx5);
+	}
 
 }

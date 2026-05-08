@@ -8,6 +8,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+/**
+ * Represents the expansion of a value set, containing the total number of elements and the list of elements.
+ * This class is used for JSON deserialization of value set expansions.
+ */
 public class ValueSetExpansion {
 
   private int total;
