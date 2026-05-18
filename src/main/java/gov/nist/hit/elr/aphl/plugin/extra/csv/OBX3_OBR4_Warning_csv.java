@@ -4,9 +4,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import gov.nist.hit.elr.aphl.plugin.extra.OBX3_OBR4_Warning;
 import gov.nist.hit.elr.plugin.utils.CSVUtils;
 import gov.nist.hit.elr.plugin.utils.CodedElement;
@@ -122,7 +119,6 @@ public abstract class OBX3_OBR4_Warning_csv implements OBX3_OBR4_Warning {
 				// 1.1 Check if the parent OBR-4 matches
 				if (obr4Expected.contains(obx4)) {
 					// success : move to the next OBX-3
-					// logger.debug("SUCCESS 1");
 					continue;
 				}
 				// 1.2 Check if the OBR-4 value is associated with another OBX-3 in test

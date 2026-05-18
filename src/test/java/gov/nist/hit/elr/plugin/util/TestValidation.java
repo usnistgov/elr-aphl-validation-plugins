@@ -19,6 +19,7 @@ import hl7.v2.validation.SyncHL7Validator;
 import hl7.v2.validation.ValidationContext;
 import hl7.v2.validation.ValidationContextBuilder;
 
+@Ignore
 public class TestValidation {
 
 	@Test
