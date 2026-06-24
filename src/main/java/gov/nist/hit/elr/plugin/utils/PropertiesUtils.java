@@ -18,24 +18,48 @@ public class PropertiesUtils {
 	private static final Logger logger = LogManager.getLogger(PropertiesUtils.class);
 
 	private Properties properties;
+	private static final String propFileName = "elr-plugins-config.properties";
+	// Legacy name retained for backward compatibility — "plugings" was a typo in the original filename.
+	// Callers still packaging the old name will still be found via the fallback in propertiesUtilsLegacy().
+	private static final String propFileNameLegacy = "elr-plugings-config.properties";
 
 	private static volatile PropertiesUtils single_instance = null;
 
 	private PropertiesUtils() throws IOException {
-		String propFileName = "elr-plugings-config.properties";
 
 		try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(propFileName)) {
 			properties = new Properties();
 
 			if (inputStream == null) {
-				logger.warn(
-						"WARN: Property file '" + propFileName + "' not found in classpath. Using empty properties.");
+				logger.warn("WARN: Property file '" + propFileName
+						+ "' not found in classpath. Try to load legacy properties file.");
+				propertiesUtilsLegacy();
 			} else {
 				properties.load(inputStream);
 				logger.info("INFO: Loaded properties from " + propFileName);
 			}
 		} catch (IOException e) {
 			logger.error("ERROR: Failed to load properties file '" + propFileName + "': " + e.getMessage());
+			// Initialize with empty properties to avoid NullPointerException
+			properties = new Properties();
+		}
+	}
+
+	private void propertiesUtilsLegacy() {
+
+		try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(propFileNameLegacy)) {
+			properties = new Properties();
+
+			if (inputStream == null) {
+				logger.warn("WARN: Property file '" + propFileNameLegacy
+						+ "' not found in classpath. Using empty properties.");
+			} else {
+				properties.load(inputStream);
+				logger.info("INFO: Loaded properties from " + propFileNameLegacy);
+			}
+		} catch (IOException e) {
+			logger.error(
+					"ERROR: Failed to load legacy properties file '" + propFileNameLegacy + "': " + e.getMessage());
 			// Initialize with empty properties to avoid NullPointerException
 			properties = new Properties();
 		}
