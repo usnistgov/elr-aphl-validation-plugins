@@ -3,6 +3,9 @@ package gov.nist.hit.elr.plugin.utils;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -38,6 +41,49 @@ public class CSVUtils {
 	private Set<HierarchicDesignator> MSH4;
 
 	private Set<CodedElement> SPM4;
+
+	private static final String CLASSPATH_PREFIX = "classpath:";
+
+	// Resolves a column by name with progressive fallback:
+	// 1. case-insensitive exact match (already handled by setIgnoreHeaderCase)
+	// 2. normalized match: strip all spaces (catches "CodeSystem" vs "Code System")
+	// 3. suffix match: header ends with the target name (catches "ARLN Value Set Name" vs "Value Set Name")
+	// 4. positional index fallback with a warning
+	private String getField(CSVRecord record, Map<String, Integer> headerMap, String columnName, int fallbackIndex) {
+		String normalizedTarget = columnName.toLowerCase();
+
+		if (headerMap.containsKey(normalizedTarget)) {
+			return record.get(columnName);
+		}
+
+		String strippedTarget = normalizedTarget.replace(" ", "");
+		for (String header : headerMap.keySet()) {
+			if (header.replace(" ", "").equals(strippedTarget)) {
+				return record.get(header);
+			}
+		}
+
+		for (String header : headerMap.keySet()) {
+			if (header.endsWith(normalizedTarget)) {
+				return record.get(header);
+			}
+		}
+
+		logger.warn("Column '{}' not found in header {}; falling back to index {}", columnName, headerMap.keySet(), fallbackIndex);
+		return record.get(fallbackIndex);
+	}
+
+	private BufferedReader openReader(String path) throws IOException {
+		if (path.startsWith(CLASSPATH_PREFIX)) {
+			String resourcePath = path.substring(CLASSPATH_PREFIX.length());
+			InputStream is = getClass().getClassLoader().getResourceAsStream(resourcePath);
+			if (is == null) {
+				throw new IOException("Classpath resource not found: " + resourcePath);
+			}
+			return new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+		}
+		return new BufferedReader(new FileReader(path));
+	}
 
 	public CSVUtils() throws IOException {
 		OBR4 = new HashSet<CodedElement>();
@@ -108,19 +154,20 @@ public class CSVUtils {
 
 	protected void parseValueSetsCSV(String valueSetsCsv) throws IOException {
 		logger.info("Opening value sets CSV file: " + valueSetsCsv);
-		BufferedReader reader = new BufferedReader(new FileReader(valueSetsCsv));
+		BufferedReader reader = openReader(valueSetsCsv);
 		CSVFormat format = CSVFormat.EXCEL.builder().setHeader() // Replaces withFirstRecordAsHeader()
 				.setSkipHeaderRecord(true) // Required with setHeader() to skip first row
 				.setIgnoreHeaderCase(true) // Replaces withIgnoreHeaderCase()
 				.setTrim(true) // Replaces withTrim()
 				.get();
 		CSVParser csvParser = CSVParser.builder().setReader(reader).setFormat(format).get();
-		logger.debug("Header columns: " + csvParser.getHeaderMap().keySet());
+		Map<String, Integer> headerMap = csvParser.getHeaderMap();
+		logger.debug("Header columns: " + headerMap.keySet());
 
 		for (CSVRecord csvRecord : csvParser) {
-			String valueSetName = csvRecord.get("Value Set Name").toLowerCase();
-			String code = csvRecord.get("Code");
-			String codeSystem = csvRecord.get("CodeSystem");
+			String valueSetName = getField(csvRecord, headerMap, "Value Set Name", 0).toLowerCase();
+			String code = getField(csvRecord, headerMap, "Code", 1);
+			String codeSystem = getField(csvRecord, headerMap, "CodeSystem", 2);
 			CodedElement e = new CodedElement(code, codeSystem);
 
 			if (valueSets.containsKey(valueSetName)) {
@@ -136,22 +183,23 @@ public class CSVUtils {
 
 	protected void parseTestCSV(String testCsv) throws IOException {
 		logger.info("Opening test CSV file: " + testCsv);
-		BufferedReader reader = new BufferedReader(new FileReader(testCsv));
+		BufferedReader reader = openReader(testCsv);
 		CSVFormat format = CSVFormat.EXCEL.builder().setHeader() // Replaces withFirstRecordAsHeader()
 				.setSkipHeaderRecord(true) // Required with setHeader() to skip first row
 				.setIgnoreHeaderCase(true) // Replaces withIgnoreHeaderCase()
 				.setTrim(true) // Replaces withTrim()
 				.get();
 		CSVParser csvParser = CSVParser.builder().setReader(reader).setFormat(format).get();
-		logger.debug("Header columns: " + csvParser.getHeaderMap().keySet());
+		Map<String, Integer> headerMap = csvParser.getHeaderMap();
+		logger.debug("Header columns: " + headerMap.keySet());
 
 		for (CSVRecord csvRecord : csvParser) {
-			String OBR4Identifier = csvRecord.get("OBR4 Code");
-			String OBR4CodeSystem = csvRecord.get("OBR4 Code System");
+			String OBR4Identifier = getField(csvRecord, headerMap, "OBR4 Code", 0);
+			String OBR4CodeSystem = getField(csvRecord, headerMap, "OBR4 Code System", 1);
 			CodedElement OBR4 = new CodedElement(OBR4Identifier, OBR4CodeSystem);
 
-			String OBX3Identifier = csvRecord.get("OBX3 Code");
-			String OBX3CodeSystem = csvRecord.get("OBX3 Code System");
+			String OBX3Identifier = getField(csvRecord, headerMap, "OBX3 Code", 2);
+			String OBX3CodeSystem = getField(csvRecord, headerMap, "OBX3 Code System", 3);
 			CodedElement OBX3 = new CodedElement(OBX3Identifier, OBX3CodeSystem);
 
 			if (OBX3Identifier == null || "".equals(OBX3Identifier) || OBX3CodeSystem == null
@@ -176,13 +224,13 @@ public class CSVUtils {
 				OBX3_OBR4.put(OBX3, set);
 			}
 
-			String OBX2 = csvRecord.get("OBX2");
+			String OBX2 = getField(csvRecord, headerMap, "OBX2", 4);
 			if (!OBX3_OBX2.containsKey(OBX3)) {
 				OBX3_OBX2.put(OBX3, new HashSet<String>());
 			}
 			OBX3_OBX2.get(OBX3).add(OBX2);
 
-			String OBX5 = csvRecord.get("Value Set Name");
+			String OBX5 = getField(csvRecord, headerMap, "Value Set Name", 5);
 			if (OBX3_OBX5.containsKey(OBX3) && !OBX3_OBX5.get(OBX3).equalsIgnoreCase(OBX5)) {
 				logger.warn(
 						"OBX-3 inconsistency detected: Code={}, Previous Value Set Name={}, Current Value Set Name={}",
@@ -196,18 +244,19 @@ public class CSVUtils {
 
 	private void parseObservationsCSV(String observationsCsv) throws IOException {
 		logger.info("Opening observations CSV file: " + observationsCsv);
-		BufferedReader reader = new BufferedReader(new FileReader(observationsCsv));
+		BufferedReader reader = openReader(observationsCsv);
 		CSVFormat format = CSVFormat.EXCEL.builder().setHeader() // Replaces withFirstRecordAsHeader()
 				.setSkipHeaderRecord(true) // Required with setHeader() to skip first row
 				.setIgnoreHeaderCase(true) // Replaces withIgnoreHeaderCase()
 				.setTrim(true) // Replaces withTrim()
 				.get();
 		CSVParser csvParser = CSVParser.builder().setReader(reader).setFormat(format).get();
-		logger.debug("Header columns: " + csvParser.getHeaderMap().keySet());
+		Map<String, Integer> headerMap = csvParser.getHeaderMap();
+		logger.debug("Header columns: " + headerMap.keySet());
 
 		for (CSVRecord csvRecord : csvParser) {
-			String OBX3Identifier = csvRecord.get("OBX3 Code");
-			String OBX3CodeSystem = csvRecord.get("OBX3 Code System");
+			String OBX3Identifier = getField(csvRecord, headerMap, "OBX3 Code", 0);
+			String OBX3CodeSystem = getField(csvRecord, headerMap, "OBX3 Code System", 1);
 			CodedElement OBX3 = new CodedElement(OBX3Identifier, OBX3CodeSystem);
 
 			this.OBX3.add(OBX3);
@@ -218,18 +267,19 @@ public class CSVUtils {
 
 	private void parseOrdersCSV(String orderCsv) throws IOException {
 		logger.info("Opening orders CSV file: " + orderCsv);
-		BufferedReader reader = new BufferedReader(new FileReader(orderCsv));
+		BufferedReader reader = openReader(orderCsv);
 		CSVFormat format = CSVFormat.EXCEL.builder().setHeader() // Replaces withFirstRecordAsHeader()
 				.setSkipHeaderRecord(true) // Required with setHeader() to skip first row
 				.setIgnoreHeaderCase(true) // Replaces withIgnoreHeaderCase()
 				.setTrim(true) // Replaces withTrim()
 				.get();
 		CSVParser csvParser = CSVParser.builder().setReader(reader).setFormat(format).get();
-		logger.debug("Header columns: " + csvParser.getHeaderMap().keySet());
+		Map<String, Integer> headerMap = csvParser.getHeaderMap();
+		logger.debug("Header columns: " + headerMap.keySet());
 
 		for (CSVRecord csvRecord : csvParser) {
-			String OBR4Identifier = csvRecord.get("OBR4 Code");
-			String OBR4CodeSystem = csvRecord.get("OBR4 Code System");
+			String OBR4Identifier = getField(csvRecord, headerMap, "OBR4 Code", 0);
+			String OBR4CodeSystem = getField(csvRecord, headerMap, "OBR4 Code System", 1);
 			CodedElement OBR4 = new CodedElement(OBR4Identifier, OBR4CodeSystem);
 
 			this.OBR4.add(OBR4);
@@ -240,19 +290,20 @@ public class CSVUtils {
 
 	public void parseSpecimenTypeCSV(String specimentTypeCsv) throws IOException {
 		logger.info("Opening specimen type CSV file: " + specimentTypeCsv);
-		BufferedReader reader = new BufferedReader(new FileReader(specimentTypeCsv));
+		BufferedReader reader = openReader(specimentTypeCsv);
 		CSVFormat format = CSVFormat.EXCEL.builder().setHeader() // Replaces withFirstRecordAsHeader()
 				.setSkipHeaderRecord(true) // Required with setHeader() to skip first row
 				.setIgnoreHeaderCase(true) // Replaces withIgnoreHeaderCase()
 				.setTrim(true) // Replaces withTrim()
 				.get();
 		CSVParser csvParser = CSVParser.builder().setReader(reader).setFormat(format).get();
-		logger.debug("Header columns: " + csvParser.getHeaderMap().keySet());
+		Map<String, Integer> headerMap = csvParser.getHeaderMap();
+		logger.debug("Header columns: " + headerMap.keySet());
 
 		for (CSVRecord csvRecord : csvParser) {
-			String SPM4Identifier = csvRecord.get("Concept Code");
-			String SPM4Text = csvRecord.get("Preferred Concept Name");
-			String SPM4CodeSystem = csvRecord.get("Code System");
+			String SPM4Identifier = getField(csvRecord, headerMap, "Concept Code", 1);
+			String SPM4Text = getField(csvRecord, headerMap, "Preferred Concept Name", 3);
+			String SPM4CodeSystem = getField(csvRecord, headerMap, "Code System", 4);
 			CodedElement SPM4 = new CodedElement(SPM4Identifier, SPM4Text, SPM4CodeSystem);
 
 			this.SPM4.add(SPM4);
@@ -263,7 +314,7 @@ public class CSVUtils {
 
 	public void parseSendingApplication(String messageHeaderCsv) throws IOException {
 		logger.info("Opening sending application CSV file: " + messageHeaderCsv);
-		BufferedReader reader = new BufferedReader(new FileReader(messageHeaderCsv));
+		BufferedReader reader = openReader(messageHeaderCsv);
 		CSVFormat format = CSVFormat.EXCEL.builder().setHeader() // Replaces withFirstRecordAsHeader()
 				.setSkipHeaderRecord(true) // Required with setHeader() to skip first row
 				.setIgnoreHeaderCase(true) // Replaces withIgnoreHeaderCase()
@@ -291,7 +342,7 @@ public class CSVUtils {
 
 	public void parseSendingFacility(String messageHeaderCsv) throws IOException {
 		logger.info("Opening sending facility CSV file: " + messageHeaderCsv);
-		BufferedReader reader = new BufferedReader(new FileReader(messageHeaderCsv));
+		BufferedReader reader = openReader(messageHeaderCsv);
 		CSVFormat format = CSVFormat.EXCEL.builder().setHeader() // Replaces withFirstRecordAsHeader()
 				.setSkipHeaderRecord(true) // Required with setHeader() to skip first row
 				.setIgnoreHeaderCase(true) // Replaces withIgnoreHeaderCase()
