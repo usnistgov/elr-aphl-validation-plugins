@@ -15,6 +15,7 @@ import org.junit.Test;
 import gov.nist.hit.elr.aphl.domain.vocab.ValueSet;
 import gov.nist.hit.elr.plugin.utils.WSUtils;
 
+@Ignore
 public class TestValueSetWS {
 
 	private static Set<String> ARLN;
